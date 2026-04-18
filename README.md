@@ -447,6 +447,20 @@ A continuacion se presenta un analisis competitivo de las empresas que ofrecen s
 
 ### 2.3.3. User Journey Mapping
 
+A continuacion se muestra el proceso para la realizacion del User Journey Mapping para los User Persona con el fin de entender las experiencias del usuario sin nuestra solucion. Se presentan los journeys As-Is y se vinculan con las fichas de User Persona descritas en la seccion 2.3.1, resaltando el end-to-end journey observado.
+
+User Journey Mapping para Juan Perez:
+
+<div align="center">
+  <img src="Resources/capitulo_2/user_journey_mapping/journey-map-1.png" style="margin: 10px 0;" width="80%"/>
+</div>
+
+User Journey Mapping para Maria Lopez:
+
+<div align="center">
+  <img src="Resources/capitulo_2/user_journey_mapping/journey-map-2.png" style="margin: 10px 0;" width="80%"/>
+</div>
+
 ### 2.3.4. Empathy Mapping
 
 ### 2.3.5. Big Picture EventStorming
