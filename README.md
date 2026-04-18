@@ -127,7 +127,53 @@ ABET – EAC - Student Outcome 5 Criterio: La capacidad de funcionar efectivamen
 
 </div>
 
+## 1.2. Solution Profile
 
+
+
+
+
+### 1.2.2. Lean UX Process
+
+
+
+
+
+#### 1.2.2.1. Lean UX Problem Statements
+
+A partir del análisis del contexto y la investigación realizada, se identificaron los siguientes Problem Statements que dan forma a la propuesta de valor de **Rent2Go**, una plataforma peer-to-peer de alquiler de vehículos:
+
+- **Problem Statement 1: Falta de acceso a opciones de alquiler accesibles y confiables**
+    - **¿Qué sucede?** Arrendatarios en zonas urbanas del Perú no encuentran vehículos económicos y seguros para alquilar temporalmente.
+    - **¿Por qué es un problema?** Las empresas tradicionales imponen precios elevados y requisitos rígidos.
+    - **¿A quién afecta?** A personas que requieren movilidad flexible sin comprometerse a una compra.
+    - **Solución propuesta:** Una plataforma digital que conecte directamente a arrendatarios con vehículos disponibles de propietarios particulares, eliminando intermediarios y reduciendo costos.
+
+- **Problem Statement 2: Dificultad para monetizar vehículos no utilizados por parte de los propietarios**
+    - **¿Qué sucede?** Propietarios de autos que usan poco sus vehículos no tienen medios simples y seguros para alquilarlos.
+    - **¿Por qué es un problema?** Se desperdicia un activo valioso que podría generar ingresos pasivos.
+    - **¿A quién afecta?** A propietarios con vehículos inactivos o de bajo uso.
+    - **Solución propuesta:** Implementar una plataforma donde los propietarios puedan listar fácilmente sus vehículos, controlar condiciones de uso y recibir pagos automáticos.
+
+- **Problem Statement 3: Modelos de negocio costosos y poco escalables**
+    - **¿Qué sucede?** El modelo tradicional de alquiler exige tener flota propia, lo cual eleva los costos operativos.
+    - **¿Por qué es un problema?** Dificulta escalar y reduce el margen de ganancias.
+    - **¿A quién afecta?** A nuevas empresas que buscan entrar al mercado de movilidad sin grandes inversiones.
+    - **Solución propuesta:** Desarrollar una solución peer-to-peer donde la plataforma actúe como intermediario tecnológico y no requiera vehículos propios.
+
+- **Problem Statement 4: Falta de confianza y seguridad en plataformas similares**
+    - **¿Qué sucede?** Los usuarios temen fraudes, daños a los vehículos o problemas legales.
+    - **¿Por qué es un problema?** Reduce la adopción del servicio y frena el crecimiento.
+    - **¿A quién afecta?** Tanto a propietarios como a arrendatarios.
+    - **Solución propuesta:** Incorporar verificación de identidad, contratos digitales, seguros, políticas claras y soporte 24/7 para garantizar una experiencia segura.
+
+- **Problem Statement 5: Crecimiento limitado por falta de validación social**
+    - **¿Qué sucede?** Los usuarios nuevos se basan en recomendaciones y experiencias previas para tomar decisiones.
+    - **¿Por qué es un problema?** Sin confianza, no hay expansión.
+    - **¿A quién afecta?** A toda la comunidad de la plataforma.
+    - **Solución propuesta:** Activar mecanismos de calificación, comentarios, referidos y recompensas que fortalezcan la reputación colectiva.
+
+Rent2Go se propone como una solución innovadora, accesible y escalable dentro del sector del alquiler de vehículos, ofreciendo beneficios económicos tanto a propietarios como a arrendatarios, y resolviendo las limitaciones del modelo tradicional.
 
 
 
