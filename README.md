@@ -38,8 +38,8 @@
 <td>Chavez Uribe, Ario</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
+<td>U202322187</td>
+<td>Huarcaya Matias, Gilbert Alonso</td>
 </tr>
 <tr>
 <td></td>
@@ -86,19 +86,19 @@
 
 # Tabla de contenidos
 
-## [Capítulo I: Introducción](Capitulo_1.md)
+## [Capítulo I: Introducción](README.md)
 
-- [1.1 Startup Profile](Capitulo_1.md#11-startup-profile)
-  - [1.1.1 Descripción de la Startup](Capitulo_1.md#111-descripción-de-la-startup)
-  - [1.1.2 Perfiles de integrantes del equipo](Capitulo_1.md#112-perfiles-de-integrantes-del-equipo)
-- [1.2 Solution Profile](Capitulo_1.md#12-solution-profile)
-  - [1.2.1 Antecedentes y problemática](Capitulo_1.md#121-antecedentes-y-problemática)
-  - [1.2.2 Lean UX Process](Capitulo_1.md#122-lean-ux-process)
-    - [1.2.2.1 Lean UX Problem Statements](Capitulo_1.md#1221-lean-ux-problem-statements)
-    - [1.2.2.2 Lean UX Assumptions](Capitulo_1.md#1222-lean-ux-assumptions)
-    - [1.2.2.3 Lean UX Hypothesis Statements](Capitulo_1.md#1223-lean-ux-hypothesis-statements)
-    - [1.2.2.4 Lean UX Canvas](Capitulo_1.md#1224-lean-ux-canvas)
-- [1.3 Segmentos Objetivos](Capitulo_1.md#13-segmentos-objetivo)
+- [1.1 Startup Profile](README.md#11-startup-profile)
+  - [1.1.1 Descripción de la Startup](README.md#111-descripción-de-la-startup)
+  - [1.1.2 Perfiles de integrantes del equipo](README.md#112-perfiles-de-integrantes-del-equipo)
+- [1.2 Solution Profile](README.md#12-solution-profile)
+  - [1.2.1 Antecedentes y problemática](README.md#121-antecedentes-y-problemática)
+  - [1.2.2 Lean UX Process](README.md#122-lean-ux-process)
+    - [1.2.2.1 Lean UX Problem Statements](README.md#1221-lean-ux-problem-statements)
+    - [1.2.2.2 Lean UX Assumptions](README.md#1222-lean-ux-assumptions)
+    - [1.2.2.3 Lean UX Hypothesis Statements](README.md#1223-lean-ux-hypothesis-statements)
+    - [1.2.2.4 Lean UX Canvas](README.md#1224-lean-ux-canvas)
+- [1.3 Segmentos Objetivos](README.md#13-segmentos-objetivo)
 
 ## [Capítulo II: Requirements Development and Software Solution Design](Capitulo_2.md)
 
@@ -133,15 +133,15 @@ ABET – EAC - Student Outcome 5 Criterio: La capacidad de funcionar efectivamen
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-| Integrantes                                                                                                            | Descripción                                                                                                                                         | Conocimientos                                                                                                                   |
-| :--------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
-| <img src="Resources/capitulo_1/foto_ario.png" width="100" height="100"> <br>**Ario Joel Chavez Uribe** <br>u202213468  | Soy estudiante de la carrera de Ingeniería de Software. Tengo interés en aprender sobre nuevas tecnologías y el desarrollo de aplicaciones móviles. | Poseo conocimientos en C++, GDScript, Python y desarrollo web (HTML, CSS y Javascript), útiles para el desarrollo del proyecto. |
-| <img src="Resources/capitulo_1/foto_jesus.jpg" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código)  | [Descripción del integrante]                                                                                                                        | [Conocimientos del integrante]                                                                                                  |
-| <img src="Resources/capitulo_1/foto_james.jpeg" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código) | [Descripción del integrante]                                                                                                                        | [Conocimientos del integrante]                                                                                                  |
-| <img src="Resources/capitulo_1/default.png" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código)     | [Descripción del integrante]                                                                                                                        | [Conocimientos del integrante]                                                                                                  |
-| <img src="Resources/capitulo_1/default.png" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código)     | [Descripción del integrante]                                                                                                                        | [Conocimientos del integrante]                                                                                                  |
-| <img src="Resources/capitulo_1/default.png" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código)     | [Descripción del integrante]                                                                                                                        | [Conocimientos del integrante]                                                                                                  |
-| <img src="Resources/capitulo_1/default.png" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código)     | [Descripción del integrante]                                                                                                                        | [Conocimientos del integrante]                                                                                                  |
+| Integrantes | Descripción | Conocimientos |
+| :--- | :--- | :--- |
+| <img src="Resources/capitulo_1/foto_ario.png" width="100" height="100"> <br>**Ario Joel Chavez Uribe** <br>u202213468 | Soy estudiante de la carrera de Ingeniería de Software. Tengo interés en aprender sobre nuevas tecnologías y el desarrollo de aplicaciones móviles. | Poseo conocimientos en C++, GDScript, Python y desarrollo web (HTML, CSS y Javascript), útiles para el desarrollo del proyecto. |
+| <img src="Resources/capitulo_1/foto_jesus.jpg" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código) | [Descripción del integrante] | [Conocimientos del integrante] |
+| <img src="Resources/capitulo_1/foto_james.jpeg" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código) | [Descripción del integrante] | [Conocimientos del integrante] |
+| <img src="Resources/capitulo_1/foto_gilbert.jpg" width="100" height="100"> <br>**Gilbert Alonso Huarcaya Matías** <br>u202322187 | Mi nombre es Gilbert Alonso Huarcaya Matías y actualmente estudio la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). | He trabajado en proyectos utilizando JavaScript y TypeScript para el desarrollo front-end, así como en la implementación de soluciones con C++. Además, me destaco por mi capacidad de organización, trabajo en equipo y orientación a resultados, cualidades que me permiten adaptarme a entornos dinámicos y colaborar de manera efectiva en proyectos tecnológicos. |
+| <img src="Resources/capitulo_1/default.png" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código) | [Descripción del integrante] | [Conocimientos del integrante] |
+| <img src="Resources/capitulo_1/default.png" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código) | [Descripción del integrante] | [Conocimientos del integrante] |
+| <img src="Resources/capitulo_1/default.png" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código) | [Descripción del integrante] | [Conocimientos del integrante] |
 
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
