@@ -144,8 +144,7 @@ ABET – EAC - Student Outcome 5 Criterio: La capacidad de funcionar efectivamen
 | <img src="Resources/capitulo_1/default.png" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código)     | [Descripción del integrante]                                                                                                                        | [Conocimientos del integrante]                                                                                                  |
 
 ## 1.2. Solution Profile
-
-
+### 1.2.1. Antecedentes y problemática
 
 
 
@@ -186,7 +185,11 @@ A partir del análisis del contexto y la investigación realizada, se identifica
 
 Rent2Go se propone como una solución innovadora, accesible y escalable dentro del sector del alquiler de vehículos, ofreciendo beneficios económicos tanto a propietarios como a arrendatarios, y resolviendo las limitaciones del modelo tradicional.
 
+#### 1.2.2.2. Lean UX Assumptions
 
+#### 1.2.2.3. Lean UX Hypothesis Statements
+
+#### 1.2.2.4. Lean UX Canvas
 
 # 1.3. Segmentos Objetivo
 
