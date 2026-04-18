@@ -170,7 +170,264 @@ ABET – EAC - Student Outcome 5 Criterio: La capacidad de funcionar efectivamen
 
 ## 2.1. Competidores
 
+A continuacion realizaremos un analisis de los productos digitales ofrecidos por la competencia directa e indirecta en el mercado de nuestra solucion y las tacticas preliminares que aplicariamos para destacar. El foco se mantiene en experiencias mobile-first y servicios P2P que compiten con la propuesta de Rent2Go.
+
 ### 2.1.1. Análisis competitivo
+
+A continuacion se presenta un analisis competitivo de las empresas que ofrecen servicios similares a Rent2Go.
+
+<table>
+  <tr>
+    <th colspan="6"><b>Competitive Analysis Landscape</b></th>
+  </tr>
+  <tr>
+    <td>¿Por que llevar a cabo este analisis?</td>
+    <td  colspan="5">Este analisis fue realizado con el proposito de estudiar el valor ofrecido por las empresas que compiten con nuestra solucion. La informacion obtenida nos proporcionara la perspectiva necesaria para la realizacion de un servicio innovador.</td>
+  </tr>
+  
+  <tr>
+    <td colspan="2"></td>
+    <td ><b>Rent2Go</b></td>
+    <td ><b>Rento</b></td>
+    <td ><p><b>Hertz</b></p></td>
+    <td ><p><b>Avis</b></p></td>
+  </tr>
+
+  <tr>
+    <td colspan="2"></td>
+    <td><img src="Resources/capitulo_2/competitors/rent2go-logo.svg" alt="Rent2Go logo" width="110"></td>
+    <td><img src="Resources/capitulo_2/competitors/rento-logo.png" alt="Rento logo" width="110"></td>
+    <td><img src="Resources/capitulo_2/competitors/hertz-logo.png" alt="Hertz logo" width="110"></td>
+    <td><img src="Resources/capitulo_2/competitors/avis-logo.png" alt="Avis logo" width="110"></td>
+  </tr>
+  
+  <tr>
+    <td rowspan="2">
+      <b>Perfil</b>
+    </td>
+    <td >
+      <b>Overview</b>
+    </td>
+    <td >
+      <p>Plataforma web y aplicacion movil para gestion de alquileres P2P, pagos y monitoreo de vehiculos.
+    </td>
+    <td >
+      <p>Plataforma web y aplicacion movil que facilita el alquiler de vehiculos de particulares
+    </td>
+    <td >
+      <p>Plataforma web y aplicacion movil que facilita el alquiler de vehiculos tanto en aeropuertos como en ciudades.
+    </td>
+    <td >
+      <p>Aplicacion de reservas de autos en linea
+    </td>
+  </tr>
+  
+  <tr>
+    <td >
+      <b>Ventaja competitiva ¿Que valor ofrece a los clientes?</b>
+    </td>
+    <td >
+      <p>Flexibilidad en precios y disponibilidad, y generacion de ingresos para los propietarios sin necesidad de inversion en flota.
+    </td>
+    <td >
+      <p>Modelo peer-to-peer que permite a los propietarios generar ingresos pasivos con su vehiculo. Seguridad para ambas partes a traves de seguros todo riesgo y monitoreo GPS.
+    </td>
+    <td >
+      <p>Red global de ubicaciones, servicio confiable y una amplia variedad de vehiculos. Reputacion consolidada y un fuerte programa de fidelizacion.
+    </td>
+    <td >
+      <p>Enfoque en el servicio al cliente de alta calidad, con una variedad de opciones de vehiculos y soluciones tanto para clientes particulares como corporativos.
+    </td>
+  </tr>
+  
+  <tr>
+    <td rowspan="2" >
+      <b>Perfil de Marketing</b>
+    </td>
+    <td >
+      <b>Mercado objetivo</b>
+    </td>
+    <td >
+      <p>Propietarios de vehiculos que desean alquilarlos cuando no los usan.
+      <p>Arrendatarios que buscan opciones mas economicas y flexibles que las ofrecidas por las grandes empresas de alquiler.
+    </td>
+    <td >
+      <p>Propietarios de vehiculos que buscan generar ingresos cuando no usan sus autos.
+      <p>Arrendatarios que buscan opciones mas economicas y flexibles que las ofrecidas por las grandes empresas de alquiler.
+    </td>
+    <td >
+      <p>Turistas internacionales y locales.<p>Ejecutivos y viajeros de negocios.
+      <p>Clientes que necesitan autos por periodos cortos o largos.
+    </td>
+    <td >
+      <p>Turistas y viajeros de negocios.
+      <p>Empresas que buscan alquileres a largo plazo o soluciones corporativas.
+    </td>
+  </tr>
+  
+  <tr>
+    <td >
+      <b>Estrategias de marketing</b>
+    </td>
+    <td >
+      <p>Publicidad en redes sociales.
+      <p>Promociones con descuentos en los primeros alquileres.
+      <p>Alianzas estrategicas con aseguradoras para ofrecer seguridad y confianza.
+    </td>
+    <td >
+      <p>Publicidad digital en redes sociales y campanas de concientizacion sobre la economia colaborativa.
+      <p>Alianzas con aseguradoras para ofrecer seguros integrados.
+    </td>
+    <td >
+      <p>Publicidad en aeropuertos, marketing digital, y promociones a traves de programas de fidelizacion.
+      <p>Presencia en ferias y eventos de turismo.
+      <p>Alianzas con aerolineas y agencias de viajes.
+    </td>
+    <td >
+      <p>Marketing dirigido a clientes corporativos y viajeros frecuentes.
+      <p>Promociones digitales y descuentos a traves de alianzas con aerolineas y hoteles.
+      <p>Programas de fidelizacion
+    </td>
+  </tr>
+  
+  <tr>
+    <td rowspan="3" >
+      <b>Perfil de Producto</b>
+    </td>
+    <td >
+      <b>Productos y Servicios</b>
+    </td>
+    <td >
+      <p>Alquiler de vehiculos particulares.
+      <p>Seguro y monitoreo GPS integrados.
+      <p>Opciones de alquiler a corto y mediano plazo.
+    </td>
+    <td >
+      <p>Alquiler de vehiculos particulares a corto y mediano plazo.
+      <p>Seguro todo riesgo y monitoreo en tiempo real.
+      <p>Opciones de reserva directa y pagos a traves de la app.
+    </td>
+    <td >
+      <p>Alquiler de autos estandar, SUV, autos de lujo, y vehiculos comerciales.
+      <p>Seguros, GPS, y recogida/entrega en ubicaciones seleccionadas.
+    </td>
+    <td >
+      <p>Autos economicos, SUV, vehiculos de lujo, y comerciales.
+      <p>Alquileres a largo plazo para clientes corporativos.
+    </td>
+  </tr>
+  
+  <tr>
+    <td >
+      <b>Precios y Costos</b>
+    </td>
+    <td >
+      <p>Precios mas bajos que las companias tradicionales de alquiler debido a la ausencia de una flota fisica.
+      <p>Bajos costos operativos gracias al modelo P2P.
+    </td>
+    <td >
+      <p>Precios dinamicos y mas bajos que los de las empresas tradicionales de alquiler.
+      <p>Bajos costos operativos debido a la ausencia de una flota fisica.
+    </td>
+    <td >
+      <p>Tarifas diarias o semanales, generalmente mas altas que servicios P2P debido a la infraestructura y la cobertura global.
+      <p>Descuentos para clientes recurrentes y programas de fidelizacion.
+    </td>
+    <td >
+      <p>Precios premium, con descuentos para empresas y clientes recurrentes.
+      <p>Altos costos operativos debido a la amplia infraestructura y mantenimiento de vehiculos.
+    </td>
+  </tr>
+  
+  <tr>
+    <td >
+      <b>Canales de distribucion (Web y/o movil)</b>
+    </td>
+    <td >
+      <p>Plataforma web y aplicacion movil.
+      <p>Colaboraciones con aseguradoras y promociones digitales.
+    </td>
+    <td >
+      <p>Plataforma web y aplicacion movil.
+      <p>Asociaciones con aseguradoras y redes sociales.
+    </td>
+    <td >
+      <p>Plataforma web, aplicacion movil, y oficinas fisicas en aeropuertos y ciudades.
+    </td>
+    <td >
+      <p>Plataforma web, aplicacion movil, y oficinas fisicas en aeropuertos y centros comerciales.
+    </td>
+  </tr>
+  
+  <tr>
+    <td rowspan="5" >
+      <p><b>Analisis SWOT</b>
+    </td>
+    <td colspan="5" >
+      <p>Realice esto para su startup y sus competidores. Sus fortalezas deberian apoyar sus oportunidades y contribuir a lo que ustedes definen como su posible ventaja competitiva.
+    </td>
+  </tr>
+  <tr>
+    <td ><b>Fortalezas</b></td>
+    <td >
+      <p>Modelo flexible y economico, bajos costos operativos, facilidad de uso.
+    </td>
+    <td >
+      <p>Modelo flexible y seguro, costos operativos bajos.
+    </td>
+    <td>
+      <p>Marca consolidada, presencia global, variedad de vehiculos.
+    </td>
+    <td>
+      <p>Reputacion solida, servicio de alta calidad, fuerte presencia en el mercado corporativo.
+    </td>
+  </tr>
+  <tr>
+    <td ><b>Debilidades</b></td>
+    <td >
+      <p>Menor infraestructura y recursos comparados con las empresas tradicionales.
+    </td>
+    <td >
+      <p>Dependencia de la confianza en la plataforma y en los seguros.
+    </td>
+    <td>
+      <p>Altos costos comparados con opciones P2P.
+    </td>
+    <td>
+      <p>Precios mas altos, lo que puede limitar a ciertos segmentos del mercado.
+    </td>
+  </tr>
+  <tr>
+    <td ><b>Oportunidades</b></td>
+    <td >
+      <p>Rapida adopcion de soluciones de movilidad compartida, especialmente en mercados emergentes.
+    </td>
+    <td >
+      <p>Crecimiento del mercado de la economia colaborativa.
+    </td>
+    <td>
+      <p>Expansion en mercados emergentes y adopcion de nuevas tecnologias para la gestion de flotas.
+    </td>
+    <td>
+      <p>Crecimiento en servicios corporativos y soluciones de movilidad a largo plazo.
+    </td>
+  </tr>
+  <tr>
+    <td ><b>Amenazas</b></td>
+    <td >
+      <p>Regulaciones locales y competencia de otras plataformas P2P establecidas.
+    </td>
+    <td >
+      <p>Regulaciones gubernamentales y competencia emergente en el sector P2P.
+    </td>
+    <td>
+      <p>Creciente competencia de plataformas digitales P2P y modelos de movilidad compartida.
+    </td>
+    <td>
+      <p>Competencia de plataformas P2P y otros modelos de alquiler mas flexibles.
+    </td>
+  </tr>
+</table>
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
