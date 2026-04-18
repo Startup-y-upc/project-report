@@ -126,3 +126,47 @@ ABET – EAC - Student Outcome 5 Criterio: La capacidad de funcionar efectivamen
 | Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. |                     |              |
 
 </div>
+
+
+
+
+
+# 1.3. Segmentos Objetivo
+
+### Segmento Objetivo #1: Propietarios de Vehículos
+
+**Aspectos demográficos:**
+- Sexo: Masculino y femenino
+- Edad: Entre 18 y 60 años
+- Nivel socioeconómico: Clases A, B y C (alta, media alta y media)
+
+**Aspectos geográficos:**
+- Nacionalidad: Peruana
+- Residencia: Zonas urbanas a nivel nacional
+
+**Aspectos psicográficos:**
+- Personas naturales o jurídicas que poseen vehículos que no utilizan con frecuencia.
+- Interesados en generar ingresos pasivos sin invertir demasiado tiempo o esfuerzo.
+- Buscan una solución segura, rápida y confiable para alquilar sus vehículos de manera ocasional o constante.
+
+---
+
+### Segmento Objetivo #2: Arrendatarios de Vehículos
+
+**Aspectos demográficos:**
+- Sexo: Masculino y femenino
+- Edad: Entre 18 y 50 años
+- Nivel socioeconómico: Clases A, B y C (alta, media alta y media)
+
+**Aspectos geográficos:**
+- Nacionalidad: Peruana
+- Residencia: Zonas urbanas a nivel nacional
+
+**Aspectos psicográficos:**
+- Personas que utilizan transporte público pero desean evitar la incomodidad y pérdida de tiempo en el tráfico diario.
+- Usuarios que no cuentan con un vehículo propio, pero requieren uno temporalmente para trabajo, viajes o actividades puntuales.
+- Interesados en una alternativa accesible, flexible y confiable para el alquiler de vehículos por cortos periodos.
+
+---
+
+Estos dos segmentos representan tanto la **oferta** como la **demanda** de la plataforma, siendo fundamentales para su crecimiento y sostenibilidad en diversas ciudades del país.
