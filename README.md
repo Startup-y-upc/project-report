@@ -34,8 +34,8 @@
 <td>Castillo Vidal, Jesus Ivan</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
+<td>U202213468</td>
+<td>Chavez Uribe, Ario</td>
 </tr>
 <tr>
 <td></td>
@@ -127,6 +127,22 @@ ABET – EAC - Student Outcome 5 Criterio: La capacidad de funcionar efectivamen
 
 </div>
 
+## 1.1. StartUp Profile
+
+### 1.1.1. Description de la StartUp
+
+### 1.1.2. Perfiles de integrantes del equipo
+
+| Integrantes                                                                                                            | Descripción                                                                                                                                         | Conocimientos                                                                                                                   |
+| :--------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
+| <img src="Resources/capitulo_1/foto_ario.png" width="100" height="100"> <br>**Ario Joel Chavez Uribe** <br>u202213468  | Soy estudiante de la carrera de Ingeniería de Software. Tengo interés en aprender sobre nuevas tecnologías y el desarrollo de aplicaciones móviles. | Poseo conocimientos en C++, GDScript, Python y desarrollo web (HTML, CSS y Javascript), útiles para el desarrollo del proyecto. |
+| <img src="Resources/capitulo_1/foto_jesus.jpg" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código)  | [Descripción del integrante]                                                                                                                        | [Conocimientos del integrante]                                                                                                  |
+| <img src="Resources/capitulo_1/foto_james.jpeg" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código) | [Descripción del integrante]                                                                                                                        | [Conocimientos del integrante]                                                                                                  |
+| <img src="Resources/capitulo_1/default.png" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código)     | [Descripción del integrante]                                                                                                                        | [Conocimientos del integrante]                                                                                                  |
+| <img src="Resources/capitulo_1/default.png" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código)     | [Descripción del integrante]                                                                                                                        | [Conocimientos del integrante]                                                                                                  |
+| <img src="Resources/capitulo_1/default.png" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código)     | [Descripción del integrante]                                                                                                                        | [Conocimientos del integrante]                                                                                                  |
+| <img src="Resources/capitulo_1/default.png" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código)     | [Descripción del integrante]                                                                                                                        | [Conocimientos del integrante]                                                                                                  |
+
 ## 1.2. Solution Profile
 
 
@@ -134,11 +150,6 @@ ABET – EAC - Student Outcome 5 Criterio: La capacidad de funcionar efectivamen
 
 
 ### 1.2.2. Lean UX Process
-
-
-
-
-
 #### 1.2.2.1. Lean UX Problem Statements
 
 A partir del análisis del contexto y la investigación realizada, se identificaron los siguientes Problem Statements que dan forma a la propuesta de valor de **Rent2Go**, una plataforma peer-to-peer de alquiler de vehículos:
