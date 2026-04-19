@@ -589,7 +589,66 @@ La vista de despliegue deja claro como se implementa el sistema en hardware y se
 
 ## 2.6. Tactical-Level Domain-Driven Design
 
-### 2.6.x. Bounded Context: <Bounded Context Name>
+En esta seccion se presenta la perspectiva tactica del diseno de la solucion. Se documentan las capas, clases y diagramas por bounded context, iniciando con Vehicle Catalog.
+
+### 2.6.1. Bounded Context: Vehicle Catalog
+
+Este bounded context gestiona el ciclo de vida del catalogo de vehiculos. A continuacion se presenta el diccionario de clases y las relaciones clave de la solucion.
+
+**Diccionario de clases (resumen)**
+
+| Clase | Proposito | Atributos principales | Metodos principales | Relaciones |
+| --- | --- | --- | --- | --- |
+| Vehicle | Aggregate Root que representa el vehiculo publicado | vehicleId, ownerId, specification, pricing, status | create(), getId(), getStatus() | contiene VehicleSpecification, PricingPolicy; usa VehicleStatus |
+| VehicleSpecification | Value Object con datos descriptivos | brand, model, year | N/A | pertenece a Vehicle |
+| PricingPolicy | Value Object con tarifa base | dailyRate | N/A | usa Money |
+| Money | Value Object monetario | amount, currency | N/A | usado por PricingPolicy |
+| VehicleStatus | Enum de estado | DRAFT, PUBLISHED, UNAVAILABLE, DELETED | N/A | usado por Vehicle |
+| VehicleController | Controller REST del catalogo | N/A | registerVehicle(), publishVehicle(), getVehicleById() | usa VehicleCommandService y VehicleQueryService |
+| VehicleCommandService | Domain Service de comandos | N/A | handle(CreateVehicleCommand), handle(PublishVehicleCommand) | implementado por VehicleCommandServiceImpl |
+| VehicleQueryService | Domain Service de consultas | N/A | handle(GetVehicleByIdQuery) | implementado por VehicleQueryServiceImpl |
+| VehicleRepository | Repository del agregado | N/A | findById(), save() | maneja Vehicle |
+
+#### 2.6.1.1. Domain Layer
+
+El core del dominio se modela con el agregado Vehicle y sus Value Objects VehicleSpecification, PricingPolicy y Money. Las reglas de negocio se reflejan en el estado VehicleStatus y en la construccion del agregado al registrar o publicar vehiculos. Las abstracciones de acceso a datos se definen en VehicleRepository.
+
+#### 2.6.1.2. Interface Layer
+
+La capa de interfaz se representa con VehicleController y sus resources/assemblers para exponer endpoints REST de registro, publicacion y consulta de vehiculos.
+
+#### 2.6.1.3. Application Layer
+
+Los flujos de negocio se coordinan con VehicleCommandServiceImpl y VehicleQueryServiceImpl, que actuan como command handlers y query handlers para CreateVehicleCommand, PublishVehicleCommand y GetVehicleByIdQuery.
+
+#### 2.6.1.4. Infrastructure Layer
+
+La infraestructura contiene la implementacion de VehicleRepository y los adaptadores de persistencia para MySQL. Aqui se materializa el acceso a tablas y consultas requeridas por el catalogo.
+
+#### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+Se presenta el Component Diagram del container Vehicle Catalog, mostrando controllers, services, repositories y su interaccion interna.
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/vehicle-catalog/Component-vehicle-001-dark.png" alt="Vehicle Catalog Component Diagram" width="95%" />
+</div>
+
+#### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+Se detallan los diagramas de implementacion para el bounded context.
+
+##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/vehicle-catalog/vehicle-catalog-bounded-context.svg" alt="Vehicle Catalog Class Diagram" width="95%" />
+</div>
+
+##### 2.6.1.6.2. Bounded Context Database Design Diagram
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/vehicle-catalog/vehicle-db-diagram.png" alt="Vehicle Catalog Database Diagram" width="95%" />
+</div>
+
 
 #### 2.6.x.1. Domain Layer
 
