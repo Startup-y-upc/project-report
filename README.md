@@ -191,6 +191,15 @@ Rent2Go se propone como una solución innovadora, accesible y escalable dentro d
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
+1. **Creemos que lograremos** atraer a propietarios de vehículos interesados en generar ingresos pasivos **si** ofrecemos una plataforma que les permita listar sus vehículos de manera sencilla, con procesos claros y garantías de seguridad.  
+   **Al proporcionar** un sistema confiable que minimice su involucramiento operativo y ofrezca visibilidad de ingresos, **con la implementación** de herramientas de monitoreo, seguros integrados y asistencia al cliente, facilitaremos la decisión de participación y retención en la plataforma.
+
+2. **Creemos que lograremos** aumentar la preferencia y uso por parte de los arrendatarios **si** la plataforma ofrece una experiencia de alquiler fácil, rápida y económica, con altos estándares de seguridad y confianza.  
+   **Al enfocarnos** en una interfaz amigable, opciones de búsqueda personalizadas y procesos de reserva eficientes, **con la incorporación** de valoraciones, verificaciones de identidad y soporte durante todo el proceso, podremos fidelizar a los usuarios y mejorar la percepción del servicio.
+
+3. **Creemos que lograremos** una ventaja competitiva sostenible y un crecimiento escalable **si** mantenemos un modelo de negocio sin inversión directa en la adquisición de vehículos.  
+   **Al eliminar** los costos operativos relacionados con la gestión de flota propia, **con la reinversión** en áreas como tecnología, marketing dirigido y soporte al cliente, podremos mantener precios competitivos y ofrecer una propuesta de valor sólida tanto para propietarios como para arrendatarios.
+
 #### 1.2.2.4. Lean UX Canvas
 
 # 1.3. Segmentos Objetivo
