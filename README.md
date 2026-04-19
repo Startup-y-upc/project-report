@@ -549,11 +549,43 @@ Esta seccion consolida las epicas, historias de usuario, historias tecnicas y sp
 
 ### 2.5.3. Software Architecture
 
+En esta seccion se presenta la arquitectura de software de Rent2Go aplicando C4 Model. Se cubren los diagramas de contexto, contenedores y despliegue, mostrando los productos en alcance (app movil, landing page, API Gateway, servicios backend, base de datos y servicios externos).
+
 #### 2.5.3.1. Software Architecture Context Level Diagrams
+
+Se muestra el sistema Rent2Go en el centro, rodeado por los actores principales (Propietario y Arrendatario) y los sistemas externos (Stripe y Email Service) con los que interactua el dominio de pagos y notificaciones.
+
+<div align="center">
+  <img src="Resources/capitulo_2/architecture/SystemContext-001-dark.png" alt="System Context Diagram" width="90%" />
+</div>
+
+El diagrama evidencia que los usuarios interactuan con la plataforma para publicar y reservar vehiculos, mientras los servicios externos procesan pagos y envian notificaciones.
 
 #### 2.5.3.2. Software Architecture Container Level Diagrams
 
+El diagrama de contenedores detalla los elementos de alto nivel y la distribucion de responsabilidades: Landing Page y App Movil como canales, un API Gateway como punto de entrada, servicios backend por bounded context (IAM, Vehicle Catalog, Booking, Payments, Community) y una base de datos MySQL unica. Se resaltan las decisiones de tecnologia y las comunicaciones entre contenedores.
+
+<div align="center">
+  <img src="Resources/capitulo_2/architecture/Container-001-dark.png" alt="Container Diagram" width="95%" />
+</div>
+
+Como extension del diagrama de contenedores, se incluye el detalle de componentes del contenedor PAYMENTS para mostrar la conexion con servicios externos.
+
+<div align="center">
+  <img src="Resources/capitulo_2/architecture/Component-001-dark.png" alt="Component Diagram" width="95%" />
+</div>
+
+El componente Payment Core orquesta cobros y reembolsos, mientras Stripe Adapter integra con Stripe y Email Adapter envia notificaciones por correo.
+
 #### 2.5.3.3. Software Architecture Deployment Diagrams
+
+El diagrama de despliegue representa la distribucion fisica en infraestructura: app movil en dispositivo, landing page en navegador, un cluster de API en nube y la base de datos MySQL administrada. Se visualizan tambien las dependencias con los servicios externos.
+
+<div align="center">
+  <img src="Resources/capitulo_2/architecture/Deployment-001-dark.png" alt="Deployment Diagram" width="95%" />
+</div>
+
+La vista de despliegue deja claro como se implementa el sistema en hardware y servicios administrados, manteniendo separadas las capas de presentacion, servicios y datos.
 
 ## 2.6. Tactical-Level Domain-Driven Design
 
