@@ -705,20 +705,60 @@ Se detallan los diagramas de implementacion para el bounded context.
 </div>
 
 
-#### 2.6.x.1. Domain Layer
+### 2.6.2. Bounded Context: Booking & Reservations
 
-#### 2.6.x.2. Interface Layer
+Este bounded context gestiona el ciclo de vida de las reservas de vehiculos, desde la solicitud inicial hasta la finalizacion o cancelacion. A continuacion se presenta el diccionario de clases y las relaciones clave de la solucion.
 
-#### 2.6.x.3. Application Layer
+**Diccionario de clases (resumen)**
 
-#### 2.6.x.4. Infrastructure Layer
+| Clase | Proposito | Atributos principales | Metodos principales | Relaciones |
+| :--- | :--- | :--- | :--- | :--- |
+| Booking | Aggregate Root que representa una reserva de vehiculo | bookingId, renterId, vehicleId, period, totalAmount, status | confirm(), cancel(), complete() | contiene BookingPeriod; usa BookingStatus |
+| BookingPeriod | Value Object que define el rango de fechas | startDate, endDate | durationInDays() | pertenece a Booking |
+| BookingStatus | Enum de estado de la reserva | PENDING, CONFIRMED, CANCELLED, COMPLETED | N/A | usado por Booking |
+| BookingController | Controller REST para la gestion de reservas | N/A | createBooking(), getBookingById(), updateBookingStatus() | usa BookingCommandService y BookingQueryService |
+| BookingCommandService | Domain Service de comandos para reservas | N/A | handle(CreateBookingCommand), handle(CancelBookingCommand) | implementado por BookingCommandServiceImpl |
+| BookingQueryService | Domain Service de consultas para reservas | N/A | handle(GetBookingByIdQuery) | implementado por BookingQueryServiceImpl |
+| BookingRepository | Repository del agregado Booking | N/A | findById(), save(), findByRenterId() | maneja Booking |
 
-#### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.2.1. Domain Layer
 
-#### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
+El core del dominio se modela con el agregado Booking, que coordina la relacion entre el arrendatario y el vehiculo reservado. Las reglas de negocio, como la validacion de fechas y el calculo de montos, se encapsulan en el agregado y en el Value Object BookingPeriod. El estado de la reserva se gestiona a traves del enum BookingStatus.
 
-##### 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
+#### 2.6.2.2. Interface Layer
 
-##### 2.6.x.6.2. Bounded Context Database Design Diagram
+La capa de interfaz expone endpoints REST a traves de BookingController, permitiendo a los usuarios crear reservas, consultar su estado y realizar acciones de gestion (confirmacion/cancelacion). Se utilizan Resources y Assemblers para transformar los datos del dominio a formatos de respuesta API.
+
+#### 2.6.2.3. Application Layer
+
+Los flujos de negocio son orquestados por BookingCommandServiceImpl y BookingQueryServiceImpl. Estos servicios actuan como mediadores entre la capa de interfaz y el dominio, ejecutando comandos de cambio de estado y procesando consultas de informacion de reservas.
+
+#### 2.6.2.4. Infrastructure Layer
+
+La infraestructura maneja la persistencia de las reservas en la base de datos MySQL a traves de la implementacion de BookingRepository. Tambien incluye adaptadores para servicios externos si fuera necesario (por ejemplo, para integracion con calendarios o sistemas de notificacion).
+
+#### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+Se presenta el Component Diagram del container Booking & Reservations, detallando la interaccion entre controladores, servicios y repositorios.
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/booking-reservations/Component-booking-001-dark.png" alt="Booking & Reservations Component Diagram" width="95%" />
+</div>
+
+#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+Se detallan los diagramas de implementacion para el bounded context de reservas.
+
+##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/booking-reservations/booking-reservations-bounded-context.svg" alt="Booking & Reservations Class Diagram" width="95%" />
+</div>
+
+##### 2.6.2.6.2. Bounded Context Database Design Diagram
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/booking-reservations/booking-db-diagram.png" alt="Booking & Reservations Database Diagram" width="95%" />
+</div>
 
 </div>
