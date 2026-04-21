@@ -437,6 +437,37 @@ A continuacion se presenta un analisis competitivo de las empresas que ofrecen s
 
 ### 2.2.2. Registro de entrevistas
 
+<b> Segmento Objetivo 1: </b> Propietarios de vehículos
+
+
+<b> Segmento Objetivo 2: </b> Usuarios arrendatarios
+
+
+<b> Entrevista 6 </b> 
+
+- Nombre: Karla
+- Apellidos: Lopez
+- Edad: 22
+- Distrito: Huaraz
+- Link de la entrevista: <a href="">https://shorturl.at/PcRe6</a>
+- Duración: 3:21 minutos
+- Inicio de la entrevista: 0:37
+
+Evidencia de la reunión:
+
+<div align="center">
+    <img src="Resources/capitulo_2/interviews/interview_6.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+
+Resumen de la entrevista:
+
+- En la entrevista se menciona el uso constante del transporte público para movilizarse a su lugar objetivo
+- No realizó ningún alquiler en algún otro lado
+- No existen aplicaciones que brinden estas características en su zona
+- Menciona que la propuesta de la aplicación es buena y la recomendaría
+- Menciona que uno de sus temores son los posibles daños relacionados con el vehículo
+
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
