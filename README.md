@@ -574,6 +574,15 @@ A continuación se muestra el proceso del Empathy Mapping para los User Persona 
 
 ### 2.3.6. Ubiquitous Language
 
+En esta sección definiremos los términos y conceptos que utilizaremos en nuestro business domain. Este glosario permitirá la comunicación entre los stakeholders y los miembros del equipo.
+
+- Car (auto)
+  Vehículo motorizado utilizado para el transporte.
+- Rental (alquiler)
+  Contrato en el cual dos partes se obligan de manera recíproca y por un tiempo determinado la cesión de un bien o servicio quedando obligada la parte que aprovecha la posesión a pagar un precio cierto.​
+- Peer to Peer
+  Plataforma en la que dos personas interactúan directamente entre sí, sin la intermediación de un tercero.
+
 ## 2.4. Requirements specification
 
 ### 2.4.1. User Stories
