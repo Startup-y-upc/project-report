@@ -431,6 +431,12 @@ A continuacion se presenta un analisis competitivo de las empresas que ofrecen s
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
+A continuación se muestran las tácticas que deberá aplicar nuestra startup para afrontar las fortalezas de la competencia.
+
+Táctica: Mientras las grandes compañías cuentan con sistemas sofisticados, Rent2Go puede enfocarse en mejorar la usabilidad y simplicidad de su plataforma digital, ofreciendo un proceso de alquiler más ágil. Se debe invertir en el desarrollo de una aplicación intuitiva y fácil de usar, con un proceso de reserva fluido. Agregar funcionalidades como la reserva en pocos clics y recomendaciones personalizadas basadas en el historial de alquileres.
+
+Táctica: Fomentar reseñas y recomendaciones dentro de la plataforma. La confianza es clave en el modelo P2P. Se debe crear un entorno seguro y confiable para todos los usuarios.
+
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
