@@ -16,13 +16,11 @@
 
   <p align="center"><strong>StartUp:</strong> R2G Technologies</p>
 
-
   <p align="center"><strong>Producto:</strong> Rent2Go</p><br><br>
 
 <h2 style="text-align: center; font-size: 24px; margin-top: 30px;">
   <strong>Informe de Trabajo Final</strong>
 </h2>
-
 
 <table style="display: flex; justify-content: center;"> 
 <tr>
@@ -54,9 +52,7 @@
 <div align="center"> Abril 2026 </div>
 </div>
 
-
 <div style="page-break-after: always;"></div>
-
 
 ## **Registro de versiones del Informe**
 
@@ -82,7 +78,6 @@
 ## AV1
 
 <div style="page-break-after: always;"></div>
-
 
 # Tabla de contenidos
 
@@ -141,8 +136,6 @@
       - [2.6.x.6.1 Bounded Context Domain Layer Class Diagrams](README.md#26x61-bounded-context-domain-layer-class-diagrams)
       - [2.6.x.6.2 Bounded Context Database Design Diagram](README.md#26x62-bounded-context-database-design-diagram)
 
-
-
 ## [Conclusiones](Conclusiones_bibliografica.md#conclusiones)
 
 - [Conclusiones y recomendaciones](Conclusiones_bibliografica.md#conclusiones-y-recomendaciones)
@@ -153,7 +146,6 @@
 ## [Anexos](Conclusiones_bibliografica.md#anexos)
 
 <div style="page-break-after: always;"></div>
-
 
 ## Student Outcome
 
@@ -441,15 +433,54 @@ Táctica: Fomentar reseñas y recomendaciones dentro de la plataforma. La confia
 
 ### 2.2.1. Diseño de entrevistas
 
+A continuación se presentan las preguntas diseñadas para las entrevistas a los segmentos objetivo.
+
+Con el objetivo de comprender la necesidad y la demanda en nuestro sector por parte de nuestro publico objetivo. Por ello, elaboramos las siguientes preguntas con el fin de recolectar información cualitativa y/o cuantitativa, la cual se verá divida por nuestros segmentos objetivos.
+
+**Preguntas Generales**
+
+- ¿Cuál es su nombre?
+- ¿Cuántos años tiene usted?
+- ¿En que ciudad y distrito reside?
+- ¿A qué se dedica o cual es su ocupación?
+
+**Preguntas Específicas**
+
+**Segmento 1: Propietarios de vehículos**
+
+- ¿Cuántos vehículos posee usted?
+- ¿Con que frecuencia se transporta de su(s) vehículos(s)?
+- ¿Cuándo no utiliza su vehículo, donde permanece el mismo?
+- ¿Ha usted alquilado su vehículo anteriormente? Si la respuesta es: <br>
+  Si: ¿Qué dificultades presento alquilarlo? <br>
+  No: ¿Cuan dispuesto se encuentra usted a alquilar su vehículo?
+- ¿Conoce alguna plataforma para el alquiler de vehículos en su entorno?
+- ¿Qué tipo de garantías y compensación esperarías sobre alquilar tu vehículo?
+- ¿Considera una opción llamativa el no tener que preocuparse por su vehículo y además, recibir ingresos por ello?
+
+**Segmento 2: Usuarios arrendatarios**
+
+- ¿Con que frecuencia te transportas en el día a día?
+- ¿Cuánto dinero crees que gastas en movilizarte cada semana?
+- ¿Si tuvieras un auto, cuál sería el principal uso que le darías?
+- ¿Alguna vez pensaste en alquilar un auto? Si la respuesta es: <br> Si: ¿Nos podrías contar acerca de tu experiencia y tu opinión? <br> No: ¿Cuáles son los motivos por los que no opto por alquilar un vehículo?
+- ¿Qué aspectos negativos encuentra al alquilar un vehículo para uso propio?
+- ¿Conoce alguna plataforma de confianza donde puede hallar el vehículo adecuado a su necesidad?
+
+**Preguntas sobre la idea del proyecto**
+
+- ¿Qué opina acerca de Rent2Go, una plataforma donde podrás alquilar y confiar tu vehículo de forma segura y confiable?
+- ¿Qué aspecto le llama más la atención?
+- ¿Nos podría brindan alguna recomendación para mejorar la idea de la plataforma?
+- ¿Recomendaría el uso de nuestra aplicación a sus conocidos?
+
 ### 2.2.2. Registro de entrevistas
 
 <b> Segmento Objetivo 1: </b> Propietarios de vehículos
 
-
 <b> Segmento Objetivo 2: </b> Usuarios arrendatarios
 
-
-<b> Entrevista 6 </b> 
+<b> Entrevista 6 </b>
 
 - Nombre: Karla
 - Apellidos: Lopez
@@ -464,7 +495,6 @@ Evidencia de la reunión:
 <div align="center">
     <img src="Resources/capitulo_2/interviews/interview_6.png" style="margin: 10px 0;" width="60%"/>
 </div>
-
 
 Resumen de la entrevista:
 
@@ -529,11 +559,13 @@ User Journey Mapping para Maria Lopez:
 A continuación se muestra el proceso del Empathy Mapping para los User Persona con el fin de entender lo que piensa, siente, oye, hace y observa.
 
 **Segmento 1** Propietarios de Vehículos
+
 <div align="center">
     <img src="Resources/capitulo_2/empathy_mapping/propietario.png" style="margin: 10px 0;" width="80%"/>
 </div>
 
 **Segmento 2** Arrendatarios de Vehículos
+
 <div align="center">
     <img src="Resources/capitulo_2/empathy_mapping/arrendatario.png" style="margin: 10px 0;" width="80%"/>
 </div>
@@ -752,7 +784,6 @@ Se detallan los diagramas de implementacion para el bounded context.
 <div align="center">
   <img src="Resources/capitulo_2/bounded_context/vehicle-catalog/vehicle-db-diagram.png" alt="Vehicle Catalog Database Diagram" width="95%" />
 </div>
-
 
 ### 2.6.2. Bounded Context: Booking & Reservations
 
