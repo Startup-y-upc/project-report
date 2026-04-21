@@ -189,6 +189,105 @@ Rent2Go se propone como una solución innovadora, accesible y escalable dentro d
 
 #### 1.2.2.2. Lean UX Assumptions
 
+**Business Assumptions:**
+
+- **Creemos que nuestros clientes tienen la necesidad de:**
+  Monetizar sus vehículos sin encargarse de la gestión operativa, y acceder a opciones de alquiler accesibles y flexibles sin los compromisos de la propiedad.
+
+- **Estas necesidades se pueden satisfacer con:**
+  Una plataforma peer-to-peer que conecte directamente a propietarios de vehículos con personas que desean alquilarlos, automatizando procesos como pagos, seguros, reservas y verificaciones de usuarios.
+
+- **Nuestros clientes iniciales son (o serán):**
+  Propietarios de vehículos particulares con baja frecuencia de uso, interesados en generar ingresos pasivos, y arrendatarios que buscan soluciones económicas, prácticas y rápidas para alquilar vehículos por períodos cortos o medios.
+
+- **El valor principal que un cliente quiere obtener de nuestro servicio es:**
+  Generar ingresos de manera sencilla (para propietarios) y acceder a una solución de movilidad accesible y sin complicaciones (para arrendatarios).
+
+- **Los clientes también pueden obtener estos beneficios adicionales:**
+  Mayor control sobre su experiencia (precio, horarios, condiciones), disponibilidad de una variedad de vehículos y una experiencia más personalizada frente a las opciones tradicionales.
+
+- **Adquiriremos a la mayoría de nuestros clientes a través de:**
+  Campañas digitales, estrategias de referidos, marketing de contenido, y alianzas con comunidades urbanas, de viajeros o emprendedores.
+
+- **Ganaremos dinero mediante:**
+  Comisiones por cada transacción realizada en la plataforma, así como mediante servicios premium opcionales como seguros ampliados, visibilidad destacada de vehículos, y tarifas dinámicas inteligentes.
+
+- **Nuestra competencia principal en el mercado será:**
+  Empresas tradicionales de alquiler de autos, otras plataformas P2P con modelos similares, y servicios de movilidad como carsharing.
+
+- **Les superaremos debido a:**
+  Nuestro modelo sin flota propia, nuestra eficiencia operativa, la experiencia del usuario centrada en la simplicidad y accesibilidad, y un sistema de incentivos para ambos segmentos.
+
+- **El mayor riesgo para nuestro producto es:**
+  No generar suficiente confianza inicial entre usuarios (tanto propietarios como arrendatarios), especialmente en lo que respecta a la seguridad, el estado del vehículo y el cumplimiento de los términos acordados.
+
+**User Assumptions:**
+
+- **¿Quién es el usuario?**
+  Propietarios de vehículos que desean generar ingresos pasivos, y arrendatarios que buscan soluciones de movilidad más económicas, cómodas y accesibles que las opciones tradicionales.
+
+- **¿Dónde encaja nuestro producto en su trabajo o vida?**
+  En la rutina diaria de los propietarios como una fuente secundaria de ingresos, y en la vida de los arrendatarios como una solución a necesidades puntuales o recurrentes de transporte.
+
+- **¿Qué problemas resuelve nuestro producto?**
+  El desaprovechamiento económico de vehículos poco usados, y la falta de opciones accesibles y flexibles para quienes necesitan alquilar un vehículo de forma ocasional o temporal.
+
+- **¿Cuándo y cómo se utiliza nuestro producto?**
+  Los propietarios ingresan a la plataforma para registrar y gestionar su vehículo, establecer disponibilidad y monitorear ingresos. Los arrendatarios usan la plataforma cuando necesitan un auto para ocasiones específicas como viajes, mudanzas, o necesidades diarias.
+
+- **¿Qué características son importantes?**
+  Seguridad, verificación de usuarios, facilidad de uso, disponibilidad variada de vehículos, opciones de filtrado y búsqueda eficiente, automatización de pagos y seguros.
+
+- **¿Cómo debería verse y comportarse nuestro producto?**
+  Debería ser visualmente atractivo, intuitivo, confiable y ofrecer una experiencia fluida en todos los dispositivos. Debe inspirar confianza desde el primer contacto y facilitar todo el proceso sin fricciones.
+
+- **El valor principal que un usuario quiere obtener de nuestra funcionalidad es:**
+  Confianza, control, comodidad y rentabilidad.
+
+- **Los usuarios también pueden obtener estos beneficios adicionales:**
+  Recompensas por fidelidad o referidos, retroalimentación transparente, y un sentido de comunidad colaborativa.
+
+- **El mayor riesgo para el usuario es:**
+  Que la experiencia no cumpla con sus expectativas en términos de seguridad, eficiencia o rentabilidad, generando desconfianza o abandono de la plataforma.
+
+**User Outcomes:**
+
+- **Monetización Pasiva Efectiva:** Los propietarios de vehículos lograrán generar ingresos de manera sencilla, sin involucrarse directamente en procesos logísticos o administrativos, lo cual les proporcionará una nueva fuente de ingresos sin comprometer su tiempo.
+
+- **Movilidad Accesible y Flexible:** Los arrendatarios podrán acceder a vehículos en su zona con precios más bajos y condiciones personalizadas, lo que les permitirá satisfacer sus necesidades de transporte sin necesidad de adquirir un vehículo propio.
+
+- **Confianza y Seguridad en la Comunidad:** La plataforma fomentará un entorno seguro para ambas partes, gracias a verificaciones, evaluaciones, pólizas de seguro y soporte activo, facilitando relaciones de confianza entre usuarios.
+
+**Business Outcomes:**
+
+- **Crecimiento Orgánico y Participativo:** Se espera que el 20% de los propietarios iniciales recomienden la plataforma a otros dentro de los primeros tres meses, generando un efecto de red positivo que amplíe la oferta de vehículos.
+
+- **Conversión Sostenible de Usuarios:** Esperamos que al menos el 30% de los arrendatarios que realicen un primer alquiler regresen a usar la plataforma dentro de los siguientes 60 días, consolidando una base activa de usuarios frecuentes.
+
+- **Reducción de Costos Operativos por Modelo P2P:** Al no requerir inversión en flota propia, se proyecta que los costos operativos sean al menos 50% menores respecto a modelos tradicionales, permitiendo márgenes más competitivos desde el inicio.
+
+**Feature Assumptions:**
+
+- **Gestión Autónoma de Vehículos para Propietarios:**
+  - Panel para listar vehículos, establecer precios y disponibilidad.
+  - Sistema automatizado de pagos y estadísticas de ingresos.
+
+- **Proceso de Alquiler Simplificado para Arrendatarios:**
+  - Búsqueda rápida por zona, tipo de vehículo, precio y disponibilidad.
+  - Reserva inmediata con confirmación, verificación de identidad y opciones de seguro.
+
+- **Sistema de Evaluación y Confianza Bidireccional:**
+  - Calificaciones y comentarios para arrendatarios y propietarios.
+  - Historial de transacciones y comportamiento.
+
+- **Soporte y Seguridad Integrados:**
+  - Integración con seguros para cobertura durante los alquileres.
+  - Centro de ayuda automatizado y atención al cliente 24/7.
+
+- **Programa de Referidos y Fidelización:**
+  - Incentivos por invitar a nuevos usuarios y por uso recurrente.
+  - Recompensas por buenos comportamientos y altas calificaciones.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
 1. **Creemos que lograremos** atraer a propietarios de vehículos interesados en generar ingresos pasivos **si** ofrecemos una plataforma que les permita listar sus vehículos de manera sencilla, con procesos claros y garantías de seguridad.  
