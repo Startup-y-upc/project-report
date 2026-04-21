@@ -526,6 +526,18 @@ User Journey Mapping para Maria Lopez:
 
 ### 2.3.4. Empathy Mapping
 
+A continuación se muestra el proceso del Empathy Mapping para los User Persona con el fin de entender lo que piensa, siente, oye, hace y observa.
+
+**Segmento 1** Propietarios de Vehículos
+<div align="center">
+    <img src="Resources/capitulo_2/empathy_mapping/propietario.png" style="margin: 10px 0;" width="80%"/>
+</div>
+
+**Segmento 2** Arrendatarios de Vehículos
+<div align="center">
+    <img src="Resources/capitulo_2/empathy_mapping/arrendatario.png" style="margin: 10px 0;" width="80%"/>
+</div>
+
 ### 2.3.5. Big Picture EventStorming
 
 ### 2.3.6. Ubiquitous Language
