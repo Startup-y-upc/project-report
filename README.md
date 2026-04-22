@@ -983,6 +983,36 @@ Se detallan los diagramas de implementación para el bounded context de IAM.
   <img src="Resources/capitulo_2/bounded_context/iam/iam-db-diagram.png" alt="Booking & Reservations Database Diagram" width="95%" />
 </div>
 
+### 2.6.4. Bounded Context: Community & Trust
+
+Este bounded context gestiona el ciclo de vida de la confianza y la comunidad dentro de la plataforma. Centraliza las reseñas verificadas post-alquiler, la mensajería privada entre usuarios, los perfiles públicos y el registro formal de incidentes de seguridad. A continuación se presenta el diccionario de clases y las relaciones clave de la solución.
+
+| Clase | Propósito | Atributos principales | Métodos principales | Relaciones |
+| :--- | :--- | :--- | :--- | :--- |
+| **UserProfile** | Aggregate Root que representa el perfil público del usuario | profileId, userId, bio, avatarUrl, trustScore, verificationBadge, reviewCount | create(), updateBio(), applyBadge(), recalculateTrustScore() | Contiene TrustScore; recibe VerificationBadge desde IAM; relacionado con Review |
+| **Review** | Aggregate Root que modela una evaluación dejada tras un alquiler completado | reviewId, reservationId, authorId, targetVehicleId, rating, comment, publishedAt | create(), validate() | Referencia a Booking (reservationId) y Vehicle Catalog (targetVehicleId) |
+| **MessageThread** | Aggregate Root que agrupa la conversación privada entre arrendatario y propietario | threadId, participants[renterId, ownerId], reservationId, messages[] | startThread(), addMessage() | Contiene Message; referencia a Booking (reservationId) |
+| **Message** | Value Object / entidad dentro de MessageThread con el contenido de un mensaje individual | messageId, senderId, content, sentAt | N/A | Pertenese a MessageThread |
+| **IncidentReport** | Aggregate Root que representa un reporte formal de un evento de seguridad o conflicto | reportId, reporterId, description, status, createdAt | create(), updateStatus() | Usa IncidentStatus |
+| **TrustScore** | Value Object que encapsula el índice de confianza calculado | value: Float | N/A | Pertenece a UserProfile |
+| **VerificationBadge** | Value Object indicador de identidad verificada recibido desde IAM vía evento | verified: Boolean | N/A | Pertenece a UserProfile |
+| **IncidentStatus** | Enum de estado del reporte de incidente | OPEN, UNDER_REVIEW, RESOLVED, CLOSED | N/A | Usado por IncidentReport |
+| **ProfileController** | Controller REST del perfil y reseñas | N/A | getProfile(), updateProfile(), getReviews() | Usa ProfileCommandService y ProfileQueryService |
+| **ReviewController** | Controller REST de reseñas | N/A | createReview(), getReviewsByTarget() | Usa ReviewCommandService y ReviewQueryService |
+| **MessageController** | Controller REST de mensajería | N/A | startThread(), sendMessage(), getThread() | Usa MessageCommandService y MessageQueryService |
+| **IncidentController** | Controller REST de incidentes | N/A | reportIncident(), getIncident() | Usa IncidentCommandService |
+| **ProfileCommandService** | Domain Service de comandos para perfiles | N/A | handle(UpdateProfileCommand), handle(ApplyBadgeCommand), handle(RecalculateTrustScoreCommand) | Implementado por ProfileCommandServiceImpl |
+| **ReviewCommandService** | Domain Service de comandos para reseñas | N/A | handle(CreateReviewCommand) | Implementado por ReviewCommandServiceImpl |
+| **MessageCommandService** | Domain Service de comandos para mensajería | N/A | handle(StartThreadCommand), handle(SendMessageCommand) | Implementado por MessageCommandServiceImpl |
+| **IncidentCommandService** | Domain Service de comandos para incidentes | N/A | handle(ReportIncidentCommand), handle(UpdateIncidentStatusCommand) | Implementado por IncidentCommandServiceImpl |
+| **ProfileQueryService** | Domain Service de consultas para perfiles | N/A | handle(GetProfileByUserIdQuery) | Implementado por ProfileQueryServiceImpl |
+| **ReviewQueryService** | Domain Service de consultas para reseñas | N/A | handle(GetReviewsByTargetQuery) | Implementado por ReviewQueryServiceImpl |
+| **MessageQueryService** | Domain Service de consultas para mensajería | N/A | handle(GetThreadQuery) | Implementado por MessageQueryServiceImpl |
+| **UserProfileRepository** | Repository del agregado UserProfile | N/A | findByUserId(), save() | Maneja UserProfile |
+| **ReviewRepository** | Repository del agregado Review | N/A | findByReservationId(), findByTargetVehicleId(), save() | Maneja Review |
+| **MessageThreadRepository** | Repository del agregado MessageThread | N/A | findByThreadId(), findByReservationId(), save() | Maneja MessageThread |
+| **IncidentReportRepository** | Repository del agregado IncidentReport | N/A | findByReportId(), save() | Maneja IncidentReport |
+
 #### 2.6.x.1. Domain Layer
 
 #### 2.6.x.2. Interface Layer
