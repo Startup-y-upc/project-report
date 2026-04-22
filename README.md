@@ -825,6 +825,69 @@ En esta sección se modelan los principales flujos de mensajes del dominio entre
 
 
 #### 2.5.1.3. Bounded Context Canvases
+Los bounded context canvases permiten documentar de manera estratégica los principales contextos del dominio de Rent2Go. Cada canvas resume el propósito, responsabilidades, conceptos del dominio, mensajes de entrada y salida, dependencias y actores asociados a cada bounded context. Esta vista facilita comprender el alcance funcional de cada contexto antes de pasar al modelado táctico y arquitectónico.
+
+### IAM
+| Campo                      | Descripción                                                                                                                       |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **Bounded Context Name**   | IAM                                                                                                                               |
+| **Purpose**                | Gestionar la identidad, autenticación y verificación de usuarios dentro de la plataforma.                                         |
+| **Responsibilities**       | Registrar usuarios, autenticar usuarios, gestionar recuperación de contraseña, mantener sesiones activas y verificar identidad.   |
+| **Domain Concepts**        | User, Credentials, Session, Identity Verification, Verification Status                                                            |
+| **Inbound Messages**       | RegisterUser, LoginUser, RecoverPassword, VerifyIdentity                                                                          |
+| **Outbound Messages**      | UserRegistered, UserAuthenticated, UserVerified                                                                                   |
+| **Dependencies**           | No presenta dependencias funcionales principales dentro del dominio core, pero provee información de identidad a otros contextos. |
+| **Primary Users / Actors** | Usuario, Arrendatario, Propietario                                                                                                |
+
+### Vehicle Catalog
+| Campo                      | Descripción                                                                                                                  |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Bounded Context Name**   | Vehicle Catalog                                                                                                              |
+| **Purpose**                | Gestionar el registro, publicación, consulta y visualización de vehículos disponibles para alquiler.                         |
+| **Responsibilities**       | Registrar vehículos, publicar vehículos, editar información del vehículo, consultar detalles y soportar búsquedas y filtros. |
+| **Domain Concepts**        | Vehicle, VehicleSpecification, PricingPolicy, VehicleStatus, Availability                                                    |
+| **Inbound Messages**       | RegisterVehicle, PublishVehicle, UpdateVehicle, GetVehicleDetails, SearchVehicles                                            |
+| **Outbound Messages**      | VehicleRegistered, VehiclePublished, VehicleUpdated, VehicleAvailabilityProvided                                             |
+| **Dependencies**           | Provee información operativa al contexto Booking & Reservations para validar disponibilidad y selección de vehículos.        |
+| **Primary Users / Actors** | Propietario, Arrendatario                                                                                                    |
+### Booking & Reservations
+| Campo                      | Descripción                                                                                                                                           |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Bounded Context Name**   | Booking & Reservations                                                                                                                                |
+| **Purpose**                | Gestionar el ciclo de vida de las reservas, desde la solicitud inicial hasta la finalización o cancelación del alquiler.                              |
+| **Responsibilities**       | Crear reservas, confirmar reservas, cancelar reservas, consultar detalle de reservas, gestionar estados de reserva y coordinar disponibilidad y pago. |
+| **Domain Concepts**        | Reservation, DateRange, ReservationStatus, Renter, Owner                                                                                              |
+| **Inbound Messages**       | CreateReservation, CancelReservation, UpdateReservationStatus, PaymentApproved, PaymentRejected, VehicleAvailabilityProvided                          |
+| **Outbound Messages**      | ReservationRequested, ReservationConfirmed, ReservationCancelled, ReservationCompleted, CreatePayment, CheckVehicleAvailability                       |
+| **Dependencies**           | Depende de Vehicle Catalog para validar disponibilidad y de Payments para completar el flujo económico de la reserva.                                 |
+| **Primary Users / Actors** | Arrendatario, Propietario, Administrador                                                                                                              |
+
+### Payments
+| Campo                      | Descripción                                                                                                                                                 |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Bounded Context Name**   | Payments                                                                                                                                                    |
+| **Purpose**                | Gestionar el cálculo, procesamiento y seguimiento de pagos asociados a las reservas dentro de la plataforma.                                                |
+| **Responsibilities**       | Calcular el monto total del alquiler, crear pagos, procesar transacciones, registrar operaciones, gestionar estados de pago y atender reembolsos si aplica. |
+| **Domain Concepts**        | Payment, FeeBreakdown, Money, PaymentStatus, PaymentTransaction                                                                                             |
+| **Inbound Messages**       | CreatePayment, RefundPayment                                                                                                                                |
+| **Outbound Messages**      | PaymentCreated, PaymentApproved, PaymentRejected, PaymentRefunded                                                                                           |
+| **Dependencies**           | Depende de Stripe Sandbox como proveedor externo para el procesamiento de pagos en entorno de prueba.                                                       |
+| **Primary Users / Actors** | Arrendatario, Booking & Reservations                                                                                                                        |
+
+
+### Community & Trust
+| Campo                      | Descripción                                                                                                                                              |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Bounded Context Name**   | Community & Trust                                                                                                                                        |
+| **Purpose**                | Gestionar los mecanismos de confianza y comunidad entre usuarios, incluyendo perfiles, reseñas, mensajería e incidentes.                                 |
+| **Responsibilities**       | Gestionar perfiles públicos, publicar reseñas, administrar mensajería entre usuarios, registrar incidentes y reflejar atributos de confianza.            |
+| **Domain Concepts**        | UserProfile, Review, MessageThread, Message, IncidentReport, TrustScore, VerificationBadge                                                               |
+| **Inbound Messages**       | ReservationCompleted, UserVerified, StartThread, SendMessage, CreateReview, ReportIncident                                                               |
+| **Outbound Messages**      | ReviewPublished, MessageSent, IncidentReported, TrustScoreUpdated                                                                                        |
+| **Dependencies**           | Depende de Booking & Reservations para habilitar reseñas después de una reserva completada y de IAM para reflejar atributos de verificación e identidad. |
+| **Primary Users / Actors** | Arrendatario, Propietario, Usuario                                                                                                                       |
+
+
 
 ### 2.5.2. Context Mapping
 
