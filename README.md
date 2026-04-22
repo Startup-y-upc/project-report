@@ -12,7 +12,7 @@
 
  <p align="center"><strong>NRC:</strong> 3248</p>
 
- <p align="center"><strong>Profesor:</strong>Quevedo Velasco, David Gerardo</p>
+ <p align="center"><strong>Profesor:</strong> Quevedo Velasco, David Gerardo</p>
 
   <p align="center"><strong>StartUp:</strong> R2G Technologies</p>
 
@@ -67,7 +67,7 @@
     <td align="center">AV1</td>
     <td align="center">21/04/2026</td>
     <td>Castillo Vidal, Jesus Ivan<br>Chavez Uribe, Ario Joel<br>Carhuancote Dominguez, Gonzalo Alonso<br>Diestra Zambrano, Adriana Maria<br>Huarcaya Matias, Gilbert Alonso</td>
-    <td>Primera version del informe: caratula, registro de versiones, collaboration insights, student outcome, objetivos SMART, Capitulo I con avances iniciales del perfil de la startup y Lean UX, y Capitulo II desarrollado segun el guideline (competidores, entrevistas, needfinding, requirements specification, DDD estrategico y tactico).</td>
+    <td>Primera version del informe: caratula, registro de versiones, collaboration insights, student outcome, objetivos SMART, Capitulo I con el perfil de la startup y Lean UX, y Capitulo II desarrollado segun el guideline (competidores, entrevistas, needfinding, requirements specification, DDD estrategico y tactico).</td>
   </tr>
 </table>
 
