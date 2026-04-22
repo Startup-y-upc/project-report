@@ -1016,6 +1016,77 @@ Se detallan los diagramas de implementación para el bounded context de pagos.
 
 </div>
 
+
+### 2.6.5.1 Bounded Context: Community & Trust
+
+Este bounded context gestiona el ciclo de vida de la confianza y la comunidad dentro de la plataforma. Centraliza las reseñas verificadas post-alquiler, la mensajería privada entre usuarios, los perfiles públicos y el registro formal de incidentes de seguridad. A continuación se presenta el diccionario de clases y las relaciones clave de la solución.
+
+| Clase | Propósito | Atributos principales | Métodos principales | Relaciones |
+| :--- | :--- | :--- | :--- | :--- |
+| **UserProfile** | Aggregate Root que representa el perfil público del usuario | profileId, userId, bio, avatarUrl, trustScore, verificationBadge, reviewCount | create(), updateBio(), applyBadge(), recalculateTrustScore() | Contiene TrustScore; recibe VerificationBadge desde IAM; relacionado con Review |
+| **Review** | Aggregate Root que modela una evaluación dejada tras un alquiler completado | reviewId, reservationId, authorId, targetVehicleId, rating, comment, publishedAt | create(), validate() | Referencia a Booking (reservationId) y Vehicle Catalog (targetVehicleId) |
+| **MessageThread** | Aggregate Root que agrupa la conversación privada entre arrendatario y propietario | threadId, participants[renterId, ownerId], reservationId, messages[] | startThread(), addMessage() | Contiene Message; referencia a Booking (reservationId) |
+| **Message** | Value Object / entidad dentro de MessageThread con el contenido de un mensaje individual | messageId, senderId, content, sentAt | N/A | Pertenese a MessageThread |
+| **IncidentReport** | Aggregate Root que representa un reporte formal de un evento de seguridad o conflicto | reportId, reporterId, description, status, createdAt | create(), updateStatus() | Usa IncidentStatus |
+| **TrustScore** | Value Object que encapsula el índice de confianza calculado | value: Float | N/A | Pertenece a UserProfile |
+| **VerificationBadge** | Value Object indicador de identidad verificada recibido desde IAM vía evento | verified: Boolean | N/A | Pertenece a UserProfile |
+| **IncidentStatus** | Enum de estado del reporte de incidente | OPEN, UNDER_REVIEW, RESOLVED, CLOSED | N/A | Usado por IncidentReport |
+| **ProfileController** | Controller REST del perfil y reseñas | N/A | getProfile(), updateProfile(), getReviews() | Usa ProfileCommandService y ProfileQueryService |
+| **ReviewController** | Controller REST de reseñas | N/A | createReview(), getReviewsByTarget() | Usa ReviewCommandService y ReviewQueryService |
+| **MessageController** | Controller REST de mensajería | N/A | startThread(), sendMessage(), getThread() | Usa MessageCommandService y MessageQueryService |
+| **IncidentController** | Controller REST de incidentes | N/A | reportIncident(), getIncident() | Usa IncidentCommandService |
+| **ProfileCommandService** | Domain Service de comandos para perfiles | N/A | handle(UpdateProfileCommand), handle(ApplyBadgeCommand), handle(RecalculateTrustScoreCommand) | Implementado por ProfileCommandServiceImpl |
+| **ReviewCommandService** | Domain Service de comandos para reseñas | N/A | handle(CreateReviewCommand) | Implementado por ReviewCommandServiceImpl |
+| **MessageCommandService** | Domain Service de comandos para mensajería | N/A | handle(StartThreadCommand), handle(SendMessageCommand) | Implementado por MessageCommandServiceImpl |
+| **IncidentCommandService** | Domain Service de comandos para incidentes | N/A | handle(ReportIncidentCommand), handle(UpdateIncidentStatusCommand) | Implementado por IncidentCommandServiceImpl |
+| **ProfileQueryService** | Domain Service de consultas para perfiles | N/A | handle(GetProfileByUserIdQuery) | Implementado por ProfileQueryServiceImpl |
+| **ReviewQueryService** | Domain Service de consultas para reseñas | N/A | handle(GetReviewsByTargetQuery) | Implementado por ReviewQueryServiceImpl |
+| **MessageQueryService** | Domain Service de consultas para mensajería | N/A | handle(GetThreadQuery) | Implementado por MessageQueryServiceImpl |
+| **UserProfileRepository** | Repository del agregado UserProfile | N/A | findByUserId(), save() | Maneja UserProfile |
+| **ReviewRepository** | Repository del agregado Review | N/A | findByReservationId(), findByTargetVehicleId(), save() | Maneja Review |
+| **MessageThreadRepository** | Repository del agregado MessageThread | N/A | findByThreadId(), findByReservationId(), save() | Maneja MessageThread |
+| **IncidentReportRepository** | Repository del agregado IncidentReport | N/A | findByReportId(), save() | Maneja IncidentReport |
+
+#### 2.6.5.1. Domain Layer
+
+El core del dominio se modela con cuatro agregados principales: UserProfile, Review, MessageThread e IncidentReport. Sus respectivos Value Objects son TrustScore, VerificationBadge y Message. Las reglas de negocio más críticas como la unicidad de reseña por reserva y la restricción de threads a reservas activas se codifican directamente en los agregados. Los estados de IncidentReport (OPEN, UNDER_REVIEW, RESOLVED, CLOSED) son representados mediante un enum IncidentStatus. Las abstracciones de acceso a datos se definen en UserProfileRepository, ReviewRepository, MessageThreadRepository e IncidentReportRepository.
+
+#### 2.6.5.2. Interface Layer
+
+La capa de interfaz expone cuatro controllers REST especializados: ProfileController (gestión y consulta de perfiles públicos), ReviewController (creación y consulta de reseñas por vehículo o usuario), MessageController (inicio de threads y envío de mensajes) e IncidentController (registro y seguimiento de incidentes). Cada controller utiliza resources y assemblers para transformar los modelos de dominio en representaciones REST, manteniendo la separación entre capas. Los endpoints siguen los casos de uso definidos en las User Stories HU06, HU07, HU11, HU12 y HU33.
+
+#### 2.6.5.3. Application Layer
+
+Los flujos de negocio se coordinan mediante Command y Query Services por agregado (Profile, Review, Message, Incident), actuando como handlers para comandos y consultas específicos. Cada servicio ejecuta la lógica de negocio y publica eventos de dominio como ProfileUpdated, ReviewPublished o MessageSent.
+
+#### 2.6.5.4. Infrastructure Layer
+
+La infraestructura implementa los repositorios en MySQL y gestiona la persistencia mediante adaptadores específicos. Además, integra la mensajería para publicar eventos de dominio y consumir ReservationCompleted, habilitando así la creación de reseñas.
+
+#### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/Community&Trust/Components.png" alt="Booking & Reservations Database Diagram" width="95%" />
+</div>
+
+#### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+Se detallan los diagramas de implementación para el bounded context de Community & Trust.
+
+##### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/Community&Trust/DomainLayer.png" alt="Booking & Reservations Database Diagram" width="95%" />
+</div>
+
+##### 2.6.5.6.2. Bounded Context Database Design Diagram
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/Community&Trust/DesignDiagram.png" alt="Booking & Reservations Database Diagram" width="95%" />
+</div>
+
+</div>
+
 ## Conclusiones
 
 ### Conclusiones y recomendaciones
