@@ -892,8 +892,9 @@ Los bounded context canvases permiten documentar de manera estratégica los prin
 ### 2.5.2. Context Mapping
 El context map de Rent2Go permite representar la relación entre los bounded contexts identificados durante el análisis estratégico del dominio. Esta vista muestra cómo cada contexto conserva responsabilidades específicas, pero al mismo tiempo colabora con otros a través de dependencias funcionales e intercambios de información. En particular, Booking & Reservations actúa como eje del proceso de alquiler, conectando la autenticación de usuarios, la consulta de vehículos, el procesamiento de pagos y la habilitación de mecanismos de confianza posteriores a la reserva.
 
+El siguiente context map muestra la relación entre los bounded contexts identificados en Rent2Go. En esta vista, **Booking & Reservations** actúa como el eje del proceso de alquiler, articulando la interacción con autenticación, catálogo de vehículos, pagos y comunidad.
 
-
+<img src="./Resources/capitulo_2/event_storming/mermaid-diagram.png">
 
 ### 2.5.3. Software Architecture
 
