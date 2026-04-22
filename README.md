@@ -367,6 +367,8 @@ Rent2Go se propone como una solución innovadora, accesible y escalable dentro d
 
 #### 1.2.2.4. Lean UX Canvas
 
+![Lean UX Canvas](Resources/capitulo_1/leanuxcanva.png)
+
 # 1.3. Segmentos Objetivo
 
 ### Segmento Objetivo #1: Propietarios de Vehículos
