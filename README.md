@@ -478,6 +478,28 @@ Con el objetivo de comprender la necesidad y la demanda en nuestro sector por pa
 
 <b> Segmento Objetivo 1: </b> Propietarios de vehículos
 
+<b> Entrevista 1 </b>
+
+- Nombre: Juan Carlos
+- Apellidos: Alvarado
+- Edad: 21
+- Distrito: Callao
+- Link de la entrevista: <a href="">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210720_upc_edu_pe/IQChZzoqQoMyS7ZxtiANa0JaAcWMBAzl2aYXkY7X5AlN9Gs?e=nPdump&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D</a>
+- Duración: 3:03
+
+Evidencia de la reunión:
+
+<div align="center">
+    <img src="Resources/capitulo_2/interviews/interview_1.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+Resumen de la entrevista:
+
+- Posee un vehículo que utiliza de forma moderada durante la semana.
+- Mantiene su auto guardado en casa cuando no lo usa, sin generar ingresos.
+- No ha alquilado su vehículo antes debido a falta de confianza en el proceso.
+- Estaría dispuesto a alquilarlo si existen garantías como seguro y monitoreo.
+- Considera atractiva la idea de generar ingresos pasivos con su vehículo.
 
 <b> Entrevista 2 </b>
 
