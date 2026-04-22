@@ -718,6 +718,12 @@ Esta seccion consolida las epicas, historias de usuario, historias tecnicas y sp
 
 ### 2.4.2. Impact Mapping
 
+Impact map de nuestros segmentos objetivos
+
+<div align="center">
+    <img src="Resources/capitulo_2/need_finding/Impact Mapping.png" alt="Impact Map" style="margin: 10px 0;" width="80%"/>
+</div>
+
 ### 2.4.3. Product Backlog
 
 Utilizamos la escala de Fibonacci para la estimación de los Story Points.
