@@ -1013,7 +1013,10 @@ Este bounded context gestiona el ciclo de vida de la confianza y la comunidad de
 | **MessageThreadRepository** | Repository del agregado MessageThread | N/A | findByThreadId(), findByReservationId(), save() | Maneja MessageThread |
 | **IncidentReportRepository** | Repository del agregado IncidentReport | N/A | findByReportId(), save() | Maneja IncidentReport |
 
-#### 2.6.x.1. Domain Layer
+#### 2.6.4.1. Domain Layer
+
+El core del dominio se modela con cuatro agregados principales: UserProfile, Review, MessageThread e IncidentReport.Sus respectivos Value Objects son TrustScore, VerificationBadge y Message. Las reglas de negocio más críticas como la unicidad de reseña por reserva y la restricción de threads a reservas activas se codifican directamente en los agregados. Los estados de IncidentReport (OPEN, UNDER_REVIEW, RESOLVED, CLOSED) son representados mediante un enum IncidentStatus. Las abstracciones de acceso a datos se definen en UserProfileRepository, ReviewRepository, MessageThreadRepository e IncidentReportRepository.
+
 
 #### 2.6.x.2. Interface Layer
 
