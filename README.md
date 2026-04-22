@@ -890,6 +890,10 @@ Los bounded context canvases permiten documentar de manera estratégica los prin
 
 
 ### 2.5.2. Context Mapping
+El context map de Rent2Go permite representar la relación entre los bounded contexts identificados durante el análisis estratégico del dominio. Esta vista muestra cómo cada contexto conserva responsabilidades específicas, pero al mismo tiempo colabora con otros a través de dependencias funcionales e intercambios de información. En particular, Booking & Reservations actúa como eje del proceso de alquiler, conectando la autenticación de usuarios, la consulta de vehículos, el procesamiento de pagos y la habilitación de mecanismos de confianza posteriores a la reserva.
+
+
+
 
 ### 2.5.3. Software Architecture
 
@@ -1260,6 +1264,27 @@ Como recomendaciones, se debe mantener el enfoque en mecanismos de seguridad y t
 
 ## Bibliografia
 
-- [Insert references]
+Gothelf, J., & Seiden, J. (2021). Lean UX: Applying lean principles to improve user experience (3.ª ed.). O'Reilly Media.
+
+Bland, D. J., & Osterwalder, A. (2019). Testing business ideas: A field guide for rapid experimentation. John Wiley & Sons.
+
+Adzic, G. (2012). Impact mapping: Making a big impact with software products and projects. Provoking Thoughts.
+
+Cohn, M. (2004). User stories applied: For agile software development. Addison-Wesley Professional.
+
+Smart, J. F. (2014). BDD in action: Behavior-driven development for the whole software lifecycle. Manning Publications.
+
+Evans, E. (2004). Domain-driven design: Tackling complexity in the heart of software. Addison-Wesley Professional.
+
+Brandolini, A. (2021). Introducing EventStorming. Leanpub. https://www.leanpub.com/introducing_eventstorming
+
+Brown, S. (2020). The C4 model for visualising software architecture. https://c4model.com/
+
+ABET. (2023). Criteria for accrediting engineering programs, 2023-2024. ABET Engineering Accreditation Commission. https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2023-2024/
+
+
+Stripe. (s.f.). Stripe API reference. Recuperado el [Ingresa la fecha de hoy, ej. 22 de abril de 2026], de https://stripe.com/docs/api
+
+
 
 ## Anexos
