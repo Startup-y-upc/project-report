@@ -546,13 +546,13 @@ Resumen de la entrevista:
 
 Resumen de la entrevista:
 
-- La entrevistada posee un vehiculo que usa con poca frecuencia
-- No ha alquilado su vehiculo anteriormente debido a la falta de confianza
-- No conoce plataformas actuales para alquilar vehiculos
-- Considera atractiva la idea de generar ingresos con su auto
-- Menciona que su principal preocupacion es la seguridad y proteccion del vehiculo
-- Valora positivamente la propuesta y la considera innovadora y util
-- Estaria dispuesta a recomendar la aplicacion si cumple con lo prometido
+- El entrevistado cuenta con un vehículo que utiliza con escasa frecuencia
+- Por falta de confianza, no ha rentado su automóvil en el pasado
+- Desconoce las plataformas que existen actualmente para el alquiler de autos
+- Le resulta muy atractiva la posibilidad de generar ingresos extra con su vehículo
+- Resalta que su mayor preocupación es la seguridad y el cuidado de su automóvil
+- Tiene una opinión muy favorable de la propuesta, considerándola útil y novedosa
+- Estaría dispuesto a recomendar la aplicación si esta cumple con las expectativas
 
 
 
@@ -810,6 +810,18 @@ A partir del análisis del dominio y de las historias de usuario, se identificar
 
 #### 2.5.1.2. Domain Message Flows Modeling
 
+En esta sección se modelan los principales flujos de mensajes del dominio entre los bounded contexts identificados en Rent2Go. El objetivo es representar cómo se coordinan las capacidades del negocio sin entrar aún en detalles de implementación técnica. Los flujos muestran la interacción entre Vehicle Catalog, Booking & Reservations, Payments, IAM y Community & Trust, especialmente en procesos clave como la validación de disponibilidad, el procesamiento de pagos, la confirmación de reservas y la habilitación de reseñas posteriores al alquiler.
+
+<img src="./Resources/capitulo_2/event_storming/message_flow.png" alt="Candidate Contexts Discovery" width="90%" />
+
+| Source Context         | Message                  | Message Type    | Target Context         | Purpose                                                                                                                         |
+| ---------------------- | ------------------------ | --------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Vehicle Catalog        | CheckVehicleAvailability | Query / Command | Booking & Reservations | Permite validar si el vehículo seleccionado se encuentra disponible en el rango de fechas solicitado antes de crear la reserva. |
+| Booking & Reservations | CreatePayment            | Command         | Payments               | Solicita la creación y procesamiento del pago asociado a una reserva que requiere confirmación económica.                       |
+| Payments               | PaymentApproved          | Domain Event    | Booking & Reservations | Informa que el pago fue procesado exitosamente para que la reserva pueda ser confirmada o activada.                             |
+| Payments               | PaymentRejected          | Domain Event    | Booking & Reservations | Informa que el pago no fue aprobado para que la reserva no continúe con el flujo de confirmación.                               |
+| Booking & Reservations | ReservationCompleted     | Domain Event    | Community & Trust      | Habilita funcionalidades posteriores al alquiler, como reseñas, calificaciones o interacciones de confianza entre usuarios.     |
+| IAM                    | UserVerified             | Domain Event    | Community & Trust      | Comunica que la identidad del usuario ha sido validada, permitiendo reflejar atributos de confianza en el perfil público.       |
 
 
 #### 2.5.1.3. Bounded Context Canvases
