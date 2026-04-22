@@ -1011,7 +1011,7 @@ Se detallan los diagramas de implementación para el bounded context de pagos.
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
 
 <div align="center">
-  <img src="Resources/capitulo_2/bounded_context/payments/payments-db-diagram.png" alt="Payments Bounded Context Class Diagram" width="95%" />
+  <img src="Resources/capitulo_2/bounded_context/payments/payments_db_diagram.png" alt="Payments Bounded Context Class Diagram" width="95%" />
 
 
 </div>
