@@ -210,7 +210,6 @@ Convertirnos en la plataforma líder en el mercado de alquiler de vehículos en 
 | :------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
 | <img src="Resources/capitulo_1/foto_ario.png" width="100" height="100"> <br>**Ario Joel Chavez Uribe** <br>u202213468                  | Soy estudiante de la carrera de Ingeniería de Software. Tengo interés en aprender sobre nuevas tecnologías y el desarrollo de aplicaciones móviles.                      | Poseo conocimientos en C++, GDScript, Python y desarrollo web (HTML, CSS y Javascript), útiles para el desarrollo del proyecto. |
 | <img src="Resources/capitulo_1/foto_jesus.jpg" width="100" height="120"> <br>**Jesús Iván Castillo Vidal** <br>u202322952                  | Desarrollador full-stack, emprendedor tecnológico y estudiante de Ingeniería de Software. Aporto al equipo experiencia práctica en el ciclo completo de desarrollo de software y en la creación de soluciones para la digitalización de negocios. | Conocimientos prácticos en Next.js, Angular, Vue, C#, Java, FastAPI y Tailwind CSS, combinados con una sólida visión de negocio para construir productos digitales (SaaS) 100% funcionales. |
-| <img src="Resources/capitulo_1/foto_nombre.jpeg" width="100" height="100"> <br>**[Nombre del Integrante]** <br>(Código)                 | [Descripción del integrante]                                                                                                                                             | [Conocimientos del integrante]                                                                                                  |
 | <img src="Resources/capitulo_1/foto_gonzalo.jpg" width="100" height="100"> <br>**Gonzalo Alonso Carhuacnote Dominguez** <br>u202210720 | Soy estudiante de la carrera de Ingeniería de Software, actualmente tambén trabajo en Desarollo de Software, y tengo interés en las últimas novedades del mundo moderno. | Poseo conocimientos en desarrollo web, asi como en tecnologias como C++, Python y distintas tecnologías de uso de Intlegincia Artificial, así como herramientas clásicas para el desarrollo de software.                                    |
 | <img src="Resources/capitulo_1/foto_adriana.jpeg" width="100" height="100"> <br>**Adriana Maria Diestra Zambrano** <br>u202218110                     |Estudiante de Ingeniería de Software y desarrolladora Full Stack con experiencia en proyectos reales. Me especializo en el desarrollo multiplataforma, integrando interfaces modernas con arquitecturas de backend robustas.                                                                                                                                           | Manejo de Node.js con HBS, Angular, Vue y Java. Poseo conocimientos en Kotlin y Flutter para aplicaciones móviles, además de JavaScript, HTML, CSS, Python y C++ aplicados al desarrollo del proyecto.                                                                                               |
 | <img src="Resources/capitulo_1/foto_gilbert.jpg" width="100" height="100"> <br>**Gilbert Alonso Huarcaya Matías** <br>u202322187 | Mi nombre es Gilbert Alonso Huarcaya Matías y actualmente estudio la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). | He trabajado en proyectos utilizando JavaScript y TypeScript para el desarrollo front-end, así como en la implementación de soluciones con C++. Además, me destaco por mi capacidad de organización, trabajo en equipo y orientación a resultados, cualidades que me permiten adaptarme a entornos dinámicos y colaborar de manera efectiva en proyectos tecnológicos. |
@@ -833,13 +832,60 @@ Resumen de la entrevista:
 - Le resulta muy atractiva la posibilidad de generar ingresos extra con su vehículo
 - Resalta que su mayor preocupación es la seguridad y el cuidado de su automóvil
 - Tiene una opinión muy favorable de la propuesta, considerándola útil y novedosa
-- Estaría dispuesto a recomendar la aplicación si esta cumple con las expectativas
-
-
-
----
+- Estaría dispuesto a recomendar la aplicación si esta cumple con las expectativas  ---
 
 <b> Segmento Objetivo 2: </b> Usuarios arrendatarios
+
+<b> Entrevista 4 </b>
+
+- Nombre: Esaut
+- Apellidos: Salhuana
+- Edad: 26
+- Distrito: Ate
+- Link de la entrevista: <a href="https://shorturl.at/PcRe6">[Entrevista]</a>
+- Duración: 2:11 minutos
+- Inicio de la entrevista: 0:01
+
+Evidencia de la reunión:
+
+<div align="center">
+  <img src="Resources/capitulo_2/interviews/segmento_2/interview_4.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+Resumen de la entrevista:
+
+- Usa transporte publico de forma diaria y considera alquilar vehiculos para trabajo y viajes cortos.
+- No ha utilizado plataformas similares y percibe barreras por precio y falta de confianza.
+- Valora que la plataforma ofrezca verificacion de identidad y soporte durante el alquiler.
+- Indica que la transparencia en tarifas y condiciones influye en su decision de uso.
+- Recomendaría la aplicacion si mantiene disponibilidad y procesos simples.
+
+
+
+<b> Entrevista 5 </b>
+
+- Nombre: Daniela
+- Apellidos: Huaman
+- Edad: 24
+- Distrito: San Miguel
+- Link de la entrevista: <a href="https://shorturl.at/PcRe6">[Entrevista]</a>
+- Duracion: 3:12 minutos
+- Inicio de la entrevista: 0:22
+
+Evidencia de la reunion:
+
+<div align="center">
+  <img src="Resources/capitulo_2/interviews/segmento_2/interview_5.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+Resumen de la entrevista:
+
+- Se moviliza principalmente en transporte publico, pero necesita autos para viajes cortos y visitas familiares.
+- No ha alquilado antes por falta de confianza y desconocimiento de procesos claros.
+- Considera clave la transparencia en tarifas, deposito y politicas de cancelacion.
+- Valora verificacion de identidad y soporte rapido en caso de incidentes.
+- Usaria la aplicacion si puede comparar precios y reservar en pocos pasos.
+
 
 <b> Entrevista 6 </b>
 
@@ -871,7 +917,9 @@ Resumen de la entrevista:
 
 ### 2.2.3. Análisis de entrevistas
 
-La entrevistada representa el perfil de propietario potencial porque posee un vehiculo subutilizado y muestra interes en monetizarlo. Existe una barrera critica de confianza por temor a danos o mal uso del vehiculo.
+**Segmento 1: Propietarios de vehiculos**
+
+Las entrevistas confirman un perfil de propietario potencial con vehiculo subutilizado y motivacion por monetizarlo. La principal barrera es la confianza, asociada al temor de danos o mal uso del vehiculo.
 
 Factores mas importantes identificados:
 
@@ -879,7 +927,19 @@ Factores mas importantes identificados:
 - Proteccion ante danos
 - Respaldo legal
 
-Tambien se evidencia una oportunidad de mercado, ya que no conoce plataformas similares, lo que refuerza la innovacion de la propuesta. La percepcion general del proyecto es positiva, destacando su capacidad de conectar personas y generar beneficios economicos.
+Tambien se evidencia una oportunidad de mercado por el desconocimiento de plataformas similares, lo que refuerza la innovacion de la propuesta y su valor de ingresos pasivos.
+
+**Segmento 2: Arrendatarios de vehiculos**
+
+Las entrevistas de arrendatarios muestran una necesidad clara de movilidad flexible y economica para viajes cortos, con preferencia por procesos simples y tarifas transparentes. La confianza y la seguridad del vehiculo son el principal freno para adoptar una plataforma nueva.
+
+Factores mas importantes identificados:
+
+- Transparencia en tarifas, deposito y politicas de cancelacion
+- Verificacion de identidad y soporte rapido
+- Estado del vehiculo y cobertura de seguros
+
+Se observa una disposicion positiva a usar la aplicacion si el flujo de reserva es rapido y las condiciones de uso son claras, reforzando la necesidad de una experiencia mobile-first sin fricciones.
 
 ## 2.3. Needfinding
 
