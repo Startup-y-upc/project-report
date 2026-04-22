@@ -28,6 +28,10 @@
 <th>Integrantes</th>
 </tr> 
 <tr>
+<td>U202210720</td>
+<td>Carhuancote Dominguez, Gonzalo Alonso</td>
+</tr>
+<tr>
 <td>U202322952</td>
 <td>Castillo Vidal, Jesus Ivan</td>
 </tr>
@@ -36,16 +40,12 @@
 <td>Chavez Uribe, Ario</td>
 </tr>
 <tr>
-<td>U202210720</td>
-<td>Carhuancote Dominguez, Gonzalo Alonso</td>
+<td>U202218110</td>
+<td>Diestra Zambrano, Adriana Maria</td>
 </tr>
 <tr>
 <td>U202322187</td>
 <td>Huarcaya Matias, Gilbert Alonso</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
 </tr>
 </table>
 <br><br>
@@ -64,10 +64,10 @@
     <th style="width: 25%;">Descripción de modificación </th>
   </tr>
    <tr>
-    <td align="center"></td>
-    <td align="center"></td>
-    <td></td>
-    <td></td>
+    <td align="center">AV1</td>
+    <td align="center">21/04/2026</td>
+    <td>Castillo Vidal, Jesus Ivan<br>Chavez Uribe, Ario Joel<br>Carhuancote Dominguez, Gonzalo Alonso<br>Diestra Zambrano, Adriana Maria<br>Huarcaya Matias, Gilbert Alonso</td>
+    <td>Primera version del informe: caratula, registro de versiones, collaboration insights, student outcome, objetivos SMART, Capitulo I con avances iniciales del perfil de la startup y Lean UX, y Capitulo II desarrollado segun el guideline (competidores, entrevistas, needfinding, requirements specification, DDD estrategico y tactico).</td>
   </tr>
 </table>
 
@@ -77,9 +77,28 @@
 
 ## AV1
 
+**URL de organizacion GitHub:** [https://github.com/Startup-y-upc](https://github.com/Startup-y-upc)
+
+**URL del repositorio del Project Report:** [https://github.com/Startup-y-upc/project-report](https://github.com/Startup-y-upc/project-report)
+
+**Desarrollo de actividades:**
+
+Para AV1, el equipo coordino reuniones virtuales para definir el alcance del reporte, distribuir la redaccion de los Capitulos I y II y acordar el formato del informe. Cada integrante asumio una seccion del documento y realizo revisiones cruzadas para alinear el contenido con la guia del curso y mantener el enfoque mobile-first.
+
+**Evidencias de colaboracion y commits:**
+
+- **Analiticos de colaboracion:** [Insertar captura]
+- **Contributors (GitHub Insights):** [Insertar captura]
+- **Commits por integrante:** [Insertar capturas individuales]
+
 <div style="page-break-after: always;"></div>
 
 # Tabla de contenidos
+
+- [Registro de versiones del Informe](README.md#registro-de-versiones-del-informe)
+- [Project Report Collaboration Insights](README.md#project-report-collaboration-insights)
+- [Student Outcome](README.md#student-outcome)
+- [Objetivos SMART](README.md#objetivos-smart)
 
 ## [Capítulo I: Introducción](README.md)
 
@@ -110,14 +129,42 @@
 
 ## Student Outcome
 
-ABET – EAC - Student Outcome 5 Criterio: La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
+ABET – EAC - Student Outcome 7 Criterio: Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.
 
 | Criterio                                                                                        | Acciones realizadas | Conclusiones |
 | ----------------------------------------------------------------------------------------------- | ------------------- | ------------ |
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta.                                |                     |              |
-| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. |                     |              |
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Castillo Vidal, Jesus Ivan**<br>&nbsp;&nbsp;- **AV1:** Cumplio el criterio al aplicar conceptos de analisis del contexto, competencia y validacion inicial en la descripcion de la startup y el diseno de entrevistas con enfoque mobile-first.<br><br>- **Chavez Uribe, Ario Joel**<br>&nbsp;&nbsp;- **AV1:** Cumplio el criterio al incorporar enfoques de Lean UX y traducirlos en artefactos de requisitos (historias, impacto y backlog) segun la guia.<br><br>- **Carhuancote Dominguez, Gonzalo Alonso**<br>&nbsp;&nbsp;- **AV1:** Cumplio el criterio al articular segmentos objetivo y al aplicar principios de DDD estrategico y tactico para la solucion movil.<br><br>- **Diestra Zambrano, Adriana Maria**<br>&nbsp;&nbsp;- **AV1:** Cumplio el criterio al estructurar la problematica y aplicar tecnicas de needfinding y user stories para sustentar necesidades de usuarios.<br><br>- **Huarcaya Matias, Gilbert Alonso**<br>&nbsp;&nbsp;- **AV1:** Cumplio el criterio al consolidar el Lean UX Canvas y organizar evidencias de entrevistas e impacto para asegurar trazabilidad. | En AV1, el equipo actualizó y aplicó conceptos del guideline y de Lean UX para alinear el reporte y el enfoque mobile-first con los criterios del curso. |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | - **Castillo Vidal, Jesus Ivan**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al detectar vacios en entrevistas y competencia y dejar acciones de mejora para la siguiente entrega.<br><br>- **Chavez Uribe, Ario Joel**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al identificar que las hipotesis y la validacion de impacto requieren mayor profundidad y planificar su refuerzo. <br><br>- **Carhuancote Dominguez, Gonzalo Alonso**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al planificar la ampliacion de arquitectura y diagramas para mejorar la claridad del sistema en el siguiente avance.<br><br>- **Diestra Zambrano, Adriana Maria**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al dejar mejoras pendientes en eventstorming y lenguaje ubicuo con un plan de cierre para AV2/TB1.<br><br>- **Huarcaya Matias, Gilbert Alonso**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al definir el refinamiento de backlog y del analisis de entrevistas con nuevas evidencias. | En AV1, el equipo documentó brechas y acciones de mejora para sostener el aprendizaje continuo y la calidad del reporte en las siguientes entregas. |
 
 </div>
+
+## Objetivos SMART
+
+**Castillo Vidal, Jesus Ivan**
+
+- Obtener la certificacion Associate Android Developer antes de diciembre 2026, completando al menos 2 cursos oficiales y aprobando el examen en el primer intento.
+- Desarrollar y publicar una app movil en Google Play antes de marzo 2027 con al menos 500 descargas y calificacion alta.
+
+**Chavez Uribe, Ario Joel**
+
+- Especializarse en pruebas automatizadas para apps moviles antes de febrero 2027, implementando suites de pruebas en 2 proyectos academicos o personales.
+- Completar un portafolio con 3 prototipos mobile-first en Figma antes de noviembre 2026, documentando decisiones de UX y validaciones.
+
+**Carhuancote Dominguez, Gonzalo Alonso**
+
+- Implementar un backend REST con autenticacion y despliegue en la nube antes de enero 2027, documentando endpoints y pruebas de carga basicas.
+- Participar en 2 hackathons o retos de desarrollo movil antes de julio 2027 para fortalecer trabajo en equipo y entrega bajo tiempo.
+
+**Diestra Zambrano, Adriana Maria**
+
+- Certificarse en Flutter o Kotlin Multiplatform antes de abril 2027, completando un curso especializado y construyendo una app demo publicada.
+- Mejorar competencias de arquitectura limpia para mobile antes de marzo 2027, aplicando patrones en al menos 2 proyectos con revision de codigo.
+
+**Huarcaya Matias, Gilbert Alonso**
+
+- Dominar integraciones con servicios externos para apps moviles antes de diciembre 2026, implementando 3 integraciones con APIs reales y documentando resultados.
+- Liderar un proyecto movil con DDD antes de junio 2026, definiendo bounded contexts y entregando un MVP funcional.
+- Desplegar una aplicacion movil en iOS y Android en simultaneo antes de diciembre 2026 y mantenerla con actualizaciones mensuales durante mas de 6 meses.
 
 ## 1.1. StartUp Profile
 
