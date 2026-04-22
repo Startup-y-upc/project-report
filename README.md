@@ -571,6 +571,14 @@ Tambien se evidencia una oportunidad de mercado, ya que no conoce plataformas si
 
 ### 2.3.1. User Personas
 
+<div align="center">
+    <img src="Resources/capitulo_2/need_finding/User-Persona-Propietario-Juan Pérez.png" alt="User Persona Juan Pérez" style="margin: 10px 0;" width="80%"/>
+</div>
+
+<div align="center">
+    <img src="Resources/capitulo_2/need_finding/User-Persona-Propietario-María Lopez.png" alt="User Persona María Lopez" style="margin: 10px 0;" width="80%"/>
+</div>
+
 ### 2.3.2. User Task Matrix
 
 A continuación se muestra el proceso para la realizacion del User Task Matrix para comprender las tareas que realizan los User Persona para cumplir sus objetivos.
