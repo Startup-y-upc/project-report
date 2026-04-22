@@ -1021,9 +1021,13 @@ El core del dominio se modela con cuatro agregados principales: UserProfile, Rev
 
 La capa de interfaz expone cuatro controllers REST especializados: ProfileController (gestión y consulta de perfiles públicos), ReviewController (creación y consulta de reseñas por vehículo o usuario), MessageController (inicio de threads y envío de mensajes) e IncidentController (registro y seguimiento de incidentes). Cada controller utiliza resources y assemblers para transformar los modelos de dominio en representaciones REST, manteniendo la separación entre capas. Los endpoints siguen los casos de uso definidos en las User Stories HU06, HU07, HU11, HU12 y HU33.
 
-#### 2.6.x.3. Application Layer
+#### 2.6.4.3. Application Layer
 
-#### 2.6.x.4. Infrastructure Layer
+Los flujos de negocio se coordinan mediante Command y Query Services por agregado (Profile, Review, Message, Incident), actuando como handlers para comandos y consultas específicos. Cada servicio ejecuta la lógica de negocio y publica eventos de dominio como ProfileUpdated, ReviewPublished o MessageSent.
+
+#### 2.6.4.4. Infrastructure Layer
+
+La infraestructura implementa los repositorios en MySQL y gestiona la persistencia mediante adaptadores específicos. Además, integra la mensajería para publicar eventos de dominio y consumir ReservationCompleted, habilitando así la creación de reseñas.
 
 #### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
 
