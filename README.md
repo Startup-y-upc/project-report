@@ -1029,13 +1029,27 @@ Los flujos de negocio se coordinan mediante Command y Query Services por agregad
 
 La infraestructura implementa los repositorios en MySQL y gestiona la persistencia mediante adaptadores específicos. Además, integra la mensajería para publicar eventos de dominio y consumir ReservationCompleted, habilitando así la creación de reseñas.
 
-#### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-#### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/Community&Trust/Components.png" alt="Booking & Reservations Database Diagram" width="95%" />
+</div>
 
-##### 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
+#### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
 
-##### 2.6.x.6.2. Bounded Context Database Design Diagram
+Se detallan los diagramas de implementación para el bounded context de Community & Trust.
+
+##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/Community&Trust/DomainLayer.png" alt="Booking & Reservations Database Diagram" width="95%" />
+</div>
+
+##### 2.6.4.6.2. Bounded Context Database Design Diagram
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/Community&Trust/DesignDiagram.png" alt="Booking & Reservations Database Diagram" width="95%" />
+</div>
 
 </div>
 
