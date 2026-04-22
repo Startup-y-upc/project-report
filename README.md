@@ -983,16 +983,53 @@ Se detallan los diagramas de implementación para el bounded context de IAM.
   <img src="Resources/capitulo_2/bounded_context/iam/iam-db-diagram.png" alt="Booking & Reservations Database Diagram" width="95%" />
 </div>
 
+### 2.6.4. Bounded Context: Payments
+
+Este bounded context gestiona el ciclo de vida de los pagos dentro de la plataforma. Centraliza la creación de pagos asociados a reservas, el cálculo del desglose monetario, la integración con Stripe Sandbox para el procesamiento de pagos de prueba y la persistencia del estado de cada transacción. A continuación se presenta el diccionario de clases y las relaciones clave de la solución.
+
+| Clase                           | Propósito                                                              | Atributos principales                                                                                                         | Métodos principales                                                  | Relaciones                                                                                        |
+| ------------------------------- | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Payment                         | Aggregate Root que representa un pago asociado a una reserva           | paymentId, reservationId, status, breakdown, gatewayReference                                                                 | create(), approve(), reject(), refund(), getTotal()                  | Contiene FeeBreakdown; usa PaymentStatus; referencia a Booking/Reservation mediante reservationId |
+| FeeBreakdown                    | Value Object que encapsula el desglose económico del pago              | baseFee, taxes, platformCommission, total                                                                                     | calculateTotal()                                                     | Pertenece a Payment; usa Money                                                                    |
+| Money                           | Value Object que representa un monto monetario                         | amount, currency                                                                                                              | add(), subtract()                                                    | Pertenece a FeeBreakdown                                                                          |
+| PaymentStatus                   | Enum de estado del pago                                                | PENDING, PROCESSING, APPROVED, REJECTED, REFUNDED                                                                             | N/A                                                                  | Usado por Payment                                                                                 |
+| PaymentTransaction              | Entidad de soporte que registra la operación procesada con la pasarela | transactionId, paymentId, provider, providerPaymentToken, providerReference, transactionStatus, amount, currency, processedAt | create(), markProcessed()                                            | Referencia a Payment mediante paymentId                                                           |
+| PaymentController               | Controller REST de pagos                                               | N/A                                                                                                                           | createPayment(), getPaymentById(), getPaymentsByReservationId()      | Usa PaymentCommandService y PaymentQueryService                                                   |
+| PaymentCommandService           | Domain Service de comandos para pagos                                  | N/A                                                                                                                           | handle(CreatePaymentCommand), handle(RefundPaymentCommand)           | Implementado por PaymentCommandServiceImpl                                                        |
+| PaymentQueryService             | Domain Service de consultas para pagos                                 | N/A                                                                                                                           | handle(GetPaymentByIdQuery), handle(GetPaymentsByReservationIdQuery) | Implementado por PaymentQueryServiceImpl                                                          |
+| PaymentCommandServiceImpl       | Implementación de comandos de pago                                     | N/A                                                                                                                           | handle(CreatePaymentCommand), handle(RefundPaymentCommand)           | Usa PaymentRepository, PaymentTransactionRepository y StripeGateway                               |
+| PaymentQueryServiceImpl         | Implementación de consultas de pago                                    | N/A                                                                                                                           | handle(GetPaymentByIdQuery), handle(GetPaymentsByReservationIdQuery) | Usa PaymentRepository                                                                             |
+| PaymentRepository               | Repository del agregado Payment                                        | N/A                                                                                                                           | findById(), findAllByReservationId(), save()                         | Maneja Payment                                                                                    |
+| PaymentTransactionRepository    | Repository de transacciones de pago                                    | N/A                                                                                                                           | findByPaymentId(), save()                                            | Maneja PaymentTransaction                                                                         |
+| StripeGateway                   | Gateway externo para procesar cobros en entorno de prueba              | N/A                                                                                                                           | charge(), refund()                                                   | Usado por PaymentCommandServiceImpl; integra Stripe Sandbox                                       |
+| CreatePaymentCommand            | Comando para crear un pago                                             | reservationId, paymentToken                                                                                                   | N/A                                                                  | Consumido por PaymentCommandService                                                               |
+| RefundPaymentCommand            | Comando para reembolsar un pago                                        | paymentId                                                                                                                     | N/A                                                                  | Consumido por PaymentCommandService                                                               |
+| GetPaymentByIdQuery             | Consulta de un pago por ID                                             | paymentId                                                                                                                     | N/A                                                                  | Consumido por PaymentQueryService                                                                 |
+| GetPaymentsByReservationIdQuery | Consulta de pagos por reserva                                          | reservationId                                                                                                                 | N/A                                                                  | Consumido por PaymentQueryService                                                                 |
+
+
 #### 2.6.4.1. Domain Layer
-Se detallan los diagramas de implementación para el bounded context de Pagos.
+El core del dominio se modela con un agregado principal: Payment, el cual representa el pago asociado a una reserva dentro de la plataforma. Sus respectivos Value Objects son FeeBreakdown y Money, encargados de encapsular el detalle monetario del pago, incluyendo tarifa base, impuestos, comisión de la plataforma y monto total. El ciclo de vida del pago se representa mediante el enum PaymentStatus, cuyos estados son PENDING, PROCESSING, APPROVED, REJECTED y REFUNDED.
+
+Adicionalmente, el contexto incluye la entidad PaymentTransaction, utilizada para registrar la operación ejecutada contra la pasarela de pago. Las reglas de negocio más importantes, como la asociación obligatoria de un pago a una reserva y la consistencia entre el estado del pago y el resultado del procesamiento externo, se modelan dentro del agregado y sus servicios de dominio. Las abstracciones de acceso a datos se definen en PaymentRepository y PaymentTransactionRepository.
 
 #### 2.6.4.2. Interface Layer
+La capa de interfaz expone un controller REST especializado: PaymentController, encargado de la creación y consulta de pagos. Sus principales endpoints permiten registrar un pago asociado a una reserva, obtener un pago por identificador y listar pagos vinculados a una reserva específica.
+
+Cada controller utiliza resources y assemblers para transformar los modelos de dominio en representaciones REST, manteniendo así la separación entre capas. Esta capa permite que la aplicación móvil consuma el bounded context de Payments de forma desacoplada, mostrando el resultado del pago directamente dentro de la app sin depender de notificaciones por correo.
 
 #### 2.6.4.3. Application Layer
+Los flujos de negocio se coordinan mediante PaymentCommandService y PaymentQueryService, que actúan como handlers para comandos y consultas específicos del contexto. En particular, PaymentCommandService procesa operaciones de escritura como la creación y el eventual reembolso de pagos, mientras que PaymentQueryService resuelve operaciones de lectura como la búsqueda por ID y la consulta por reserva.
+
+Las implementaciones PaymentCommandServiceImpl y PaymentQueryServiceImpl encapsulan la lógica de aplicación, orquestando la validación del pago, la interacción con la pasarela externa y la persistencia de la información. De esta manera, la capa de aplicación coordina el flujo completo desde la solicitud iniciada por la app móvil hasta la actualización final del estado del pago.
 
 #### 2.6.4.4. Infrastructure Layer
+La infraestructura implementa los repositorios PaymentRepository y PaymentTransactionRepository sobre una base de datos relacional, gestionando la persistencia de pagos y transacciones. Asimismo, incorpora el adaptador StripeGateway, responsable de conectarse con Stripe Sandbox para procesar cobros de prueba y devolver las referencias externas necesarias para la trazabilidad.
+
+Esta capa permite desacoplar el dominio de la tecnología específica del proveedor de pagos. Además, soporta el almacenamiento de identificadores externos, estados de transacción y montos procesados, lo que facilita tanto la auditoría como el seguimiento de pagos dentro de la plataforma.
 
 #### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+Se detallan los diagramas de implementación para el bounded context de Pagos.
 
 <div align="center">
   <img src="Resources/capitulo_2/bounded_context/payments/PaymentsComponentDiagram-dark.svg" alt="Payments Bounded Context Class Diagram" width="95%" />
@@ -1012,12 +1049,10 @@ Se detallan los diagramas de implementación para el bounded context de pagos.
 
 <div align="center">
   <img src="Resources/capitulo_2/bounded_context/payments/payments_db_diagram.png" alt="Payments Bounded Context Class Diagram" width="95%" />
-
-
 </div>
 
 
-### 2.6.5.1 Bounded Context: Community & Trust
+### 2.6.5 Bounded Context: Community & Trust
 
 Este bounded context gestiona el ciclo de vida de la confianza y la comunidad dentro de la plataforma. Centraliza las reseñas verificadas post-alquiler, la mensajería privada entre usuarios, los perfiles públicos y el registro formal de incidentes de seguridad. A continuación se presenta el diccionario de clases y las relaciones clave de la solución.
 
