@@ -79,6 +79,18 @@
 
 **URL de organizacion GitHub:** [https://github.com/Startup-y-upc](https://github.com/Startup-y-upc)
 
+**Resumen de actividad:** Durante AV1 el equipo organizo el trabajo del reporte mediante ramas de trabajo y pull requests. En este periodo se registraron 3 pull requests mergeados, 0 issues activos y 5 autores con 59 commits en main (y 59 commits en todas las ramas). No se registraron cambios de archivos en main dentro de la ventana del analitico. Los PRs mergeados fueron: **AV1**, **Feature/chapter 2** y **Feature/chapter 1**.
+
+**Evidencia (analiticos de colaboracion y commits):**
+
+<div align="center">
+  <img src="Resources/collaboration/av1-contributors.png" style="margin: 10px 0;" width="85%"/>
+</div>
+
+<div align="center">
+  <img src="Resources/collaboration/av1-overview.png" style="margin: 10px 0;" width="85%"/>
+</div>
+
 # Tabla de contenidos
 
 ## [Capítulo I: Introducción](README.md)
