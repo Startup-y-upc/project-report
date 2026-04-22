@@ -1015,10 +1015,11 @@ Este bounded context gestiona el ciclo de vida de la confianza y la comunidad de
 
 #### 2.6.4.1. Domain Layer
 
-El core del dominio se modela con cuatro agregados principales: UserProfile, Review, MessageThread e IncidentReport.Sus respectivos Value Objects son TrustScore, VerificationBadge y Message. Las reglas de negocio más críticas como la unicidad de reseña por reserva y la restricción de threads a reservas activas se codifican directamente en los agregados. Los estados de IncidentReport (OPEN, UNDER_REVIEW, RESOLVED, CLOSED) son representados mediante un enum IncidentStatus. Las abstracciones de acceso a datos se definen en UserProfileRepository, ReviewRepository, MessageThreadRepository e IncidentReportRepository.
+El core del dominio se modela con cuatro agregados principales: UserProfile, Review, MessageThread e IncidentReport. Sus respectivos Value Objects son TrustScore, VerificationBadge y Message. Las reglas de negocio más críticas como la unicidad de reseña por reserva y la restricción de threads a reservas activas se codifican directamente en los agregados. Los estados de IncidentReport (OPEN, UNDER_REVIEW, RESOLVED, CLOSED) son representados mediante un enum IncidentStatus. Las abstracciones de acceso a datos se definen en UserProfileRepository, ReviewRepository, MessageThreadRepository e IncidentReportRepository.
 
+#### 2.6.4.2. Interface Layer
 
-#### 2.6.x.2. Interface Layer
+La capa de interfaz expone cuatro controllers REST especializados: ProfileController (gestión y consulta de perfiles públicos), ReviewController (creación y consulta de reseñas por vehículo o usuario), MessageController (inicio de threads y envío de mensajes) e IncidentController (registro y seguimiento de incidentes). Cada controller utiliza resources y assemblers para transformar los modelos de dominio en representaciones REST, manteniendo la separación entre capas. Los endpoints siguen los casos de uso definidos en las User Stories HU06, HU07, HU11, HU12 y HU33.
 
 #### 2.6.x.3. Application Layer
 
