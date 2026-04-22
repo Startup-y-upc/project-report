@@ -844,7 +844,9 @@ Resumen de la entrevista:
 - Le resulta muy atractiva la posibilidad de generar ingresos extra con su vehículo
 - Resalta que su mayor preocupación es la seguridad y el cuidado de su automóvil
 - Tiene una opinión muy favorable de la propuesta, considerándola útil y novedosa
-- Estaría dispuesto a recomendar la aplicación si esta cumple con las expectativas  ---
+- Estaría dispuesto a recomendar la aplicación si esta cumple con las expectativas  
+
+---
 
 <b> Segmento Objetivo 2: </b> Usuarios arrendatarios
 
