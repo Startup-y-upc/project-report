@@ -913,6 +913,62 @@ Se detallan los diagramas de implementación para el bounded context de reservas
   <img src="Resources/capitulo_2/bounded_context/booking-reservations/booking-db-diagram.png" alt="Booking & Reservations Database Diagram" width="95%" />
 </div>
 
+### 2.6.3. Bounded Context: IAM (Identity & Access Management)
+
+Este contexto se encarga de gestionar la identidad y el acceso de los usuarios dentro de la plataforma, incluyendo el registro, autenticación y control de permisos. Se organiza siguiendo las entidades definidas en el dominio para garantizar un acceso seguro y controlado al sistema.
+
+| Clase             | Propósito                                                 | Atributos principales            | Métodos principales                             | Relaciones                                        |
+| ----------------- | --------------------------------------------------------- | -------------------------------- | ----------------------------------------------- | ------------------------------------------------- |
+| User              | Aggregate Root que representa al usuario del sistema      | userId, email, role, isActive    | register(), activate(), deactivate(), getRole() | contiene Credential, Session; usa Role            |
+| Credential        | Value Object que almacena la información de autenticación | passwordHash                     | validatePassword()                              | pertenece a User                                  |
+| Role              | Entidad que define el tipo de usuario                     | roleId, name                     | getPermissions()                                | usado por User                                    |
+| Session           | Entidad que representa una sesión activa                  | sessionId, token, expirationDate | create(), isValid(), invalidate()               | pertenece a User                                  |
+| Token             | Value Object para el manejo de tokens de autenticación    | value, expiration                | isExpired()                                     | usado por Session                                 |
+| AuthController    | Controller REST para autenticación y acceso               | N/A                              | register(), login(), logout(), getCurrentUser() | usa AuthService                                   |
+| AuthService       | Servicio de aplicación para lógica de autenticación       | N/A                              | registerUser(), loginUser(), logoutUser()       | usa UserRepository, TokenService, PasswordEncoder |
+| TokenService      | Servicio encargado de generación y validación de tokens   | N/A                              | generateToken(), validateToken()                | usado por AuthService                             |
+| PasswordEncoder   | Servicio para encriptar y validar contraseñas             | N/A                              | encode(), matches()                             | usado por AuthService                             |
+| UserRepository    | Repository para persistencia de usuarios                  | N/A                              | findByEmail(), findById(), save()               | maneja User                                       |
+| SessionRepository | Repository para manejo de sesiones                        | N/A                              | save(), findByToken(), delete()                 | maneja Session                                    |
+
+#### 2.6.3.1. Domain Layer
+
+Contiene las entidades, value objects y reglas de negocio relacionadas con la gestión de identidad y acceso, definiendo la lógica central del dominio sin depender de tecnologías externas.
+
+#### 2.6.3.2. Interface Layer
+
+Proporciona los puntos de entrada al sistema mediante APIs o controladores, permitiendo la interacción de los usuarios con las funcionalidades de autenticación y autorización.
+
+#### 2.6.3.3. Application Layer
+
+Orquesta los casos de uso del sistema, coordinando las operaciones necesarias para el registro, inicio de sesión y validación de usuarios, utilizando los servicios del dominio.
+
+#### 2.6.3.4. Infrastructure Layer
+
+Implementa los detalles técnicos como la persistencia de datos, generación de tokens y encriptación de contraseñas, permitiendo la integración con bases de datos y servicios externos.
+
+#### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/iam/IAMComponent.png" alt="Booking & Reservations Database Diagram" width="95%" />
+</div>
+
+#### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+Se detallan los diagramas de implementación para el bounded context de IAM.
+
+##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/iam/IAMClassDiagram.png" alt="Booking & Reservations Database Diagram" width="95%" />
+</div>
+
+##### 2.6.3.6.2. Bounded Context Database Design Diagram
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/iam/iam-db-diagram.png" alt="Booking & Reservations Database Diagram" width="95%" />
+</div>
+
 #### 2.6.x.1. Domain Layer
 
 #### 2.6.x.2. Interface Layer
