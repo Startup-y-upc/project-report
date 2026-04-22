@@ -478,6 +478,35 @@ Con el objetivo de comprender la necesidad y la demanda en nuestro sector por pa
 
 <b> Segmento Objetivo 1: </b> Propietarios de vehículos
 
+
+<b> Entrevista 2 </b>
+
+- Nombre: Fiorella
+- Apellidos: Cordova Pinchi
+- Edad: 30
+- Distrito: Chorrillos
+- Link de la entrevista: <a href="">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202322187_upc_edu_pe/IQBUrzmcVd74TqoRwx7YMLY_ARt8mfHi8aBNXDYfvWYP08k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=cZbAZv</a>
+- Duración: 5:40
+- Inicio de la entrevista: 0:48
+
+Evidencia de la reunión:
+
+<div align="center">
+    <img src="Resources/capitulo_2/interviews/interview_2.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+Resumen de la entrevista:
+
+- La entrevistada posee un vehiculo que usa con poca frecuencia
+- No ha alquilado su vehiculo anteriormente debido a la falta de confianza
+- No conoce plataformas actuales para alquilar vehiculos
+- Considera atractiva la idea de generar ingresos con su auto
+- Menciona que su principal preocupacion es la seguridad y proteccion del vehiculo
+- Valora positivamente la propuesta y la considera innovadora y util
+- Estaria dispuesta a recomendar la aplicacion si cumple con lo prometido
+
+---
+
 <b> Segmento Objetivo 2: </b> Usuarios arrendatarios
 
 <b> Entrevista 6 </b>
@@ -505,6 +534,16 @@ Resumen de la entrevista:
 - Menciona que uno de sus temores son los posibles daños relacionados con el vehículo
 
 ### 2.2.3. Análisis de entrevistas
+
+La entrevistada representa el perfil de propietario potencial porque posee un vehiculo subutilizado y muestra interes en monetizarlo. Existe una barrera critica de confianza por temor a danos o mal uso del vehiculo.
+
+Factores mas importantes identificados:
+
+- Seguro vehicular incluido
+- Proteccion ante danos
+- Respaldo legal
+
+Tambien se evidencia una oportunidad de mercado, ya que no conoce plataformas similares, lo que refuerza la innovacion de la propuesta. La percepcion general del proyecto es positiva, destacando su capacidad de conectar personas y generar beneficios economicos.
 
 ## 2.3. Needfinding
 
