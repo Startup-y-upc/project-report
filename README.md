@@ -527,6 +527,35 @@ Resumen de la entrevista:
 - Valora positivamente la propuesta y la considera innovadora y util
 - Estaria dispuesta a recomendar la aplicacion si cumple con lo prometido
 
+
+
+<b> Entrevista 3 </b>
+
+- Nombre: Josué
+- Apellidos: Cordova Ypanaque
+- Edad: 28
+- Distrito: Trujillo
+- Link de la entrevista: <a href="https://upcedupe-my.sharepoint.com/personal/u202322952_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202322952%5Fupc%5Fedu%5Fpe%2FDocuments%2FAplicaciones%20m%C3%B3viles%2Fentrevista%5Fsegmento%5F1%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eeab1acb7%2Dac3c%2D4dac%2D9e30%2D0c591a7ffbe7">https://upcedupe-my.sharepoint.com/personal/u202322952_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202322952%5Fupc%5Fedu%5Fpe%2FDocuments%2FAplicaciones%20m%C3%B3viles%2Fentrevista%5Fsegmento%5F1%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eeab1acb7%2Dac3c%2D4dac%2D9e30%2D0c591a7ffbe7</a>
+
+- Duración: 10:20
+- Inicio de la entrevista: 0:48
+
+<div align="center">
+    <img src="Resources/capitulo_2/interviews/interview_3.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+Resumen de la entrevista:
+
+- La entrevistada posee un vehiculo que usa con poca frecuencia
+- No ha alquilado su vehiculo anteriormente debido a la falta de confianza
+- No conoce plataformas actuales para alquilar vehiculos
+- Considera atractiva la idea de generar ingresos con su auto
+- Menciona que su principal preocupacion es la seguridad y proteccion del vehiculo
+- Valora positivamente la propuesta y la considera innovadora y util
+- Estaria dispuesta a recomendar la aplicacion si cumple con lo prometido
+
+
+
 ---
 
 <b> Segmento Objetivo 2: </b> Usuarios arrendatarios
@@ -554,6 +583,10 @@ Resumen de la entrevista:
 - No existen aplicaciones que brinden estas características en su zona
 - Menciona que la propuesta de la aplicación es buena y la recomendaría
 - Menciona que uno de sus temores son los posibles daños relacionados con el vehículo
+
+
+
+
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -760,8 +793,24 @@ Utilizamos la escala de Fibonacci para la estimación de los Story Points.
 ### 2.5.1. EventStorming
 
 #### 2.5.1.1. Candidate Context Discovery
+<img src="./Resources/capitulo_2/event_storming/bounded_context.jpg" alt="Candidate Contexts Discovery" width="90%" />
+
+A partir del análisis del dominio y de las historias de usuario, se identificaron cinco bounded contexts candidatos: IAM, Vehicle Catalog, Booking & Reservations, Payments y Community & Trust. Cada uno agrupa capacidades del negocio con lenguaje, reglas y responsabilidades propias, lo que permite una mejor modularización del sistema.
+
+A partir del análisis del dominio y de las historias de usuario, se identificaron cinco bounded contexts candidatos: IAM, Vehicle Catalog, Booking & Reservations, Payments y Community & Trust. Cada uno agrupa capacidades del negocio con lenguaje, reglas y responsabilidades propias, lo que permite una mejor modularización del sistema.
+
+| Candidate Bounded Context | Purpose                                                   |
+| ------------------------- | --------------------------------------------------------- |
+| IAM                       | Gestiona autenticación, identidad y sesiones              |
+| Vehicle Catalog           | Gestiona el registro, publicación y búsqueda de vehículos |
+| Booking & Reservations    | Gestiona el ciclo de vida de las reservas                 |
+| Payments                  | Gestiona el cálculo y procesamiento de pagos              |
+| Community & Trust         | Gestiona perfiles, reseñas, mensajería e incidentes       |
+
 
 #### 2.5.1.2. Domain Message Flows Modeling
+
+
 
 #### 2.5.1.3. Bounded Context Canvases
 
