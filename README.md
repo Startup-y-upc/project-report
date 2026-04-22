@@ -136,14 +136,14 @@
       - [2.6.x.6.1 Bounded Context Domain Layer Class Diagrams](README.md#26x61-bounded-context-domain-layer-class-diagrams)
       - [2.6.x.6.2 Bounded Context Database Design Diagram](README.md#26x62-bounded-context-database-design-diagram)
 
-## [Conclusiones](Conclusiones_bibliografica.md#conclusiones)
+## [Conclusiones](README.md#conclusiones)
 
-- [Conclusiones y recomendaciones](Conclusiones_bibliografica.md#conclusiones-y-recomendaciones)
-- [Video About-the-Team](Conclusiones_bibliografica.md#video-about-the-team)
+- [Conclusiones y recomendaciones](README.md#conclusiones-y-recomendaciones)
+- [Video About-the-Team](README.md#video-about-the-team)
 
-## [Bibliografía](Conclusiones_bibliografica.md#bibliografía)
+## [Bibliografia](README.md#bibliografia)
 
-## [Anexos](Conclusiones_bibliografica.md#anexos)
+## [Anexos](README.md#anexos)
 
 <div style="page-break-after: always;"></div>
 
@@ -908,3 +908,21 @@ Se detallan los diagramas de implementación para el bounded context de reservas
 ##### 2.6.x.6.2. Bounded Context Database Design Diagram
 
 </div>
+
+## Conclusiones
+
+### Conclusiones y recomendaciones
+
+En esta entrega se consolido la base del proyecto Rent2Go desde la investigacion hasta el diseño de la solucion. Las entrevistas y el needfinding evidencian una necesidad clara de confianza y seguridad para propietarios y arrendatarios, lo que orienta la propuesta de valor hacia garantias verificables. La especificacion de requerimientos y el backlog permiten priorizar funcionalidades criticas como registro, reservas, pagos y verificacion de identidad. La arquitectura DDD y los diagramas C4 delimitan los bounded contexts y aseguran una base tecnica coherente para el desarrollo mobile-first.
+
+Como recomendaciones, se debe mantener el enfoque en mecanismos de seguridad y trazabilidad, validar los flujos con usuarios reales en las siguientes iteraciones y asegurar que las integraciones externas (pagos, notificaciones y mapas) respalden la experiencia movil.
+
+### Video About-the-Team
+
+**URL**: [Insert public link]
+
+## Bibliografia
+
+- [Insert references]
+
+## Anexos
