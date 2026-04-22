@@ -983,21 +983,36 @@ Se detallan los diagramas de implementación para el bounded context de IAM.
   <img src="Resources/capitulo_2/bounded_context/iam/iam-db-diagram.png" alt="Booking & Reservations Database Diagram" width="95%" />
 </div>
 
-#### 2.6.x.1. Domain Layer
+#### 2.6.4.1. Domain Layer
+Se detallan los diagramas de implementación para el bounded context de Pagos.
 
-#### 2.6.x.2. Interface Layer
+#### 2.6.4.2. Interface Layer
 
-#### 2.6.x.3. Application Layer
+#### 2.6.4.3. Application Layer
 
-#### 2.6.x.4. Infrastructure Layer
+#### 2.6.4.4. Infrastructure Layer
 
-#### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-#### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/payments/PaymentsComponentDiagram-dark.svg" alt="Payments Bounded Context Class Diagram" width="95%" />
+</div>
 
-##### 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
 
-##### 2.6.x.6.2. Bounded Context Database Design Diagram
+#### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
+Se detallan los diagramas de implementación para el bounded context de pagos.
+
+##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/payments/pagos_uml.svg" alt="Payments Bounded Context Class Diagram" width="95%" />
+</div>
+
+##### 2.6.4.6.2. Bounded Context Database Design Diagram
+
+<div align="center">
+  <img src="Resources/capitulo_2/bounded_context/payments/payments-db-diagram.png" alt="Payments Bounded Context Class Diagram" width="95%" />
+
 
 </div>
 
