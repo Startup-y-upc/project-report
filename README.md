@@ -1688,3 +1688,4 @@ Stripe. (s.f.). Stripe API reference. Recuperado el [Ingresa la fecha de hoy, ej
 
 
 ## Anexos
+Videos: https://upcedupe-my.sharepoint.com/:f:/g/personal/u202213468_upc_edu_pe/IgDsLT806VxISJn0ZJNvti1fAXDn4pwyKQA8Y3l-kIW4K-4?e=cY9khT
