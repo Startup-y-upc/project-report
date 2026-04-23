@@ -925,9 +925,53 @@ Resumen de la entrevista:
 - Menciona que la propuesta de la aplicación es buena y la recomendaría
 - Menciona que uno de sus temores son los posibles daños relacionados con el vehículo
 
+<b> Entrevista 7 </b>
 
+- Nombre: Rodrigo
+- Apellidos: Diaz
+- Edad: 22
+- Distrito: Los Olivos
+- Link de la entrevista: <a href="https://acortar.link/a1bosU">[Entrevista]</a>
+- Duración: 4:07 minutos
+- Inicio de la entrevista: 0:03
 
+Evidencia de la reunión:
 
+<div align="center">
+    <img src="Resources/capitulo_2/interviews/interview_7.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+Resumen de la entrevista:
+
+- En la entrevista se menciona el uso constante del transporte público.
+- No realizó ningún alquiler de vihículo.
+- Conoce la plataforma Luxury Rent a Car.
+- Menciona que la propuesta de la aplicación es buena y la recomendaría.
+- Menciona que uno de sus temores son los posibles daños relacionados con el vehículo.
+
+<b> Entrevista 8 </b>
+
+- Nombre: Joaquín
+- Apellidos: Carranza
+- Edad: 25
+- Distrito: Chorrillos
+- Link de la entrevista: <a href="https://acortar.link/29SR0F">[Entrevista]</a>
+- Duración: 5:24 minutos
+- Inicio de la entrevista: 0:03
+
+Evidencia de la reunión:
+
+<div align="center">
+    <img src="Resources/capitulo_2/interviews/interview_8.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+Resumen de la entrevista:
+
+- En la entrevista se menciona el uso constante en el que se moviliza.
+- No realizó ningún alquiler de vihículo.
+- No conoce ninguna otra plataforma de rentar vehículos.
+- Menciona que la propuesta de la aplicación es buena y la recomendaría.
+- Menciona que uno de sus temores son los posibles daños relacionados con el vehículo.
 
 ### 2.2.3. Análisis de entrevistas
 
