@@ -1660,7 +1660,7 @@ Como recomendaciones, se debe mantener el enfoque en mecanismos de seguridad y t
 
 ### Video About-the-Team
 
-**URL**: [Insert public link]
+**URL**: https://upcedupe-my.sharepoint.com/personal/u202213468_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202213468%5Fupc%5Fedu%5Fpe%2FDocuments%2FAppM%C3%B3viles%2Fupc%2Dpre%2D2026%2D01%2D1acc238%2D3248%2Drent2go%2Dabout%2Dthe%2Dteam%2Dsprint%2D1%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ead1a6551%2Dc80a%2D44ad%2Dbcf7%2Dc97a75178906
 
 ## Bibliografia
 
