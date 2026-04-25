@@ -944,7 +944,7 @@ Evidencia de la reunión:
 Resumen de la entrevista:
 
 - En la entrevista se menciona el uso constante del transporte público.
-- No realizó ningún alquiler de vihículo.
+- No realizó ningún alquiler de vehículo.
 - Conoce la plataforma Luxury Rent a Car.
 - Menciona que la propuesta de la aplicación es buena y la recomendaría.
 - Menciona que uno de sus temores son los posibles daños relacionados con el vehículo.
@@ -968,7 +968,7 @@ Evidencia de la reunión:
 Resumen de la entrevista:
 
 - En la entrevista se menciona el uso constante en el que se moviliza.
-- No realizó ningún alquiler de vihículo.
+- No realizó ningún alquiler de vehículo.
 - No conoce ninguna otra plataforma de rentar vehículos.
 - Menciona que la propuesta de la aplicación es buena y la recomendaría.
 - Menciona que uno de sus temores son los posibles daños relacionados con el vehículo.
