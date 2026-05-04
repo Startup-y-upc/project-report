@@ -2218,23 +2218,23 @@ Esta seccion consolida las épicas principales del producto en una sola vista pa
     <th>Epic</th>
   </tr>
   <tr>
-    <td>TS01</td><td>Desarrollador</td><td>High</td><td>EP03</td>
+    <td>HU35</td><td>Arrendatario</td><td>High</td><td>EP01</td>
   </tr>
   <tr>
     <td>Title</td>
-    <td colspan="3">Exponer API de pagos</td>
+    <td colspan="3">Modificar reservacion</td>
   </tr>
   <tr>
     <td colspan="4">Description</td>
   </tr>
   <tr>
-    <td colspan="4">Como desarrollador, quiero exponer un endpoint de pagos, para procesar transacciones.</td>
+    <td colspan="4">Como arrendatario, quiero modificar una reservacion, para ajustar fechas sin cancelar.</td>
   </tr>
   <tr>
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">- Escenario: Transaccion aprobada.<br>Dado que existe una solicitud valida con monto y token.<br>Cuando el servicio procesa la transaccion.<br>Entonces responde con estado aprobado y referencia.<br>- Escenario: Transaccion rechazada.<br>Dado que existe una solicitud con token invalido.<br>Cuando el servicio procesa la transaccion.<br>Entonces responde con estado rechazado y codigo de error.</td>
+    <td colspan="4">- Escenario: Modificacion exitosa.<br>Dado que la reservacion permite cambios.<br>Cuando el arrendatario actualiza fechas.<br>Entonces el sistema recalcula disponibilidad y confirma el cambio.<br>- Escenario: Modificacion rechazada.<br>Dado que las nuevas fechas no estan disponibles.<br>Cuando intenta modificar.<br>Entonces el sistema rechaza el cambio e informa el motivo.</td>
   </tr>
 </table>
 
@@ -2246,23 +2246,23 @@ Esta seccion consolida las épicas principales del producto en una sola vista pa
     <th>Epic</th>
   </tr>
   <tr>
-    <td>TS02</td><td>Desarrollador</td><td>High</td><td>EP05</td>
+    <td>HU36</td><td>Propietario</td><td>High</td><td>EP01</td>
   </tr>
   <tr>
     <td>Title</td>
-    <td colspan="3">Exponer API de autenticacion</td>
+    <td colspan="3">Gestionar disponibilidad de vehiculo</td>
   </tr>
   <tr>
     <td colspan="4">Description</td>
   </tr>
   <tr>
-    <td colspan="4">Como desarrollador, quiero exponer endpoints de autenticacion, para gestionar sesiones seguras.</td>
+    <td colspan="4">Como propietario, quiero gestionar la disponibilidad de mi vehiculo, para bloquear fechas no rentables.</td>
   </tr>
   <tr>
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">- Escenario: Inicio de sesion correcto.<br>Dado que las credenciales son validas.<br>Cuando el servicio autentica.<br>Entonces responde con token y expiracion.<br>- Escenario: Inicio de sesion incorrecto.<br>Dado que las credenciales son invalidas.<br>Cuando el servicio autentica.<br>Entonces responde con error de autenticacion.</td>
+    <td colspan="4">- Escenario: Bloqueo de fechas.<br>Dado que el propietario selecciona un rango.<br>Cuando confirma el bloqueo.<br>Entonces el sistema marca las fechas como no disponibles.<br>- Escenario: Conflicto con reserva activa.<br>Dado que existe una reserva confirmada.<br>Cuando intenta bloquear fechas.<br>Entonces el sistema impide el bloqueo y notifica el conflicto.</td>
   </tr>
 </table>
 
@@ -2274,23 +2274,555 @@ Esta seccion consolida las épicas principales del producto en una sola vista pa
     <th>Epic</th>
   </tr>
   <tr>
-    <td>TS03</td><td>Desarrollador</td><td>Medium</td><td>EP02</td>
+    <td>HU37</td><td>Arrendatario</td><td>Medium</td><td>EP01</td>
   </tr>
   <tr>
     <td>Title</td>
-    <td colspan="3">Exponer API de busqueda</td>
+    <td colspan="3">Confirmar devolucion del vehiculo</td>
   </tr>
   <tr>
     <td colspan="4">Description</td>
   </tr>
   <tr>
-    <td colspan="4">Como desarrollador, quiero exponer un endpoint de busqueda, para filtrar vehiculos por criterios.</td>
+    <td colspan="4">Como arrendatario, quiero confirmar la devolucion del vehiculo, para cerrar el alquiler.</td>
   </tr>
   <tr>
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">- Escenario: Consulta con resultados.<br>Dado que existe una solicitud con filtros validos.<br>Cuando el servicio procesa la busqueda.<br>Entonces responde con una lista paginada de vehiculos.<br>- Escenario: Consulta sin resultados.<br>Dado que existe una solicitud con filtros validos que no coincide con vehiculos.<br>Cuando el servicio procesa la busqueda.<br>Entonces responde con una lista vacia y estado exitoso.</td>
+    <td colspan="4">- Escenario: Devolucion confirmada.<br>Dado que el alquiler esta en curso.<br>Cuando el arrendatario confirma la devolucion.<br>Entonces el sistema marca la reserva como finalizada.<br>- Escenario: Devolucion fuera de rango.<br>Dado que el alquiler aun no ha iniciado.<br>Cuando intenta confirmar.<br>Entonces el sistema rechaza la accion e informa el motivo.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU38</td><td>Arrendatario</td><td>Medium</td><td>EP02</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Ordenar resultados de busqueda</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero ordenar resultados de busqueda, para comparar opciones con rapidez.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Ordenamiento aplicado.<br>Dado que el arrendatario selecciona un criterio.<br>Cuando aplica el ordenamiento.<br>Entonces el sistema reordena los resultados segun el criterio.<br>- Escenario: Criterio no soportado.<br>Dado que el criterio no esta disponible.<br>Cuando intenta ordenar.<br>Entonces el sistema mantiene el orden actual e informa la limitacion.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU39</td><td>Arrendatario</td><td>Medium</td><td>EP02</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Filtrar por tipo, kilometraje y antiguedad</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero filtrar por tipo, kilometraje y antiguedad, para ajustar la busqueda a mis preferencias.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Filtros especificos aplicados.<br>Dado que el arrendatario define tipo, kilometraje o antiguedad.<br>Cuando aplica los filtros.<br>Entonces el sistema muestra vehiculos que cumplen los criterios.<br>- Escenario: Sin coincidencias.<br>Dado que no hay vehiculos con esos criterios.<br>Cuando aplica los filtros.<br>Entonces el sistema informa la ausencia de resultados.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU40</td><td>Arrendatario</td><td>Medium</td><td>EP02</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Ver favoritos sincronizados</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero ver mis favoritos sincronizados, para continuar la busqueda en otro dispositivo.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Favoritos sincronizados.<br>Dado que el arrendatario tiene favoritos guardados.<br>Cuando inicia sesion en otro dispositivo.<br>Entonces el sistema muestra la misma lista de favoritos.<br>- Escenario: Sin favoritos.<br>Dado que no existen favoritos guardados.<br>Cuando accede a la lista.<br>Entonces el sistema muestra un estado vacio.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU41</td><td>Arrendatario</td><td>High</td><td>EP03</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Agregar metodo de pago</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero agregar un metodo de pago, para pagar de forma rapida.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Metodo agregado.<br>Dado que el arrendatario ingresa datos validos.<br>Cuando confirma el registro.<br>Entonces el sistema guarda el metodo de pago de forma segura.<br>- Escenario: Datos invalidos.<br>Dado que los datos del metodo son invalidos.<br>Cuando intenta guardar.<br>Entonces el sistema rechaza el registro e informa el error.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU42</td><td>Arrendatario</td><td>Medium</td><td>EP03</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Ver recibos e historial de pagos</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero ver mis recibos e historial de pagos, para controlar mis gastos.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Historial disponible.<br>Dado que existen pagos registrados.<br>Cuando el arrendatario solicita el historial.<br>Entonces el sistema muestra recibos con monto y fecha.<br>- Escenario: Historial vacio.<br>Dado que no hay pagos registrados.<br>Cuando solicita el historial.<br>Entonces el sistema informa que no hay recibos.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU43</td><td>Arrendatario</td><td>Low</td><td>EP03</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Aplicar codigo promocional</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero aplicar un codigo promocional, para obtener un descuento.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Codigo valido aplicado.<br>Dado que el arrendatario ingresa un codigo vigente.<br>Cuando aplica el codigo.<br>Entonces el sistema descuenta el monto correspondiente.<br>- Escenario: Codigo invalido.<br>Dado que el codigo no es valido o expiro.<br>Cuando intenta aplicarlo.<br>Entonces el sistema rechaza el codigo e informa el motivo.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU44</td><td>Arrendatario</td><td>Medium</td><td>EP03</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Solicitar reembolso por cancelacion</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero solicitar un reembolso, para recuperar el pago segun la politica.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Reembolso aprobado.<br>Dado que la cancelacion cumple la politica.<br>Cuando solicita el reembolso.<br>Entonces el sistema registra el reembolso y notifica el estado.<br>- Escenario: Reembolso denegado.<br>Dado que la cancelacion no cumple la politica.<br>Cuando solicita el reembolso.<br>Entonces el sistema rechaza la solicitud e informa la razon.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU45</td><td>Propietario</td><td>Medium</td><td>EP03</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Ver ganancias de alquiler</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como propietario, quiero ver mis ganancias, para monitorear ingresos por alquiler.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Ganancias visibles.<br>Dado que existen alquileres pagados.<br>Cuando el propietario consulta ganancias.<br>Entonces el sistema muestra totales por periodo.<br>- Escenario: Sin ingresos.<br>Dado que no hay pagos registrados.<br>Cuando consulta ganancias.<br>Entonces el sistema informa que no hay ingresos.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU46</td><td>Usuario</td><td>Medium</td><td>EP04</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Reportar usuario o vehiculo</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero reportar a un usuario o vehiculo, para alertar conductas inapropiadas.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Reporte registrado.<br>Dado que el usuario describe el incidente.<br>Cuando envia el reporte.<br>Entonces el sistema crea un caso con evidencia basica.<br>- Escenario: Reporte incompleto.<br>Dado que faltan datos obligatorios.<br>Cuando intenta enviar.<br>Entonces el sistema solicita completar la informacion.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU47</td><td>Arrendatario</td><td>Medium</td><td>EP04</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Abrir disputa de alquiler</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero abrir una disputa, para resolver un conflicto del alquiler.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Disputa creada.<br>Dado que el alquiler esta finalizado.<br>Cuando el arrendatario abre la disputa.<br>Entonces el sistema registra el caso y notifica al propietario.<br>- Escenario: Disputa fuera de plazo.<br>Dado que paso el plazo permitido.<br>Cuando intenta abrir la disputa.<br>Entonces el sistema rechaza la solicitud e informa la politica.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU48</td><td>Administrador</td><td>Medium</td><td>EP04</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Bloquear usuario por incumplimiento</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como administrador, quiero bloquear usuarios reincidentes, para reducir riesgos en la plataforma.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Bloqueo aplicado.<br>Dado que el usuario tiene reportes validados.<br>Cuando el administrador aplica el bloqueo.<br>Entonces el sistema desactiva el acceso y registra la accion.<br>- Escenario: Bloqueo no permitido.<br>Dado que el usuario no cumple criterios de bloqueo.<br>Cuando intenta bloquear.<br>Entonces el sistema rechaza la accion e informa el motivo.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU49</td><td>Usuario</td><td>Medium</td><td>EP05</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Verificar correo electronico</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero verificar mi correo electronico, para activar la cuenta de forma segura.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Verificacion exitosa.<br>Dado que el usuario recibe un enlace valido.<br>Cuando confirma el enlace.<br>Entonces el sistema marca el correo como verificado.<br>- Escenario: Enlace expirado.<br>Dado que el enlace esta expirado.<br>Cuando intenta verificar.<br>Entonces el sistema solicita reenviar la verificacion.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU50</td><td>Usuario</td><td>Medium</td><td>EP05</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Activar autenticacion de doble factor</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero activar doble factor, para proteger mi cuenta.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: 2FA activado.<br>Dado que el usuario configura un segundo factor.<br>Cuando confirma la activacion.<br>Entonces el sistema requiere el segundo factor en nuevos accesos.<br>- Escenario: 2FA no configurado.<br>Dado que el usuario no completa la configuracion.<br>Cuando intenta activar.<br>Entonces el sistema mantiene el estado sin cambios.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU51</td><td>Usuario</td><td>Low</td><td>EP05</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Iniciar sesion con proveedor social</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero iniciar sesion con un proveedor social, para reducir friccion.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Login social exitoso.<br>Dado que el usuario autoriza al proveedor.<br>Cuando completa la autenticacion.<br>Entonces el sistema inicia sesion y vincula la cuenta.<br>- Escenario: Autorizacion rechazada.<br>Dado que el usuario cancela la autorizacion.<br>Cuando intenta iniciar sesion.<br>Entonces el sistema mantiene la sesion cerrada.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU52</td><td>Usuario</td><td>Medium</td><td>EP06</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Recibir notificaciones push de estado</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero recibir notificaciones push, para conocer cambios de estado en mis reservas.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Notificacion enviada.<br>Dado que cambia el estado de una reserva.<br>Cuando el sistema registra el cambio.<br>Entonces envia una notificacion al usuario.<br>- Escenario: Notificaciones desactivadas.<br>Dado que el usuario desactivo notificaciones.<br>Cuando cambia el estado.<br>Entonces el sistema no envia la notificacion.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU53</td><td>Administrador</td><td>Low</td><td>EP06</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Acceder a dashboard administrativo</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como administrador, quiero acceder a un dashboard, para visualizar indicadores del servicio.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Dashboard disponible.<br>Dado que el administrador inicia sesion.<br>Cuando accede al modulo de dashboard.<br>Entonces el sistema muestra indicadores clave.<br>- Escenario: Acceso sin permisos.<br>Dado que el usuario no es administrador.<br>Cuando intenta acceder.<br>Entonces el sistema bloquea el acceso.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU54</td><td>Administrador</td><td>Low</td><td>EP06</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Consultar analiticas operativas</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como administrador, quiero consultar analiticas operativas, para monitorear conversiones y abandono.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Analiticas disponibles.<br>Dado que existen datos agregados.<br>Cuando el administrador consulta analiticas.<br>Entonces el sistema muestra metricas por periodo.<br>- Escenario: Datos insuficientes.<br>Dado que no hay datos suficientes.<br>Cuando consulta analiticas.<br>Entonces el sistema informa la falta de datos.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU55</td><td>Usuario</td><td>High</td><td>EP06</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Asegurar una experiencia rapida y estable</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero que la plataforma responda rapido y se mantenga estable, para completar mis acciones sin interrupciones.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Respuesta rapida.<br>Dado que el usuario busca un vehiculo o consulta una reserva.<br>Cuando ejecuta la accion.<br>Entonces el sistema responde sin demoras apreciables.<br>- Escenario: Servicio estable.<br>Dado que ocurre una interrupcion temporal.<br>Cuando el usuario intenta usar la app.<br>Entonces el sistema informa la situacion sin perder la sesion activa.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU56</td><td>Usuario</td><td>High</td><td>EP05</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Guardar sesion local</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero que mis datos y mi sesion esten protegidos, para usar la app con confianza.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Datos protegidos.<br>Dado que el usuario envía información sensible.<br>Cuando el sistema la procesa o transmite.<br>Entonces la protege con mecanismos seguros.<br>- Escenario: Sesion valida.<br>Dado que el usuario inicia sesion correctamente.<br>Cuando cierra y reabre la app.<br>Entonces el sistema recupera la sesion activa si sigue vigente.<br>- Escenario: Sesion expirada.<br>Dado que la sesion expiro.<br>Cuando abre la app nuevamente.<br>Entonces el sistema solicita autenticacion.</td>
   </tr>
 </table>
 
@@ -2377,6 +2909,7 @@ Esta seccion consolida las épicas principales del producto en una sola vista pa
     <td colspan="4">- Escenario: Estrategia definida.<br>Dado que se identifican datos sensibles.<br>Cuando se define cifrado y politica de expiracion.<br>Entonces se documenta el esquema de almacenamiento local.<br>- Escenario: Riesgos no mitigables.<br>Dado que existen riesgos que no pueden mitigarse con los mecanismos disponibles.<br>Cuando se evalua la estrategia de almacenamiento.<br>Entonces se documentan las limitaciones y se propone una alternativa.</td>
   </tr>
 </table>
+
 
 ### 2.4.2. Impact Mapping
 
