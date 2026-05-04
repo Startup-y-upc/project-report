@@ -69,6 +69,12 @@
     <td>Castillo Vidal, Jesus Ivan<br>Chavez Uribe, Ario Joel<br>Carhuancote Dominguez, Gonzalo Alonso<br>Diestra Zambrano, Adriana Maria<br>Huarcaya Matias, Gilbert Alonso</td>
     <td>Primera version del informe: caratula, registro de versiones, collaboration insights, student outcome, objetivos SMART, Capitulo I con el perfil de la startup y Lean UX, y Capitulo II desarrollado segun el guideline (competidores, entrevistas, needfinding, requirements specification, DDD estrategico y tactico).</td>
   </tr>
+  <tr>
+    <td align="center">AV1.1</td>
+    <td align="center">04/05/2026</td>
+    <td>Huarcaya Matias, Gilbert Alonso</td>
+    <td>Correccion del titulo HU56 en el Product Backlog.</td>
+  </tr>
 </table>
 
 <div style="page-break-after: always;"></div>
@@ -2180,7 +2186,7 @@ Esta seccion consolida las épicas principales del producto en una sola vista pa
   </tr>
   <tr>
     <td>Title</td>
-    <td colspan="3">Guardar sesion local</td>
+    <td colspan="3">Proteger datos y sesion</td>
   </tr>
   <tr>
     <td colspan="4">Description</td>
