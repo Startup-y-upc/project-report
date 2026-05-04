@@ -1088,67 +1088,1305 @@ En esta sección definiremos los términos y conceptos que utilizaremos en nuest
 
 ### 2.4.1. User Stories
 
-Esta seccion consolida las epicas, historias de usuario, historias tecnicas y spikes definidos para Rent2Go. Cada descripcion sigue el formato estandar y los criterios de aceptacion se presentan en Gherkin sin depender de detalles de interfaz.
+Esta seccion consolida las épicas principales del producto en una sola vista para reducir fragmentación. Las épicas se muestran con el mismo formato de tabla usado en las historias de usuario.
 
-| Story ID | User          | Priority | Epic | Title                                    | Description                                                                                                                   | Acceptance Criteria                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| -------- | ------------- | -------- | ---- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| EP01     | -             | High     | EP01 | Registro de vehiculos                    | Conjunto de historias para el registro de vehiculos.                                                                          | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| EP02     | -             | High     | EP02 | Busqueda de vehiculos                    | Conjunto de historias de busqueda y filtros.                                                                                  | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| EP03     | -             | Medium   | EP03 | Detalles del vehiculo                    | Conjunto de historias para visualizar detalles del vehiculo.                                                                  | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| EP04     | -             | Medium   | EP04 | Favoritos y notificaciones               | Conjunto de historias de favoritos y alertas de disponibilidad.                                                               | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| EP05     | -             | High     | EP05 | Reservas                                 | Conjunto de historias para crear y gestionar reservas.                                                                        | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| EP06     | -             | High     | EP06 | Pagos                                    | Conjunto de historias de pagos y tarifas.                                                                                     | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| EP07     | -             | Medium   | EP07 | Resenas y calificaciones                 | Conjunto de historias para calificaciones y resenas.                                                                          | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| EP08     | -             | Medium   | EP08 | Mensajeria                               | Conjunto de historias para mensajeria segura.                                                                                 | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| EP09     | -             | Medium   | EP09 | Perfiles                                 | Conjunto de historias para gestion de perfiles.                                                                               | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| EP10     | -             | Medium   | EP10 | Verificacion de identidad                | Conjunto de historias de verificacion de identidad.                                                                           | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| EP11     | -             | Medium   | EP11 | Gestion de flota del propietario         | Conjunto de historias para la gestion del propietario.                                                                        | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| EP12     | -             | Medium   | EP12 | Administracion de reservas               | Conjunto de historias para la administracion de reservas.                                                                     | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| EP13     | -             | High     | EP13 | Autenticacion y recuperacion             | Conjunto de historias para registro e inicio de sesion.                                                                       | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| EP14     | -             | Low      | EP14 | Soporte y seguridad                      | Conjunto de historias de soporte e incidentes de seguridad.                                                                   | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| EP15     | -             | Medium   | EP15 | Landing page                             | Conjunto de historias del sitio web estatico.                                                                                 | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| HU01     | Propietario   | High     | EP01 | Registrar vehiculo                       | Como propietario quiero registrar un vehiculo para ofrecerlo en alquiler.                                                     | Escenario: Registro exitoso.<br>Dado que el propietario proporciona los datos requeridos<br>Cuando envia la solicitud de registro<br>Entonces el sistema guarda el vehiculo y lo marca como disponible.<br><br>Escenario: Datos incompletos.<br>Dado que el propietario omite datos requeridos<br>Cuando envia la solicitud de registro<br>Entonces el sistema rechaza el registro e informa la falta de datos.                                                                                 |
-| HU02     | Arrendatario  | High     | EP02 | Buscar vehiculos disponibles             | Como arrendatario quiero buscar vehiculos disponibles para seleccionar uno adecuado a mis necesidades.                        | Escenario: Resultados con coincidencias.<br>Dado que el arrendatario define criterios de busqueda<br>Cuando ejecuta la busqueda<br>Entonces el sistema lista vehiculos que cumplen los criterios.<br><br>Escenario: Sin resultados.<br>Dado que no existen vehiculos disponibles para los criterios<br>Cuando ejecuta la busqueda<br>Entonces el sistema informa que no hay resultados.                                                                                                         |
-| HU03     | Arrendatario  | Medium   | EP02 | Filtrar por precio                       | Como arrendatario quiero filtrar vehiculos por precio para ajustar el resultado a mi presupuesto.                             | Escenario: Filtro aplicado.<br>Dado que el arrendatario define un rango de precios<br>Cuando aplica el filtro<br>Entonces el sistema muestra solo vehiculos dentro del rango.<br><br>Escenario: Sin coincidencias.<br>Dado que no hay vehiculos en el rango<br>Cuando aplica el filtro<br>Entonces el sistema informa que no hay coincidencias.                                                                                                                                                 |
-| HU04     | Arrendatario  | Medium   | EP03 | Ver detalles de vehiculo                 | Como arrendatario quiero ver detalles de un vehiculo para tomar una decision informada.                                       | Escenario: Detalle disponible.<br>Dado que el arrendatario selecciona un vehiculo listado<br>Cuando solicita el detalle<br>Entonces el sistema muestra datos del vehiculo y condiciones del alquiler.<br><br>Escenario: Detalle no disponible.<br>Dado que no se pueden recuperar los datos del vehiculo<br>Cuando el arrendatario solicita el detalle<br>Entonces el sistema informa el problema y no muestra datos incompletos.                                                               |
-| HU05     | Arrendatario  | Medium   | EP04 | Agregar a favoritos                      | Como arrendatario quiero agregar vehiculos a favoritos para revisarlos mas tarde.                                             | Escenario: Favorito guardado.<br>Dado que el arrendatario selecciona un vehiculo<br>Cuando marca el vehiculo como favorito<br>Entonces el sistema guarda el favorito en su lista.<br><br>Escenario: Error al guardar.<br>Dado que ocurre un error al guardar<br>Cuando intenta agregar a favoritos<br>Entonces el sistema informa el error y no guarda el favorito.                                                                                                                             |
-| HU06     | Arrendatario  | Medium   | EP07 | Calificar vehiculo                       | Como arrendatario quiero calificar un vehiculo al finalizar el alquiler para compartir mi experiencia.                        | Escenario: Calificacion exitosa.<br>Dado que el alquiler esta completado<br>Cuando el arrendatario envia una calificacion y comentario<br>Entonces el sistema guarda la evaluacion asociada al vehiculo.<br><br>Escenario: Alquiler no completado.<br>Dado que el alquiler no esta completado<br>Cuando intenta calificar<br>Entonces el sistema bloquea la calificacion.                                                                                                                       |
-| HU07     | Arrendatario  | Medium   | EP08 | Contactar al propietario                 | Como arrendatario quiero contactar al propietario para coordinar detalles del alquiler.                                       | Escenario: Mensaje enviado.<br>Dado que el arrendatario redacta un mensaje<br>Cuando lo envia al propietario<br>Entonces el sistema entrega el mensaje y confirma el envio.<br><br>Escenario: Error de envio.<br>Dado que ocurre un fallo al enviar<br>Cuando intenta contactar al propietario<br>Entonces el sistema informa el error y no envia el mensaje.                                                                                                                                   |
-| HU08     | Arrendatario  | High     | EP05 | Reservar vehiculo                        | Como arrendatario quiero reservar un vehiculo para asegurar disponibilidad en fechas definidas.                               | Escenario: Reserva exitosa.<br>Dado que el vehiculo esta disponible en el rango solicitado<br>Cuando el arrendatario confirma la reserva<br>Entonces el sistema registra la reserva y bloquea las fechas.<br><br>Escenario: Conflicto de disponibilidad.<br>Dado que el vehiculo ya no esta disponible<br>Cuando intenta reservar<br>Entonces el sistema rechaza la reserva e informa el conflicto.                                                                                             |
-| HU09     | Arrendatario  | Medium   | EP05 | Ver historial de alquileres              | Como arrendatario quiero ver mi historial de alquileres para llevar control de mis transacciones.                             | Escenario: Historial disponible.<br>Dado que el arrendatario tiene alquileres previos<br>Cuando solicita el historial<br>Entonces el sistema lista sus alquileres con fechas y estados.<br><br>Escenario: Historial vacio.<br>Dado que no hay alquileres previos<br>Cuando solicita el historial<br>Entonces el sistema informa que no existe historial.                                                                                                                                        |
-| HU10     | Arrendatario  | High     | EP06 | Administrar pagos                        | Como arrendatario quiero realizar el pago del alquiler para completar la transaccion.                                         | Escenario: Pago exitoso.<br>Dado que el arrendatario confirma el pago con datos validos<br>Cuando se procesa la transaccion<br>Entonces el sistema confirma el pago y actualiza la reserva.<br><br>Escenario: Pago fallido.<br>Dado que los datos son invalidos o el proveedor rechaza<br>Cuando se procesa el pago<br>Entonces el sistema informa el fallo y no confirma la reserva.                                                                                                           |
-| HU11     | Usuario       | Medium   | EP09 | Ver perfil de usuario                    | Como usuario quiero ver mi perfil para confirmar mis datos y actividad.                                                       | Escenario: Perfil visible.<br>Dado que el usuario tiene una cuenta activa<br>Cuando solicita su perfil<br>Entonces el sistema muestra datos personales y actividad relevante.<br><br>Escenario: Error de carga.<br>Dado que ocurre un error del servicio<br>Cuando solicita el perfil<br>Entonces el sistema informa el error y no muestra datos incompletos.                                                                                                                                   |
-| HU12     | Usuario       | Medium   | EP09 | Editar perfil de usuario                 | Como usuario quiero editar mi perfil para mantener mis datos actualizados.                                                    | Escenario: Actualizacion exitosa.<br>Dado que el usuario envia datos validos<br>Cuando confirma la edicion<br>Entonces el sistema guarda los cambios y actualiza el perfil.<br><br>Escenario: Datos invalidos.<br>Dado que el usuario envia datos invalidos<br>Cuando intenta guardar<br>Entonces el sistema rechaza la actualizacion e informa el error.                                                                                                                                       |
-| HU13     | Propietario   | Medium   | EP11 | Gestionar vehiculos alquilados           | Como propietario quiero ver vehiculos alquilados para monitorear mis transacciones.                                           | Escenario: Lista de alquileres.<br>Dado que el propietario tiene vehiculos alquilados<br>Cuando solicita la lista<br>Entonces el sistema muestra vehiculos con fechas y arrendatario.<br><br>Escenario: Sin alquileres.<br>Dado que no hay alquileres activos o previos<br>Cuando solicita la lista<br>Entonces el sistema informa que no hay resultados.                                                                                                                                       |
-| HU14     | Arrendatario  | Medium   | EP04 | Recibir notificaciones de disponibilidad | Como arrendatario quiero recibir notificaciones de disponibilidad para enterarme cuando un vehiculo favorito esta disponible. | Escenario: Notificacion enviada.<br>Dado que el arrendatario tiene un favorito<br>Cuando el vehiculo vuelve a estar disponible<br>Entonces el sistema envia una notificacion de disponibilidad.<br><br>Escenario: Favorito no registrado.<br>Dado que el vehiculo no esta en favoritos<br>Cuando cambia la disponibilidad<br>Entonces el sistema no envia notificaciones.                                                                                                                       |
-| HU15     | Visitante     | Medium   | EP15 | Ver landing page informativa             | Como visitante quiero ver una landing page informativa para conocer el servicio.                                              | Escenario: Contenido disponible.<br>Dado que el visitante accede al sitio<br>Cuando carga la pagina<br>Entonces el sistema muestra la informacion del servicio.<br><br>Escenario: Fallo de carga.<br>Dado que ocurre un error de disponibilidad<br>Cuando el visitante accede al sitio<br>Entonces el sistema informa el fallo y no muestra contenido incompleto.                                                                                                                               |
-| HU16     | Visitante     | Medium   | EP15 | Ver informacion de contacto              | Como visitante quiero ver informacion de contacto para comunicarme con la empresa.                                            | Escenario: Contacto visible.<br>Dado que el visitante navega en la pagina<br>Cuando busca la seccion de contacto<br>Entonces el sistema muestra telefono, correo y redes sociales.<br><br>Escenario: Datos no disponibles.<br>Dado que la informacion no esta disponible<br>Cuando el visitante busca contacto<br>Entonces el sistema informa que no hay datos de contacto.                                                                                                                     |
-| HU17     | Visitante     | Low      | EP15 | Navegacion intuitiva en landing          | Como visitante quiero navegar facilmente la landing para encontrar contenido sin friccion.                                    | Escenario: Navegacion clara.<br>Dado que el visitante usa la pagina<br>Cuando explora las secciones principales<br>Entonces el sistema permite acceder a cada seccion sin obstaculos.<br><br>Escenario: Seccion no disponible.<br>Dado que una seccion no esta disponible<br>Cuando el visitante intenta acceder<br>Entonces el sistema informa la no disponibilidad.                                                                                                                           |
-| HU18     | Visitante     | Low      | EP15 | Landing responsiva                       | Como visitante quiero que la landing sea responsiva para verla bien en distintos dispositivos.                                | Escenario: Ajuste correcto.<br>Dado que el visitante abre la pagina en un dispositivo diferente<br>Cuando se renderiza el contenido<br>Entonces el sistema adapta la pagina al tamano de pantalla.<br><br>Escenario: Vista no soportada.<br>Dado que el visitante usa un tamano de pantalla no comun<br>Cuando se renderiza la pagina<br>Entonces el sistema mantiene contenido legible sin superposiciones.                                                                                    |
-| HU19     | Usuario       | High     | EP13 | Registro de usuario                      | Como nuevo usuario quiero registrarme para acceder a los servicios.                                                           | Escenario: Registro exitoso.<br>Dado que el usuario ingresa datos validos<br>Cuando envia el registro<br>Entonces el sistema crea la cuenta y habilita el acceso.<br><br>Escenario: Correo duplicado.<br>Dado que el correo ya existe<br>Cuando intenta registrarse<br>Entonces el sistema rechaza el registro e informa duplicidad.<br><br>Escenario: Campos incompletos.<br>Dado que faltan datos requeridos<br>Cuando envia el registro<br>Entonces el sistema informa los campos faltantes. |
-| HU20     | Usuario       | High     | EP13 | Inicio de sesion                         | Como usuario registrado quiero iniciar sesion para acceder a mi cuenta.                                                       | Escenario: Inicio exitoso.<br>Dado que las credenciales son validas<br>Cuando inicia sesion<br>Entonces el sistema autoriza el acceso y crea la sesion.<br><br>Escenario: Credenciales invalidas.<br>Dado que las credenciales son incorrectas<br>Cuando intenta iniciar sesion<br>Entonces el sistema rechaza el acceso e informa el error.                                                                                                                                                    |
-| HU21     | Usuario       | Medium   | EP13 | Recuperar contrasena                     | Como usuario quiero recuperar mi contrasena para restablecer el acceso.                                                       | Escenario: Enlace enviado.<br>Dado que el correo esta registrado<br>Cuando solicita recuperacion<br>Entonces el sistema envia un enlace de recuperacion.<br><br>Escenario: Correo no registrado.<br>Dado que el correo no existe<br>Cuando solicita recuperacion<br>Entonces el sistema informa que el correo no esta registrado.                                                                                                                                                               |
-| HU22     | Propietario   | Medium   | EP01 | Publicar vehiculo con especificaciones   | Como propietario quiero publicar un vehiculo con especificaciones para alquilarlo con informacion clara.                      | Escenario: Publicacion exitosa.<br>Dado que el propietario ingresa datos validos<br>Cuando confirma la publicacion<br>Entonces el sistema registra el vehiculo con sus especificaciones.<br><br>Escenario: Datos invalidos.<br>Dado que el propietario ingresa datos invalidos<br>Cuando intenta publicar<br>Entonces el sistema rechaza la publicacion e informa el error.                                                                                                                     |
-| HU23     | Propietario   | Medium   | EP11 | Ver mis vehiculos publicados             | Como propietario quiero ver mis vehiculos publicados para gestionar su estado.                                                | Escenario: Vehiculos listados.<br>Dado que el propietario tiene vehiculos publicados<br>Cuando solicita la lista<br>Entonces el sistema muestra los vehiculos con su estado.<br><br>Escenario: Sin vehiculos.<br>Dado que el propietario no tiene vehiculos publicados<br>Cuando solicita la lista<br>Entonces el sistema informa que no hay vehiculos.                                                                                                                                         |
-| HU24     | Administrador | Medium   | EP12 | Ver todas las reservaciones              | Como administrador quiero ver todas las reservaciones para monitorear el servicio.                                            | Escenario: Reservaciones listadas.<br>Dado que el administrador tiene permisos de gestion<br>Cuando solicita la lista general<br>Entonces el sistema muestra todas las reservaciones existentes.<br><br>Escenario: Sin reservaciones.<br>Dado que no hay reservaciones registradas<br>Cuando solicita la lista general<br>Entonces el sistema informa que no hay registros.                                                                                                                     |
-| HU25     | Usuario       | Medium   | EP12 | Filtrar reservaciones por estado         | Como usuario quiero filtrar reservaciones por estado para visualizar resultados especificos.                                  | Escenario: Filtro aplicado.<br>Dado que el usuario selecciona un estado<br>Cuando aplica el filtro<br>Entonces el sistema lista reservaciones con ese estado.<br><br>Escenario: Sin coincidencias.<br>Dado que no existen reservaciones con ese estado<br>Cuando aplica el filtro<br>Entonces el sistema informa que no hay resultados.                                                                                                                                                         |
-| HU26     | Arrendatario  | Medium   | EP02 | Buscar con filtros avanzados             | Como arrendatario quiero buscar vehiculos con filtros avanzados para encontrar el vehiculo ideal.                             | Escenario: Resultados filtrados.<br>Dado que el arrendatario define filtros avanzados<br>Cuando ejecuta la busqueda<br>Entonces el sistema muestra resultados que cumplen todos los filtros.<br><br>Escenario: Sin resultados.<br>Dado que no hay coincidencias<br>Cuando ejecuta la busqueda<br>Entonces el sistema informa la ausencia de resultados.                                                                                                                                         |
-| HU27     | Arrendatario  | Medium   | EP05 | Ver mis reservaciones por estado         | Como arrendatario quiero ver mis reservaciones por estado para organizar mis alquileres.                                      | Escenario: Reservaciones por estado.<br>Dado que el arrendatario selecciona un estado<br>Cuando solicita sus reservaciones<br>Entonces el sistema lista sus reservaciones en ese estado.<br><br>Escenario: Lista vacia.<br>Dado que no hay reservaciones en ese estado<br>Cuando solicita la lista<br>Entonces el sistema informa que no hay registros.                                                                                                                                         |
-| HU28     | Usuario       | Medium   | EP05 | Ver detalle de una reservacion           | Como usuario quiero ver el detalle de una reservacion para consultar fechas y condiciones.                                    | Escenario: Detalle visible.<br>Dado que el usuario tiene acceso a la reservacion<br>Cuando solicita el detalle<br>Entonces el sistema muestra los datos completos de la reservacion.<br><br>Escenario: Acceso no permitido.<br>Dado que la reservacion no pertenece al usuario<br>Cuando intenta acceder<br>Entonces el sistema rechaza el acceso e informa el error.                                                                                                                           |
-| HU29     | Arrendatario  | Medium   | EP05 | Cancelar reservacion                     | Como arrendatario quiero cancelar una reservacion para evitar cargos si ya no la necesito.                                    | Escenario: Cancelacion exitosa.<br>Dado que la reservacion esta dentro del plazo permitido<br>Cuando el arrendatario solicita cancelacion<br>Entonces el sistema cancela la reservacion sin penalizacion.<br><br>Escenario: Plazo vencido.<br>Dado que el plazo permitido vencio<br>Cuando solicita cancelacion<br>Entonces el sistema rechaza la cancelacion e informa la politica aplicada.                                                                                                   |
-| HU30     | Propietario   | Medium   | EP12 | Actualizar estado de reservacion         | Como propietario quiero actualizar el estado de una reservacion para gestionar el proceso de alquiler.                        | Escenario: Estado actualizado.<br>Dado que el propietario tiene permisos<br>Cuando actualiza el estado<br>Entonces el sistema guarda el cambio y notifica al arrendatario.<br><br>Escenario: Conflicto de actualizacion.<br>Dado que el estado fue actualizado por otro proceso<br>Cuando intenta modificarlo<br>Entonces el sistema informa el conflicto y no aplica cambios.                                                                                                                  |
-| HU31     | Usuario       | Medium   | EP10 | Verificacion de identidad                | Como usuario quiero verificar mi identidad para aumentar la confianza en la plataforma.                                       | Escenario: Verificacion exitosa.<br>Dado que el usuario envia documentos validos<br>Cuando se procesa la verificacion<br>Entonces el sistema marca la identidad como verificada.<br><br>Escenario: Verificacion rechazada.<br>Dado que los documentos no son validos<br>Cuando se procesa la verificacion<br>Entonces el sistema informa el rechazo y solicita correccion.                                                                                                                      |
-| HU32     | Arrendatario  | Medium   | EP06 | Calculo de tarifa total                  | Como arrendatario quiero ver el costo total del alquiler para decidir antes de confirmar.                                     | Escenario: Tarifa calculada.<br>Dado que el arrendatario define fechas y vehiculo<br>Cuando solicita el costo<br>Entonces el sistema muestra el total con impuestos y comisiones.<br><br>Escenario: Datos insuficientes.<br>Dado que faltan datos para el calculo<br>Cuando solicita el costo<br>Entonces el sistema indica la informacion faltante.                                                                                                                                            |
-| HU33     | Usuario       | Low      | EP14 | Reportar incidente de seguridad          | Como usuario quiero reportar un incidente para recibir soporte y dejar constancia.                                            | Escenario: Reporte enviado.<br>Dado que el usuario describe el incidente<br>Cuando envia el reporte<br>Entonces el sistema registra el caso y confirma la recepcion.<br><br>Escenario: Error al reportar.<br>Dado que ocurre un fallo del sistema<br>Cuando envia el reporte<br>Entonces el sistema informa el error y no registra el caso.                                                                                                                                                     |
-| HU34     | Usuario       | Medium   | EP13 | Guardar sesion local                     | Como usuario quiero mantener la sesion activa para no iniciar sesion cada vez que uso la app.                                 | Escenario: Sesion persistida.<br>Dado que el usuario inicia sesion correctamente<br>Cuando cierra y reabre la app<br>Entonces el sistema recupera la sesion desde almacenamiento local.<br><br>Escenario: Sesion expirada.<br>Dado que la sesion expiro<br>Cuando abre la app nuevamente<br>Entonces el sistema solicita autenticacion.                                                                                                                                                         |
-| TS01     | Desarrollador | High     | EP06 | API de pagos                             | Como desarrollador quiero exponer un endpoint de pagos para procesar transacciones.                                           | Escenario: Transaccion aprobada.<br>Dado que existe una solicitud valida con monto y token<br>Cuando el servicio procesa la transaccion<br>Entonces responde con estado aprobado y referencia.<br><br>Escenario: Transaccion rechazada.<br>Dado que existe una solicitud con token invalido<br>Cuando el servicio procesa la transaccion<br>Entonces responde con estado rechazado y codigo de error.                                                                                           |
-| TS02     | Desarrollador | High     | EP13 | API de autenticacion                     | Como desarrollador quiero exponer endpoints de autenticacion para gestionar sesiones seguras.                                 | Escenario: Inicio de sesion correcto.<br>Dado que las credenciales son validas<br>Cuando el servicio autentica<br>Entonces responde con token y expiracion.<br><br>Escenario: Inicio de sesion incorrecto.<br>Dado que las credenciales son invalidas<br>Cuando el servicio autentica<br>Entonces responde con error de autenticacion.                                                                                                                                                          |
-| TS03     | Desarrollador | Medium   | EP02 | API de busqueda                          | Como desarrollador quiero exponer un endpoint de busqueda para filtrar vehiculos por criterios.                               | Escenario: Consulta con resultados.<br>Dado que existe una solicitud con filtros validos<br>Cuando el servicio procesa la busqueda<br>Entonces responde con una lista paginada de vehiculos.<br><br>Escenario: Consulta sin resultados.<br>Dado que existe una solicitud con filtros validos que no coincide con vehiculos<br>Cuando el servicio procesa la busqueda<br>Entonces responde con una lista vacia y estado exitoso.                                                                 |
-| SP01     | Desarrollador | Medium   | EP06 | Spike integracion pasarela de pagos      | Como desarrollador quiero investigar una pasarela de pagos para validar viabilidad tecnica.                                   | Escenario: Spike completado.<br>Dado que se prueban al menos dos proveedores<br>Cuando se comparan costos, cobertura y SDKs<br>Entonces se documenta una recomendacion con riesgos y compensaciones.<br><br>Escenario: Sin proveedor viable.<br>Dado que los proveedores evaluados no cumplen requisitos<br>Cuando se completa la evaluacion<br>Entonces se documentan restricciones y alternativas.                                                                                            |
-| SP02     | Desarrollador | Medium   | EP02 | Spike integracion servicio de mapas      | Como desarrollador quiero evaluar un servicio de mapas para validar busqueda por ubicacion.                                   | Escenario: PoC funcional.<br>Dado que se integra un proveedor externo<br>Cuando se consulta una ubicacion<br>Entonces se obtienen coordenadas y resultados en pruebas.<br><br>Escenario: Limitacion del proveedor.<br>Dado que el proveedor no soporta una region requerida<br>Cuando se evalua la PoC<br>Entonces se documenta la limitacion y opciones de mitigacion.                                                                                                                         |
-| SP03     | Desarrollador | Medium   | EP13 | Spike almacenamiento seguro              | Como desarrollador quiero definir almacenamiento local seguro para proteger datos sensibles.                                  | Escenario: Estrategia definida.<br>Dado que se identifican datos sensibles<br>Cuando se define cifrado y politica de expiracion<br>Entonces se documenta el esquema de almacenamiento local.<br><br>Escenario: Riesgos no mitigables.<br>Dado que existen riesgos que no pueden mitigarse con los mecanismos disponibles<br>Cuando se evalua la estrategia de almacenamiento<br>Entonces se documentan las limitaciones y se propone una alternativa.                                           |
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>EP01</td><td>-</td><td>High</td><td>EP01</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Reservas y Operaciones</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Epic core que centraliza la gestión de reservas, confirmaciones, cancelaciones y estados del alquiler.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Epic core priorizada antes de las épicas normales y no funcionales.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>EP02</td><td>-</td><td>High</td><td>EP02</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Catálogo y Búsqueda de Vehículos</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Epic core que cubre registro, publicación, búsqueda, filtros, favoritos y detalle de vehículos.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Epic core orientada al descubrimiento y selección de vehículos.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>EP03</td><td>-</td><td>High</td><td>EP03</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Pagos y Tarificación</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Epic core que calcula tarifas y procesa transacciones asociadas a la reserva.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Epic core que soporta el flujo económico del alquiler.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>EP04</td><td>-</td><td>Medium</td><td>EP04</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Confianza y Comunidad</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Epic funcional normal que integra reseñas, favoritos, mensajería, perfiles e interacción entre usuarios.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Epic no inicial enfocada en confianza y comunidad.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>EP05</td><td>-</td><td>Medium</td><td>EP05</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Identidad y Acceso</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Epic funcional normal que centraliza registro, inicio de sesión, recuperación y verificación de identidad.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Epic no inicial para autenticación, recuperación y validación de identidad.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>EP06</td><td>-</td><td>Low</td><td>EP06</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Plataforma y Soporte</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Epic no funcional que reúne landing, soporte, seguridad operativa e integraciones técnicas.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Epic no funcional ubicada al final de la priorización.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU01</td><td>Propietario</td><td>High</td><td>EP03</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Registrar vehiculo</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como propietario, quiero registrar un vehiculo, para ofrecerlo en alquiler.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Registro exitoso.<br>Dado que el propietario proporciona los datos requeridos.<br>Cuando envia la solicitud de registro.<br>Entonces el sistema guarda el vehiculo y lo marca como disponible.<br>- Escenario: Datos incompletos.<br>Dado que el propietario omite datos requeridos.<br>Cuando envia la solicitud de registro.<br>Entonces el sistema rechaza el registro e informa la falta de datos.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU02</td><td>Arrendatario</td><td>High</td><td>EP02</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Buscar vehiculos disponibles</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero buscar vehiculos disponibles, para seleccionar uno adecuado a mis necesidades.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Resultados con coincidencias.<br>Dado que el arrendatario define criterios de busqueda.<br>Cuando ejecuta la busqueda.<br>Entonces el sistema lista vehiculos que cumplen los criterios.<br>- Escenario: Sin resultados.<br>Dado que no existen vehiculos disponibles para los criterios.<br>Cuando ejecuta la busqueda.<br>Entonces el sistema informa que no hay resultados.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU03</td><td>Arrendatario</td><td>Medium</td><td>EP02</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Filtrar por precio</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero filtrar vehiculos por precio, para ajustar el resultado a mi presupuesto.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Filtro aplicado.<br>Dado que el arrendatario define un rango de precios.<br>Cuando aplica el filtro.<br>Entonces el sistema muestra solo vehiculos dentro del rango.<br>- Escenario: Sin coincidencias.<br>Dado que no hay vehiculos en el rango.<br>Cuando aplica el filtro.<br>Entonces el sistema informa que no hay coincidencias.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU04</td><td>Arrendatario</td><td>Medium</td><td>EP02</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Ver detalles de vehiculo</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero ver detalles de un vehiculo, para tomar una decision informada.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Detalle disponible.<br>Dado que el arrendatario selecciona un vehiculo listado.<br>Cuando solicita el detalle.<br>Entonces el sistema muestra datos del vehiculo y condiciones del alquiler.<br>- Escenario: Detalle no disponible.<br>Dado que no se pueden recuperar los datos del vehiculo.<br>Cuando el arrendatario solicita el detalle.<br>Entonces el sistema informa el problema y no muestra datos incompletos.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU05</td><td>Arrendatario</td><td>Medium</td><td>EP02</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Agregar a favoritos</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero agregar vehiculos a favoritos, para revisarlos mas tarde.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Favorito guardado.<br>Dado que el arrendatario selecciona un vehiculo.<br>Cuando marca el vehiculo como favorito.<br>Entonces el sistema guarda el favorito en su lista.<br>- Escenario: Error al guardar.<br>Dado que ocurre un error al guardar.<br>Cuando intenta agregar a favoritos.<br>Entonces el sistema informa el error y no guarda el favorito.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU06</td><td>Arrendatario</td><td>Medium</td><td>EP04</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Calificar vehiculo</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero calificar un vehiculo al finalizar el alquiler, para compartir mi experiencia.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Calificacion exitosa.<br>Dado que el alquiler esta completado.<br>Cuando el arrendatario envia una calificacion y comentario.<br>Entonces el sistema guarda la evaluacion asociada al vehiculo.<br>- Escenario: Alquiler no completado.<br>Dado que el alquiler no esta completado.<br>Cuando intenta calificar.<br>Entonces el sistema bloquea la calificacion.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU07</td><td>Arrendatario</td><td>Medium</td><td>EP04</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Contactar al propietario</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero contactar al propietario, para coordinar detalles del alquiler.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Mensaje enviado.<br>Dado que el arrendatario redacta un mensaje.<br>Cuando lo envia al propietario.<br>Entonces el sistema entrega el mensaje y confirma el envio.<br>- Escenario: Error de envio.<br>Dado que ocurre un fallo al enviar.<br>Cuando intenta contactar al propietario.<br>Entonces el sistema informa el error y no envia el mensaje.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU08</td><td>Arrendatario</td><td>High</td><td>EP01</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Reservar vehiculo</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero reservar un vehiculo, para asegurar disponibilidad en fechas definidas.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Reserva exitosa.<br>Dado que el vehiculo esta disponible en el rango solicitado.<br>Cuando el arrendatario confirma la reserva.<br>Entonces el sistema registra la reserva y bloquea las fechas.<br>- Escenario: Conflicto de disponibilidad.<br>Dado que el vehiculo ya no esta disponible.<br>Cuando intenta reservar.<br>Entonces el sistema rechaza la reserva e informa el conflicto.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU09</td><td>Arrendatario</td><td>Medium</td><td>EP01</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Ver historial de alquileres</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero ver mi historial de alquileres, para llevar control de mis transacciones.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Historial disponible.<br>Dado que el arrendatario tiene alquileres previos.<br>Cuando solicita el historial.<br>Entonces el sistema lista sus alquileres con fechas y estados.<br>- Escenario: Historial vacio.<br>Dado que no hay alquileres previos.<br>Cuando solicita el historial.<br>Entonces el sistema informa que no existe historial.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU10</td><td>Arrendatario</td><td>High</td><td>EP03</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Administrar pagos</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero realizar el pago del alquiler, para completar la transaccion.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Pago exitoso.<br>Dado que el arrendatario confirma el pago con datos validos.<br>Cuando se procesa la transaccion.<br>Entonces el sistema confirma el pago y actualiza la reserva.<br>- Escenario: Pago fallido.<br>Dado que los datos son invalidos o el proveedor rechaza.<br>Cuando se procesa el pago.<br>Entonces el sistema informa el fallo y no confirma la reserva.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU11</td><td>Usuario</td><td>Medium</td><td>EP04</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Ver perfil de usuario</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero ver mi perfil, para confirmar mis datos y actividad.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Perfil visible.<br>Dado que el usuario tiene una cuenta activa.<br>Cuando solicita su perfil.<br>Entonces el sistema muestra datos personales y actividad relevante.<br>- Escenario: Error de carga.<br>Dado que ocurre un error del servicio.<br>Cuando solicita el perfil.<br>Entonces el sistema informa el error y no muestra datos incompletos.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU12</td><td>Usuario</td><td>Medium</td><td>EP04</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Editar perfil de usuario</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero editar mi perfil, para mantener mis datos actualizados.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Actualizacion exitosa.<br>Dado que el usuario envia datos validos.<br>Cuando confirma la edicion.<br>Entonces el sistema guarda los cambios y actualiza el perfil.<br>- Escenario: Datos invalidos.<br>Dado que el usuario envia datos invalidos.<br>Cuando intenta guardar.<br>Entonces el sistema rechaza la actualizacion e informa el error.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU13</td><td>Propietario</td><td>Medium</td><td>EP03</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Gestionar vehiculos alquilados</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como propietario, quiero ver vehiculos alquilados, para monitorear mis transacciones.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Lista de alquileres.<br>Dado que el propietario tiene vehiculos alquilados.<br>Cuando solicita la lista.<br>Entonces el sistema muestra vehiculos con fechas y arrendatario.<br>- Escenario: Sin alquileres.<br>Dado que no hay alquileres activos o previos.<br>Cuando solicita la lista.<br>Entonces el sistema informa que no hay resultados.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU14</td><td>Arrendatario</td><td>Medium</td><td>EP04</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Recibir notificaciones de disponibilidad</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero recibir notificaciones de disponibilidad, para enterarme cuando un vehiculo favorito esta disponible.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Notificacion enviada.<br>Dado que el arrendatario tiene un favorito.<br>Cuando el vehiculo vuelve a estar disponible.<br>Entonces el sistema envia una notificacion de disponibilidad.<br>- Escenario: Favorito no registrado.<br>Dado que el vehiculo no esta en favoritos.<br>Cuando cambia la disponibilidad.<br>Entonces el sistema no envia notificaciones.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU15</td><td>Visitante</td><td>Medium</td><td>EP06</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Ver landing page informativa</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como visitante, quiero ver una landing page informativa, para conocer el servicio.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Contenido disponible.<br>Dado que el visitante accede al sitio.<br>Cuando carga la pagina.<br>Entonces el sistema muestra la informacion del servicio.<br>- Escenario: Fallo de carga.<br>Dado que ocurre un error de disponibilidad.<br>Cuando el visitante accede al sitio.<br>Entonces el sistema informa el fallo y no muestra contenido incompleto.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU16</td><td>Visitante</td><td>Medium</td><td>EP06</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Ver informacion de contacto</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como visitante, quiero ver informacion de contacto, para comunicarme con la empresa.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Contacto visible.<br>Dado que el visitante navega en la pagina.<br>Cuando busca la seccion de contacto.<br>Entonces el sistema muestra telefono, correo y redes sociales.<br>- Escenario: Datos no disponibles.<br>Dado que la informacion no esta disponible.<br>Cuando el visitante busca contacto.<br>Entonces el sistema informa que no hay datos de contacto.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU17</td><td>Visitante</td><td>Low</td><td>EP06</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Navegar intuitivamente en landing</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como visitante, quiero navegar facilmente la landing, para encontrar contenido sin friccion.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Navegacion clara.<br>Dado que el visitante usa la pagina.<br>Cuando explora las secciones principales.<br>Entonces el sistema permite acceder a cada seccion sin obstaculos.<br>- Escenario: Seccion no disponible.<br>Dado que una seccion no esta disponible.<br>Cuando el visitante intenta acceder.<br>Entonces el sistema informa la no disponibilidad.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU18</td><td>Visitante</td><td>Low</td><td>EP06</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Adaptar landing responsiva</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como visitante, quiero que la landing sea responsiva, para verla bien en distintos dispositivos.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Ajuste correcto.<br>Dado que el visitante abre la pagina en un dispositivo diferente.<br>Cuando se renderiza el contenido.<br>Entonces el sistema adapta la pagina al tamano de pantalla.<br>- Escenario: Vista no soportada.<br>Dado que el visitante usa un tamano de pantalla no comun.<br>Cuando se renderiza la pagina.<br>Entonces el sistema mantiene contenido legible sin superposiciones.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU19</td><td>Usuario</td><td>High</td><td>EP05</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Registrar usuario</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como nuevo usuario, quiero registrarme, para acceder a los servicios.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Registro exitoso.<br>Dado que el usuario ingresa datos validos.<br>Cuando envia el registro.<br>Entonces el sistema crea la cuenta y habilita el acceso.<br>- Escenario: Correo duplicado.<br>Dado que el correo ya existe.<br>Cuando intenta registrarse.<br>Entonces el sistema rechaza el registro e informa duplicidad.<br>- Escenario: Campos incompletos.<br>Dado que faltan datos requeridos.<br>Cuando envia el registro.<br>Entonces el sistema informa los campos faltantes.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU20</td><td>Usuario</td><td>High</td><td>EP05</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Iniciar sesion</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario registrado, quiero iniciar sesion, para acceder a mi cuenta.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Inicio exitoso.<br>Dado que las credenciales son validas.<br>Cuando inicia sesion.<br>Entonces el sistema autoriza el acceso y crea la sesion.<br>- Escenario: Credenciales invalidas.<br>Dado que las credenciales son incorrectas.<br>Cuando intenta iniciar sesion.<br>Entonces el sistema rechaza el acceso e informa el error.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU21</td><td>Usuario</td><td>Medium</td><td>EP05</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Recuperar contrasena</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero recuperar mi contrasena, para restablecer el acceso.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Enlace enviado.<br>Dado que el correo esta registrado.<br>Cuando solicita recuperacion.<br>Entonces el sistema envia un enlace de recuperacion.<br>- Escenario: Correo no registrado.<br>Dado que el correo no existe.<br>Cuando solicita recuperacion.<br>Entonces el sistema informa que el correo no esta registrado.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU22</td><td>Propietario</td><td>Medium</td><td>EP03</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Publicar vehiculo con especificaciones</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como propietario, quiero publicar un vehiculo con especificaciones, para alquilarlo con informacion clara.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Publicacion exitosa.<br>Dado que el propietario ingresa datos validos.<br>Cuando confirma la publicacion.<br>Entonces el sistema registra el vehiculo con sus especificaciones.<br>- Escenario: Datos invalidos.<br>Dado que el propietario ingresa datos invalidos.<br>Cuando intenta publicar.<br>Entonces el sistema rechaza la publicacion e informa el error.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU23</td><td>Propietario</td><td>Medium</td><td>EP03</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Ver mis vehiculos publicados</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como propietario, quiero ver mis vehiculos publicados, para gestionar su estado.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Vehiculos listados.<br>Dado que el propietario tiene vehiculos publicados.<br>Cuando solicita la lista.<br>Entonces el sistema muestra los vehiculos con su estado.<br>- Escenario: Sin vehiculos.<br>Dado que el propietario no tiene vehiculos publicados.<br>Cuando solicita la lista.<br>Entonces el sistema informa que no hay vehiculos.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU24</td><td>Administrador</td><td>Medium</td><td>EP01</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Ver todas las reservaciones</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como administrador, quiero ver todas las reservaciones, para monitorear el servicio.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Reservaciones listadas.<br>Dado que el administrador tiene permisos de gestion.<br>Cuando solicita la lista general.<br>Entonces el sistema muestra todas las reservaciones existentes.<br>- Escenario: Sin reservaciones.<br>Dado que no hay reservaciones registradas.<br>Cuando solicita la lista general.<br>Entonces el sistema informa que no hay registros.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU25</td><td>Usuario</td><td>Medium</td><td>EP01</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Filtrar reservaciones por estado</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero filtrar reservaciones por estado, para visualizar resultados especificos.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Filtro aplicado.<br>Dado que el usuario selecciona un estado.<br>Cuando aplica el filtro.<br>Entonces el sistema lista reservaciones con ese estado.<br>- Escenario: Sin coincidencias.<br>Dado que no existen reservaciones con ese estado.<br>Cuando aplica el filtro.<br>Entonces el sistema informa que no hay resultados.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU26</td><td>Arrendatario</td><td>Medium</td><td>EP02</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Buscar con filtros avanzados</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero buscar vehiculos con filtros avanzados, para encontrar el vehiculo ideal.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Resultados filtrados.<br>Dado que el arrendatario define filtros avanzados.<br>Cuando ejecuta la busqueda.<br>Entonces el sistema muestra resultados que cumplen todos los filtros.<br>- Escenario: Sin resultados.<br>Dado que no hay coincidencias.<br>Cuando ejecuta la busqueda.<br>Entonces el sistema informa la ausencia de resultados.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU27</td><td>Arrendatario</td><td>Medium</td><td>EP01</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Ver mis reservaciones por estado</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero ver mis reservaciones por estado, para organizar mis alquileres.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Reservaciones por estado.<br>Dado que el arrendatario selecciona un estado.<br>Cuando solicita sus reservaciones.<br>Entonces el sistema lista sus reservaciones en ese estado.<br>- Escenario: Lista vacia.<br>Dado que no hay reservaciones en ese estado.<br>Cuando solicita la lista.<br>Entonces el sistema informa que no hay registros.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU28</td><td>Usuario</td><td>Medium</td><td>EP01</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Ver detalle de una reservacion</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero ver el detalle de una reservacion, para consultar fechas y condiciones.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Detalle visible.<br>Dado que el usuario tiene acceso a la reservacion.<br>Cuando solicita el detalle.<br>Entonces el sistema muestra los datos completos de la reservacion.<br>- Escenario: Acceso no permitido.<br>Dado que la reservacion no pertenece al usuario.<br>Cuando intenta acceder.<br>Entonces el sistema rechaza el acceso e informa el error.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU29</td><td>Arrendatario</td><td>Medium</td><td>EP01</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Cancelar reservacion</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero cancelar una reservacion, para evitar cargos si ya no la necesito.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Cancelacion exitosa.<br>Dado que la reservacion esta dentro del plazo permitido.<br>Cuando el arrendatario solicita cancelacion.<br>Entonces el sistema cancela la reservacion sin penalizacion.<br>- Escenario: Plazo vencido.<br>Dado que el plazo permitido vencio.<br>Cuando solicita cancelacion.<br>Entonces el sistema rechaza la cancelacion e informa la politica aplicada.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU30</td><td>Propietario</td><td>Medium</td><td>EP01</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Actualizar estado de reservacion</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como propietario, quiero actualizar el estado de una reservacion, para gestionar el proceso de alquiler.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Estado actualizado.<br>Dado que el propietario tiene permisos.<br>Cuando actualiza el estado.<br>Entonces el sistema guarda el cambio y notifica al arrendatario.<br>- Escenario: Conflicto de actualizacion.<br>Dado que el estado fue actualizado por otro proceso.<br>Cuando intenta modificarlo.<br>Entonces el sistema informa el conflicto y no aplica cambios.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU31</td><td>Usuario</td><td>Medium</td><td>EP05</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Verificar identidad</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero verificar mi identidad, para aumentar la confianza en la plataforma.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Verificacion exitosa.<br>Dado que el usuario envia documentos validos.<br>Cuando se procesa la verificacion.<br>Entonces el sistema marca la identidad como verificada.<br>- Escenario: Verificacion rechazada.<br>Dado que los documentos no son validos.<br>Cuando se procesa la verificacion.<br>Entonces el sistema informa el rechazo y solicita correccion.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU32</td><td>Arrendatario</td><td>Medium</td><td>EP03</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Calcular tarifa total</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como arrendatario, quiero ver el costo total del alquiler, para decidir antes de confirmar.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Tarifa calculada.<br>Dado que el arrendatario define fechas y vehiculo.<br>Cuando solicita el costo.<br>Entonces el sistema muestra el total con impuestos y comisiones.<br>- Escenario: Datos insuficientes.<br>Dado que faltan datos para el calculo.<br>Cuando solicita el costo.<br>Entonces el sistema indica la informacion faltante.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU33</td><td>Usuario</td><td>Low</td><td>EP06</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Reportar incidente de seguridad</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero reportar un incidente, para recibir soporte y dejar constancia.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Reporte enviado.<br>Dado que el usuario describe el incidente.<br>Cuando envia el reporte.<br>Entonces el sistema registra el caso y confirma la recepcion.<br>- Escenario: Error al reportar.<br>Dado que ocurre un fallo del sistema.<br>Cuando envia el reporte.<br>Entonces el sistema informa el error y no registra el caso.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>HU34</td><td>Usuario</td><td>Medium</td><td>EP05</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Guardar sesion local</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario, quiero mantener la sesion activa, para no iniciar sesion cada vez que uso la app.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Sesion persistida.<br>Dado que el usuario inicia sesion correctamente.<br>Cuando cierra y reabre la app.<br>Entonces el sistema recupera la sesion desde almacenamiento local.<br>- Escenario: Sesion expirada.<br>Dado que la sesion expiro.<br>Cuando abre la app nuevamente.<br>Entonces el sistema solicita autenticacion.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>TS01</td><td>Desarrollador</td><td>High</td><td>EP03</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Exponer API de pagos</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como desarrollador, quiero exponer un endpoint de pagos, para procesar transacciones.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Transaccion aprobada.<br>Dado que existe una solicitud valida con monto y token.<br>Cuando el servicio procesa la transaccion.<br>Entonces responde con estado aprobado y referencia.<br>- Escenario: Transaccion rechazada.<br>Dado que existe una solicitud con token invalido.<br>Cuando el servicio procesa la transaccion.<br>Entonces responde con estado rechazado y codigo de error.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>TS02</td><td>Desarrollador</td><td>High</td><td>EP05</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Exponer API de autenticacion</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como desarrollador, quiero exponer endpoints de autenticacion, para gestionar sesiones seguras.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Inicio de sesion correcto.<br>Dado que las credenciales son validas.<br>Cuando el servicio autentica.<br>Entonces responde con token y expiracion.<br>- Escenario: Inicio de sesion incorrecto.<br>Dado que las credenciales son invalidas.<br>Cuando el servicio autentica.<br>Entonces responde con error de autenticacion.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>TS03</td><td>Desarrollador</td><td>Medium</td><td>EP02</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Exponer API de busqueda</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como desarrollador, quiero exponer un endpoint de busqueda, para filtrar vehiculos por criterios.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Consulta con resultados.<br>Dado que existe una solicitud con filtros validos.<br>Cuando el servicio procesa la busqueda.<br>Entonces responde con una lista paginada de vehiculos.<br>- Escenario: Consulta sin resultados.<br>Dado que existe una solicitud con filtros validos que no coincide con vehiculos.<br>Cuando el servicio procesa la busqueda.<br>Entonces responde con una lista vacia y estado exitoso.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>SP01</td><td>Desarrollador</td><td>Medium</td><td>EP03</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Investigar integracion pasarela de pagos</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como desarrollador, quiero investigar una pasarela de pagos, para validar viabilidad tecnica.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Spike completado.<br>Dado que se prueban al menos dos proveedores.<br>Cuando se comparan costos, cobertura y SDKs.<br>Entonces se documenta una recomendacion con riesgos y compensaciones.<br>- Escenario: Sin proveedor viable.<br>Dado que los proveedores evaluados no cumplen requisitos.<br>Cuando se completa la evaluacion.<br>Entonces se documentan restricciones y alternativas.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>SP02</td><td>Desarrollador</td><td>Medium</td><td>EP02</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Evaluar integracion servicio de mapas</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como desarrollador, quiero evaluar un servicio de mapas, para validar busqueda por ubicacion.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: PoC funcional.<br>Dado que se integra un proveedor externo.<br>Cuando se consulta una ubicacion.<br>Entonces se obtienen coordenadas y resultados en pruebas.<br>- Escenario: Limitacion del proveedor.<br>Dado que el proveedor no soporta una region requerida.<br>Cuando se evalua la PoC.<br>Entonces se documenta la limitacion y opciones de mitigacion.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>SP03</td><td>Desarrollador</td><td>Medium</td><td>EP06</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Definir almacenamiento seguro</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como desarrollador, quiero definir almacenamiento local seguro, para proteger datos sensibles.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Estrategia definida.<br>Dado que se identifican datos sensibles.<br>Cuando se define cifrado y politica de expiracion.<br>Entonces se documenta el esquema de almacenamiento local.<br>- Escenario: Riesgos no mitigables.<br>Dado que existen riesgos que no pueden mitigarse con los mecanismos disponibles.<br>Cuando se evalua la estrategia de almacenamiento.<br>Entonces se documentan las limitaciones y se propone una alternativa.</td>
+  </tr>
+</table>
 
 ### 2.4.2. Impact Mapping
+
+### Requisitos No Funcionales (globales)
+
+- Rendimiento: Respuestas críticas (búsqueda, reservas) < 2s bajo carga normal; optimizar consultas y paginación.
+- Seguridad: Autenticación segura (JWT/OAuth), cifrado de datos sensibles en tránsito y reposo; validación de documentos para verificación.
+- Usabilidad: Mobile-first, accesibilidad básica y flujos simplificados para onboarding y reserva.
+- Disponibilidad: Objetivo inicial 99.5% para servicios críticos (reservas, pagos); mecanismos de retry y circuit breakers para pasarelas externas.
+
 
 Impact map de nuestros segmentos objetivos
 
@@ -1164,7 +2402,7 @@ Utilizamos la escala de Fibonacci para la estimación de los Story Points.
 | --------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
 | HU01            | Registrar cuenta                                | **Como** usuario, **deseo** crear una nueva cuenta para entrar a la plataforma.                                                                  | 3                        |
 | HU02            | Iniciar sesión con autenticación segura         | **Como** usuario, **deseo** iniciar sesión con mi cuenta de forma segura para acceder a mis funcionalidades.                                     | 2                        |
-| HU04            | Verificación de identidad                       | **Como** propietario y arrendatario, **deseo** que la plataforma verifique la identidad de los usuarios para asegurar la confiabilidad.          | 5                        |
+| HU04            | Verificar identidad                             | **Como** propietario y arrendatario, **deseo** que la plataforma verifique la identidad de los usuarios para asegurar la confiabilidad.          | 5                        |
 | HU06            | Publicar un vehículo para alquiler              | **Como** propietario, **deseo** publicar mi vehículo para que pueda ser alquilado.                                                               | 3                        |
 | HU07            | Buscar vehículos disponibles                    | **Como** arrendatario, **deseo** buscar vehículos disponibles cerca de mi ubicación para alquilar.                                               | 5                        |
 | HU08            | Reservar un vehículo                            | **Como** arrendatario, **deseo** reservar un vehículo para una fecha y hora específicas.                                                         | 5                        |
@@ -1174,9 +2412,9 @@ Utilizamos la escala de Fibonacci para la estimación de los Story Points.
 | HU16            | Editar datos de vehículo publicado              | **Como** propietario, **deseo** editar los datos de mi vehículo publicado en caso de cambios.                                                    | 2                        |
 | HU17            | Compartir vehículo por redes sociales           | **Como** propietario, **deseo** compartir mi anuncio en redes sociales para llegar a más personas.                                               | 1                        |
 | HU18            | Ver ranking de usuarios confiables              | **Como** usuario, **deseo** ver la calificación promedio de otros usuarios para decidir con quién interactuar.                                   | 2                        |
-| HU19            | Registro interno de usuario                     | **Como** nuevo usuario, **Quiero** registrarme en la plataforma **Para** acceder a los servicios.                                                | 3                        |
-| HU20            | Registro interno de inicio de sesión            | **Como** usuario registrado, **Quiero** iniciar sesión **Para** acceder a mi cuenta.                                                             | 2                        |
-| HU21            | Registro interno para recuperar contraseña      | **Como** usuario, **Quiero** recuperar mi contraseña **Para** restablecer acceso si la olvidé.                                                   | 2                        |
+| HU19            | Registrar usuario                                | **Como** nuevo usuario, **Quiero** registrarme en la plataforma **Para** acceder a los servicios.                                                | 3                        |
+| HU20            | Iniciar sesión                                   | **Como** usuario registrado, **Quiero** iniciar sesión **Para** acceder a mi cuenta.                                                             | 2                        |
+| HU21            | Recuperar contraseña                             | **Como** usuario, **Quiero** recuperar mi contraseña **Para** restablecer acceso si la olvidé.                                                   | 2                        |
 | HU22            | Publicar vehículo con especificaciones          | **Como** propietario, **Quiero** publicar un vehículo con datos y especificaciones **Para** alquilarlo.                                          | 3                        |
 | HU23            | Ver mis vehículos publicados                    | **Como** propietario, **Quiero** ver mis vehículos publicados **Para** gestionar su estado.                                                      | 2                        |
 | HU24            | Ver todas las reservaciones                     | **Como** administrador o propietario, **Quiero** ver todas las reservaciones **Para** monitorear.                                                | 3                        |
