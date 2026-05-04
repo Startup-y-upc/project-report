@@ -2764,23 +2764,23 @@ Esta seccion consolida las épicas principales del producto en una sola vista pa
     <th>Epic</th>
   </tr>
   <tr>
-    <td>HU55</td><td>Usuario</td><td>High</td><td>EP06</td>
+    <td>NFR01</td><td>Usuario</td><td>High</td><td>EP02</td>
   </tr>
   <tr>
     <td>Title</td>
-    <td colspan="3">Asegurar una experiencia rapida y estable</td>
+    <td colspan="3">Asegurar búsqueda rápida de vehículos</td>
   </tr>
   <tr>
     <td colspan="4">Description</td>
   </tr>
   <tr>
-    <td colspan="4">Como usuario, quiero que la plataforma responda rapido y se mantenga estable, para completar mis acciones sin interrupciones.</td>
+    <td colspan="4">Como usuario de Rent2Go, quiero que la búsqueda de vehículos se cargue en menos de 2 segundos, para explorar opciones disponibles sin demoras.</td>
   </tr>
   <tr>
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">- Escenario: Respuesta rapida.<br>Dado que el usuario busca un vehiculo o consulta una reserva.<br>Cuando ejecuta la accion.<br>Entonces el sistema responde sin demoras apreciables.<br>- Escenario: Servicio estable.<br>Dado que ocurre una interrupcion temporal.<br>Cuando el usuario intenta usar la app.<br>Entonces el sistema informa la situacion sin perder la sesion activa.</td>
+    <td colspan="4">- Escenario: Búsqueda rápida.<br>Dado que el usuario aplica filtros de búsqueda (ubicación, tipo, fechas).<br>Cuando presiona buscar.<br>Entonces la app retorna resultados en menos de 2 segundos.<br>- Escenario: Conexión lenta.<br>Dado que la red está degradada (3G).<br>Cuando ejecuta la búsqueda.<br>Entonces muestra un indicador de carga y retorna resultados en máximo 3 segundos.</td>
   </tr>
 </table>
 
@@ -2792,23 +2792,52 @@ Esta seccion consolida las épicas principales del producto en una sola vista pa
     <th>Epic</th>
   </tr>
   <tr>
-    <td>HU56</td><td>Usuario</td><td>High</td><td>EP05</td>
+    <td>NFR02</td><td>Usuario</td><td>High</td><td>EP01</td>
   </tr>
   <tr>
     <td>Title</td>
-    <td colspan="3">Proteger datos y sesion</td>
+    <td colspan="3">Optimizar consumo de batería con GPS</td>
   </tr>
   <tr>
     <td colspan="4">Description</td>
   </tr>
   <tr>
-    <td colspan="4">Como usuario, quiero que mis datos y mi sesion esten protegidos, para usar la app con confianza.</td>
+    <td colspan="4">Como propietario o arrendatario, quiero que la app consuma mínima batería durante GPS activo, para usar Rent2Go sin agotarla rápidamente.</td>
   </tr>
   <tr>
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">- Escenario: Datos protegidos.<br>Dado que el usuario envía información sensible.<br>Cuando el sistema la procesa o transmite.<br>Entonces la protege con mecanismos seguros.<br>- Escenario: Sesion valida.<br>Dado que el usuario inicia sesion correctamente.<br>Cuando cierra y reabre la app.<br>Entonces el sistema recupera la sesion activa si sigue vigente.<br>- Escenario: Sesion expirada.<br>Dado que la sesion expiro.<br>Cuando abre la app nuevamente.<br>Entonces el sistema solicita autenticacion.</td>
+    <td colspan="4">- Escenario: Consumo con GPS activo.<br>Dado que el usuario tiene GPS activo durante una reservación.<br>Cuando la app ejecuta seguimiento de ubicación.<br>Entonces el consumo de batería no excede 8% en una hora.<br>- Escenario: GPS desactivado.<br>Dado que el usuario desactiva GPS.<br>Cuando cierra la sección de ubicación.<br>Entonces el consumo cae a menos del 1% mensual.</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <th>Story ID</th>
+    <th>User</th>
+    <th>Priority</th>
+    <th>Epic</th>
+  </tr>
+  <tr>
+    <td>NFR03</td><td>Usuario</td><td>High</td><td>EP06</td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td colspan="3">Soportar iOS 15+ y Android 11+</td>
+  </tr>
+  <tr>
+    <td colspan="4">Description</td>
+  </tr>
+  <tr>
+    <td colspan="4">Como usuario de Rent2Go, quiero usar la app en iOS y Android, para acceder sin restricción de plataforma.</td>
+  </tr>
+  <tr>
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+  <tr>
+    <td colspan="4">- Escenario: Compatibilidad mínima.<br>Dado que la app se ejecuta.<br>Cuando se prueba en iOS 15+ y Android 11+.<br>Entonces funciona con todas las características principales sin errores.<br>- Escenario: Experiencia consistente.<br>Dado que el usuario cambia de iOS a Android.<br>Cuando accede a su cuenta.<br>Entonces todos sus datos y preferencias se sincronizan automáticamente.</td>
   </tr>
 </table>
 
