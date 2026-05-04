@@ -852,54 +852,51 @@ Resumen de la entrevista:
 
 <b> Entrevista 4 </b>
 
-- Nombre: Esaut
-- Apellidos: Salhuana
-- Edad: 26
-- Distrito: Ate
-- Link de la entrevista: <a href="https://shorturl.at/PcRe6">[Entrevista]</a>
-- Duración: 2:11 minutos
-- Inicio de la entrevista: 0:01
+- Nombre: Rodrigo
+- Apellidos: Diaz
+- Edad: 22
+- Distrito: Los Olivos
+- Link de la entrevista: <a href="https://acortar.link/a1bosU">https://acortar.link/29SR0F</a>
+- Duración: 4:07 minutos
+- Inicio de la entrevista: 0:03
 
 Evidencia de la reunión:
 
 <div align="center">
-  <img src="Resources/capitulo_2/interviews/segmento_2/interview_4.png" style="margin: 10px 0;" width="60%"/>
+    <img src="Resources/capitulo_2/interviews/interview_4.png" style="margin: 10px 0;" width="60%"/>
 </div>
 
 Resumen de la entrevista:
 
-- Usa transporte publico de forma diaria y considera alquilar vehiculos para trabajo y viajes cortos.
-- No ha utilizado plataformas similares y percibe barreras por precio y falta de confianza.
-- Valora que la plataforma ofrezca verificacion de identidad y soporte durante el alquiler.
-- Indica que la transparencia en tarifas y condiciones influye en su decision de uso.
-- Recomendaría la aplicacion si mantiene disponibilidad y procesos simples.
-
-
+- En la entrevista se menciona el uso constante del transporte público.
+- No realizó ningún alquiler de vehículo.
+- Conoce la plataforma Luxury Rent a Car.
+- Menciona que la propuesta de la aplicación es buena y la recomendaría.
+- Menciona que uno de sus temores son los posibles daños relacionados con el vehículo.
 
 <b> Entrevista 5 </b>
 
-- Nombre: Daniela
-- Apellidos: Huaman
-- Edad: 24
-- Distrito: San Miguel
-- Link de la entrevista: <a href="https://shorturl.at/PcRe6">[Entrevista]</a>
-- Duracion: 3:12 minutos
-- Inicio de la entrevista: 0:22
+- Nombre: Joaquín
+- Apellidos: Carranza
+- Edad: 25
+- Distrito: Chorrillos
+- Link de la entrevista: <a href="https://acortar.link/29SR0F">https://acortar.link/29SR0F</a>
+- Duración: 5:24 minutos
+- Inicio de la entrevista: 0:03
 
-Evidencia de la reunion:
+Evidencia de la reunión:
 
 <div align="center">
-  <img src="Resources/capitulo_2/interviews/segmento_2/interview_5.png" style="margin: 10px 0;" width="60%"/>
+    <img src="Resources/capitulo_2/interviews/interview_5.png" style="margin: 10px 0;" width="60%"/>
 </div>
 
 Resumen de la entrevista:
 
-- Se moviliza principalmente en transporte publico, pero necesita autos para viajes cortos y visitas familiares.
-- No ha alquilado antes por falta de confianza y desconocimiento de procesos claros.
-- Considera clave la transparencia en tarifas, deposito y politicas de cancelacion.
-- Valora verificacion de identidad y soporte rapido en caso de incidentes.
-- Usaria la aplicacion si puede comparar precios y reservar en pocos pasos.
-
+- En la entrevista se menciona el uso constante en el que se moviliza.
+- No realizó ningún alquiler de vehículo.
+- No conoce ninguna otra plataforma de rentar vehículos.
+- Menciona que la propuesta de la aplicación es buena y la recomendaría.
+- Menciona que uno de sus temores son los posibles daños relacionados con el vehículo.
 
 <b> Entrevista 6 </b>
 
@@ -925,53 +922,6 @@ Resumen de la entrevista:
 - Menciona que la propuesta de la aplicación es buena y la recomendaría
 - Menciona que uno de sus temores son los posibles daños relacionados con el vehículo
 
-<b> Entrevista 7 </b>
-
-- Nombre: Rodrigo
-- Apellidos: Diaz
-- Edad: 22
-- Distrito: Los Olivos
-- Link de la entrevista: <a href="https://acortar.link/a1bosU">[Entrevista]</a>
-- Duración: 4:07 minutos
-- Inicio de la entrevista: 0:03
-
-Evidencia de la reunión:
-
-<div align="center">
-    <img src="Resources/capitulo_2/interviews/interview_7.png" style="margin: 10px 0;" width="60%"/>
-</div>
-
-Resumen de la entrevista:
-
-- En la entrevista se menciona el uso constante del transporte público.
-- No realizó ningún alquiler de vehículo.
-- Conoce la plataforma Luxury Rent a Car.
-- Menciona que la propuesta de la aplicación es buena y la recomendaría.
-- Menciona que uno de sus temores son los posibles daños relacionados con el vehículo.
-
-<b> Entrevista 8 </b>
-
-- Nombre: Joaquín
-- Apellidos: Carranza
-- Edad: 25
-- Distrito: Chorrillos
-- Link de la entrevista: <a href="https://acortar.link/29SR0F">[Entrevista]</a>
-- Duración: 5:24 minutos
-- Inicio de la entrevista: 0:03
-
-Evidencia de la reunión:
-
-<div align="center">
-    <img src="Resources/capitulo_2/interviews/interview_8.png" style="margin: 10px 0;" width="60%"/>
-</div>
-
-Resumen de la entrevista:
-
-- En la entrevista se menciona el uso constante en el que se moviliza.
-- No realizó ningún alquiler de vehículo.
-- No conoce ninguna otra plataforma de rentar vehículos.
-- Menciona que la propuesta de la aplicación es buena y la recomendaría.
-- Menciona que uno de sus temores son los posibles daños relacionados con el vehículo.
 
 ### 2.2.3. Análisis de entrevistas
 
