@@ -2,171 +2,234 @@
 
 ## 3.1 Product design
 
-En esta sección se presenta el diseño del producto como una parte integral de la arquitectura del sistema, enfocándose en los aspectos clave que determinan su estructura y funcionalidad. El diseño del producto abarca tanto los componentes físicos como el software, asegurando que cada parte esté alineada con los requisitos y objetivos definidos en las etapas previas del proyecto. Se detallan las decisiones clave que influencian la interacción entre los usuarios y el sistema, las funcionalidades principales del producto y las tecnologías utilizadas para su implementación.
+Este capítulo se alinea con lo implementado en la carpeta landing-page. Se documenta el diseño visual, los componentes y la arquitectura de información existentes, manteniendo el enfoque mobile-first solicitado por la guía del curso.
 
 ### 3.1.1 Style Guidelines
 
-El equipo utiliza un repositorio centralizado de assets y tokens de diseño para mantener coherencia visual entre Landing Page, Web App y Mobile App. Este Design System de referencia contiene: paleta de colores, tipografías, escalas de espaciado, iconografía, estilos de botones, formularios y componentes reutilizables.
+La Landing Page implementada se apoya en la estructura Vue de landing-page-samples/landing-page-main, con estilos efectivos en src/style.css e index.html. Esta sección registra la implementación visual real para trazabilidad.
 
 #### 3.1.1.1 General Style Guidelines
 
-- Branding: lenguaje visual cercano y confiable que inspire seguridad y accesibilidad. Tono: semi-formal, cercano y claro.
-- Typography: sistema escalado con variables CSS: --font-base (inter/roboto), --font-headline, --font-body. Escalas typográficas: H1 (32px), H2 (24px), H3 (20px), body (16px), small (14px).
-- Colors: tokens primarios, secundarios y neutrales. Ejemplo:
-  - --color-primary: #0D6EFD
-  - --color-accent: #FF7A59
-  - --color-success: #28A745
-  - neutrals: --gray-100 ... --gray-900
-- Spacing: base 8px modular (8, 16, 24, 32). Contenedores responsivos con breakpoints: 360px, 768px, 1024px, 1440px.
-- Tone & Voice: comunicación clara, breve y orientada a la acción. Preferir frases cortas y verbos en imperativo suave para CTAs.
+- Branding y tono: comunicación directa, confiable y orientada a acción con CTAs como Reservar ahora y Explorar vehículos.
+- Tipografía aplicada en la implementación real: Poppins como familia base con fallback system-ui, Segoe UI, Roboto y Arial.
+- Escala tipográfica efectiva: títulos grandes, encabezados medios y texto base definidos con clases heading-xl, heading-lg, heading-md, heading-sm y body.
+- Colores base confirmados: paleta primary con variantes primary-50, primary-100, primary-500 y primary-600, neutros grises y superficies dark.
+- Variables y utilidades adicionales implementadas para estados y superficies: fondos claros, fondos dark, bordes, sombras y footer.
+- Espaciado y layout aplicado: base de 8px, contenedores max-w-7xl y padding horizontal 16px en mobile y 24px en desktop.
+- Breakpoints configurados en Tailwind y usados en la UI: 640px, 768px y 1024px.
+- Breakpoints implementados en CSS: 1024px, 768px y 640px, con ajustes de grid, tipografía y layout.
+- Soporte visual adicional implementado: modo oscuro por clase dark en html, activado desde el toggle de tema y aplicado al conjunto de la interfaz.
 
-> Principios: accesibilidad (AA), lectura rápida, consistencia y economía visual.
+Componentes UI implementados en Landing:
+
+- Botón primario: fondo #0D6EFD, texto blanco, radio 8px, hover en #0854d4.
+- Botón outline: borde de 1px, fondo transparente, hover con fondo gris claro.
+- Botón ícono: usado para cambio de tema y menú móvil.
+- Tarjetas: fondo de tarjeta, borde suave, radio 16px y elevación en hover.
+- Formularios: campos con borde gris y foco con anillo visual primary-50.
+- Chips de categoría y tags de atributos para flota.
 
 ### 3.1.2 Information Architecture
 
-Se documentan las decisiones que rigen la organización del contenido en experiencias web y móvil, con el objetivo de que usuarios encuentren lo que necesitan sin esfuerzo.
+La arquitectura de información se documenta desde la estructura real de la página implementada en index.html, sections y app.js.
 
 #### 3.1.2.1 Organization Systems
 
-Decisiones:
-- Jerárquica (visual hierarchy): para pantallas de producto y ficha de vehículo; uso de tamaño, contraste y agrupación para priorizar información.
-- Secuencial (step-by-step): para procesos como registro, verificación de usuario y reserva.
-- Matricial: para listados y filtros (por tipo de vehículo, precio, ubicación).
+Sistema jerárquico y secuencial implementado por bloques anclados:
 
-Esquemas de categorización:
-- Alfabetico: listas de marcas cuando aplique.
-- Cronológico: historial de reservas y transacciones.
-- Por tópicos: filtros por características (transmisión, asientos, combustible).
-- Según audiencia: vistas diferenciadas para Propietario y Arrendatario.
+1. Header
+2. Hero
+3. Features
+4. Fleet
+5. How it works
+6. Requirements
+7. Testimonials
+8. FAQ
+9. CTA / Contacto
+10. Footer
+
+Organización funcional observada:
+
+- Sección Hero para propuesta de valor y CTAs.
+- Secciones intermedias para confianza y evaluación (features, flota, requisitos, testimonios, FAQ).
+- Sección CTA/Contacto para conversión mediante información de soporte y formulario de solicitud.
 
 #### 3.1.2.2 Labelling Systems
 
-Reglas:
-- Etiquetas cortas (1–3 palabras) y consistentes: "Buscar", "Reservar", "Mi perfil", "Mis vehículos".
-- Botones de acción: verbo principal + complemento opcional (ej. "Reservar ahora").
-- Evitar tecnicismos en UI, priorizar claridad y correspondencia semántica entre etiqueta y destino.
+Etiquetas reales de navegación principal:
 
-Ejemplos de etiquetas clave:
-- Header: Inicio | Buscar vehículos | Mis reservas | Soporte
-- Ficha vehículo: Marca | Modelo | Precio/Día | Disponibilidad
+- Inicio
+- Vehículos
+- ¿Cómo funciona?
+- Requisitos
+- Preguntas
+- Contacto
+
+Etiquetas de acción reales:
+
+- Iniciar sesión
+- Reservar ahora
+- Explorar vehículos
+- ¿Cómo funciona?
+- Solicitar reserva
+
+Se mantiene consistencia bilingüe usando claves data-i18n y catálogos en es_419.json y en_US.json.
 
 #### 3.1.2.3 SEO Tags and Meta Tags
 
-Recomendaciones para Landing Page y páginas públicas:
-- Title: Rent2Go – Alquila y monetiza vehículos fácilmente
-- Meta Description: Plataforma P2P para alquilar vehículos en minutos. Propietarios monetizan; arrendatarios encuentran autos accesibles y seguros.
-- Meta Keywords: alquiler vehículos, carsharing, rent2go, alquiler por horas, P2P vehículos
-- Author: R2G Technologies
+Implementado en index.html:
 
-ASO (App Store Optimization) para aplicaciones móviles:
-- App Title: Rent2Go – Alquiler de vehículos
-- App Subtitle: Reserva autos cerca de ti
-- App Keywords: alquiler, auto, coche, rent, carshare, vehículo
-- App Description (breve): Reserva vehículos de particulares y gana dinero como propietario. Seguro integrado y proceso rápido.
+- Title: Rent2Go – Alquila y monetiza vehículos
+- Meta description: Rent2Go — Alquila y monetiza vehículos fácilmente
+
+Pendiente para completar guía de curso:
+
+- [PENDIENTE: agregar meta keywords si la guía lo exige].
+- [PENDIENTE: agregar meta author si la guía lo exige].
+- [PENDIENTE: agregar Open Graph y Twitter Cards para evidencia SEO social].
+- [PENDIENTE: evidencia de validación SEO en capturas o reporte de auditoría].
+
+ASO para aplicaciones móviles:
+
+- [PENDIENTE: no existe material ASO en el repositorio actual].
 
 #### 3.1.2.4 Searching Systems
 
-Opciones de búsqueda:
-- Barra principal con búsqueda por ubicación y palabras clave.
-- Filtros: rango de precio, tipo de vehículo, transmisión, capacidad, distancia, calificación.
-- Ordenamiento: relevancia, precio asc/desc, cercanía, más reservados.
+Estado real implementado:
 
-Resultados:
-- Tarjetas estándar con imagen, título, etiqueta de precio, rating y CTA.
-- Paginación o scroll infinito con indicador de carga y estado "sin resultados" con sugerencias (expandir radio, quitar filtros).
+- No hay barra de búsqueda por texto en la Landing.
+- Sí existe filtrado por categorías de flota: Todos, Económicos, SUVs, Lujo y Vans.
+- El grid de vehículos se actualiza dinámicamente al seleccionar categoría.
+
+Pendiente para alineación futura si la guía exige búsqueda completa:
+
+- [PENDIENTE: definir búsqueda por texto, ubicación y ordenamientos].
+- [PENDIENTE: evidencia de estados sin resultados].
 
 #### 3.1.2.5 Navigation Systems
 
-Estrategia:
-- Desktop: header con navegación primaria, CTA de alto contraste, footer con enlaces secundarios.
-- Mobile: bottom navigation (4 tabs) para acciones principales: Inicio, Buscar, Reservas, Perfil. Menu hamburguesa para enlaces secundarios.
-- Breadcrumbs en rutas profundas (detalle vehículo > pasos de reserva).
+Navegación implementada:
+
+- Desktop: menú horizontal con enlaces ancla internos a secciones.
+- Mobile: botón de menú hamburguesa y menú colapsable con aria-hidden.
+- CTA persistente en header con botones Iniciar sesión y Reservar ahora.
+- Selector de idioma con preferencia visual declarada en la navegación.
+- Toggle de tema claro/oscuro que alterna la clase dark en html.
+
+No implementado actualmente:
+
+- Breadcrumbs.
+- Bottom navigation tipo aplicación móvil.
 
 ### 3.1.3 Landing Page UI Design
 
-Introducción: la Landing Page comunica propuesta de valor, genera confianza e impulsa registros y descargas. Traduce las decisiones de diseño y arquitectura de información en una experiencia pública clara.
+La UI implementada corresponde a una landing de una sola página con secciones modulares, renderizado dinámico de contenido y soporte bilingüe.
 
 #### 3.1.3.1 Landing Page Wireframe
 
-Wireframes incluidos (placeholder):
-- Desktop: Hero con CTA principal, secciones Features, How it Works, Testimonios, FAQ, Footer.
-- Mobile: versión adaptada con hero condensado, CTA fijo y secciones apiladas verticalmente.
+Referencia estructural derivada de implementación actual:
 
-Evidencia: añadir imágenes en `project-report/Resources/capitulo_3/landing_wireframes/` con archivos `desktop.png` y `mobile.png`.
+- Header con branding, menú principal, selector de idioma, toggle de tema y CTAs.
+- Hero con imagen de fondo, título, subtítulo, doble CTA y métricas.
+- Bloques de contenido tipo card para features, pasos, requisitos, testimonios y FAQ.
+- Catálogo de flota con filtros por categoría.
+- Sección CTA/Contacto con información de contacto, imagen de fondo y formulario de reserva.
+- Footer en cuatro columnas con enlaces de navegación secundaria.
+
+Evidencia pendiente:
+
+- [PENDIENTE: wireframe desktop en project-report/Resources/capitulo_3/landing_wireframes/desktop.png].
+- [PENDIENTE: wireframe mobile en project-report/Resources/capitulo_3/landing_wireframes/mobile.png].
 
 #### 3.1.3.2 Landing Page Mock-up
 
-Mock-ups (placeholder): usar assets en `project-report/Resources/capitulo_3/landing_mockups/` y describir la aplicación del Design System: colores, tipografías, espaciado y accesibilidad.
+Estado actual:
+
+- Existe implementación visual funcional en HTML/CSS/JS.
+- No se encontró archivo de mock-up editable (Figma, Sketch u otro) dentro del repositorio.
+
+Evidencia pendiente:
+
+- [PENDIENTE: mock-up desktop en project-report/Resources/capitulo_3/landing_mockups/].
+- [PENDIENTE: mock-up mobile en project-report/Resources/capitulo_3/landing_mockups/].
+- [PENDIENTE: registro de decisiones visuales comparando mock-up vs implementación].
 
 ### 3.1.4 Mobile Applications UX/UI Design
 
-Propuesta visual e interacción para las aplicaciones móviles. La UI móvil sigue el mismo Design System del landing para mantener sincronía en la experiencia.
+Se mantiene el alcance mobile-first en el reporte, pero esta sección queda como evidencia pendiente porque no hay entregables UX/UI móviles dentro de la carpeta mobile en el estado actual del repositorio.
 
 #### 3.1.4.1 Mobile Applications Wireframes
 
-Wireframes por pantallas clave:
-- Onboarding/Registro
-- Home / Búsqueda con filtros
-- Ficha vehículo
-- Reserva (checkout)
-- Perfil de usuario y panel de propietario
-
-Guardar wireframes en `project-report/Resources/capitulo_3/mobile_wireframes/`.
+- [PENDIENTE: wireframes de onboarding, home, detalle de vehículo, checkout y perfil].
+- [PENDIENTE: guardar evidencia en project-report/Resources/capitulo_3/mobile_wireframes/].
 
 #### 3.1.4.2 Mobile Applications Wireflow Diagrams
 
-Wireflows por User Goal (placeholders):
-- Goal: Reservar vehículo rápido
-  - Task Flow: Buscar > Filtrar > Ver ficha > Reservar > Confirmación
-  - Crear wireflow diagram y guardar en `project-report/Resources/capitulo_3/mobile_wireflows/`.
-
-Cada wireflow debe incluir: User goal, persona objetivo, pasos y estados de pantalla.
+- [PENDIENTE: wireflow principal Reservar vehículo rápido].
+- [PENDIENTE: guardar evidencia en project-report/Resources/capitulo_3/mobile_wireflows/].
 
 #### 3.1.4.3 Mobile Applications Mock-ups
 
-Mock-ups en alta fidelidad usando los tokens del Design System. Guardar en `project-report/Resources/capitulo_3/mobile_mockups/`.
+- [PENDIENTE: mock-ups de alta fidelidad de pantallas móviles].
+- [PENDIENTE: guardar evidencia en project-report/Resources/capitulo_3/mobile_mockups/].
 
 #### 3.1.4.4 Mobile Applications User Flow Diagrams
 
-User Flows que incluyan happy path y unhappy paths (errores, verificación fallida). Documentar condiciones y mensajes de error.
+- [PENDIENTE: user flows happy path y unhappy paths].
+- [PENDIENTE: incluir flujos de error y mensajes de validación].
 
 #### 3.1.4.5 Mobile Applications Prototyping
 
-Prototipos interactivos (link / screenshot): incluir al menos 1 captura y un enlace a video demostrativo en Microsoft Stream por prototipo. Guardar capturas en `project-report/Resources/capitulo_3/prototypes/`.
+- [PENDIENTE: prototipo navegable y evidencia en video].
+- [PENDIENTE: capturas en project-report/Resources/capitulo_3/prototypes/].
 
 ---
 
-## 3.2 Design System — Configuración base (referencia del Landing Page)
+## 3.2 Design System - Configuración base (alineado al Landing implementado)
 
-Esta sección incluye el archivo de referencia para tokens y componentes que deben usarse en Web App y Mobile App para mantener sincronía.
+Fuentes reales verificadas:
 
-- Fonts: `Inter` para UI, `Roboto` fallback.
-- Color tokens: primario, secundario, neutrales, estados (success, error, warning).
-- Spacing: base 8px.
-- Component primitives: Button, Input, Card, Tag, Avatar, Badge.
+- landing-page-samples/landing-page-main/index.html
+- landing-page-samples/landing-page-main/src/style.css
+- landing-page-samples/landing-page-main/src/App.vue
+- landing-page-samples/landing-page-main/src/components/*.vue
 
-Nota técnica: el Landing Page purista (HTML/CSS/JS) ubicado en `/landing-page` incluirá un `style.css` con las variables CSS del Design System. Las aplicaciones web y móviles deben mapear estos tokens a sus sistemas (CSS vars / theme tokens / design tokens JSON).
+Definiciones clave registradas:
 
-Design tokens de referencia: [landing-page/design-tokens.json](landing-page/design-tokens.json)
+- Tipografía base Poppins declarada en index.html y aplicada desde src/style.css.
+- Variables visuales extendidas y tema oscuro en src/style.css.
+- Componentes de UI organizados por Vue en src/components y ensamblados desde App.vue.
+- Navegación, CTA y toggle de tema definidos en componentes reutilizables.
+
+Nota de consistencia:
+
+- La guía de diseño debe considerar como fuente de verdad visual el CSS efectivo (src/style.css).
+- La implementación actual no depende de un archivo separado de design tokens en esta muestra.
 
 ## 3.3 Assets y Evidencias
 
-Estructura recomendada dentro de `project-report/Resources/capitulo_3/`:
-- landing_wireframes/
-- landing_mockups/
-- mobile_wireframes/
-- mobile_mockups/
-- mobile_wireflows/
-- prototypes/
+Evidencia existente verificable en repositorio:
 
-En cada carpeta incluir un README con la lista de archivos y descripciones.
+- Implementación de estructura y contenido en landing-page-samples/landing-page-main/index.html.
+- Estilos efectivos en landing-page-samples/landing-page-main/src/style.css.
+- Ensamblado de secciones y toggle de tema en landing-page-samples/landing-page-main/src/App.vue.
+- Componentes de navegación, hero, features, flota, how-it-works, requirements, testimonials, FAQ, CTA y footer en landing-page-samples/landing-page-main/src/components/.
+
+Evidencia pendiente para completar capítulo según guía:
+
+- [PENDIENTE: capturas de pantalla desktop/mobile del landing en ejecución].
+- [PENDIENTE: wireframes y mock-ups documentados en Resources/capitulo_3].
+- [PENDIENTE: evidencia de evaluación de accesibilidad y contraste].
+- [PENDIENTE: evidencia de pruebas responsive por breakpoint].
+- [PENDIENTE: evidencia de licencias/fuentes de imágenes externas usadas en hero y contacto].
 
 ## 3.4 Siguientes pasos y tareas
 
-1. Generar wireframes en baja fidelidad y exportar PNG (ponerlos en `landing_wireframes` y `mobile_wireframes`).
-2. Crear mock-ups en Figma/Sketch o como archivos estáticos y guardar en `landing_mockups` y `mobile_mockups`.
-3. Implementar el Landing Page en HTML/CSS/JS en la carpeta `/landing-page` (tarea scaffoldeada en este repositorio).
+1. Adjuntar evidencia visual del estado actual del Landing (desktop y mobile) en project-report/Resources/capitulo_3.
+2. Registrar wireframes y mock-ups faltantes como evidencia de diseño, manteniendo la estructura de carpetas ya definida.
+3. Completar metadatos SEO/OG solo si la guía del curso los exige explícitamente y anexar evidencia.
+4. Incorporar en este capítulo las evidencias de UX/UI móvil cuando el equipo las genere en la carpeta mobile.
 
 ---
 
-_Este documento es la base para el Capítulo III. Contiene plantillas, placeholders y la configuración inicial del Design System que servirán como referencia para el desarrollo front-end y mobile._
+Este documento queda alineado con lo realmente implementado en la Landing Page y mantiene placeholders explícitos para toda evidencia aún no disponible.
