@@ -278,51 +278,31 @@ El problema principal radica en la falta de plataformas que faciliten el alquile
 
 | Categoría | Preguntas y Respuestas |
 | :--- | :--- |
-| **¿Qué?** | **¿Cuál es el problema?**<br>Falta de plataformas que conecten directamente a propietarios de vehículos con arrendatarios, dificultando el acceso a opciones accesibles y confiables de alquiler.<br><br>**¿Cuál es la relación con los usuarios?**<br>Los propietarios no cuentan con medios eficientes para ofrecer sus vehículos, mientras que los arrendatarios tienen problemas para encontrar alternativas viables y confiables. |
-| **¿Cuándo?** | **¿Cuándo ocurre el problema?**<br>Cuando los propietarios desean alquilar sus vehículos, pero no tienen un canal adecuado para hacerlo, y los arrendatarios requieren movilidad temporal sin opciones accesibles.<br><br>**¿Cuándo usan el producto?**<br>Cuando los propietarios listan sus vehículos en la plataforma y los arrendatarios realizan búsquedas y reservas según sus necesidades, como viajes, emergencias o desplazamientos puntuales. |
-| **¿Dónde?** | **¿Dónde usan el producto?**<br>Desde cualquier lugar con acceso a internet: hogar, trabajo o en movimiento.<br><br>**¿A dónde se dirige la solución?**<br>A propietarios que desean monetizar sus vehículos y a arrendatarios que buscan soluciones seguras y flexibles.<br><br>**¿Dónde surge el problema?**<br>Principalmente en zonas urbanas, donde la demanda de movilidad es alta y la oferta de plataformas es limitada. |
-| **¿Quiénes?** | **¿Quiénes están involucrados?**<br>Propietarios de vehículos y arrendatarios que buscan alquilar de forma sencilla y rápida.<br><br>**¿A quiénes afecta el problema?**<br>A los propietarios que no logran rentabilizar sus vehículos y a los arrendatarios que enfrentan dificultades para alquilar de forma inmediata y confiable.<br><br>**¿Quién usará la plataforma?**<br>Ambos grupos: propietarios que desean generar ingresos y arrendatarios con necesidades temporales de transporte. |
-| **¿Por qué?** | **¿Cuál es la causa del problema?**<br>La ausencia de una plataforma que facilite una conexión eficiente y segura entre propietarios y arrendatarios, limitando la disponibilidad de opciones para ambas partes. |
-| **¿Cómo?** | **¿En qué condiciones se utiliza?**<br>Los propietarios acceden cuando desean obtener ingresos mediante el alquiler; los arrendatarios la usan cuando requieren un vehículo temporalmente.<br><br>**¿Cómo conocieron la plataforma?**<br>A través de redes sociales, recomendaciones de usuarios y campañas de marketing enfocadas en movilidad.<br><br>**¿Qué motivó al usuario a buscar esta solución?**<br>La necesidad de una alternativa confiable, accesible y directa para el alquiler de vehículos. |
-| **¿Cuánto cuesta?** | **Costos para propietarios:**<br>No hay costos iniciales; solo se aplica una comisión por alquiler concretado.<br><br>**Costos para arrendatarios:**<br>Precios variables según el vehículo y la duración, generalmente más económicos y flexibles que las opciones tradicionales. |
+| **¿Qué?** | **¿Cuál es el problema específico?**<br>La falta de opciones de alquiler de vehículos que sean verdaderamente flexibles y a precios justos, así como la incapacidad de los dueños de vehículos particulares de generar ingresos con sus autos inactivos de forma segura.<br><br>**¿Cuál es la relación con los usuarios?**<br>Los arrendatarios ven limitada su movilidad por los altos costos del alquiler tradicional, y los propietarios enfrentan la depreciación de un activo subutilizado. |
+| **¿Cuándo?** | **¿Cuándo ocurre el problema?**<br>El problema se manifiesta cuando una persona requiere un vehículo de forma inmediata o por un tiempo corto (ej. fines de semana, viajes repentinos, mudanzas) y encuentra barreras en el mercado tradicional. Para el propietario, ocurre todos los días que su vehículo permanece inactivo o estacionado sin uso. |
+| **¿Dónde?** | **¿Dónde surge el problema?**<br>Principalmente en zonas urbanas y ciudades densamente pobladas, donde existen muchos vehículos sin uso y, a la vez, una alta demanda por alternativas de transporte temporal y flexible debido a la congestión o la falta de transporte público. |
+| **¿Quiénes?** | **¿A quiénes afecta el problema?**<br>Por un lado, a los **arrendatarios**, personas que no poseen un vehículo propio pero tienen necesidades temporales de movilidad. Por otro lado, a los **propietarios de vehículos particulares**, que no utilizan su auto con frecuencia y buscan rentabilizarlo pero no tienen medios seguros para hacerlo. |
+| **¿Por qué?** | **¿Cuál es la causa del problema?**<br>Las agencias de alquiler tradicionales imponen requisitos estrictos, procesos burocráticos y tarifas elevadas. Además, no existe en el mercado un medio formal y seguro que brinde confianza a los particulares para prestar sus vehículos, manteniendo la oferta y la demanda desconectadas. |
+| **¿Cómo?** | **¿Cómo se manifiesta este problema?**<br>Los arrendatarios experimentan frustración al invertir demasiado tiempo y dinero intentando acceder a un vehículo. Los propietarios asumen mensualmente gastos fijos de un activo que se deprecia constantemente sin generar ningún beneficio, generándoles una carga financiera. |
+| **¿Cuánto?** | **¿Qué tan grave es el impacto?**<br>Para los arrendatarios, el impacto es económico y de tiempo, al incurrir en altos sobrecostos al usar medios alternativos. Para los propietarios, la gravedad radica en pérdidas económicas sostenidas mes a mes, asumiendo costos de seguro, mantenimiento y devaluación de un bien con una muy baja tasa de uso. |
 
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-A partir del análisis del contexto y la investigación realizada, se identificaron los siguientes Problem Statements que dan forma a la propuesta de valor de **Rent2Go**, una plataforma peer-to-peer de alquiler de vehículos:
+A partir del análisis del contexto y la investigación realizada, hemos definido el siguiente Problem Statement principal que da forma a nuestra iniciativa:
 
-- **Problem Statement 1: Falta de acceso a opciones de alquiler accesibles y confiables**
-  - **¿Qué sucede?** Arrendatarios en zonas urbanas del Perú no encuentran vehículos económicos y seguros para alquilar temporalmente.
-  - **¿Por qué es un problema?** Las empresas tradicionales imponen precios elevados y requisitos rígidos.
-  - **¿A quién afecta?** A personas que requieren movilidad flexible sin comprometerse a una compra.
-  - **Solución propuesta:** Una plataforma digital que conecte directamente a arrendatarios con vehículos disponibles de propietarios particulares, eliminando intermediarios y reduciendo costos.
+**Contexto:**
+El mercado de alquiler de vehículos en zonas urbanas está dominado por empresas tradicionales que imponen tarifas altas, requisitos estrictos y procesos poco ágiles. Paralelamente, una gran cantidad de vehículos particulares permanecen estacionados e inactivos la mayor parte del tiempo, generando gastos fijos continuos para sus dueños.
 
-- **Problem Statement 2: Dificultad para monetizar vehículos no utilizados por parte de los propietarios**
-  - **¿Qué sucede?** Propietarios de autos que usan poco sus vehículos no tienen medios simples y seguros para alquilarlos.
-  - **¿Por qué es un problema?** Se desperdicia un activo valioso que podría generar ingresos pasivos.
-  - **¿A quién afecta?** A propietarios con vehículos inactivos o de bajo uso.
-  - **Solución propuesta:** Implementar una plataforma donde los propietarios puedan listar fácilmente sus vehículos, controlar condiciones de uso y recibir pagos automáticos.
+**Problema:**
+Los propietarios de vehículos enfrentan desafíos para encontrar ingresos operativos sin el consumo excesivo de recursos ni riesgos. Al mismo tiempo, los arrendatarios tienen grandes dificultades para encontrar opciones de alquiler de vehículos que sean verdaderamente inmediatas, flexibles y a precios accesibles.
 
-- **Problem Statement 3: Modelos de negocio costosos y poco escalables**
-  - **¿Qué sucede?** El modelo tradicional de alquiler exige tener flota propia, lo cual eleva los costos operativos.
-  - **¿Por qué es un problema?** Dificulta escalar y reduce el margen de ganancias.
-  - **¿A quién afecta?** A nuevas empresas que buscan entrar al mercado de movilidad sin grandes inversiones.
-  - **Solución propuesta:** Desarrollar una solución peer-to-peer donde la plataforma actúe como intermediario tecnológico y no requiera vehículos propios.
+**Impacto:**
+Los arrendatarios sufren una pérdida significativa de tiempo y altos gastos en transporte al verse obligados a depender de opciones costosas o ineficientes. A su vez, los propietarios asumen pérdidas operativas y económicas sostenidas mes a mes (seguro, impuestos, mantenimiento) debido a la baja tasa de uso de su activo.
 
-- **Problem Statement 4: Falta de confianza y seguridad en plataformas similares**
-  - **¿Qué sucede?** Los usuarios temen fraudes, daños a los vehículos o problemas legales.
-  - **¿Por qué es un problema?** Reduce la adopción del servicio y frena el crecimiento.
-  - **¿A quién afecta?** Tanto a propietarios como a arrendatarios.
-  - **Solución propuesta:** Incorporar verificación de identidad, contratos digitales, seguros, políticas claras y soporte 24/7 para garantizar una experiencia segura.
-
-- **Problem Statement 5: Crecimiento limitado por falta de validación social**
-  - **¿Qué sucede?** Los usuarios nuevos se basan en recomendaciones y experiencias previas para tomar decisiones.
-  - **¿Por qué es un problema?** Sin confianza, no hay expansión.
-  - **¿A quién afecta?** A toda la comunidad de la plataforma.
-  - **Solución propuesta:** Activar mecanismos de calificación, comentarios, referidos y recompensas que fortalezcan la reputación colectiva.
-
-Rent2Go se propone como una solución innovadora, accesible y escalable dentro del sector del alquiler de vehículos, ofreciendo beneficios económicos tanto a propietarios como a arrendatarios, y resolviendo las limitaciones del modelo tradicional.
+**Pregunta de enfoque:**
+¿Cómo mejorar la eficiencia en el acceso a la movilidad temporal logrando que los arrendatarios encuentren opciones accesibles y los propietarios rentabilicen sus vehículos inactivos de forma segura y confiable?
 
 #### 1.2.2.2. Lean UX Assumptions
 
