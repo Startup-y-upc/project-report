@@ -196,7 +196,7 @@ Sabremos que esta hipótesis es correcta cuando al menos el 60% de los usuarios 
 
 Sabremos que esta hipótesis es correcta cuando la mayoría de usuarios mantenga valoraciones superiores a 4 estrellas y las incidencias relacionadas con conflictos o cancelaciones injustificadas sean menores al 10% de las transacciones.
 
-**Hipótesis sobre ventaja competitiva del modelo P2P**
+**4. Hipótesis sobre ventaja competitiva del modelo P2P**
 
 **Creemos que** lograremos una propuesta de valor más competitiva y escalable en el mercado de alquiler vehicular  
 **si** propietarios y arrendatarios  
@@ -205,7 +205,7 @@ Sabremos que esta hipótesis es correcta cuando la mayoría de usuarios mantenga
 
 Sabremos que esta hipótesis es correcta cuando los costos operativos sean significativamente menores frente a modelos tradicionales y la plataforma mantenga precios competitivos sin afectar la sostenibilidad del negocio.
 
-**Hipótesis sobre fidelización mediante experiencia móvil**
+**5. Hipótesis sobre fidelización mediante experiencia móvil**
 
 **Creemos que** aumentaremos la retención y satisfacción de los usuarios de la plataforma  
 **si** propietarios y arrendatarios  
