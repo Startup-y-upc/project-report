@@ -169,14 +169,50 @@ Los arrendatarios sufren una pérdida significativa de tiempo y altos gastos en 
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-1. **Creemos que lograremos** atraer a propietarios de vehículos interesados en generar ingresos pasivos **si** ofrecemos una plataforma que les permita listar sus vehículos de manera sencilla, con procesos claros y garantías de seguridad.  
-   **Al proporcionar** un sistema confiable que minimice su involucramiento operativo y ofrezca visibilidad de ingresos, **con la implementación** de herramientas de monitoreo, seguros integrados y asistencia al cliente, facilitaremos la decisión de participación y retención en la plataforma.
+**1. Hipótesis sobre captación de propietarios de vehículos**
 
-2. **Creemos que lograremos** aumentar la preferencia y uso por parte de los arrendatarios **si** la plataforma ofrece una experiencia de alquiler fácil, rápida y económica, con altos estándares de seguridad y confianza.  
-   **Al enfocarnos** en una interfaz amigable, opciones de búsqueda personalizadas y procesos de reserva eficientes, **con la incorporación** de valoraciones, verificaciones de identidad y soporte durante todo el proceso, podremos fidelizar a los usuarios y mejorar la percepción del servicio.
+**Creemos que** incrementaremos la cantidad de vehículos registrados y disponibles en la plataforma  
+**si** los propietarios de vehículos particulares  
+**alcanzan** una forma segura y sencilla de generar ingresos pasivos sin involucrarse en procesos operativos complejos  
+**con** un sistema de publicación de vehículos, verificación de identidad, monitoreo de alquileres y protección mediante seguros integrados.
 
-3. **Creemos que lograremos** una ventaja competitiva sostenible y un crecimiento escalable **si** mantenemos un modelo de negocio sin inversión directa en la adquisición de vehículos.  
-   **Al eliminar** los costos operativos relacionados con la gestión de flota propia, **con la reinversión** en áreas como tecnología, marketing dirigido y soporte al cliente, podremos mantener precios competitivos y ofrecer una propuesta de valor sólida tanto para propietarios como para arrendatarios.
+Sabremos que esta hipótesis es correcta cuando al menos el 70% de los propietarios registrados complete la publicación de su primer vehículo y al menos el 50% mantenga disponibilidad activa durante el primer mes de uso.
+
+**2. Hipótesis sobre preferencia de arrendatarios**
+
+**Creemos que** aumentaremos la preferencia y frecuencia de uso de la plataforma frente a alternativas tradicionales de alquiler  
+**si** los arrendatarios  
+**alcanzan** una experiencia rápida, flexible y accesible para encontrar vehículos cercanos según sus necesidades  
+**con** un sistema de búsqueda inteligente, filtros personalizados y reservas inmediatas desde dispositivos móviles.
+
+Sabremos que esta hipótesis es correcta cuando al menos el 60% de los usuarios complete una reserva sin asistencia externa y al menos el 30% vuelva a utilizar la plataforma dentro de los siguientes 60 días.
+
+**3. Hipótesis sobre generación de confianza entre usuarios**
+
+**Creemos que** incrementaremos la confianza y permanencia de los usuarios dentro de la plataforma  
+**si** propietarios y arrendatarios  
+**alcanzan** seguridad y transparencia durante todo el proceso de alquiler  
+**con** mecanismos de validación de identidad, historial de alquileres, calificaciones bidireccionales y soporte integrado.
+
+Sabremos que esta hipótesis es correcta cuando la mayoría de usuarios mantenga valoraciones superiores a 4 estrellas y las incidencias relacionadas con conflictos o cancelaciones injustificadas sean menores al 10% de las transacciones.
+
+**Hipótesis sobre ventaja competitiva del modelo P2P**
+
+**Creemos que** lograremos una propuesta de valor más competitiva y escalable en el mercado de alquiler vehicular  
+**si** propietarios y arrendatarios  
+**alcanzan** precios más accesibles y una mayor disponibilidad de vehículos  
+**con** un modelo peer-to-peer que elimine la necesidad de mantener una flota propia.
+
+Sabremos que esta hipótesis es correcta cuando los costos operativos sean significativamente menores frente a modelos tradicionales y la plataforma mantenga precios competitivos sin afectar la sostenibilidad del negocio.
+
+**Hipótesis sobre fidelización mediante experiencia móvil**
+
+**Creemos que** aumentaremos la retención y satisfacción de los usuarios de la plataforma  
+**si** propietarios y arrendatarios  
+**alcanzan** una experiencia fluida y consistente desde cualquier dispositivo móvil  
+**con** una aplicación intuitiva que permita gestionar reservas, pagos, publicaciones y seguimiento en tiempo real.
+
+Sabremos que esta hipótesis es correcta cuando los usuarios completen las principales tareas del sistema en pocos pasos y las evaluaciones de satisfacción sobre usabilidad sean mayoritariamente positivas.
 
 #### 1.2.2.4. Lean UX Canvas
 
