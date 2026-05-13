@@ -185,3 +185,6 @@ ABET – EAC - Student Outcome 7 Criterio: Actualiza conceptos y conocimientos n
 - Dominar integraciones con servicios externos para apps moviles antes de diciembre 2026, implementando 3 integraciones con APIs reales y documentando resultados.
 - Liderar un proyecto movil con DDD antes de junio 2026, definiendo bounded contexts y entregando un MVP funcional.
 - Desplegar una aplicacion movil en iOS y Android en simultaneo antes de diciembre 2026 y mantenerla con actualizaciones mensuales durante mas de 6 meses.
+
+
+1
