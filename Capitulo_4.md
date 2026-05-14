@@ -12,26 +12,52 @@ En esta sección el equipo establece las decisiones y convenciones que permitir�
 
 ### 4.1.1. Software Development Environment Configuration
 
-En esta sección se especifica, describe e indica los nombres de productos, el propósito de uso en el proyecto, la ruta de referencia (para software basado en modelos SaaS) o ruta de descarga de cada uno de los productos de software que deben utilizar los miembros del equipo para colaborar en el ciclo de vida de los productos digitales que forman la solución.
+**Contexto y Justificación:**
 
-| Producto | Versión | Propósito | Referencia |
+Rent2Go es una plataforma digital integral para el alquiler de vehículos que requiere la coordinación simultánea de múltiples productos: un backend robusto basado en microservicios, un landing page informativo, aplicaciones móviles nativas (Android/iOS) y una plataforma web frontend. Este escenario polimórfico exige un ecosistema de herramientas diversas pero cohesionadas que permita al equipo mantener consistencia, calidad y velocidad de desarrollo.
+
+Durante Sprint 1, el equipo estableció una pila tecnológica moderna basada en arquitectura de dominio (DDD) para el backend, frameworks nativos para mobile (Kotlin/Swift), y tecnologías web estándar para frontend. La selección de herramientas se hizo considerando:
+
+1. **Compatibilidad**: Integración fluida entre componentes frontend, backend y mobile
+2. **Escalabilidad**: Capacidad de soportar crecimiento de usuarios y complejidad funcional
+3. **Experiencia del Equipo**: Tecnologías modernas con amplio soporte comunitario
+4. **Productividad**: IDEs y herramientas que aceleren el desarrollo iterativo
+
+En esta sección se especifica el conjunto de software, versiones y referencias de descarga necesarias para que cada miembro del equipo configure su ambiente de desarrollo local y colabore efectivamente en el ciclo de vida de Rent2Go.
+
+**Stack Tecnológico por Área:**
+
+| Área | Stack |
+|------|-------|
+| **Backend** | Java 17 + Spring Boot 3.5.7 + Maven + MySQL 8.0 |
+| **Landing Page** | HTML5 + CSS3 + JavaScript + i18n |
+| **Mobile** | Android (Kotlin) / iOS (Swift) / Flutter (Dart) |
+| **Frontend Web** | Angular + TypeScript |
+| **DevOps** | Git + GitHub |
+| **Herramientas** | Postman + Figma + MySQL Workbench |
+
+---
+
+**Herramientas de Desarrollo - Configuración Recomendada:**
+
+| Producto | Versión | Propósito | Descarga / Referencia |
 | --- | --- | --- | --- |
-| **JDK (Java Development Kit)** | 17.0 | Desarrollo del backend con Spring Boot | [https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) |
-| **Apache Maven** | 3.8.1+ | Gestor de dependencias y build para Spring Boot | [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi) |
-| **IDE - IntelliJ IDEA** | 2024+ | Entorno de desarrollo para Java/Spring Boot | [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/) |
-| **Node.js** | 18.0+ | Runtime para herramientas de build frontend | [https://nodejs.org/](https://nodejs.org/) |
-| **Visual Studio Code** | Latest | Editor para desarrollo frontend y móvil | [https://code.visualstudio.com/](https://code.visualstudio.com/) |
-| **Android Studio** | Latest | IDE para desarrollo Android Kotlin | [https://developer.android.com/studio](https://developer.android.com/studio) |
-| **Xcode** | Latest | IDE para desarrollo iOS Swift | [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) |
-| **Flutter SDK** | 3.10+ | Framework para desarrollo cross-platform | [https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install) |
-| **Dart** | 3.0+ | Lenguaje para Flutter | [https://dart.dev/get-dart](https://dart.dev/get-dart) |
-| **Git** | 2.40+ | Control de versiones | [https://git-scm.com/](https://git-scm.com/) |
-| **GitHub Desktop** | Latest | Interfaz gráfica para Git | [https://desktop.github.com/](https://desktop.github.com/) |
-| **Figma** | Cloud | Diseño y prototipado UI/UX | [https://www.figma.com/](https://www.figma.com/) |
-| **Postman** | Latest | Herramienta para testing de APIs REST | [https://www.postman.com/downloads/](https://www.postman.com/downloads/) |
-| **MySQL Workbench** | 8.0+ | Modelado y administración de BD MySQL | [https://www.mysql.com/products/workbench/](https://www.mysql.com/products/workbench/) |
-| **Docker** | Latest | Containerización para despliegue | [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop) |
-| **Firebase** | Console | Testing y distribución de apps móviles | [https://console.firebase.google.com/](https://console.firebase.google.com/) |
+| **JDK (Java Development Kit)** | 17.0+ | Compilación y ejecución del backend Spring Boot basado en DDD | [https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) |
+| **Apache Maven** | 3.8.1+ | Gestión de dependencias y build automation para módulos Spring Boot | [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi) |
+| **IDE - IntelliJ IDEA** | 2024+ | Desarrollo Java/Spring Boot con análisis de código y refactoring avanzado | [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/) |
+| **Node.js** | 18.0+ | Runtime para herramientas de build, TypeScript compilation y build scripts | [https://nodejs.org/](https://nodejs.org/) |
+| **Visual Studio Code** | Latest | Editor ligero para frontend, landing page, scripts y documentación | [https://code.visualstudio.com/](https://code.visualstudio.com/) |
+| **Android Studio** | Latest | IDE oficial para desarrollo Android en Kotlin con emulator integrado | [https://developer.android.com/studio](https://developer.android.com/studio) |
+| **Xcode** | Latest | Entorno de desarrollo oficial para iOS con compilador Swift nativo | [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) |
+| **Flutter SDK** | 3.10+ | Framework cross-platform para desarrollo simultáneo Android/iOS en Dart | [https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install) |
+| **Dart** | 3.0+ | Lenguaje de programación para aplicaciones Flutter | [https://dart.dev/get-dart](https://dart.dev/get-dart) |
+| **Git** | 2.40+ | Sistema de control de versiones distribuido para colaboración de código | [https://git-scm.com/](https://git-scm.com/) |
+| **GitHub Desktop** | Latest | Interfaz gráfica para Git que simplifica operaciones de control de versiones | [https://desktop.github.com/](https://desktop.github.com/) |
+| **Figma** | Cloud | Diseño colaborativo y prototipado de UI/UX para landing y apps | [https://www.figma.com/](https://www.figma.com/) |
+| **Postman** | Latest | Testing y documentación de APIs REST; simulación de endpoints | [https://www.postman.com/downloads/](https://www.postman.com/downloads/) |
+| **MySQL Workbench** | 8.0+ | Diseño, modelado y administración visual de base de datos MySQL | [https://www.mysql.com/products/workbench/](https://www.mysql.com/products/workbench/) |
+| **Railway** | - | Plataforma de deployment para backend con MySQL gestionado | [https://railway.app/](https://railway.app/) |
+| **GitHub Pages** | - | Hosting gratuito para landing page estática con CI/CD integrado | [https://pages.github.com/](https://pages.github.com/) |
 
 ---
 
@@ -117,10 +143,6 @@ El equipo aplica convenciones estándares para codificación en los lenguajes ut
 - Nomenclatura: PascalCase para clases y structs, camelCase para variables
 - Aplicar [iOS Best Practices](https://developer.apple.com/documentation/swift)
 
-**Dart (Flutter Mobile):**
-- Guía: [Dart Style Guide](https://dart.dev/guides/language/effective-dart/style)
-- Nomenclatura: camelCase para variables y funciones, PascalCase para clases
-- Ejemplo: `class VehicleRepository {}`
 
 **TypeScript/Angular (Frontend Web):**
 - Guía: [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
@@ -150,19 +172,17 @@ En esta sección se especifica la configuración del despliegue de la solución.
 **Estrategia de Despliegue por Producto:**
 
 **Landing Page:**
-- Plataforma: Vercel o Netlify (SaaS)
+- Plataforma: GitHub Pages
 - Trigger: Merge a main branch
 - Process: Automatic build & deploy
 - URL: [Insert production URL]
-- Configuración: Environment variables en .env.production
+- Configuración: Source branch, GitHub Pages settings y dominio personalizado si aplica
 
 **Backend (Web Services):**
-- Plataforma: AWS EC2 o Azure App Service
-- Container: Docker
-- Orchestration: [Insert si aplica - Kubernetes, etc.]
-- CI/CD: GitHub Actions
-- Database: MySQL en AWS RDS
-- Configuración: application.properties por ambiente (dev, staging, prod)
+- Plataforma: Railway
+- CI/CD: GitHub Actions + Railway deploy
+- Database: MySQL 8.0 en Railway
+- Configuración: variables de entorno y application.properties por ambiente (dev, staging, prod)
 
 **Mobile (Android/iOS/Flutter):**
 - Android: Google Play Store
@@ -487,11 +507,11 @@ Durante Sprint 1, se documentaron todos los endpoints del backend correspondient
 
 **Introducción:**
 
-Durante Sprint 1, el equipo completó el despliegue del Landing Page en ambiente de staging (HU15-HU18) y preparó el backend para despliegue en desarrollo (HU02-HU05). Se configuraron los ambientes necesarios, secrets, y pipelines de CI/CD.
+Durante Sprint 1, el equipo completó el despliegue del Landing Page de Rent2Go en GitHub Pages (HU15-HU18) y publicó el backend Spring Boot en Railway (HU02-HU05). Se configuraron los ambientes necesarios, secrets y pipelines de CI/CD para ambos servicios.
 
 **Landing Page - Deployment:**
 
-**Plataforma:** Vercel
+**Plataforma:** GitHub Pages
 
 - **Production URL:** [Insert URL]
 - **Staging URL:** [Insert URL]
@@ -501,44 +521,53 @@ Durante Sprint 1, el equipo completó el despliegue del Landing Page en ambiente
 
 **Steps realizados:**
 
-1. Creación de proyecto en Vercel vinculado a repositorio GitHub
+1. Creación del repositorio y configuración de GitHub Pages para Rent2Go
 2. Configuración de environment variables (.env.production)
 3. Setup de dominio personalizado (si aplica)
-4. Configuración de SSL/TLS automático
-5. Primer deploy exitoso en staging
+4. Configuración de publicación automática en GitHub Pages
+5. Primer deploy exitoso en GitHub Pages
 
-[Insert screenshot: Vercel deployment console]
-[Insert screenshot: Landing page deployed en staging]
+[Insert screenshot: GitHub Pages deployment console]
+[Insert screenshot: Landing page deployed on GitHub Pages]
 
-**Backend - Deployment Preparation:**
+**Backend - Deployment:**
 
-**Plataforma:** AWS EC2 / Azure App Service (en preparación)
+**Plataforma:** Railway
 
-**Status:** En configuración para Sprint 2
+**Status:** Desplegado
 
 **Steps realizados en Sprint 1:**
 
-1. Creación de Docker image para Spring Boot
-2. Configuración de MySQL RDS en AWS
-3. Setup de GitHub Actions workflow para CI/CD
-4. Configuración de secrets en GitHub (DB credentials, etc.)
-5. Testing de deployment en ambiente local
+1. Configuración del servicio backend en Railway vinculado al repositorio de Rent2Go
+2. Creación del servicio MySQL 8.0 en Railway para la persistencia de datos
+3. Configuración de variables de entorno y secrets en Railway
+4. Setup de GitHub Actions workflow para CI/CD
+5. Validación del despliegue y conexión con la base de datos
 
-[Insert screenshot: Docker build exitoso]
-[Insert screenshot: GitHub Actions workflow setup]
+<div align="center">
+  <img src="Resources/capitulo_4/backend-deployment/1-railway-create.png" alt="Railway backend service creado" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/backend-deployment/3-added-mysql.png" alt="Railway MySQL service creado" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/backend-deployment/9-backend-deployed-evidence.png" alt="Railway backend deploy evidence" width="900">
+</div>
 
 **Database Deployment:**
 
-**Plataforma:** AWS RDS MySQL 8.0
+**Plataforma:** Railway MySQL 8.0
 
 **Steps realizados:**
 
-1. Creación de instancia RDS MySQL
+1. Creación del servicio MySQL dentro de Railway
 2. Ejecución de scripts de schema para Vehicle Catalog
-3. Configuración de security groups
-4. Testing de conexión desde aplicación
+3. Configuración de variables de entorno para la conexión
+4. Testing de conexión desde la aplicación
 
-[Insert screenshot: AWS RDS instance created]
+[Insert screenshot: Railway MySQL instance creada]
 [Insert screenshot: Database schema verification]
 
 ---
@@ -1007,7 +1036,7 @@ May 12 - Release 1.0.0 tag
 
 | Desafío | Impacto | Resolución | Lección |
 | --- | --- | --- | --- |
-| MySQL connection strings | Medium | Docker compose local + env vars | Documentar config desde día 1 |
+| MySQL connection strings | Medium | Variables de entorno locales + Railway secrets | Documentar config desde día 1 |
 | CORS en API | Medium | Configurar Spring Security | Considerar CORS temprano |
 | Responsive CSS | Low | Mobile-first approach | Usar framework CSS next time |
 | Timezone differences | Low | Async standup + recordings | Documentar en UTC |
