@@ -255,7 +255,11 @@ La integración de estos productos permitirá validar tempranamente el concepto 
 
 **Estado del Sprint Backlog (Trello Board):**
 
-[Insert screenshot de Trello Board]
+<div align="center">
+  <img src="Resources/capitulo_4/sprint-backlog/1-trello-board.png" alt="Sprint 1 Trello Board" width="900">
+</div>
+
+*Nota.* Elaboración propia. El tablero resume las tareas de Sprint 1 para Landing Page y Backend Vehicle Catalog.
 
 **URL del Board:** [Insert URL público de Trello]
 
@@ -422,15 +426,39 @@ Feature: Favorites Management (HU05)
 
 **Introducción:**
 
-Durante Sprint 1, el equipo completó la implementación del Landing Page informativo (HU15-HU18) y los endpoints base del Backend para catálogo de vehículos (HU02-HU05). Se presentan screenshots de las principales vistas implementadas y enlace a video de demostración de funcionalidades.
+Durante Sprint 1, el equipo completó la implementación del Landing Page informativo (HU15-HU18) y los endpoints base del Backend para catálogo de vehículos (HU02-HU05). Se presentan capturas de las principales vistas implementadas y enlace a video de demostración de funcionalidades.
 
-**Landing Page - Screenshots:**
+**Landing Page - Capturas:**
 
-[Insert screenshot 1: Landing page completa con navbar (HU17) - Navegación]
-[Insert screenshot 2: Hero section con CTA principal (HU15) - Propuesta de valor]
-[Insert screenshot 3: Sección de contacto (HU16) - Información de contacto]
-[Insert screenshot 4: Layout responsivo en móvil (HU18) - Responsive design]
-[Insert screenshot 5: Secciones principales visibles (HU15) - Contenido informativo]
+<div align="center">
+  <img src="Resources/capitulo_4/execution/landing-page/1-navbar.png" alt="Landing page completa con navbar" width="900">
+</div>
+
+*Nota.* Elaboración propia. Vista general de la landing page con navegación superior y estructura principal (HU17).
+
+<div align="center">
+  <img src="Resources/capitulo_4/execution/landing-page/2-hero-cta.png" alt="Hero section con CTA principal" width="900">
+</div>
+
+*Nota.* Elaboración propia. Hero section con propuesta de valor y llamada a la acción principal (HU15).
+
+<div align="center">
+  <img src="Resources/capitulo_4/execution/landing-page/3-contact-section.png" alt="Sección de contacto" width="900">
+</div>
+
+*Nota.* Elaboración propia. Sección de contacto con información de la empresa y formulario (HU16).
+
+<div align="center">
+  <img src="Resources/capitulo_4/execution/landing-page/4-responsive-mobile.png" alt="Layout responsivo en móvil" width="900">
+</div>
+
+*Nota.* Elaboración propia. Adaptación visual de la landing page en dispositivo móvil (HU18).
+
+<div align="center">
+  <img src="Resources/capitulo_4/execution/landing-page/5-main-sections.png" alt="Secciones principales visibles" width="900">
+</div>
+
+*Nota.* Elaboración propia. Captura donde se aprecian las secciones informativas principales del landing page (HU15).
 
 **Video de Demostración - Landing Page:**
 
@@ -441,13 +469,37 @@ En este video se muestra la navegación completa del Landing Page (HU15-HU18), i
 - **Duración:** [Insert HH:MM:SS]
 - **Descripción:** Demostración completa del Landing Page con navegación entre secciones (HU15), información de contacto (HU16), navegación intuitiva (HU17), y responsividad (HU18).
 
-**Backend API - Screenshots & Testing (HU02-HU05):**
+**Backend API - Capturas & Testing (HU02-HU05):**
 
-[Insert screenshot 1: Postman - GET /api/vehicles/search con criterios (HU02)]
-[Insert screenshot 2: Postman - GET /api/vehicles/filter con rango de precio (HU03)]
-[Insert screenshot 3: Postman - GET /api/vehicles/{id} detail (HU04)]
-[Insert screenshot 4: Postman - POST /api/favorites respuesta exitosa (HU05)]
-[Insert screenshot 5: Postman - GET /api/favorites list (HU05)]
+<div align="center">
+  <img src="Resources/capitulo_4/execution/backend-api/1-postman-search.png" alt="Postman GET search con criterios" width="900">
+</div>
+
+*Nota.* Elaboración propia. Prueba del endpoint de búsqueda de vehículos con criterios (HU02).
+
+<div align="center">
+  <img src="Resources/capitulo_4/execution/backend-api/2-postman-filter.png" alt="Postman GET filter por rango de precio" width="900">
+</div>
+
+*Nota.* Elaboración propia. Prueba del filtro por precio en Postman (HU03).
+
+<div align="center">
+  <img src="Resources/capitulo_4/execution/backend-api/3-postman-detail.png" alt="Postman GET detail de vehículo" width="900">
+</div>
+
+*Nota.* Elaboración propia. Respuesta del endpoint de detalle de vehículo (HU04).
+
+<div align="center">
+  <img src="Resources/capitulo_4/execution/backend-api/4-postman-favorites-post.png" alt="Postman POST favorites exitoso" width="900">
+</div>
+
+*Nota.* Elaboración propia. Creación de favorito mediante el endpoint POST /api/favorites (HU05).
+
+<div align="center">
+  <img src="Resources/capitulo_4/execution/backend-api/5-postman-favorites-list.png" alt="Postman GET favorites list" width="900">
+</div>
+
+*Nota.* Elaboración propia. Consulta de la lista de favoritos del usuario (HU05).
 
 **Video de Demostración - Backend API (HU02-HU05):**
 
@@ -477,12 +529,31 @@ Durante Sprint 1, se documentaron todos los endpoints del backend correspondient
 | `/api/favorites` | POST | HU05 | Agrega vehículo a favoritos | Body: {vehicleId, userId} | 201 Created - Agregado a favoritos |
 | `/api/favorites/{id}` | DELETE | HU05 | Elimina de favoritos | `id` (path) | 204 No Content |
 
-**OpenAPI Documentation Screenshots:**
+**OpenAPI Documentation Capturas:**
 
-[Insert screenshot 1: Swagger UI - Endpoints list]
-[Insert screenshot 2: Swagger UI - GET /api/vehicles/search con ejemplos]
-[Insert screenshot 3: Swagger UI - POST /api/vehicles request body]
-[Insert screenshot 4: Swagger UI - Response schemas]
+<div align="center">
+  <img src="Resources/capitulo_4/services-documentation/1-swagger-endpoints.png" alt="Swagger UI endpoints list" width="900">
+</div>
+
+*Nota.* Elaboración propia. Vista general de los endpoints documentados en Swagger.
+
+<div align="center">
+  <img src="Resources/capitulo_4/services-documentation/2-swagger-search.png" alt="Swagger UI GET search con ejemplos" width="900">
+</div>
+
+*Nota.* Elaboración propia. Ejemplo de documentación del endpoint GET /api/vehicles/search.
+
+<div align="center">
+  <img src="Resources/capitulo_4/services-documentation/3-swagger-request-body.png" alt="Swagger UI request body" width="900">
+</div>
+
+*Nota.* Elaboración propia. Definición del request body para operaciones de creación o actualización.
+
+<div align="center">
+  <img src="Resources/capitulo_4/services-documentation/4-swagger-response-schemas.png" alt="Swagger UI response schemas" width="900">
+</div>
+
+*Nota.* Elaboración propia. Esquemas de respuesta y modelos generados en Swagger.
 
 **OpenAPI URL Deployments:**
 
@@ -527,8 +598,13 @@ Durante Sprint 1, el equipo completó el despliegue del Landing Page de Rent2Go 
 4. Configuración de publicación automática en GitHub Pages
 5. Primer deploy exitoso en GitHub Pages
 
-[Insert screenshot: GitHub Pages deployment console]
-[Insert screenshot: Landing page deployed on GitHub Pages]
+<div align="center">
+  <img src="Resources/capitulo_4/landing-page-deployment/2-settings.png" alt="GitHub Pages deployment console" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/landing-page-deployment/5-github-pages-live.png" alt="Landing page deployed on GitHub Pages" width="900">
+</div>
 
 **Backend - Deployment:**
 
@@ -567,8 +643,13 @@ Durante Sprint 1, el equipo completó el despliegue del Landing Page de Rent2Go 
 3. Configuración de variables de entorno para la conexión
 4. Testing de conexión desde la aplicación
 
-[Insert screenshot: Railway MySQL instance creada]
-[Insert screenshot: Database schema verification]
+<div align="center">
+  <img src="Resources/capitulo_4/backend-deployment/3-added-mysql.png" alt="Railway MySQL instance creada" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/backend-deployment/4-configure-connection.png" alt="Database schema verification" width="900">
+</div>
 
 ---
 
@@ -580,10 +661,21 @@ Durante Sprint 1, el equipo trabajó de forma colaborativa siguiendo GitFlow y p
 
 **Analíticos de GitHub - Sprint 1:**
 
-[Insert screenshot: GitHub Insights - Contributors]
-[Insert screenshot: GitHub Insights - Commits over time]
-[Insert screenshot: GitHub Insights - Pull requests merged]
-[Insert screenshot: GitHub Insights - Code frequency]
+<div align="center">
+  <img src="Resources/capitulo_4/collaboration/1-github-insights-contributors.png" alt="GitHub Insights contributors" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/collaboration/2-github-insights-commits.png" alt="GitHub Insights commits over time" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/collaboration/3-github-insights-prs.png" alt="GitHub Insights pull requests merged" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/collaboration/4-github-insights-code-frequency.png" alt="GitHub Insights code frequency" width="900">
+</div>
 
 **Participación del equipo:**
 
@@ -1139,7 +1231,7 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Edad** | [Insert edad] |
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
-| **Screenshot de Video** | [Insert image screenshot] |
+| **Captura de Video** | <img src="Resources/capitulo_4/interviews/1-entrevista-1.png" alt="Captura entrevista 1" width="320"> |
 | **URL OneDrive** | [Insert link OneDrive] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
@@ -1166,7 +1258,7 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Edad** | [Insert edad] |
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
-| **Screenshot de Video** | [Insert image screenshot] |
+| **Captura de Video** | <img src="Resources/capitulo_4/interviews/2-entrevista-2.png" alt="Captura entrevista 2" width="320"> |
 | **URL OneDrive** | [Insert link OneDrive] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
@@ -1185,7 +1277,7 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Edad** | [Insert edad] |
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
-| **Screenshot de Video** | [Insert image screenshot] |
+| **Captura de Video** | <img src="Resources/capitulo_4/interviews/3-entrevista-3.png" alt="Captura entrevista 3" width="320"> |
 | **URL OneDrive** | [Insert link OneDrive] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
@@ -1212,7 +1304,7 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Edad** | [Insert edad] |
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
-| **Screenshot de Video** | [Insert image screenshot] |
+| **Captura de Video** | <img src="Resources/capitulo_4/interviews/4-entrevista-4.png" alt="Captura entrevista 4" width="320"> |
 | **URL OneDrive** | [Insert link OneDrive] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
