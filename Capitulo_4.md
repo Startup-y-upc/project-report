@@ -819,7 +819,7 @@ Una vez configurado, GitHub Pages genera automáticamente una URL pública y des
 | **Branch** | main / (root) |
 | **Custom Domain** | No configurado (usando dominio por defecto) |
 | **HTTPS** | Habilitado automáticamente |
-| **URL Pública** | https://[username].github.io/rent2go-landing/ |
+| **URL Pública** | https://startup-y-upc.github.io/landing-page/ |
 | **Status** | Live |
 
 ---
@@ -1075,10 +1075,10 @@ May 12 - Release 1.0.0 tag
 
 | Rol | Responsable | Contribución Principal | Horas Estimadas |
 | --- | --- | --- | --- |
-| Frontend Lead | [Name] | Landing Page (HU15-HU18) | 40 horas |
-| Backend Lead | [Name] | Vehicle Catalog (HU02-HU05) | 45 horas |
-| QA/Testing | [Name] | Validación y testing | 20 horas |
-| DevOps | [Name] | Deployment en Vercel y Railway | 15 horas |
+| Frontend Lead | Adriana Diestra | Landing Page (HU15-HU18) | 40 horas |
+| Backend Lead | Gilbert Huarcaya | Vehicle Catalog (HU02-HU05) | 45 horas |
+| QA/Testing | Gilbert Huarcaya | Validación y testing | 20 horas |
+| DevOps | Gilbert Huarcaya | Deployment en Vercel y Railway | 15 horas |
 
 ---
 
