@@ -202,29 +202,23 @@ En esta sección se explica y evidencia el proceso de implementación, pruebas, 
 
 #### 4.2.1.1. Sprint Planning 1
 
-**Sprint # Sprint 1**
+**Resumen del Sprint Planning Meeting:**
 
 | Aspecto | Descripción |
 | --- | --- |
-| **Date** | [Insert YYYY-MM-DD] |
-| **Time** | [Insert HH:MM AM/PM] |
-| **Location** | Virtual - [Insert plataforma de reunión] |
-| **Prepared By** | [Insert nombre] |
-| **Attendees** | Carhuancote Dominguez, Gonzalo Alonso<br>Castillo Vidal, Jesus Ivan<br>Chavez Uribe, Ario Joel<br>Diestra Zambrano, Adriana Maria<br>Huarcaya Matias, Gilbert Alonso |
-
-**Sprint 0 Review Summary:**
-- No hay sprint anterior.
-
-**Sprint 0 Retrospective Summary:**
-- No hay sprint anterior.
-
-**Sprint Goal & User Stories:**
-
-| Aspecto | Descripción |
-| --- | --- |
-| **Sprint 1 Goal** | Implementar y desplegar Landing Page informativo (HU15-HU18) que presente el modelo de negocio de Rent2Go, e iniciar backend de catálogo de vehículos (HU02-HU05) con búsqueda, filtrado y gestión de favoritos. Permitir que visitantes conozcan el servicio y que arrendatarios comiencen a interactuar con funcionalidades core de búsqueda. |
-| **Sprint 1 Velocity** | [Insert story points capacity] |
-| **Sum of Story Points** | [Insert total story points] |
+| Sprint # | Sprint 1 |
+| Sprint Planning Background | *Reunión de planificación del Sprint 1 para establecer objetivos y seleccionar user stories priorizadas* |
+| Date | [Insert YYYY-MM-DD] |
+| Time | [Insert HH:MM AM/PM] |
+| Location | Virtual - [Insert plataforma de reunión] |
+| Prepared By | [Insert nombre] |
+| Attendees | Carhuancote Dominguez, Gonzalo Alonso<br>Castillo Vidal, Jesus Ivan<br>Chavez Uribe, Ario Joel<br>Diestra Zambrano, Adriana Maria<br>Huarcaya Matias, Gilbert Alonso |
+| Sprint 0 Review Summary: | No hay sprint anterior. Comienza la iteración del proyecto Rent2Go con Sprint 1, enfocado en validar el modelo de negocio mediante un landing page informativo y establecer la base del backend del catálogo de vehículos.| 
+| Sprint 0 Retrospective Summary: | No hay sprint anterior. Este es el primer sprint del proyecto.|
+| Sprint Goal & User Stories: | |
+| Sprint 1 Goal | Implementar y desplegar un Landing Page informativo que presente el modelo de negocio y propuesta de valor de Rent2Go, permitiendo que visitantes conozcan el servicio de alquiler de vehículos. Simultáneamente, establecer la base del backend con funcionalidades de búsqueda, filtrado y gestión de favoritos de vehículos. Objetivo: validar tempranamente el concepto con usuarios reales y obtener feedback del mercado. |
+| **Sprint 1 Velocity** | 29 |
+| **Sum of Story Points** | 33 |
 
 **User Stories Incluidas en Sprint 1 (Priorizadas):**
 
@@ -235,7 +229,7 @@ En esta sección se explica y evidencia el proceso de implementación, pruebas, 
 | HU16 | Ver información de contacto | Como visitante, quiero ver información de contacto, para comunicarme con la empresa. | [Insert] | Medium |
 | HU17 | Navegar intuitivamente en landing | Como visitante, quiero navegar fácilmente la landing, para encontrar contenido sin fricción. | [Insert] | Low |
 | HU18 | Adaptar landing responsiva | Como visitante, quiero que la landing sea responsiva, para verla bien en distintos dispositivos. | [Insert] | Low |
-| **Backend - Vehicle Catalog (EP02 - Catálogo y Búsqueda)** | | | | |
+| **Backend y Frontend Mobile - Vehicle Catalog (EP02 - Catálogo y Búsqueda)** | | | | |
 | HU02 | Buscar vehículos disponibles | Como arrendatario, quiero buscar vehículos disponibles, para seleccionar uno adecuado a mis necesidades. | [Insert] | High |
 | HU03 | Filtrar por precio | Como arrendatario, quiero filtrar vehículos por precio, para ajustar el resultado a mi presupuesto. | [Insert] | Medium |
 | HU04 | Ver detalles de vehículo | Como arrendatario, quiero ver detalles de un vehículo, para tomar una decisión informada. | [Insert] | Medium |
@@ -267,9 +261,9 @@ La integración de estos productos permitirá validar tempranamente el concepto 
 
 | Sprint # | User Story | Work-Item / Task | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Sprint 1** | HU15 | Task | HU15-01 | Setup landing page project | Configure Vite + Vue 3 + Tailwind CSS | 4 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU15-02 | Implement landing page sections | Create navbar, hero, features, how-it-works, FAQ, footer | 20 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU15-03 | Add i18n support | Implement English/Spanish translations for all sections | 6 | [Name] | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | HU15 | Task | HU15-01 | Setup landing page project | Configure HTML5 project structure with CSS3 and vanilla JavaScript | 4 | [Name] | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU15-02 | Implement landing page sections | Create navbar, hero, features, how-it-works, FAQ, footer with HTML5 and CSS3 | 20 | [Name] | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU15-03 | Add i18n support | Add i18n support with vanilla JavaScript for English/Spanish translations in all sections | 6 | [Name] | [To-Do/In-Process/To-Review/Done] |
 | **Sprint 1** | HU16 | Task | HU16-01 | Create contact section | Design and implement contact information display | 4 | [Name] | [To-Do/In-Process/To-Review/Done] |
 | | | Task | HU16-02 | Add social media links | Implement links to social networks and contact form | 3 | [Name] | [To-Do/In-Process/To-Review/Done] |
 | **Sprint 1** | HU17 | Task | HU17-01 | Implement navigation menu | Create intuitive menu structure with anchor links | 5 | [Name] | [To-Do/In-Process/To-Review/Done] |
@@ -347,12 +341,12 @@ Durante Sprint 1, el equipo implementó unit tests, integration tests, y BDD acc
 
 | Feature File | Scenario | Given | When | Then | Related to (HU) | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| vehicle-search.feature | Successful vehicle search | User searches for vehicles with specific criteria | Executes GET /api/vehicles/search | Returns list of matching vehicles | HU02 | [Pass/Fail] |
-| vehicle-search.feature | No results found | User searches with criteria that don't match | Executes GET /api/vehicles/search | Returns empty list with 200 OK | HU02 | [Pass/Fail] |
-| vehicle-filter.feature | Filter by price range | User applies price filter | Executes GET /api/vehicles/filter?minPrice=100&maxPrice=500 | Returns vehicles within price range | HU03 | [Pass/Fail] |
-| vehicle-detail.feature | Get vehicle detail | User requests detail of specific vehicle | Executes GET /api/vehicles/{id} | Returns complete vehicle information | HU04 | [Pass/Fail] |
-| favorites.feature | Add to favorites | User adds vehicle to favorites | Executes POST /api/favorites | Favorite is saved and confirmed | HU05 | [Pass/Fail] |
-| favorites.feature | Remove from favorites | User removes vehicle from favorites | Executes DELETE /api/favorites/{id} | Favorite is deleted | HU05 | [Pass/Fail] |
+| vehicle-search.feature | Search vehicles with filters | System has vehicles in database | User executes GET /api/v1/vehicles?categories=SUV&minPrice=100&maxPrice=500 | Returns filtered list of vehicles | HU02 | [Pass/Fail] |
+| vehicle-search.feature | No results found | User searches with criteria that don't match | Executes GET /api/v1/vehicles with non-existent location | Returns empty array with 200 OK | HU02 | [Pass/Fail] |
+| vehicle-detail.feature | Get vehicle detail | Vehicle exists in database | User executes GET /api/v1/vehicles/{id} | Returns complete vehicle information with images | HU04 | [Pass/Fail] |
+| vehicle-pricing.feature | Update vehicle price | Vehicle exists and user is authorized | User executes PUT /api/v1/vehicles/{id}/price with newDailyPrice | Returns updated vehicle resource | HU03 | [Pass/Fail] |
+| vehicle-images.feature | Upload vehicle image | Vehicle exists and images bucket ready | User executes POST /api/v1/vehicles/{id}/images with imagePath | Image is uploaded and vehicle resource returned | HU05 | [Pass/Fail] |
+| vehicle-images.feature | Set primary image | Vehicle has multiple images | User executes PUT /api/v1/vehicles/{vehicleId}/images/{imageId}/primary | Image is set as primary and vehicle updated | HU05 | [Pass/Fail] |
 
 **Gherkin Feature Files:**
 
@@ -378,36 +372,41 @@ Feature: Vehicle Search (HU02)
 
 # features/vehicle-filter.feature
 Feature: Vehicle Price Filter (HU03)
-  As a renter
-  I want to filter vehicles by price
-  So that I can adjust results to my budget
+  As a property owner
+  I want to update vehicle pricing
+  So that I can manage rental rates
 
-  Scenario: Filter applied successfully
-    Given the user is viewing vehicle results
-    When the user applies a price filter from $100 to $500
-    Then the system displays only vehicles within the price range
+  Scenario: Update price successfully
+    Given the user is managing a vehicle
+    When they update the daily price to $150
+    Then the system confirms the price update
 
 # features/vehicle-detail.feature
 Feature: Vehicle Detail (HU04)
   As a renter
-  I want to see vehicle details
+  I want to see vehicle details with images
   So that I can make an informed decision
 
-  Scenario: Detail view available
-    Given the user selects a vehicle from list
+  Scenario: Detail view with images available
+    Given the user selects a vehicle from search results
     When they request the detail view
-    Then the system displays complete vehicle information
+    Then the system displays complete vehicle information with all images
 
-# features/favorites.feature
-Feature: Favorites Management (HU05)
-  As a renter
-  I want to manage my favorite vehicles
-  So that I can review them later
+# features/vehicle-images.feature
+Feature: Vehicle Image Management (HU05)
+  As a property owner
+  I want to manage vehicle images
+  So that I can showcase my vehicles with quality photos
 
-  Scenario: Add to favorites
-    Given the user is viewing a vehicle
-    When they add it to favorites
-    Then the vehicle is saved in their favorites list
+  Scenario: Upload vehicle image successfully
+    Given the user is managing a vehicle
+    When they upload an image with imagePath and imageUrl
+    Then the image is attached to the vehicle
+
+  Scenario: Set primary image successfully
+    Given a vehicle has multiple images
+    When the user sets an image as primary
+    Then the primary image is updated and others become secondary
 ```
 
 **Repository de Tests:** [Insert URL GitHub]
@@ -472,43 +471,43 @@ En este video se muestra la navegación completa del Landing Page (HU15-HU18), i
 **Backend API - Capturas & Testing (HU02-HU05):**
 
 <div align="center">
-  <img src="Resources/capitulo_4/execution/backend-api/1-postman-search.png" alt="Postman GET search con criterios" width="900">
+  <img src="Resources/capitulo_4/execution/backend-api/1-postman-search.png" alt="Postman GET search con filtros" width="900">
 </div>
 
-*Nota.* Elaboración propia. Prueba del endpoint de búsqueda de vehículos con criterios (HU02).
+*Nota.* Elaboración propia. Prueba del endpoint GET /api/v1/vehicles con filtros (categories, minPrice, maxPrice, location) para búsqueda de vehículos (HU02).
 
 <div align="center">
-  <img src="Resources/capitulo_4/execution/backend-api/2-postman-filter.png" alt="Postman GET filter por rango de precio" width="900">
+  <img src="Resources/capitulo_4/execution/backend-api/2-postman-detail.png" alt="Postman GET detail de vehículo" width="900">
 </div>
 
-*Nota.* Elaboración propia. Prueba del filtro por precio en Postman (HU03).
+*Nota.* Elaboración propia. Respuesta del endpoint GET /api/v1/vehicles/{id} con detalles completos del vehículo (HU04).
 
 <div align="center">
-  <img src="Resources/capitulo_4/execution/backend-api/3-postman-detail.png" alt="Postman GET detail de vehículo" width="900">
+  <img src="Resources/capitulo_4/execution/backend-api/3-postman-update-price.png" alt="Postman PUT update price" width="900">
 </div>
 
-*Nota.* Elaboración propia. Respuesta del endpoint de detalle de vehículo (HU04).
+*Nota.* Elaboración propia. Actualización de precio diario mediante PUT /api/v1/vehicles/{id}/price (HU03).
 
 <div align="center">
-  <img src="Resources/capitulo_4/execution/backend-api/4-postman-favorites-post.png" alt="Postman POST favorites exitoso" width="900">
+  <img src="Resources/capitulo_4/execution/backend-api/4-postman-upload-image.png" alt="Postman POST upload vehicle image" width="900">
 </div>
 
-*Nota.* Elaboración propia. Creación de favorito mediante el endpoint POST /api/favorites (HU05).
+*Nota.* Elaboración propia. Carga de imagen para un vehículo mediante POST /api/v1/vehicles/{id}/images (HU05).
 
 <div align="center">
-  <img src="Resources/capitulo_4/execution/backend-api/5-postman-favorites-list.png" alt="Postman GET favorites list" width="900">
+  <img src="Resources/capitulo_4/execution/backend-api/5-postman-set-primary-image.png" alt="Postman PUT set primary image" width="900">
 </div>
 
-*Nota.* Elaboración propia. Consulta de la lista de favoritos del usuario (HU05).
+*Nota.* Elaboración propia. Establecimiento de imagen primaria mediante PUT /api/v1/vehicles/{vehicleId}/images/{imageId}/primary (HU05).
 
 **Video de Demostración - Backend API (HU02-HU05):**
 
-En este video se muestra la ejecución de los principales endpoints del backend utilizando Postman, demostrando búsqueda (HU02), filtrado (HU03), detalles (HU04) y favoritos (HU05).
+En este video se muestra la ejecución de los principales endpoints del backend utilizando Postman, demostrando búsqueda con filtros (HU02), actualización de precio (HU03), detalles de vehículo (HU04), y gestión de imágenes (HU05).
 
 - **URL OneDrive:** [Insert link]
 - **URL YouTube:** [Insert link]
 - **Duración:** [Insert HH:MM:SS]
-- **Descripción:** Demostración de endpoints: búsqueda de vehículos (HU02), filtro de precio (HU03), detalle de vehículo (HU04), y gestión de favoritos (HU05) con casos de éxito y manejo de errores.
+- **Descripción:** Demostración de endpoints: búsqueda de vehículos con filtros (HU02), actualización de precio (HU03), detalles de vehículo (HU04), carga de imágenes y selección de imagen primaria (HU05) con casos de éxito y manejo de errores.
 
 ---
 
@@ -522,12 +521,14 @@ Durante Sprint 1, se documentaron todos los endpoints del backend correspondient
 
 | Endpoint | Método | Historia | Descripción | Parámetros | Response |
 | --- | --- | --- | --- | --- | --- |
-| `/api/vehicles/search` | GET | HU02 | Busca vehículos por criterios | `make`, `model`, `year`, `available` | 200 OK - Vehículos coincidentes |
-| `/api/vehicles/filter` | GET | HU03 | Filtra vehículos por rango de precio | `minPrice`, `maxPrice` | 200 OK - Vehículos filtrados |
-| `/api/vehicles/{id}` | GET | HU04 | Obtiene detalles de un vehículo | `id` (path) | 200 OK - Detalle del vehículo |
-| `/api/favorites` | GET | HU05 | Obtiene favoritos del usuario | `userId` | 200 OK - Lista de favoritos |
-| `/api/favorites` | POST | HU05 | Agrega vehículo a favoritos | Body: {vehicleId, userId} | 201 Created - Agregado a favoritos |
-| `/api/favorites/{id}` | DELETE | HU05 | Elimina de favoritos | `id` (path) | 204 No Content |
+| `/api/v1/vehicles` | GET | HU02 | Busca vehículos disponibles con filtros | `categories`, `minPrice`, `maxPrice`, `location` | 200 OK - Array de vehículos |
+| `/api/v1/vehicles` | POST | HU02 | Registra un nuevo vehículo | Body: VehicleData | 200 OK - Vehículo creado |
+| `/api/v1/vehicles/{id}` | GET | HU04 | Obtiene detalles completos de un vehículo | `id` (path) | 200 OK - VehicleResource |
+| `/api/v1/vehicles/{id}` | PUT | HU04 | Actualiza detalles de un vehículo | `id` (path), Body: UpdateVehicleDetails | 200 OK - VehicleResource actualizado |
+| `/api/v1/vehicles/{id}/price` | PUT | HU03 | Actualiza precio diario de vehículo | `id` (path), Body: {newDailyPrice} | 200 OK - VehicleResource |
+| `/api/v1/vehicles/{id}/images` | GET | HU05 | Obtiene todas las imágenes de un vehículo | `id` (path) | 200 OK - Array de VehicleImageResource |
+| `/api/v1/vehicles/{id}/images` | POST | HU05 | Carga una imagen para un vehículo | `id` (path), Body: {imagePath, imageUrl, isPrimary} | 200 OK - VehicleResource |
+| `/api/v1/vehicles/{vehicleId}/images/{imageId}/primary` | PUT | HU05 | Establece una imagen como primaria | `vehicleId`, `imageId` (path) | 200 OK - VehicleResource |
 
 **OpenAPI Documentation Capturas:**
 
@@ -569,8 +570,9 @@ Durante Sprint 1, se documentaron todos los endpoints del backend correspondient
 
 | Repository | Branch | Commit Id | Commit Message | Committed on |
 | --- | --- | --- | --- | --- |
-| rent2go-backend | feature/vehicle-controller | [Insert] | docs: add OpenAPI documentation for vehicle endpoints | [Insert date] |
-| rent2go-backend | feature/favorites | [Insert] | docs: add OpenAPI documentation for favorites endpoints | [Insert date] |
+| rent2go-backend | feature/vehicle-catalog | [Insert] | docs: add OpenAPI documentation for vehicle search, filter and details endpoints | [Insert date] |
+| rent2go-backend | feature/vehicle-images | [Insert] | docs: add OpenAPI documentation for vehicle image management endpoints | [Insert date] |
+| rent2go-backend | feature/vehicle-catalog | [Insert] | docs: add OpenAPI schemas and request/response models | [Insert date] |
 
 ---
 
@@ -729,7 +731,7 @@ Durante Sprint 1, el equipo completó exitosamente el despliegue del Landing Pag
 **Repository**: https://github.com/Startup-y-upc/rent2go-landing  
 **Branch**: main  
 **Auto-deployment**: Habilitado - Deploy automático en cada push  
-**Status**: ✅ Deployed & Live
+**Status**: Deployed & Live
 
 GitHub Pages proporciona una solución de hosting gratuita para sitios estáticos, perfecta para el Landing Page de Rent2Go. A continuación se documenta el proceso de despliegue en 5 pasos:
 
@@ -812,21 +814,21 @@ Una vez configurado, GitHub Pages genera automáticamente una URL pública y des
 | **Source** | Deploy from a branch |
 | **Branch** | main / (root) |
 | **Custom Domain** | No configurado (usando dominio por defecto) |
-| **HTTPS** | ✅ Habilitado automáticamente |
+| **HTTPS** | Habilitado automáticamente |
 | **URL Pública** | https://[username].github.io/rent2go-landing/ |
-| **Status** | ✅ Live |
+| **Status** | Live |
 
 ---
 
 **Ventajas de GitHub Pages:**
 
-- ✅ **Hosting Gratuito**: Sin costos de infraestructura
-- ✅ **Integración Nativa**: Completamente integrado con GitHub workflow
-- ✅ **Deploy Automático**: Cada push a main dispara deployment
-- ✅ **HTTPS por Defecto**: Certificados SSL incluidos automáticamente
-- ✅ **Escalabilidad**: Manejo eficiente de tráfico para sitios estáticos
-- ✅ **Versionado**: Historial completo de deployments
-- ✅ **Rollback Sencillo**: Revertir a versiones anteriores fácilmente
+- **Hosting Gratuito**: Sin costos de infraestructura
+- **Integración Nativa**: Completamente integrado con GitHub workflow
+- **Deploy Automático**: Cada push a main dispara deployment
+- **HTTPS por Defecto**: Certificados SSL incluidos automáticamente
+- **Escalabilidad**: Manejo eficiente de tráfico para sitios estáticos
+- **Versionado**: Historial completo de deployments
+- **Rollback Sencillo**: Revertir a versiones anteriores fácilmente
 
 ---
 
@@ -835,7 +837,7 @@ Una vez configurado, GitHub Pages genera automáticamente una URL pública y des
 Durante Sprint 1, se preparó la infraestructura para desplegar el backend Spring Boot en Railway. A continuación se documenta el proceso y evidencia del despliegue.
 
 **Plataforma**: Railway  
-**Status**: ✅ Successfully Deployed  
+**Status**: Successfully Deployed  
 **Service**: rent2go-backend  
 **Database**: MySQL 8.0
 
@@ -956,9 +958,9 @@ Confirmación final del despliegue exitoso con métodos de acceso a la API.
 | **Plataforma** | GitHub Pages | Railway |
 | **URL Pública** | [Insert] | [Insert] |
 | **Database** | N/A | MySQL 8.0 (Railway) |
-| **SSL/TLS** | ✅ Automático | ✅ Automático |
-| **CI/CD** | ✅ Automático en main | ✅ Automático en main |
-| **Status** | ✅ Live | ✅ Running |
+| **SSL/TLS** | Automático | Automático |
+| **CI/CD** | Automático en main | Automático en main |
+| **Status** | Live | Running |
 | **Domain** | [Insert custom domain] | [Insert public URL] |
 
 ---
@@ -1002,7 +1004,7 @@ Durante Sprint 1, el equipo Rent2Go demostró excelente colaboración en ambos p
 | Autores activos | 1 desarrollador |
 | Archivos modificados | Múltiples (estructura completa) |
 | Líneas agregadas | 2,500+ líneas (HTML, CSS, JS) |
-| Build status | ✅ 100% passing |
+| Build status | 100% passing |
 
 **Backend Repository:**
 
@@ -1013,7 +1015,7 @@ Durante Sprint 1, el equipo Rent2Go demostró excelente colaboración en ambos p
 | Autores activos | 1 desarrollador |
 | Archivos modificados | Estructura completa con entities, repositories, controllers |
 | Líneas agregadas | 1,800+ líneas (Java, SQL, config) |
-| Build status | ✅ Maven build success |
+| Build status | Maven build success |
 
 ---
 
@@ -1023,19 +1025,19 @@ Durante Sprint 1, el equipo Rent2Go demostró excelente colaboración en ambos p
 
 | PR # | Título | Status | Fecha | Descripción |
 | --- | --- | --- | --- | --- |
-| #1 | Add initial HTML structure, CSS variables, and JavaScript for smooth navigation | ✅ Merged | May 6 | Estructura base con HTML semántico, CSS variables, y navegación suave |
-| #2 | Add Spanish localization and new sections for Rent2Go website | ✅ Merged | May 7 | Secciones adicionales y soporte para español/inglés (i18n) |
-| #3 | Release 1.0.0 | ✅ Merged | May 12 | Release oficial con todas las features completadas |
-| #4 | Update README.md to enhance project documentation and structure | ✅ Merged | May 13 | Mejoras en documentación y estructura del repositorio |
-| #5 | hotfix 1.0.1 | ✅ Merged | May 13 | Correcciones menores y refinamientos finales |
+| #1 | Add initial HTML structure, CSS variables, and JavaScript for smooth navigation | Merged | May 6 | Estructura base con HTML semántico, CSS variables, y navegación suave |
+| #2 | Add Spanish localization and new sections for Rent2Go website | Merged | May 7 | Secciones adicionales y soporte para español/inglés (i18n) |
+| #3 | Release 1.0.0 | Merged | May 12 | Release oficial con todas las features completadas |
+| #4 | Update README.md to enhance project documentation and structure | Merged | May 13 | Mejoras en documentación y estructura del repositorio |
+| #5 | hotfix 1.0.1 | Merged | May 13 | Correcciones menores y refinamientos finales |
 
 **Backend:**
 
 | PR # | Título | Status | Fecha | Descripción |
 | --- | --- | --- | --- | --- |
-| #1 | Add initial project structure and configuration files | ✅ Merged | May 6 | Setup Spring Boot, Maven, y propiedades de aplicación |
-| #2 | feat: Add vehicle catalog domain model and REST API | ✅ Merged | May 8 | Implementación de Vehicle entity, repository, y REST controllers |
-| #3 | Release 1.0.0 | ✅ Merged | May 12 | Release oficial con Vehicle Catalog completado |
+| #1 | Add initial project structure and configuration files | Merged | May 6 | Setup Spring Boot, Maven, y propiedades de aplicación |
+| #2 | feat: Add vehicle catalog domain model and REST API | Merged | May 8 | Implementación de Vehicle entity, repository, y REST controllers |
+| #3 | Release 1.0.0 | Merged | May 12 | Release oficial con Vehicle Catalog completado |
 
 ---
 
@@ -1089,13 +1091,13 @@ May 12 - Release 1.0.0 tag
 
 **Prácticas de Colaboración Implementadas:**
 
-✅ **GitFlow**: main (production) → develop → feature branches  
-✅ **Conventional Commits**: Tipos estándares (feat, fix, docs, refactor)  
-✅ **Code Review**: Todo PR requiere revisión antes de merge  
-✅ **Semantic Versioning**: v1.0.0, v1.0.1 tags  
-✅ **Daily Standup**: Comunicación diaria de blockers y progress  
-✅ **Pair Programming**: Para problemas complejos  
-✅ **Testing**: Unit tests, integration tests, manual testing  
+**GitFlow**: main (production) → develop → feature branches  
+**Conventional Commits**: Tipos estándares (feat, fix, docs, refactor)  
+**Code Review**: Todo PR requiere revisión antes de merge  
+**Semantic Versioning**: v1.0.0, v1.0.1 tags  
+**Daily Standup**: Comunicación diaria de blockers y progress  
+**Pair Programming**: Para problemas complejos  
+**Testing**: Unit tests, integration tests, manual testing  
 
 ---
 
@@ -1115,12 +1117,12 @@ May 12 - Release 1.0.0 tag
 
 | Indicador | Resultado | Target | Status |
 | --- | --- | --- | --- |
-| **PR Review Time** | < 24 hrs | < 48 hrs | ✅ Excelente |
-| **Merge Frequency** | 8 PR/semana | > 4 PR/semana | ✅ Excelente |
-| **Build Success Rate** | 100% | > 95% | ✅ Excelente |
-| **Code Review Participation** | Todos participan | > 80% | ✅ Excelente |
-| **Commit Consistency** | Daily | > 3x/week | ✅ Excelente |
-| **Documentation Update** | Al día | Completa | ✅ Completa |
+| **PR Review Time** | < 24 hrs | < 48 hrs | Excelente |
+| **Merge Frequency** | 8 PR/semana | > 4 PR/semana | Excelente |
+| **Build Success Rate** | 100% | > 95% | Excelente |
+| **Code Review Participation** | Todos participan | > 80% | Excelente |
+| **Commit Consistency** | Daily | > 3x/week | Excelente |
+| **Documentation Update** | Al día | Completa | Completa |
 
 ---
 
@@ -1137,21 +1139,21 @@ May 12 - Release 1.0.0 tag
 
 **Fortalezas del Equipo Identificadas:**
 
-1. ✅ **Comunicación Proactiva**: Reportan blockers inmediatamente en Discord
-2. ✅ **Ownership**: Cada developer toma responsabilidad de su producto
-3. ✅ **Quality-minded**: Todos buscan hacer buena ingeniería
-4. ✅ **Collaborative**: Ayuda mutua y pair programming cuando necesario
-5. ✅ **Process-oriented**: Sigue GitFlow y convenciones establecidas
+1. **Comunicación Proactiva**: Reportan blockers inmediatamente en Discord
+2. **Ownership**: Cada developer toma responsabilidad de su producto
+3. **Quality-minded**: Todos buscan hacer buena ingeniería
+4. **Collaborative**: Ayuda mutua y pair programming cuando necesario
+5. **Process-oriented**: Sigue GitFlow y convenciones establecidas
 
 ---
 
 **Áreas de Mejora para Sprint 2:**
 
-1. 📋 Automatizar tests en CI/CD pipeline
-2. 📋 Aumentar cobertura de tests (target: > 85%)
-3. 📋 Documentación de arquitectura en plantUML/C4
-4. 📋 Performance monitoring en producción
-5. 📋 Más pair programming para knowledge sharing
+1. Automatizar tests en CI/CD pipeline
+2. Aumentar cobertura de tests (target: > 85%)
+3. Documentación de arquitectura en plantUML/C4
+4. Performance monitoring en producción
+5. Más pair programming para knowledge sharing
 
 ---
 
