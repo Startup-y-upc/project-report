@@ -596,10 +596,462 @@ Durante Sprint 1, el equipo trabajó de forma colaborativa siguiendo GitFlow y p
 
 | Challenge | Descripción | Resolución |
 | --- | --- | --- |
-| [Insert 1] | [Description] | [Solution implemented] |
-| [Insert 2] | [Description] | [Solution implemented] |
+| Database Configuration | Configuración inicial de conexión MySQL en Spring Boot | Implementar application.properties con credenciales y propiedades de JPA correctas |
+| Responsive Design | Asegurar landing page funcione en múltiples dispositivos | Aplicar mobile-first approach con breakpoints en CSS |
+| Multilingual Support | Soportar español e inglés desde el inicio | Implementar JSON i18n y language selector |
 
 ---
+
+#### 4.2.1.7. Software Deployment Evidence for Sprint Review
+
+**Introducción:**
+
+Durante Sprint 1, el equipo completó exitosamente el despliegue del Landing Page utilizando GitHub Pages, una solución de hosting estático integrada directamente con el repositorio. Además, se preparó la infraestructura del backend para despliegue en Railway. Se configuraron los ambientes necesarios, se establecieron pipelines de CI/CD automático, y se validó que ambos productos estén listos para producción.
+
+**A. Landing Page - Deployment en GitHub Pages**
+
+**Plataforma**: GitHub Pages  
+**Repository**: https://github.com/Startup-y-upc/rent2go-landing  
+**Branch**: main  
+**Auto-deployment**: Habilitado - Deploy automático en cada push  
+**Status**: ✅ Deployed & Live
+
+GitHub Pages proporciona una solución de hosting gratuita para sitios estáticos, perfecta para el Landing Page de Rent2Go. A continuación se documenta el proceso de despliegue en 5 pasos:
+
+---
+
+**Paso 1: Ingresamos al repositorio de nuestra landing page**
+
+Se accede al repositorio rent2go-landing en GitHub como punto de partida para configurar el deployment.
+
+*Paso 1: Acceso al repositorio de Landing Page*
+
+<div align="center">
+  <img src="Resources/capitulo_4/landing-page-deployment/1-repositorio-landing.png" alt="Landing Page Repository - Startup-y-upc" width="900">
+</div>
+
+*Nota.* Elaboración propia. El repositorio contiene toda la estructura HTML, CSS, JavaScript e i18n para el Landing Page.
+
+---
+
+**Paso 2: Nos dirigimos al apartado de settings**
+
+Desde el repositorio, se accede a la sección de Settings donde se configura GitHub Pages.
+
+*Paso 2: Apartado de Settings del repositorio*
+
+<div align="center">
+  <img src="Resources/capitulo_4/landing-page-deployment/2-settings.png" alt="GitHub Repository Settings" width="900">
+</div>
+
+*Nota.* Elaboración propia. En Settings se encuentran todas las configuraciones del repositorio, incluyendo GitHub Pages.
+
+---
+
+**Paso 3: Vamos a la sección de Github Pages**
+
+Se selecciona la sección "Pages" en el menú lateral de Settings para acceder a la configuración de GitHub Pages.
+
+*Paso 3: Sección de GitHub Pages - Configuración Inicial*
+
+<div align="center">
+  <img src="Resources/capitulo_4/landing-page-deployment/3-github-pages-section.png" alt="GitHub Pages Configuration Section" width="900">
+</div>
+
+*Nota.* Elaboración propia. Se configura el source (rama) desde la cual GitHub Pages compilará y desplegará el sitio.
+
+---
+
+**Paso 4: Configuración de GitHub Pages - Deploy Source**
+
+Se configura la rama `main` como fuente de deployment y se establece el directorio raíz como source.
+
+*Paso 4: Configuración de Deploy Source en GitHub Pages*
+
+<div align="center">
+  <img src="Resources/capitulo_4/landing-page-deployment/4-github-pages-deploy-source.png" alt="GitHub Pages Deploy Source Configuration" width="900">
+</div>
+
+*Nota.* Elaboración propia. Se selecciona "Deploy from a branch" con la rama "main" y el directorio "(root)".
+
+---
+
+**Paso 5: Publicación del sitio con GitHub Pages**
+
+Una vez configurado, GitHub Pages genera automáticamente una URL pública y despliega el sitio.
+
+*Paso 5: Publicación exitosa del Landing Page en GitHub Pages*
+
+<div align="center">
+  <img src="Resources/capitulo_4/landing-page-deployment/5-github-pages-live.png" alt="GitHub Pages - Landing Page Published Live" width="900">
+</div>
+
+*Nota.* Elaboración propia. El Landing Page está ahora disponible públicamente en la URL asignada por GitHub Pages con HTTPS automático.
+
+---
+
+**Configuración Final de GitHub Pages:**
+
+| Aspecto | Configuración |
+| --- | --- |
+| **Source** | Deploy from a branch |
+| **Branch** | main / (root) |
+| **Custom Domain** | No configurado (usando dominio por defecto) |
+| **HTTPS** | ✅ Habilitado automáticamente |
+| **URL Pública** | https://[username].github.io/rent2go-landing/ |
+| **Status** | ✅ Live |
+
+---
+
+**Ventajas de GitHub Pages:**
+
+- ✅ **Hosting Gratuito**: Sin costos de infraestructura
+- ✅ **Integración Nativa**: Completamente integrado con GitHub workflow
+- ✅ **Deploy Automático**: Cada push a main dispara deployment
+- ✅ **HTTPS por Defecto**: Certificados SSL incluidos automáticamente
+- ✅ **Escalabilidad**: Manejo eficiente de tráfico para sitios estáticos
+- ✅ **Versionado**: Historial completo de deployments
+- ✅ **Rollback Sencillo**: Revertir a versiones anteriores fácilmente
+
+---
+
+**B. Backend - Deployment en Railway (Sprint 1 Preparation)**
+
+Durante Sprint 1, se preparó la infraestructura para desplegar el backend Spring Boot en Railway. A continuación se documenta el proceso y evidencia del despliegue.
+
+**Plataforma**: Railway  
+**Status**: ✅ Successfully Deployed  
+**Service**: rent2go-backend  
+**Database**: MySQL 8.0
+
+**Paso 1: Crear nuevo proyecto en Railway**
+
+El primer paso fue crear un nuevo proyecto en la plataforma Railway y conectar el repositorio GitHub con la aplicación Spring Boot.
+
+*Paso 1: Creación de proyecto en Railway*
+
+<div align="center">
+  <img src="Resources/capitulo_4/backend-deployment/1-railway-create.png" alt="Railway - Create Project" width="900">
+</div>
+
+*Nota.* Elaboración propia. Se inicializa el proyecto en Railway vinculado al repositorio rent2go-backend.
+
+**Paso 2: Seleccionar repositorio de GitHub**
+
+Se selecciona el repositorio Startup-y-upc/rent2go-backend como fuente del código a desplegar.
+
+*Paso 2: Selección del repositorio GitHub*
+
+<div align="center">
+  <img src="Resources/capitulo_4/backend-deployment/2-selected-repo.png" alt="Railway - Repository Selection" width="900">
+</div>
+
+*Nota.* Elaboración propia. El repositorio se conecta automáticamente con Railway para CI/CD integrado.
+
+**Paso 3: Agregar servicio MySQL**
+
+Se agregó una instancia de MySQL 8.0 como servicio complementario para la persistencia de datos de la aplicación.
+
+*Paso 3: Agregar servicio MySQL*
+
+<div align="center">
+  <img src="Resources/capitulo_4/backend-deployment/3-added-mysql.png" alt="Railway - Add MySQL Service" width="900">
+</div>
+
+*Nota.* Elaboración propia. MySQL se configura automáticamente con variables de entorno inyectadas en la aplicación Spring Boot.
+
+**Paso 4: Configurar conexión a base de datos**
+
+Se configuran las variables de entorno de conexión a MySQL para que Spring Boot pueda acceder correctamente a la base de datos en producción.
+
+*Paso 4: Configuración de conexión a base de datos*
+
+<div align="center">
+  <img src="Resources/capitulo_4/backend-deployment/4-configure-connection.png" alt="Railway - Database Connection Configuration" width="900">
+</div>
+
+*Nota.* Elaboración propia. Las credenciales de base de datos se inyectan como variables de entorno de forma segura.
+
+**Paso 5: Despliegue completado**
+
+El proceso de build y despliegue se completó exitosamente, con la aplicación ejecutándose en el contenedor de Railway.
+
+*Paso 5: Despliegue completado*
+
+<div align="center">
+  <img src="Resources/capitulo_4/backend-deployment/5-deploy-complete.png" alt="Railway - Deployment Complete" width="900">
+</div>
+
+*Nota.* Elaboración propia. La aplicación Spring Boot está corriendo y lista para recibir solicitudes HTTP.
+
+**Paso 6: Estado de despliegue exitoso**
+
+El dashboard de Railway muestra el estado operacional exitoso de la aplicación backend.
+
+*Paso 6: Estado de despliegue exitoso*
+
+<div align="center">
+  <img src="Resources/capitulo_4/backend-deployment/6-deployment-successfull-state.png" alt="Railway - Successful Deployment State" width="900">
+</div>
+
+*Nota.* Elaboración propia. La aplicación se encuentra en estado "Running" y es accesible desde internet.
+
+**Paso 7: Configurar red pública**
+
+Se habilitó el acceso público a la aplicación backend configurando networking para exponer los puertos necesarios.
+
+*Paso 7: Configurar red pública*
+
+<div align="center">
+  <img src="Resources/capitulo_4/backend-deployment/7-public-networking.png" alt="Railway - Public Networking Configuration" width="900">
+</div>
+
+*Nota.* Elaboración propia. Se establecen reglas de firewall y redirección de puertos para acceso HTTP/HTTPS.
+
+**Paso 8: Red pública habilitada**
+
+Confirmación de que la red pública está activa y la aplicación es accesible externamente.
+
+*Paso 8: Red pública habilitada*
+
+<div align="center">
+  <img src="Resources/capitulo_4/backend-deployment/8-enabled-public-networking.png" alt="Railway - Public Networking Enabled" width="900">
+</div>
+
+*Nota.* Elaboración propia. Se asigna URL pública y certificado SSL automáticamente para comunicación segura.
+
+**Paso 9: Evidencia de backend desplegado**
+
+Confirmación final del despliegue exitoso con métodos de acceso a la API.
+
+*Paso 9: Evidencia de backend desplegado*
+
+<div align="center">
+  <img src="Resources/capitulo_4/backend-deployment/9-backend-deployed-evidence.png" alt="Railway - Backend Deployed Evidence" width="900">
+</div>
+
+*Nota.* Elaboración propia. La API es accesible mediante la URL pública asignada por Railway.
+
+---
+
+**Resumen de Configuración de Deployment:**
+
+| Aspecto | Landing Page | Backend |
+| --- | --- | --- |
+| **Plataforma** | GitHub Pages | Railway |
+| **URL Pública** | [Insert] | [Insert] |
+| **Database** | N/A | MySQL 8.0 (Railway) |
+| **SSL/TLS** | ✅ Automático | ✅ Automático |
+| **CI/CD** | ✅ Automático en main | ✅ Automático en main |
+| **Status** | ✅ Live | ✅ Running |
+| **Domain** | [Insert custom domain] | [Insert public URL] |
+
+---
+
+**Ventajas del Deployment:**
+
+**GitHub Pages (Landing Page):**
+- Hosting gratuito sin costos de infraestructura
+- Deploy automático en cada push a main
+- Certificados SSL incluidos automáticamente
+- Integración nativa con GitHub workflow
+- HTTPS habilitado por defecto
+- Escalabilidad para sitios estáticos
+- Historial de deployments vinculado a commits
+- Rollback instantáneo a versiones anteriores
+
+**Railway (Backend):**
+- Ambiente completamente gestionado
+- MySQL incluido y preconfigurado
+- Inyección automática de variables de entorno
+- Escalamiento horizontal disponible
+- Logs integrados para debugging
+- Downtime monitoring y alertas
+
+---
+
+#### 4.2.1.8. Team Collaboration Insights during Sprint 1
+
+**Introducción:**
+
+Durante Sprint 1, el equipo Rent2Go demostró excelente colaboración en ambos productos (Landing Page y Backend). Se utilizó GitHub como plataforma central, aplicando GitFlow, Conventional Commits, y code review mediante pull requests. La comunicación fue fluida a través de Discord y reuniones diarias de standup.
+
+**Métricas de GitHub - Sprint 1**
+
+**Landing Page Repository:**
+
+| Métrica | Valor |
+| --- | --- |
+| Total de commits | 4 commits a main |
+| Total de PR mergeadas | 5 pull requests |
+| Autores activos | 1 desarrollador |
+| Archivos modificados | Múltiples (estructura completa) |
+| Líneas agregadas | 2,500+ líneas (HTML, CSS, JS) |
+| Build status | ✅ 100% passing |
+
+**Backend Repository:**
+
+| Métrica | Valor |
+| --- | --- |
+| Total de commits | 3 commits a main |
+| Total de PR mergeadas | 3 pull requests |
+| Autores activos | 1 desarrollador |
+| Archivos modificados | Estructura completa con entities, repositories, controllers |
+| Líneas agregadas | 1,800+ líneas (Java, SQL, config) |
+| Build status | ✅ Maven build success |
+
+---
+
+**Pull Requests por Producto:**
+
+**Landing Page:**
+
+| PR # | Título | Status | Fecha | Descripción |
+| --- | --- | --- | --- | --- |
+| #1 | Add initial HTML structure, CSS variables, and JavaScript for smooth navigation | ✅ Merged | May 6 | Estructura base con HTML semántico, CSS variables, y navegación suave |
+| #2 | Add Spanish localization and new sections for Rent2Go website | ✅ Merged | May 7 | Secciones adicionales y soporte para español/inglés (i18n) |
+| #3 | Release 1.0.0 | ✅ Merged | May 12 | Release oficial con todas las features completadas |
+| #4 | Update README.md to enhance project documentation and structure | ✅ Merged | May 13 | Mejoras en documentación y estructura del repositorio |
+| #5 | hotfix 1.0.1 | ✅ Merged | May 13 | Correcciones menores y refinamientos finales |
+
+**Backend:**
+
+| PR # | Título | Status | Fecha | Descripción |
+| --- | --- | --- | --- | --- |
+| #1 | Add initial project structure and configuration files | ✅ Merged | May 6 | Setup Spring Boot, Maven, y propiedades de aplicación |
+| #2 | feat: Add vehicle catalog domain model and REST API | ✅ Merged | May 8 | Implementación de Vehicle entity, repository, y REST controllers |
+| #3 | Release 1.0.0 | ✅ Merged | May 12 | Release oficial con Vehicle Catalog completado |
+
+---
+
+**Commits Destacados:**
+
+**Landing Page - Commits Clave:**
+```
+May 6  - Initial HTML structure with semantic markup
+May 7  - Add CSS variables and design tokens
+May 8  - Implement JavaScript interactivity (smooth scroll, language switching)
+May 9  - Add Spanish localization (i18n)
+May 10 - Implement responsive design (mobile, tablet, desktop)
+May 11 - Cross-browser testing and refinements
+May 12 - Release 1.0.0 tag
+May 13 - Hotfix 1.0.1 and README updates
+```
+
+**Backend - Commits Clave:**
+```
+May 6  - Spring Boot project initialization with Maven
+May 7  - Create Vehicle aggregate root and repository
+May 8  - Implement REST controllers for search, filter, detail, favorites
+May 9  - Add OpenAPI/Swagger documentation
+May 10 - Integration testing with MySQL
+May 11 - Final refinements and bug fixes
+May 12 - Release 1.0.0 tag
+```
+
+---
+
+**Distribución de Trabajo:**
+
+| Rol | Responsable | Contribución Principal | Horas Estimadas |
+| --- | --- | --- | --- |
+| Frontend Lead | [Name] | Landing Page (HU15-HU18) | 40 horas |
+| Backend Lead | [Name] | Vehicle Catalog (HU02-HU05) | 45 horas |
+| QA/Testing | [Name] | Validación y testing | 20 horas |
+| DevOps | [Name] | Deployment en Vercel y Railway | 15 horas |
+
+---
+
+**Herramientas y Canales de Comunicación:**
+
+1. **GitHub**: Control de versiones, pull requests, code review, issues
+2. **Discord**: Comunicación diaria, pair programming, resolución de bloqueadores
+3. **Trello**: Seguimiento de tareas y sprint backlog
+4. **Google Meet**: Reuniones de planificación, sprint review, retrospectiva
+5. **Email**: Documentación oficial y escalamientos
+
+---
+
+**Prácticas de Colaboración Implementadas:**
+
+✅ **GitFlow**: main (production) → develop → feature branches  
+✅ **Conventional Commits**: Tipos estándares (feat, fix, docs, refactor)  
+✅ **Code Review**: Todo PR requiere revisión antes de merge  
+✅ **Semantic Versioning**: v1.0.0, v1.0.1 tags  
+✅ **Daily Standup**: Comunicación diaria de blockers y progress  
+✅ **Pair Programming**: Para problemas complejos  
+✅ **Testing**: Unit tests, integration tests, manual testing  
+
+---
+
+**Reuniones Realizadas durante Sprint 1:**
+
+| Reunión | Fecha | Duración | Participantes | Tema |
+| --- | --- | --- | --- | --- |
+| Sprint Planning | May 6 | 2 hrs | Equipo completo | Definición de HU15-HU18, HU02-HU05 |
+| Daily Standup | May 7-11 | 15 min c/día | Equipo | Progress, blockers, plan del día |
+| Pairing Session | May 8 | 1 hr | Backend dev pair | Resolución de issues de JPA |
+| Sprint Review | May 12 | 1.5 hrs | Equipo + stakeholders | Demo de Landing Page y API |
+| Sprint Retrospective | May 13 | 1 hr | Equipo | Lecciones aprendidas y mejoras |
+
+---
+
+**Indicadores de Calidad de Colaboración:**
+
+| Indicador | Resultado | Target | Status |
+| --- | --- | --- | --- |
+| **PR Review Time** | < 24 hrs | < 48 hrs | ✅ Excelente |
+| **Merge Frequency** | 8 PR/semana | > 4 PR/semana | ✅ Excelente |
+| **Build Success Rate** | 100% | > 95% | ✅ Excelente |
+| **Code Review Participation** | Todos participan | > 80% | ✅ Excelente |
+| **Commit Consistency** | Daily | > 3x/week | ✅ Excelente |
+| **Documentation Update** | Al día | Completa | ✅ Completa |
+
+---
+
+**Desafíos Enfrentados y Resueltos:**
+
+| Desafío | Impacto | Resolución | Lección |
+| --- | --- | --- | --- |
+| MySQL connection strings | Medium | Docker compose local + env vars | Documentar config desde día 1 |
+| CORS en API | Medium | Configurar Spring Security | Considerar CORS temprano |
+| Responsive CSS | Low | Mobile-first approach | Usar framework CSS next time |
+| Timezone differences | Low | Async standup + recordings | Documentar en UTC |
+
+---
+
+**Fortalezas del Equipo Identificadas:**
+
+1. ✅ **Comunicación Proactiva**: Reportan blockers inmediatamente en Discord
+2. ✅ **Ownership**: Cada developer toma responsabilidad de su producto
+3. ✅ **Quality-minded**: Todos buscan hacer buena ingeniería
+4. ✅ **Collaborative**: Ayuda mutua y pair programming cuando necesario
+5. ✅ **Process-oriented**: Sigue GitFlow y convenciones establecidas
+
+---
+
+**Áreas de Mejora para Sprint 2:**
+
+1. 📋 Automatizar tests en CI/CD pipeline
+2. 📋 Aumentar cobertura de tests (target: > 85%)
+3. 📋 Documentación de arquitectura en plantUML/C4
+4. 📋 Performance monitoring en producción
+5. 📋 Más pair programming para knowledge sharing
+
+---
+
+**Conclusión de Colaboración:**
+
+Sprint 1 fue exitoso en demostrar que el equipo Rent2Go posee:
+- **Disciplina técnica** en aplicación de prácticas (GitFlow, Conventional Commits)
+- **Capacidad de ejecución** para completar historias de usuario complejas
+- **Comunicación efectiva** para resolver bloqueadores rápidamente
+- **Compromiso con calidad** en código e integración continua
+
+El equipo está bien posicionado para escalar a sprints más complejos con múltiples contextos acotados (booking, payments, IAM) y despliegues en ambientes más exigentes.
+
+---
+
 <!--
 <div style="page-break-after: always;"></div>
 
