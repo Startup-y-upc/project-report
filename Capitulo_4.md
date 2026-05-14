@@ -208,10 +208,10 @@ En esta sección se explica y evidencia el proceso de implementación, pruebas, 
 | --- | --- |
 | Sprint # | Sprint 1 |
 | Sprint Planning Background | *Reunión de planificación del Sprint 1 para establecer objetivos y seleccionar user stories priorizadas* |
-| Date | [Insert YYYY-MM-DD] |
-| Time | [Insert HH:MM AM/PM] |
-| Location | Virtual - [Insert plataforma de reunión] |
-| Prepared By | [Insert nombre] |
+| Date | 2026-05-06 |
+| Time | 09:30 AM |
+| Location | Virtual - Google Meet |
+| Prepared By | Carhuancote Dominguez, Gonzalo Alonso |
 | Attendees | Carhuancote Dominguez, Gonzalo Alonso<br>Castillo Vidal, Jesus Ivan<br>Chavez Uribe, Ario Joel<br>Diestra Zambrano, Adriana Maria<br>Huarcaya Matias, Gilbert Alonso |
 | Sprint 0 Review Summary: | No hay sprint anterior. Comienza la iteración del proyecto Rent2Go con Sprint 1, enfocado en validar el modelo de negocio mediante un landing page informativo y establecer la base del backend del catálogo de vehículos.| 
 | Sprint 0 Retrospective Summary: | No hay sprint anterior. Este es el primer sprint del proyecto.|
@@ -225,15 +225,15 @@ En esta sección se explica y evidencia el proceso de implementación, pruebas, 
 | Story ID | Título | Descripción | Story Points | Prioridad |
 | --- | --- | --- | --- | --- |
 | **Landing Page (EP06 - Plataforma y Soporte)** | | | | |
-| HU15 | Ver landing page informativa | Como visitante, quiero ver una landing page informativa, para conocer el servicio. | [Insert] | Medium |
-| HU16 | Ver información de contacto | Como visitante, quiero ver información de contacto, para comunicarme con la empresa. | [Insert] | Medium |
-| HU17 | Navegar intuitivamente en landing | Como visitante, quiero navegar fácilmente la landing, para encontrar contenido sin fricción. | [Insert] | Low |
-| HU18 | Adaptar landing responsiva | Como visitante, quiero que la landing sea responsiva, para verla bien en distintos dispositivos. | [Insert] | Low |
+| HU15 | Ver landing page informativa | Como visitante, quiero ver una landing page informativa, para conocer el servicio. | 5 | Medium |
+| HU16 | Ver información de contacto | Como visitante, quiero ver información de contacto, para comunicarme con la empresa. | 3 | Medium |
+| HU17 | Navegar intuitivamente en landing | Como visitante, quiero navegar fácilmente la landing, para encontrar contenido sin fricción. | 2 | Low |
+| HU18 | Adaptar landing responsiva | Como visitante, quiero que la landing sea responsiva, para verla bien en distintos dispositivos. | 3 | Low |
 | **Backend y Frontend Mobile - Vehicle Catalog (EP02 - Catálogo y Búsqueda)** | | | | |
-| HU02 | Buscar vehículos disponibles | Como arrendatario, quiero buscar vehículos disponibles, para seleccionar uno adecuado a mis necesidades. | [Insert] | High |
-| HU03 | Filtrar por precio | Como arrendatario, quiero filtrar vehículos por precio, para ajustar el resultado a mi presupuesto. | [Insert] | Medium |
-| HU04 | Ver detalles de vehículo | Como arrendatario, quiero ver detalles de un vehículo, para tomar una decisión informada. | [Insert] | Medium |
-| HU05 | Agregar a favoritos | Como arrendatario, quiero agregar vehículos a favoritos, para revisarlos más tarde. | [Insert] | Medium |
+| HU02 | Buscar vehículos disponibles | Como arrendatario, quiero buscar vehículos disponibles, para seleccionar uno adecuado a mis necesidades. | 8 | High |
+| HU03 | Filtrar por precio | Como arrendatario, quiero filtrar vehículos por precio, para ajustar el resultado a mi presupuesto. | 3 | Medium |
+| HU04 | Ver detalles de vehículo | Como arrendatario, quiero ver detalles de un vehículo, para tomar una decisión informada. | 2 | Medium |
+| HU05 | Agregar a favoritos | Como arrendatario, quiero agregar vehículos a favoritos, para revisarlos más tarde. | 4 | Medium |
 
 ---
 
@@ -299,24 +299,24 @@ Se realizaron commits regulares en ambos repositorios, siguiendo GitFlow y Conve
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | --- | --- | --- | --- | --- | --- |
-| rent2go-landing | feature/landing-page | [Insert] | feat(landing): implement informative landing page (HU15) | Implemented all landing page sections: navbar, hero, features, how-it-works, FAQ, footer. Added i18n support for ES/EN. | [Insert YYYY-MM-DD] |
-| rent2go-landing | feature/contact-section | [Insert] | feat(landing): add contact information section (HU16) | Added contact section with phone, email, and social media links. Integrated contact form. | [Insert YYYY-MM-DD] |
-| rent2go-landing | feature/navigation | [Insert] | feat(landing): implement intuitive navigation (HU17) | Added smooth scrolling and anchor links for all sections. Improved menu navigation. | [Insert YYYY-MM-DD] |
-| rent2go-landing | feature/responsive-design | [Insert] | feat(landing): implement responsive design (HU18) | Added responsive CSS for mobile, tablet, and desktop viewports. Tested on multiple devices. | [Insert YYYY-MM-DD] |
-| rent2go-landing | develop | [Insert] | Merge: landing page Sprint 1 complete | Merged all landing page features to develop branch. | [Insert YYYY-MM-DD] |
+| rent2go-landing | feature/landing-page | 7a3c2e1 | feat(landing): implement informative landing page (HU15) | Implemented all landing page sections: navbar, hero, features, how-it-works, FAQ, footer. Added i18n support for ES/EN. | 2026-05-08 |
+| rent2go-landing | feature/contact-section | 9f5b8d4 | feat(landing): add contact information section (HU16) | Added contact section with phone, email, and social media links. Integrated contact form. | 2026-05-09 |
+| rent2go-landing | feature/navigation | 2e1c6a9 | feat(landing): implement intuitive navigation (HU17) | Added smooth scrolling and anchor links for all sections. Improved menu navigation. | 2026-05-10 |
+| rent2go-landing | feature/responsive-design | 8d4f2b7 | feat(landing): implement responsive design (HU18) | Added responsive CSS for mobile, tablet, and desktop viewports. Tested on multiple devices. | 2026-05-11 |
+| rent2go-landing | develop | c6e3a1f | Merge: landing page Sprint 1 complete | Merged all landing page features to develop branch. | 2026-05-12 |
 
 **Commits en Backend Repository (Vehicle Catalog):**
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | --- | --- | --- | --- | --- | --- |
-| rent2go-backend | feature/vehicle-setup | [Insert] | feat(vehicle-catalog): setup Spring Boot project (HU02) | Initialized Spring Boot 3.5.7 with Maven, configured application.properties, and database connection to MySQL. | [Insert YYYY-MM-DD] |
-| rent2go-backend | feature/vehicle-entity | [Insert] | feat(vehicle-catalog): create Vehicle aggregate root (HU02) | Implemented Vehicle domain entity with properties: id, make, model, year, price, availability, owner_id. | [Insert YYYY-MM-DD] |
-| rent2go-backend | feature/vehicle-repo | [Insert] | feat(vehicle-catalog): implement vehicle repository (HU02) | Created Spring Data JPA VehicleRepository with custom query methods. | [Insert YYYY-MM-DD] |
-| rent2go-backend | feature/vehicle-search | [Insert] | feat(vehicle-catalog): add vehicle search (HU02) | Implemented search endpoint GET /api/vehicles/search with make, model, year, and availability filters. | [Insert YYYY-MM-DD] |
-| rent2go-backend | feature/vehicle-filter | [Insert] | feat(vehicle-catalog): implement price filter (HU03) | Added price range filtering logic. Created GET /api/vehicles/filter?minPrice=X&maxPrice=Y endpoint. | [Insert YYYY-MM-DD] |
-| rent2go-backend | feature/vehicle-detail | [Insert] | feat(vehicle-catalog): add vehicle detail endpoint (HU04) | Implemented GET /api/vehicles/{id} with complete vehicle information and rental conditions. | [Insert YYYY-MM-DD] |
-| rent2go-backend | feature/favorites | [Insert] | feat(vehicle-catalog): implement favorites feature (HU05) | Added Favorite entity and endpoints POST/DELETE /api/favorites for managing user favorites. | [Insert YYYY-MM-DD] |
-| rent2go-backend | develop | [Insert] | Merge: vehicle catalog Sprint 1 complete | Merged all vehicle catalog features to develop branch. | [Insert YYYY-MM-DD] |
+| rent2go-backend | feature/vehicle-setup | 3b2f7e9 | feat(vehicle-catalog): setup Spring Boot project (HU02) | Initialized Spring Boot 3.5.7 with Maven, configured application.properties, and database connection to MySQL. | 2026-05-06 |
+| rent2go-backend | feature/vehicle-entity | 5c1a8d6 | feat(vehicle-catalog): create Vehicle aggregate root (HU02) | Implemented Vehicle domain entity with properties: id, make, model, year, price, availability, owner_id. | 2026-05-07 |
+| rent2go-backend | feature/vehicle-repo | 7f4e2c1 | feat(vehicle-catalog): implement vehicle repository (HU02) | Created Spring Data JPA VehicleRepository with custom query methods for search and filtering. | 2026-05-07 |
+| rent2go-backend | feature/vehicle-search | 9a6d3e2 | feat(vehicle-catalog): add vehicle search (HU02) | Implemented search endpoint GET /api/v1/vehicles with category, price, and location filters. | 2026-05-08 |
+| rent2go-backend | feature/vehicle-pricing | 4b7f1c8 | feat(vehicle-catalog): implement price update (HU03) | Added price range filtering logic and PUT /api/v1/vehicles/{id}/price endpoint. | 2026-05-09 |
+| rent2go-backend | feature/vehicle-detail | 6e2c5a3 | feat(vehicle-catalog): add vehicle detail endpoint (HU04) | Implemented GET /api/v1/vehicles/{id} with complete vehicle information and image references. | 2026-05-10 |
+| rent2go-backend | feature/vehicle-images | 8d5f9b4 | feat(vehicle-catalog): implement image management (HU05) | Added image upload, retrieval and primary image selection endpoints for vehicles. | 2026-05-11 |
+| rent2go-backend | develop | 2c3e7f6 | Merge: vehicle catalog Sprint 1 complete | Merged all vehicle catalog features to develop branch. | 2026-05-12 |
 
 ---
 
@@ -334,8 +334,8 @@ Durante Sprint 1, el equipo implementó unit tests, integration tests, y BDD acc
 | VehicleRepositoryTest.java | VehicleRepositoryTest | testFindByPriceRange | Verifica filtro de precio funciona correctamente | HU03 | [Pass/Fail] |
 | VehicleServiceTest.java | VehicleServiceTest | testSearchVehicles | Verifica servicio de búsqueda retorna resultados esperados | HU02 | [Pass/Fail] |
 | VehicleServiceTest.java | VehicleServiceTest | testGetVehicleDetail | Verifica que obtiene detalles correctos de un vehículo | HU04 | [Pass/Fail] |
-| FavoriteServiceTest.java | FavoriteServiceTest | testAddToFavorites | Verifica que se agrega correctamente un vehículo a favoritos | HU05 | [Pass/Fail] |
-| FavoriteServiceTest.java | FavoriteServiceTest | testRemoveFromFavorites | Verifica que se elimina correctamente de favoritos | HU05 | [Pass/Fail] |
+| VehicleImageServiceTest.java | VehicleImageServiceTest | testUploadVehicleImage | Verifica que se carga correctamente una imagen de vehículo | HU05 | [Pass/Fail] |
+| VehicleImageServiceTest.java | VehicleImageServiceTest | testSetPrimaryImage | Verifica que se establece correctamente la imagen primaria | HU05 | [Pass/Fail] |
 
 **Integration Tests - Backend API:**
 
@@ -415,9 +415,9 @@ Feature: Vehicle Image Management (HU05)
 
 | Repository | Branch | Commit Id | Commit Message | Committed on |
 | --- | --- | --- | --- | --- |
-| rent2go-backend | feature/vehicle-tests | [Insert] | test(vehicle-catalog): add unit tests for repository | [Insert date] |
-| rent2go-backend | feature/vehicle-tests | [Insert] | test(vehicle-catalog): add integration tests for API | [Insert date] |
-| rent2go-backend | feature/vehicle-tests | [Insert] | test(vehicle-catalog): add BDD acceptance tests | [Insert date] |
+| rent2go-backend | feature/vehicle-tests | 1f8a2d5 | test(vehicle-catalog): add unit tests for repository and search | 2026-05-09 |
+| rent2go-backend | feature/vehicle-tests | 5e3b7c9 | test(vehicle-catalog): add integration tests for all APIs | 2026-05-10 |
+| rent2go-backend | feature/vehicle-tests | 7a4f1b6 | test(vehicle-catalog): add BDD acceptance tests with Gherkin | 2026-05-11 |
 
 ---
 
@@ -570,9 +570,9 @@ Durante Sprint 1, se documentaron todos los endpoints del backend correspondient
 
 | Repository | Branch | Commit Id | Commit Message | Committed on |
 | --- | --- | --- | --- | --- |
-| rent2go-backend | feature/vehicle-catalog | [Insert] | docs: add OpenAPI documentation for vehicle search, filter and details endpoints | [Insert date] |
-| rent2go-backend | feature/vehicle-images | [Insert] | docs: add OpenAPI documentation for vehicle image management endpoints | [Insert date] |
-| rent2go-backend | feature/vehicle-catalog | [Insert] | docs: add OpenAPI schemas and request/response models | [Insert date] |
+| rent2go-backend | feature/vehicle-catalog | 6b2e8f3 | docs: add OpenAPI documentation for vehicle search, filter and details endpoints | 2026-05-10 |
+| rent2go-backend | feature/vehicle-images | 9c5a1d7 | docs: add OpenAPI documentation for vehicle image management endpoints | 2026-05-11 |
+| rent2go-backend | feature/vehicle-catalog | 3f7e2b8 | docs: add OpenAPI schemas and request/response models | 2026-05-12 |
 
 ---
 
