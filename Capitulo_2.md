@@ -690,35 +690,85 @@ Impact map de nuestros segmentos objetivos
 </div>
 
 ### 2.4.3. Product Backlog
+| # Orden | User Story Id | Título                                                  | Story Points |
+| ------: | ------------- | ------------------------------------------------------- | -----------: |
+|       1 | SP06          | Definir arquitectura del backend y base de datos        |            5 |
+|       2 | TS14          | Estandarizar respuestas de error del API                |            3 |
+|       3 | US01          | Registrar usuario                                       |            3 |
+|       4 | US02          | Iniciar sesión                                          |            3 |
+|       5 | TS01          | Implementar API de autenticación                        |            5 |
+|       6 | US04          | Seleccionar tipo de cuenta                              |            2 |
+|       7 | US05          | Completar perfil de usuario                             |            3 |
+|       8 | US08          | Ver perfil de usuario                                   |            2 |
+|       9 | US09          | Editar información del perfil                           |            3 |
+|      10 | TS02          | Implementar API de perfil de usuario                    |            5 |
+|      11 | SP03          | Evaluar almacenamiento de imágenes y documentos         |            3 |
+|      12 | US06          | Subir documentos de verificación                        |            5 |
+|      13 | US07          | Consultar estado de verificación                        |            3 |
+|      14 | TS03          | Implementar API de documentos de verificación           |            5 |
+|      15 | US10          | Ver indicadores del perfil                              |            3 |
+|      16 | US11          | Registrar vehículo para alquiler                        |            5 |
+|      17 | US12          | Publicar vehículo                                       |            5 |
+|      18 | US13          | Ver mis vehículos publicados                            |            3 |
+|      19 | TS04          | Implementar API de vehículos                            |            8 |
+|      20 | US15          | Editar información de vehículo                          |            5 |
+|      21 | US16          | Gestionar disponibilidad del vehículo                   |            5 |
+|      22 | US14          | Filtrar vehículos por estado                            |            3 |
+|      23 | US17          | Consultar rendimiento de vehículo                       |            5 |
+|      24 | SP02          | Evaluar integración de mapas y ubicación                |            5 |
+|      25 | US18          | Explorar vehículos disponibles                          |            5 |
+|      26 | US19          | Buscar vehículos por ubicación y fechas                 |            5 |
+|      27 | TS05          | Implementar API de búsqueda de vehículos                |            8 |
+|      28 | US21          | Ver resumen de vehículo disponible                      |            3 |
+|      29 | US22          | Ver detalle de vehículo                                 |            5 |
+|      30 | US20          | Filtrar y ordenar vehículos disponibles                 |            5 |
+|      31 | US23          | Guardar vehículo como favorito                          |            3 |
+|      32 | TS06          | Implementar API de favoritos                            |            5 |
+|      33 | US24          | Iniciar reserva de vehículo                             |            5 |
+|      34 | US25          | Confirmar datos de reserva                              |            3 |
+|      35 | US26          | Seleccionar cobertura de reserva                        |            3 |
+|      36 | US27          | Visualizar cálculo total de reserva                     |            5 |
+|      37 | TS08          | Implementar servicio de cálculo de tarifa               |            5 |
+|      38 | SP01          | Investigar integración de pasarela de pagos             |            3 |
+|      39 | US28          | Confirmar y pagar reserva                               |            8 |
+|      40 | TS09          | Implementar API de pagos simulados                      |            5 |
+|      41 | US44          | Registrar pago de reserva                               |            5 |
+|      42 | US45          | Ver resumen de pago                                     |            3 |
+|      43 | US29          | Ver mis reservas organizadas por estado                 |            5 |
+|      44 | US30          | Ver detalle de una reserva                              |            3 |
+|      45 | US31          | Cancelar reserva                                        |            3 |
+|      46 | US32          | Ver historial de reservas pasadas                       |            3 |
+|      47 | TS07          | Implementar API de reservas                             |            8 |
+|      48 | US33          | Ver panel de control del propietario                    |            5 |
+|      49 | US34          | Ver solicitudes de reserva pendientes                   |            5 |
+|      50 | US35          | Aceptar o rechazar solicitud de reserva                 |            5 |
+|      51 | US36          | Ver reservas activas del día                            |            3 |
+|      52 | US37          | Registrar entrega de vehículo                           |            3 |
+|      53 | US38          | Contactar al arrendatario desde una reserva             |            3 |
+|      54 | SP04          | Evaluar mensajería en tiempo real o simulada            |            3 |
+|      55 | US39          | Ver bandeja de conversaciones                           |            5 |
+|      56 | US41          | Abrir conversación                                      |            3 |
+|      57 | US42          | Enviar y recibir mensajes                               |            5 |
+|      58 | US40          | Filtrar conversaciones                                  |            2 |
+|      59 | US43          | Contactar soporte                                       |            3 |
+|      60 | TS10          | Implementar API de mensajería                           |            8 |
+|      61 | SP05          | Evaluar notificaciones push                             |            3 |
+|      62 | US50          | Recibir notificaciones de reserva                       |            3 |
+|      63 | US51          | Recibir notificaciones de mensajes                      |            3 |
+|      64 | TS11          | Implementar API de notificaciones                       |            5 |
+|      65 | US52          | Reportar problema con una reserva                       |            3 |
+|      66 | US46          | Ver ganancias acumuladas                                |            5 |
+|      67 | US47          | Ver ingresos por vehículo                               |            3 |
+|      68 | US48          | Consultar movimientos financieros                       |            3 |
+|      69 | US49          | Solicitar retiro de saldo                               |            3 |
+|      70 | TS12          | Implementar API de ganancias del propietario            |            5 |
+|      71 | US03          | Recuperar contraseña                                    |            3 |
+|      72 | US53          | Ver landing page informativa                            |            3 |
+|      73 | US54          | Conocer beneficios para arrendatarios y propietarios    |            3 |
+|      74 | US55          | Acceder al registro o inicio de sesión desde la landing |            2 |
+|      75 | US56          | Consultar información de contacto                       |            2 |
+|      76 | TS13          | Configurar despliegue de landing page                   |            3 |
 
-Utilizamos la escala de Fibonacci para la estimación de los Story Points.
-
-| Epic / Story ID | Título                                          | Descripción                                                                                                                                      | Story Points (1/2/3/5/8) |
-| --------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
-| HU01            | Registrar cuenta                                | **Como** usuario, **deseo** crear una nueva cuenta para entrar a la plataforma.                                                                  | 3                        |
-| HU02            | Iniciar sesión con autenticación segura         | **Como** usuario, **deseo** iniciar sesión con mi cuenta de forma segura para acceder a mis funcionalidades.                                     | 2                        |
-| HU04            | Verificar identidad                             | **Como** propietario y arrendatario, **deseo** que la plataforma verifique la identidad de los usuarios para asegurar la confiabilidad.          | 5                        |
-| HU06            | Publicar un vehículo para alquiler              | **Como** propietario, **deseo** publicar mi vehículo para que pueda ser alquilado.                                                               | 3                        |
-| HU07            | Buscar vehículos disponibles                    | **Como** arrendatario, **deseo** buscar vehículos disponibles cerca de mi ubicación para alquilar.                                               | 5                        |
-| HU08            | Reservar un vehículo                            | **Como** arrendatario, **deseo** reservar un vehículo para una fecha y hora específicas.                                                         | 5                        |
-| HU11            | Calcular tarifas de alquiler                    | **Como** usuario, **deseo** ver el costo total del alquiler antes de confirmar la reserva.                                                       | 5                        |
-| HU13            | Ver historial de alquileres                     | **Como** arrendatario, **deseo** ver el historial de mis alquileres anteriores para llevar un registro de mis transacciones.                     | 1                        |
-| HU14            | Recibir notificaciones de vehículos disponibles | **Como** arrendatario, **deseo** recibir notificaciones cuando un vehículo que me interesa esté disponible.                                      | 1                        |
-| HU16            | Editar datos de vehículo publicado              | **Como** propietario, **deseo** editar los datos de mi vehículo publicado en caso de cambios.                                                    | 2                        |
-| HU17            | Compartir vehículo por redes sociales           | **Como** propietario, **deseo** compartir mi anuncio en redes sociales para llegar a más personas.                                               | 1                        |
-| HU18            | Ver ranking de usuarios confiables              | **Como** usuario, **deseo** ver la calificación promedio de otros usuarios para decidir con quién interactuar.                                   | 2                        |
-| HU19            | Registrar usuario                               | **Como** nuevo usuario, **Quiero** registrarme en la plataforma **Para** acceder a los servicios.                                                | 3                        |
-| HU20            | Iniciar sesión                                  | **Como** usuario registrado, **Quiero** iniciar sesión **Para** acceder a mi cuenta.                                                             | 2                        |
-| HU21            | Recuperar contraseña                            | **Como** usuario, **Quiero** recuperar mi contraseña **Para** restablecer acceso si la olvidé.                                                   | 2                        |
-| HU22            | Publicar vehículo con especificaciones          | **Como** propietario, **Quiero** publicar un vehículo con datos y especificaciones **Para** alquilarlo.                                          | 3                        |
-| HU23            | Ver mis vehículos publicados                    | **Como** propietario, **Quiero** ver mis vehículos publicados **Para** gestionar su estado.                                                      | 2                        |
-| HU24            | Ver todas las reservaciones                     | **Como** administrador o propietario, **Quiero** ver todas las reservaciones **Para** monitorear.                                                | 3                        |
-| HU25            | Filtrar reservaciones por estado                | **Como** usuario, **Quiero** filtrar las reservaciones por estado **Para** visualizarlas fácilmente.                                             | 2                        |
-| HU26            | Buscar vehículos con filtros avanzados          | **Como** cliente, **Quiero** buscar vehículos aplicando filtros **Para** encontrar el ideal.                                                     | 5                        |
-| HU27            | Ver mis reservaciones por estado                | **Como** cliente, **Quiero** ver mis reservaciones por estado **Para** organizar mis alquileres.                                                 | 2                        |
-| HU28            | Ver detalle de una reservación                  | **Como** usuario, **Quiero** ver detalles de una reservación específica **Para** consultar fechas y vehículo.                                    | 2                        |
-| HU29            | Cancelar reservación                            | **Como** cliente, **Quiero** cancelar una reservación **Para** evitar el cobro si ya no la necesito.                                             | 3                        |
-| HU30            | Actualizar estado de reservación                | **Como** propietario, **Quiero** actualizar el estado de una reserva (aceptar, rechazar, marcar como completada) **Para** gestionar el alquiler. | 3                        |
 
 ## 2.5. Strategic-Level Domain-Driven Design
 
