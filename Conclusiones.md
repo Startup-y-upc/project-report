@@ -2,9 +2,11 @@
 
 ### Conclusiones y recomendaciones
 
-En esta entrega se consolido la base del proyecto Rent2Go desde la investigacion hasta el diseño de la solucion. Las entrevistas y el needfinding evidencian una necesidad clara de confianza y seguridad para propietarios y arrendatarios, lo que orienta la propuesta de valor hacia garantias verificables. La especificacion de requerimientos y el backlog permiten priorizar funcionalidades criticas como registro, reservas, pagos y verificacion de identidad. La arquitectura DDD y los diagramas C4 delimitan los bounded contexts y aseguran una base tecnica coherente para el desarrollo mobile-first.
+En esta entrega se consolidó la propuesta de Rent2Go desde el diseño de experiencia hasta la implementación inicial. El Capítulo III permitió definir una identidad visual consistente, una arquitectura de información clara para el landing page y wireframes, mock-ups y flujos móviles orientados a una navegación simple, comprensible y centrada en el usuario. Esa base de UI/UX facilitó que los entregables de implementación mantuvieran coherencia entre la propuesta visual, la organización del contenido y las necesidades funcionales del producto.
 
-Como recomendaciones, se debe mantener el enfoque en mecanismos de seguridad y trazabilidad, validar los flujos con usuarios reales en las siguientes iteraciones y asegurar que las integraciones externas (pagos, notificaciones y mapas) respalden la experiencia movil.
+El Capítulo IV confirmó la viabilidad técnica de esa propuesta mediante la configuración del entorno, la gestión del código fuente, el despliegue del landing page y del backend, y la ejecución de Sprint 1 con evidencia de desarrollo, pruebas, documentación y colaboración del equipo. La validación de los endpoints, la documentación OpenAPI y las evidencias de despliegue muestran que el proyecto avanzó desde la definición conceptual hacia una primera entrega funcional y verificable.
+
+Como recomendaciones, se debe continuar refinando la experiencia de usuario a partir de las entrevistas de validación, fortalecer la consistencia entre los flujos móviles y la arquitectura de información definida, y mantener la trazabilidad entre requerimientos, diseño e implementación en los siguientes sprints. También conviene seguir documentando de forma sistemática los cambios para asegurar que la evolución del producto permanezca alineada con los objetivos del proyecto.
 
 ### Video About-the-Team
 
