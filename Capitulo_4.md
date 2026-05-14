@@ -167,7 +167,9 @@ En esta sección se especifica la configuración del despliegue de la solución.
 
 **Deployment Architecture (C4 Model - Deployment Level):**
 
-[Insert Deployment Diagram C4 Model - URL a imagen]
+<div align="center">
+  <img src="Resources/capitulo_2/architecture/Deployment-001-dark.png" alt="C4 deployment diagram" width="900">
+</div>
 
 **Estrategia de Despliegue por Producto:**
 
