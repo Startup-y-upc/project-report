@@ -69,10 +69,10 @@ En esta sección el equipo establece el esquema de organización y control de ve
 
 | Producto | URL Repositorio | Rama Principal | Estado |
 | --- | --- | --- | --- |
-| Landing Page | [https://github.com/Startup-y-upc/rent2go-landing](https://github.com/Startup-y-upc/rent2go-landing) | main | [Insert status] |
-| Backend (Web Services) | [https://github.com/Startup-y-upc/rent2go-backend](https://github.com/Startup-y-upc/rent2go-backend) | master | [Insert status] |
-| Frontend Web | [https://github.com/Startup-y-upc/rent2go-frontend](https://github.com/Startup-y-upc/rent2go-frontend) | main | [Insert status] |
-| Mobile (Android/iOS/Flutter) | [https://github.com/Startup-y-upc/rent2go-mobile](https://github.com/Startup-y-upc/rent2go-mobile) | main | [Insert status] |
+| Landing Page | [https://github.com/Startup-y-upc/landing-page](https://github.com/Startup-y-upc/landing-page) | main | Deployed |
+| Backend (Web Services) | [https://github.com/Startup-y-upc/rent2go-backend](https://github.com/Startup-y-upc/rent2go-backend) | master | Deployed|
+| Frontend Web | [https://github.com/Startup-y-upc/rent2go-kotlin](https://github.com/Startup-y-upc/rent2go-kotlin) | main | In development |
+| Mobile (Android/iOS/Flutter) | [https://github.com/Startup-y-upc/rent2go-kotlin](https://github.com/Startup-y-upc/rent2go-kotlin) | main | In development |
 
 **GitFlow Workflow:**
 
@@ -694,21 +694,21 @@ Durante Sprint 1, el equipo trabajó de forma colaborativa siguiendo GitFlow y p
 
 | PR # | Title | Description | Author | Merged | Date |
 | --- | --- | --- | --- | --- | --- |
-| #1 | Feature/landing-informative (HU15) | Implement Landing Page informative sections | [Name] | Yes | [Date] |
-| #2 | Feature/landing-contact (HU16) | Add contact information section | [Name] | Yes | [Date] |
-| #3 | Feature/landing-navigation (HU17) | Implement intuitive navigation and smooth scrolling | [Name] | Yes | [Date] |
-| #4 | Feature/landing-responsive (HU18) | Add responsive design for all devices | [Name] | Yes | [Date] |
-| #5 | Feature/vehicle-catalog (HU02) | Implement vehicle search functionality | [Name] | Yes | [Date] |
-| #6 | Feature/vehicle-filter (HU03) | Add price filter functionality | [Name] | Yes | [Date] |
-| #7 | Feature/vehicle-detail (HU04) | Implement vehicle detail endpoint | [Name] | Yes | [Date] |
-| #8 | Feature/favorites (HU05) | Add favorites management feature | [Name] | Yes | [Date] |
+| #1 | Feature/landing-informative (HU15) | Implement Landing Page informative sections | Chavez Uribe, Ario Joel | Yes | 10/05/2026 |
+| #2 | Feature/landing-contact (HU16) | Add contact information section | Chavez Uribe, Ario Joel | Yes | 10/05/2026 |
+| #3 | Feature/landing-navigation (HU17) | Implement intuitive navigation and smooth scrolling | Castillo Vidal, Jesus Ivan | Yes | 10/05/2026 |
+| #4 | Feature/landing-responsive (HU18) | Add responsive design for all devices | Castillo Vidal, Jesus Ivan | Yes | 10/05/2026 |
+| #5 | Feature/vehicle-catalog (HU02) | Implement vehicle search functionality | Huarcaya Matias, Gilbert Alonso | Yes | 10/05/2026 |
+| #6 | Feature/vehicle-filter (HU03) | Add price filter functionality | Carhuancote Dominguez, Gonzalo Alonso | Yes | 10/05/2026 |
+| #7 | Feature/vehicle-detail (HU04) | Implement vehicle detail endpoint | Huarcaya Matias, Gilbert Alonso | Yes | 10/05/2026 |
+| #8 | Feature/favorites (HU05) | Add favorites management feature | Carhuancote Dominguez, Gonzalo Alonso | Yes | 10/05/2026 |
 
 **Reuniones Realizadas:**
 
-- Sprint Planning: [Date] - [HH:MM]
-- Daily Standup: [Insert frequency - e.g., Monday-Friday 10:00 AM]
-- Sprint Review: [Date] - [HH:MM]
-- Sprint Retrospective: [Date] - [HH:MM]
+- Sprint Planning: 10/05/2026 - 09:30 AM
+- Daily Standup: Monday-Friday 10:00 AM
+- Sprint Review: 10/05/2026 - 05:00 PM
+- Sprint Retrospective: 10/05/2026 - 06:00 PM
 
 **Challenges & Resolutions:**
 
