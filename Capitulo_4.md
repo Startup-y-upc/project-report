@@ -4,12 +4,6 @@
 
 ## 4. Product Implementation & Validation
 
-En esta sección el equipo explica y evidencia el proceso de implementar, comprobar, desplegar y validar la solución compuesta por los productos digitales que forman parte del alcance. El Landing Page presenta el modelo de negocio y las aplicaciones móviles. Los procesos del negocio digital que dirigen la operación del negocio, tanto procesos core como procesos de soporte (Authentication & Authorization, Subscriptions), están distribuidos entre los productos digitales que forman parte del alcance como RESTful Web Services, Native Mobile Applications y Web Applications.
-
-Este capítulo abarca secciones para la organización del proceso de trabajo en Sprints, la descripción y prácticas asociadas a Software Configuration Management, y las evidencias de Implementation, Testing, Deployment y Validación para cada uno de los productos que forman parte de la solución, en términos del producto en sí y la colaboración por Sprint.
-
----
-
 <div style="page-break-after: always;"></div>
 
 ## 4.1. Software Configuration Management
