@@ -1,6 +1,19 @@
 ## Capítulo III: Solution UI/UX Design
 ### 3.1. Product design
 ### 3.1.1. Style Guidelines
+
+## Tipografía
+
+<div align="center">
+    <img src="Resources/capitulo_3/tipografia.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+## Paleta de Colores
+
+<div align="center">
+    <img src="Resources/capitulo_3/paleta-de-colores.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
 ### 3.1.1.1. General Style Guidelines
 ### 3.1.2. Information Architecture
 ### 3.1.2.1. Organization Systems
@@ -89,7 +102,9 @@ Los mock-ups elaborados representan las principales funcionalidades de Rent2Go:
 
 Estas interfaces permiten visualizar de forma realista el funcionamiento esperado de la aplicación móvil antes de su implementación.
 
-
+<div align="center">
+    <img src="Resources/capitulo_3/mobile-mokups.png" style="margin: 10px 0;" width="60%"/>
+</div>
 
 ---
 
