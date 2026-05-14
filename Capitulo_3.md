@@ -26,6 +26,21 @@
 ### 3.1.3.2. Landing Page Mock-up
 ### 3.1.4. Mobile Applications UX/UI Design
 ### 3.1.4.1. Mobile Applications Wireframes
+
+En esta sección se presentan los wireframes desarrollados para la aplicación móvil Rent2Go. Los wireframes permiten representar de manera estructurada la distribución inicial de los elementos visuales y funcionales de cada pantalla antes del diseño final de los mock-ups.
+
+<div align="center">
+    <img src="Resources/capitulo_3/wireframe-mobile.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+<div align="center">
+    <img src="Resources/capitulo_3/wireframe-mobile2.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+<div align="center">
+    <img src="Resources/capitulo_3/wireframe-mobile3.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
 ### 3.1.4.2. Mobile Applications Wireflow Diagrams
 ### 3.1.4.3. Mobile Applications Mock-ups
 
