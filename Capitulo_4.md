@@ -261,27 +261,27 @@ La integración de estos productos permitirá validar tempranamente el concepto 
 
 | Sprint # | User Story | Work-Item / Task | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Sprint 1** | HU15 | Task | HU15-01 | Setup landing page project | Configure HTML5 project structure with CSS3 and vanilla JavaScript | 4 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU15-02 | Implement landing page sections | Create navbar, hero, features, how-it-works, FAQ, footer with HTML5 and CSS3 | 20 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU15-03 | Add i18n support | Add i18n support with vanilla JavaScript for English/Spanish translations in all sections | 6 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU16 | Task | HU16-01 | Create contact section | Design and implement contact information display | 4 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU16-02 | Add social media links | Implement links to social networks and contact form | 3 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU17 | Task | HU17-01 | Implement navigation menu | Create intuitive menu structure with anchor links | 5 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU17-02 | Add smooth scrolling | Implement smooth scroll to sections | 2 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU18 | Task | HU18-01 | Implement responsive design | Create responsive CSS for mobile, tablet, desktop | 8 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU18-02 | Test responsiveness | Test on multiple devices and screen sizes | 3 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU02 | Task | HU02-01 | Setup Spring Boot project | Create Maven project with Spring Boot 3.5.7 | 4 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU02-02 | Configure MySQL database | Setup connection and schema for vehicle catalog | 5 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU02-03 | Create Vehicle entity | Implement Vehicle aggregate root with properties | 6 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU02-04 | Create Vehicle repository | Implement Spring Data JPA repository | 4 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU02-05 | Implement search endpoint | Create GET /api/vehicles/search with query parameters | 8 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU03 | Task | HU03-01 | Add price filter logic | Implement price range filtering in repository | 5 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU03-02 | Create filter endpoint | Implement GET /api/vehicles/filter?minPrice=X&maxPrice=Y | 5 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU04 | Task | HU04-01 | Implement vehicle detail service | Add service layer method for vehicle details | 5 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU04-02 | Create detail endpoint | Implement GET /api/vehicles/{id} | 4 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU05 | Task | HU05-01 | Design favorites feature | Plan storage and query strategies for favorites | 4 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU05-02 | Implement favorites service | Add favorites management business logic | 6 | [Name] | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU05-03 | Create favorites endpoints | Implement POST/DELETE /api/favorites | 5 | [Name] | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | HU15 | Task | HU15-01 | Setup landing page project | Configure HTML5 project structure with CSS3 and vanilla JavaScript | 4 | Castillo Vidal, Jesus Ivan | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU15-02 | Implement landing page sections | Create navbar, hero, features, how-it-works, FAQ, footer with HTML5 and CSS3 | 20 | Chavez Uribe, Ario Joel | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU15-03 | Add i18n support | Add i18n support with vanilla JavaScript for English/Spanish translations in all sections | 6 | Castillo Vidal, Jesus Ivan | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | HU16 | Task | HU16-01 | Create contact section | Design and implement contact information display | 4 | Chavez Uribe, Ario Joel | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU16-02 | Add social media links | Implement links to social networks and contact form | 3 | Castillo Vidal, Jesus Ivan | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | HU17 | Task | HU17-01 | Implement navigation menu | Create intuitive menu structure with anchor links | 5 | Diestra Zambrano, Adriana Maria | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU17-02 | Add smooth scrolling | Implement smooth scroll to sections | 2 | Diestra Zambrano, Adriana Maria | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | HU18 | Task | HU18-01 | Implement responsive design | Create responsive CSS for mobile, tablet, desktop | 8 | Castillo Vidal, Jesus Ivan | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU18-02 | Test responsiveness | Test on multiple devices and screen sizes | 3 | Diestra Zambrano, Adriana Maria | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | HU02 | Task | HU02-01 | Setup Spring Boot project | Create Maven project with Spring Boot 3.5.7 | 4 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU02-02 | Configure MySQL database | Setup connection and schema for vehicle catalog | 5 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU02-03 | Create Vehicle entity | Implement Vehicle aggregate root with properties | 6 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU02-04 | Create Vehicle repository | Implement Spring Data JPA repository | 4 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU02-05 | Implement search endpoint | Create GET /api/v1/vehicles with filters (categories, price, location) | 8 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | HU03 | Task | HU03-01 | Add price filter logic | Implement price range filtering in repository | 5 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU03-02 | Create price update endpoint | Implement PUT /api/v1/vehicles/{id}/price | 5 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | HU04 | Task | HU04-01 | Implement vehicle detail service | Add service layer method for vehicle details | 5 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU04-02 | Create detail endpoint | Implement GET /api/v1/vehicles/{id} | 4 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | HU05 | Task | HU05-01 | Design image management strategy | Plan storage and query strategies for vehicle images | 4 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU05-02 | Implement image upload service | Add vehicle image upload and management business logic | 6 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU05-03 | Create image management endpoints | Implement POST/PUT /api/v1/vehicles/{id}/images endpoints | 5 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
 
 ---
 
@@ -291,7 +291,7 @@ La integración de estos productos permitirá validar tempranamente el concepto 
 
 Durante Sprint 1, el equipo implementó todas las historias de usuario priorizadas:
 - **Landing Page (HU15-HU18):** Implementación del landing page informativo con secciones core, información de contacto, navegación intuitiva y diseño responsivo.
-- **Backend Vehicle Catalog (HU02-HU05):** Endpoints de búsqueda, filtrado por precio, detalle de vehículo, y gestión de favoritos.
+- **Backend Vehicle Catalog (HU02-HU05):** Endpoints de búsqueda, filtrado por precio, detalle de vehículo, y gestión de imágenes de vehículos.
 
 Se realizaron commits regulares en ambos repositorios, siguiendo GitFlow y Conventional Commits. A continuación se presenta el resumen de avances en implementación.
 
