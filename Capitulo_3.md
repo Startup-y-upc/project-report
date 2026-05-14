@@ -43,6 +43,13 @@ Esta sección presenta los wireframes del Landing Page tanto para Desktop Web Br
 </div>
 
 ### 3.1.3.2. Landing Page Mock-up
+
+Esta sección presenta los mock-ups del Landing Page para Desktop Web Browser y Mobile Web Browser. Los diseños aplican principios de diseño visual, accesibilidad, arquitectura de información y el Design System definido para la plataforma, asegurando una experiencia clara, consistente y adaptable a diferentes dispositivos.
+
+<div align="center">
+    <img src="Resources/capitulo_3/mockup-landing1.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
 ### 3.1.4. Mobile Applications UX/UI Design
 ### 3.1.4.1. Mobile Applications Wireframes
 ### 3.1.4.2. Mobile Applications Wireflow Diagrams
