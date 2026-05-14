@@ -23,24 +23,28 @@
 ### 3.1.2.5. Navigation Systems
 ### 3.1.3. Landing Page UI Design
 ### 3.1.3.1. Landing Page Wireframe
+
+Esta sección presenta los wireframes del Landing Page tanto para Desktop Web Browser como para Mobile Web Browser. Los diseños fueron elaborados considerando principios de diseño como la jerarquía visual, consistencia, simplicidad y accesibilidad. Además, se aplicaron elementos de diseño inclusivo, asegurando una correcta navegación, legibilidad y adaptación a diferentes tamaños de pantalla. La arquitectura de información se organizó de manera clara para facilitar que los usuarios encuentren rápidamente las secciones principales de la plataforma.
+
+<div align="center">
+    <img src="Resources/capitulo_3/wireframe-landing1.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+<div align="center">
+    <img src="Resources/capitulo_3/wireframe-landing2.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+<div align="center">
+    <img src="Resources/capitulo_3/wireframe-landing3.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+<div align="center">
+    <img src="Resources/capitulo_3/wireframe-landing4.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
 ### 3.1.3.2. Landing Page Mock-up
 ### 3.1.4. Mobile Applications UX/UI Design
 ### 3.1.4.1. Mobile Applications Wireframes
-
-En esta sección se presentan los wireframes desarrollados para la aplicación móvil Rent2Go. Los wireframes permiten representar de manera estructurada la distribución inicial de los elementos visuales y funcionales de cada pantalla antes del diseño final de los mock-ups.
-
-<div align="center">
-    <img src="Resources/capitulo_3/wireframe-mobile.png" style="margin: 10px 0;" width="60%"/>
-</div>
-
-<div align="center">
-    <img src="Resources/capitulo_3/wireframe-mobile2.png" style="margin: 10px 0;" width="60%"/>
-</div>
-
-<div align="center">
-    <img src="Resources/capitulo_3/wireframe-mobile3.png" style="margin: 10px 0;" width="60%"/>
-</div>
-
 ### 3.1.4.2. Mobile Applications Wireflow Diagrams
 ### 3.1.4.3. Mobile Applications Mock-ups
 
@@ -130,15 +134,4 @@ Para el diseño de los mock-ups se utilizó la herramienta Figma, debido a su ca
 https://www.figma.com/design/BMdRHNFasQzhoxhp9cJB93/Untitled?node-id=0-1&p=f&t=sAOXZsIjXz3z7kD4-0
 
 ### 3.1.4.4. Mobile Applications User Flow Diagrams
-
-En esta sección se presentan los User Flow Diagrams de la aplicación móvil Rent2Go, los cuales representan el recorrido que realiza el usuario para cumplir distintos objetivos dentro de la plataforma. Estos diagramas fueron elaborados considerando los User Persona definidos previamente y mantienen consistencia con los Wireflows y Mock-ups desarrollados.
-
-<div align="center">
-    <img src="Resources/capitulo_3/flujo.png" style="margin: 10px 0;" width="60%"/>
-</div>
-
-<div align="center">
-    <img src="Resources/capitulo_3/flujo2.png" style="margin: 10px 0;" width="60%"/>
-</div>
-
 ### 3.1.4.5. Mobile Applications Prototyping
