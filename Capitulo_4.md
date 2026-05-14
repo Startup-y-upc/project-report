@@ -600,7 +600,7 @@ Durante Sprint 1, el equipo trabajó de forma colaborativa siguiendo GitFlow y p
 | [Insert 2] | [Description] | [Solution implemented] |
 
 ---
-
+<!--
 <div style="page-break-after: always;"></div>
 
 ## 4.3. Validation Interviews
@@ -773,3 +773,4 @@ En esta sección se evalúan las sesiones de validación basado en heurísticas 
 ---
 
 <div style="page-break-after: always;"></div>
+-->
