@@ -140,4 +140,5 @@ En esta sección se presentan los User Flow Diagrams de la aplicación móvil Re
 <div align="center">
     <img src="Resources/capitulo_3/flujo2.png" style="margin: 10px 0;" width="60%"/>
 </div>
+
 ### 3.1.4.5. Mobile Applications Prototyping
