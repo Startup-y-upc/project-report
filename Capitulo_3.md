@@ -1,6 +1,6 @@
 ## Capítulo III: Solution UI/UX Design
 ### 3.1. Product design
-#### 3.1.1. Style Guidelines
+### 3.1.1. Style Guidelines
 ### 3.1.1.1. General Style Guidelines
 ### 3.1.2. Information Architecture
 ### 3.1.2.1. Organization Systems
@@ -15,5 +15,89 @@
 ### 3.1.4.1. Mobile Applications Wireframes
 ### 3.1.4.2. Mobile Applications Wireflow Diagrams
 ### 3.1.4.3. Mobile Applications Mock-ups
+
+En esta sección se presentan los mock-ups desarrollados para la aplicación móvil de Rent2Go. Estas interfaces fueron diseñadas con el objetivo de ofrecer una experiencia intuitiva, moderna y accesible tanto para propietarios de vehículos como para usuarios arrendatarios.
+
+Durante el diseño de las pantallas se aplicaron principios de UX/UI enfocados en la simplicidad, facilidad de navegación y consistencia visual. Asimismo, se utilizaron elementos definidos dentro del Design System del proyecto, manteniendo uniformidad en colores, tipografías, componentes y estilos visuales.
+
+### Aplicación de principios de diseño
+
+Los mock-ups fueron desarrollados considerando distintos principios de diseño digital:
+
+- **Consistencia visual:**  
+  Todas las pantallas mantienen una misma línea gráfica basada en una paleta de colores azul oscuro, blanco y celeste, permitiendo uniformidad en toda la aplicación.
+
+- **Jerarquía visual:**  
+  Se utilizaron tamaños de texto, espaciados y contrastes para resaltar información importante como botones principales, precios, reservas y notificaciones.
+
+- **Minimalismo:**  
+  Las interfaces presentan únicamente los elementos necesarios para evitar sobrecargar al usuario y facilitar la interacción.
+
+- **Retroalimentación visual:**  
+  Los botones, formularios y estados de validación brindan respuestas visuales claras al usuario durante las acciones realizadas dentro de la aplicación.
+
+- **Diseño responsive y móvil:**  
+  Todas las vistas fueron diseñadas pensando en dispositivos móviles modernos, priorizando la comodidad visual y la facilidad de uso.
+
+---
+
+### Diseño inclusivo
+
+La propuesta considera aspectos relacionados con accesibilidad y diseño inclusivo:
+
+- Uso de contrastes adecuados entre texto y fondo.
+- Botones de tamaño apropiado para interacción táctil.
+- Tipografía legible y clara.
+- Navegación simple e intuitiva.
+- Iconografía comprensible para distintos tipos de usuarios.
+
+---
+
+### Arquitectura de información aplicada
+
+La organización de la información dentro de la aplicación busca facilitar la navegación y reducir el tiempo necesario para completar tareas.
+
+Las funcionalidades fueron agrupadas según las principales necesidades de los usuarios:
+
+| Funcionalidad | Objetivo |
+|---|---|
+| Inicio de sesión y registro | Permitir acceso seguro a la plataforma |
+| Búsqueda de vehículos | Facilitar la exploración y reserva |
+| Reservas | Gestionar alquileres realizados |
+| Mensajería | Permitir comunicación entre usuarios |
+| Perfil de usuario | Administrar información personal y vehículos |
+| Ganancias | Mostrar ingresos generados por propietarios |
+
+La navegación principal se encuentra ubicada en la parte inferior de la aplicación, permitiendo acceso rápido a las funcionalidades más importantes.
+
+---
+
+### Mock-ups desarrollados
+
+Los mock-ups elaborados representan las principales funcionalidades de Rent2Go:
+
+- Pantalla de inicio de sesión.
+- Pantalla de creación de cuenta.
+- Recuperación de contraseña.
+- Validación de identidad y documentos.
+- Pantalla principal de exploración de vehículos.
+- Vista detallada de vehículos disponibles.
+- Gestión de reservas.
+- Sistema de mensajería entre usuarios.
+- Perfil de usuario.
+- Panel de ganancias para propietarios.
+
+Estas interfaces permiten visualizar de forma realista el funcionamiento esperado de la aplicación móvil antes de su implementación.
+
+
+
+---
+
+### Herramienta utilizada
+
+Para el diseño de los mock-ups se utilizó la herramienta Figma, debido a su capacidad para desarrollar prototipos interactivos, sistemas de diseño y colaboración en tiempo real durante el proceso de diseño UX/UI.
+
+https://www.figma.com/design/BMdRHNFasQzhoxhp9cJB93/Untitled?node-id=0-1&p=f&t=sAOXZsIjXz3z7kD4-0
+
 ### 3.1.4.4. Mobile Applications User Flow Diagrams
 ### 3.1.4.5. Mobile Applications Prototyping
