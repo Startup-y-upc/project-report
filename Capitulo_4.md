@@ -177,13 +177,14 @@ En esta sección se especifica la configuración del despliegue de la solución.
 - Plataforma: GitHub Pages
 - Trigger: Merge a main branch
 - Process: Automatic build & deploy
-- URL: [Insert production URL]
+- URL: https://startup-y-upc.github.io/landing-page/
 - Configuración: Source branch, GitHub Pages settings y dominio personalizado si aplica
 
 **Backend (Web Services):**
 - Plataforma: Railway
 - CI/CD: GitHub Actions + Railway deploy
 - Database: MySQL 8.0 en Railway
+- URL: https://rent2go-backend-production.up.railway.app/
 - Configuración: variables de entorno y application.properties por ambiente (dev, staging, prod)
 
 **Mobile (Android/iOS/Flutter):**
