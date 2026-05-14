@@ -467,10 +467,11 @@ Durante Sprint 1, el equipo completó la implementación del Landing Page inform
 
 En este video se muestra la navegación completa del Landing Page (HU15-HU18), incluyendo responsividad en dispositivos móviles, información de contacto, y navegación intuitiva.
 
-- **URL OneDrive:** [Insert link]
-- **URL YouTube:** [Insert link]
-- **Duración:** [Insert HH:MM:SS]
+- **URL:** https://youtu.be/eXKw6t8Z5sw
+- **Duración:** 3:27
 - **Descripción:** Demostración completa del Landing Page con navegación entre secciones (HU15), información de contacto (HU16), navegación intuitiva (HU17), y responsividad (HU18).
+
+---
 
 **Backend API - Capturas & Testing (HU02-HU05):**
 
@@ -508,9 +509,8 @@ En este video se muestra la navegación completa del Landing Page (HU15-HU18), i
 
 En este video se muestra la ejecución de los principales endpoints del backend utilizando Postman, demostrando búsqueda con filtros (HU02), actualización de precio (HU03), detalles de vehículo (HU04), y gestión de imágenes (HU05).
 
-- **URL OneDrive:** [Insert link]
-- **URL YouTube:** [Insert link]
-- **Duración:** [Insert HH:MM:SS]
+- **URL:** https://youtu.be/fi6KKMVMDQg
+- **Duración:** 5:05
 - **Descripción:** Demostración de endpoints: búsqueda de vehículos con filtros (HU02), actualización de precio (HU03), detalles de vehículo (HU04), carga de imágenes y selección de imagen primaria (HU05) con casos de éxito y manejo de errores.
 
 ---
@@ -960,12 +960,11 @@ Confirmación final del despliegue exitoso con métodos de acceso a la API.
 | Aspecto | Landing Page | Backend |
 | --- | --- | --- |
 | **Plataforma** | GitHub Pages | Railway |
-| **URL Pública** | [Insert] | [Insert] |
+| **URL Pública** | https://startup-y-upc.github.io/landing-page/ | https://rent2go-backend-production.up.railway.app/ |
 | **Database** | N/A | MySQL 8.0 (Railway) |
 | **SSL/TLS** | Automático | Automático |
 | **CI/CD** | Automático en main | Automático en main |
 | **Status** | Live | Running |
-| **Domain** | [Insert custom domain] | [Insert public URL] |
 
 ---
 
