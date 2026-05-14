@@ -470,29 +470,161 @@ Resumen de la entrevista:
 
 ### 2.2.3. Análisis de entrevistas
 
-**Segmento 1: Propietarios de vehiculos**
+A partir de las entrevistas realizadas a los dos segmentos objetivo de la plataforma Rent2Go, se identificaron diferentes características objetivas y subjetivas relacionadas con las necesidades, preocupaciones y expectativas de los usuarios potenciales. El análisis permite reconocer patrones comunes que servirán como base para la construcción de los arquetipos de usuario.
 
-Las entrevistas confirman un perfil de propietario potencial con vehiculo subutilizado y motivacion por monetizarlo. La principal barrera es la confianza, asociada al temor de danos o mal uso del vehiculo.
+---
 
-Factores mas importantes identificados:
+# Segmento Objetivo 1: Propietarios de vehículos
 
-- Seguro vehicular incluido
-- Proteccion ante danos
-- Respaldo legal
+Se realizaron 3 entrevistas a propietarios de vehículos ubicados en diferentes distritos y ciudades del país.
 
-Tambien se evidencia una oportunidad de mercado por el desconocimiento de plataformas similares, lo que refuerza la innovacion de la propuesta y su valor de ingresos pasivos.
+## Características objetivas del segmento
 
-**Segmento 2: Arrendatarios de vehiculos**
+| Característica | Resultado |
+|---|---|
+| Cantidad de entrevistados | 3 |
+| Rango de edad | 21 a 30 años |
+| Promedio de edad | 26 años |
+| Distritos/Ciudades | Callao, Chorrillos y Trujillo |
+| Poseen vehículo propio | 100% |
+| Uso poco frecuente del vehículo | 100% |
+| Vehículo permanece guardado cuando no se usa | 100% |
+| Han alquilado su vehículo anteriormente | 0% |
+| Estarían dispuestos a alquilarlo | 100% |
 
-Las entrevistas de arrendatarios muestran una necesidad clara de movilidad flexible y economica para viajes cortos, con preferencia por procesos simples y tarifas transparentes. La confianza y la seguridad del vehiculo son el principal freno para adoptar una plataforma nueva.
+## Análisis estadístico
 
-Factores mas importantes identificados:
+### Frecuencia de uso del vehículo
 
-- Transparencia en tarifas, deposito y politicas de cancelacion
-- Verificacion de identidad y soporte rapido
-- Estado del vehiculo y cobertura de seguros
+| Respuesta | Cantidad | Porcentaje |
+|---|---|---|
+| Uso moderado o poco frecuente | 3 | 100% |
 
-Se observa una disposicion positiva a usar la aplicacion si el flujo de reserva es rapido y las condiciones de uso son claras, reforzando la necesidad de una experiencia mobile-first sin fricciones.
+Los entrevistados mencionaron que utilizan su vehículo únicamente en determinados momentos de la semana, dejando el automóvil estacionado la mayor parte del tiempo. Esto evidencia una oportunidad para generar ingresos mediante el alquiler temporal del vehículo.
+
+### Experiencia previa alquilando vehículos
+
+| Respuesta | Cantidad | Porcentaje |
+|---|---|---|
+| Sí ha alquilado | 0 | 0% |
+| No ha alquilado | 3 | 100% |
+
+El principal motivo identificado fue la desconfianza hacia el proceso de alquiler y el temor a posibles daños o pérdidas relacionadas con el vehículo.
+
+### Principales preocupaciones al alquilar
+
+| Preocupación mencionada | Cantidad | Porcentaje |
+|---|---|---|
+| Seguridad del vehículo | 3 | 100% |
+| Protección y monitoreo | 3 | 100% |
+| Garantías y seguros | 3 | 100% |
+
+La seguridad representa el factor más importante para este segmento. Los entrevistados indicaron que solo considerarían alquilar su vehículo si la plataforma ofrece seguros, monitoreo y mecanismos de protección confiables.
+
+### Interés por la propuesta Rent2Go
+
+| Opinión sobre la propuesta | Cantidad | Porcentaje |
+|---|---|---|
+| Consideran atractiva e innovadora la idea | 3 | 100% |
+| Recomendarían la aplicación | 2 | 67% |
+| Están interesados en generar ingresos pasivos | 3 | 100% |
+
+La totalidad de entrevistados mostró interés en obtener ingresos adicionales mediante el uso de un vehículo que normalmente permanece inactivo.
+
+## Características subjetivas identificadas
+
+A partir de las respuestas obtenidas, se identificaron las siguientes características comunes:
+
+- Buscan generar ingresos adicionales de manera sencilla.
+- Presentan desconfianza inicial respecto al alquiler de vehículos.
+- Consideran fundamental la seguridad y protección del automóvil.
+- Valoran plataformas tecnológicas confiables y fáciles de usar.
+- Perciben la propuesta como innovadora y útil.
+- Tienen interés en monetizar recursos que actualmente no utilizan constantemente.
+
+## Conclusión del segmento
+
+El análisis evidencia que los propietarios de vehículos poseen una necesidad importante relacionada con la optimización del uso de sus automóviles. Aunque existe temor respecto a la seguridad y cuidado del vehículo, todos los entrevistados mostraron interés en una plataforma que les permita generar ingresos pasivos mediante un sistema seguro y confiable. Esto demuestra una alta aceptación potencial hacia Rent2Go dentro de este segmento.
+
+---
+
+# Segmento Objetivo 2: Usuarios arrendatarios
+
+Se realizaron 3 entrevistas a usuarios potencialmente interesados en alquilar vehículos para facilitar su movilidad diaria.
+
+## Características objetivas del segmento
+
+| Característica | Resultado |
+|---|---|
+| Cantidad de entrevistados | 3 |
+| Rango de edad | 22 a 25 años |
+| Promedio de edad | 23 años |
+| Distritos/Ciudades | Los Olivos, Chorrillos y Huaraz |
+| Uso frecuente de transporte diario | 100% |
+| Han alquilado un vehículo anteriormente | 0% |
+| Conocen plataformas de alquiler | 33% |
+| Recomendarían la aplicación | 100% |
+
+## Análisis estadístico
+
+### Frecuencia de movilidad diaria
+
+| Respuesta | Cantidad | Porcentaje |
+|---|---|---|
+| Uso constante de transporte | 3 | 100% |
+
+Todos los entrevistados mencionaron movilizarse constantemente mediante transporte público u otros medios, lo cual refleja la necesidad de alternativas de transporte más cómodas y accesibles.
+
+### Experiencia previa alquilando vehículos
+
+| Respuesta | Cantidad | Porcentaje |
+|---|---|---|
+| Sí ha alquilado | 0 | 0% |
+| No ha alquilado | 3 | 100% |
+
+Los entrevistados no han utilizado servicios de alquiler anteriormente debido al desconocimiento, falta de confianza o ausencia de plataformas accesibles en su entorno.
+
+### Conocimiento de plataformas de alquiler
+
+| Respuesta | Cantidad | Porcentaje |
+|---|---|---|
+| Sí conoce plataformas | 1 | 33% |
+| No conoce plataformas | 2 | 67% |
+
+Solo uno de los entrevistados mencionó conocer una plataforma de alquiler vehicular, lo que demuestra que aún existe baja presencia o difusión de este tipo de servicios en el mercado objetivo.
+
+### Principales preocupaciones al alquilar
+
+| Preocupación mencionada | Cantidad | Porcentaje |
+|---|---|---|
+| Posibles daños al vehículo | 3 | 100% |
+| Falta de confianza | 2 | 67% |
+
+La principal preocupación identificada está relacionada con la responsabilidad frente a posibles daños o incidentes durante el uso del vehículo.
+
+### Interés por la propuesta Rent2Go
+
+| Opinión sobre la propuesta | Cantidad | Porcentaje |
+|---|---|---|
+| Consideran positiva la propuesta | 3 | 100% |
+| Recomendarían la aplicación | 3 | 100% |
+
+La totalidad de entrevistados mostró aceptación hacia la idea de Rent2Go, considerando que puede representar una solución útil, moderna y accesible para movilizarse.
+
+## Características subjetivas identificadas
+
+Las entrevistas permitieron identificar las siguientes características comunes:
+
+- Necesitan alternativas de transporte más prácticas y flexibles.
+- Buscan soluciones confiables y seguras.
+- Existe temor frente a responsabilidades relacionadas con daños al vehículo.
+- Tienen interés en plataformas tecnológicas simples y accesibles.
+- Perciben positivamente los servicios digitales relacionados con movilidad.
+- Consideran útil contar con vehículos disponibles según necesidad.
+
+## Conclusión del segmento
+
+El análisis demuestra que los usuarios arrendatarios presentan una necesidad constante de movilidad y muestran interés por alternativas distintas al transporte público tradicional. Aunque existe cierto nivel de desconfianza respecto al alquiler de vehículos, la propuesta de Rent2Go fue bien recibida por todos los entrevistados, quienes consideran que la plataforma podría facilitar su transporte diario de forma segura y accesible.
 
 ## 2.3. Needfinding
 
