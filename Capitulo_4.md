@@ -255,7 +255,8 @@ La integración de estos productos permitirá validar tempranamente el concepto 
 
 *Nota.* Elaboración propia. El tablero resume las tareas de Sprint 1 para Landing Page y Backend Vehicle Catalog.
 
-**URL del Board:** [Insert URL público de Trello]
+**URL del Board:** https://rent2go.atlassian.net/jira/software/projects/REN/boards/1/backlog?atlOrigin=eyJpIjoiNTU0NmY0OWUyMjRlNGE0NmFjM2JlNmZjNTEzNjkyN2YiLCJwIjoiaiJ9
+
 
 **Tabla de Control de Estado:**
 
@@ -279,9 +280,9 @@ La integración de estos productos permitirá validar tempranamente el concepto 
 | | | Task | HU03-02 | Create price update endpoint | Implement PUT /api/v1/vehicles/{id}/price | 5 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
 | **Sprint 1** | HU04 | Task | HU04-01 | Implement vehicle detail service | Add service layer method for vehicle details | 5 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
 | | | Task | HU04-02 | Create detail endpoint | Implement GET /api/v1/vehicles/{id} | 4 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU05 | Task | HU05-01 | Design image management strategy | Plan storage and query strategies for vehicle images | 4 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU05-02 | Implement image upload service | Add vehicle image upload and management business logic | 6 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU05-03 | Create image management endpoints | Implement POST/PUT /api/v1/vehicles/{id}/images endpoints | 5 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | HU05 | Task | HU05-01 | Design favorites feature | Plan storage and query strategies for favorites | 4 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU05-02 | Implement favorites service | Add favorites management business logic | 6 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | HU05-03 | Design favorites UI - Mobile | Design and implement favorites UI in Kotlin for Android | 5 | Chavez Uribe, Ario Joel | [To-Do/In-Process/To-Review/Done] |
 
 ---
 
@@ -409,7 +410,7 @@ Feature: Vehicle Image Management (HU05)
     Then the primary image is updated and others become secondary
 ```
 
-**Repository de Tests:** [Insert URL GitHub]
+**Repository de Tests:** https://github.com/Startup-y-upc/gherkin-tests
 
 **Commits de Testing:**
 
@@ -560,11 +561,11 @@ Durante Sprint 1, se documentaron todos los endpoints del backend correspondient
 
 | Ambiente | URL Swagger UI | Status |
 | --- | --- | --- |
-| Local Development | `http://localhost:8080/swagger-ui.html` | [Insert status] |
-| Staging | [Insert URL] | [Insert status] |
-| Production | [Insert URL] | [Insert status] |
+| Local Development | `http://localhost:8080/swagger-ui.html` | Active |
+| Staging | https://rent2go-backend-production.up.railway.app/ | Deployed |
+| Production | https://rent2go-backend-production.up.railway.app/ | Deployed |
 
-**Repository de Backend:** [Insert URL GitHub]
+**Repository de Backend:** https://github.com/Startup-y-upc/rent2go-backend
 
 **Commits de Documentación:**
 
@@ -586,11 +587,11 @@ Durante Sprint 1, el equipo completó el despliegue del Landing Page de Rent2Go 
 
 **Plataforma:** GitHub Pages
 
-- **Production URL:** [Insert URL]
-- **Staging URL:** [Insert URL]
+- **Production URL:** https://startup-y-upc.github.io/landing-page/
+- **Staging URL:** https://startup-y-upc.github.io/landing-page/
 - **Deploy Method:** Automatic deployment on merge to main
 - **Branch:** main
-- **Status:** [Insert Deployed/In Progress]
+- **Status:** Deployed
 
 **Steps realizados:**
 
@@ -681,13 +682,13 @@ Durante Sprint 1, el equipo trabajó de forma colaborativa siguiendo GitFlow y p
 
 **Participación del equipo:**
 
-| Miembro | Commits | PRs | Code Reviews | Tareas Principales |
-| --- | --- | --- | --- | --- |
-| Carhuancote Dominguez, Gonzalo Alonso | [Insert #] | [Insert #] | [Insert #] | Backend Entity Design, DDD Architecture |
-| Castillo Vidal, Jesus Ivan | [Insert #] | [Insert #] | [Insert #] | Android Mobile Development, API Integration |
-| Chavez Uribe, Ario Joel | [Insert #] | [Insert #] | [Insert #] | Landing Page Responsive Design, QA Testing |
-| Diestra Zambrano, Adriana Maria | [Insert #] | [Insert #] | [Insert #] | iOS Mobile Development, UX Design |
-| Huarcaya Matias, Gilbert Alonso | [Insert #] | [Insert #] | [Insert #] | Backend API Development, Deployment Setup |
+| Miembro | Tareas Principales |
+| --- | --- |
+| Carhuancote Dominguez, Gonzalo Alonso | Backend Entity Design, DDD Architecture |
+| Castillo Vidal, Jesus Ivan | Android Mobile Development, API Integration |
+| Chavez Uribe, Ario Joel | Landing Page Responsive Design, QA Testing |
+| Diestra Zambrano, Adriana Maria | iOS Mobile Development, UX Design |
+| Huarcaya Matias, Gilbert Alonso | Backend API Development, Deployment Setup |
 
 **Pull Requests Mergeados - Sprint 1:**
 
