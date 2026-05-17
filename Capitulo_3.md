@@ -56,6 +56,30 @@ El sistema de búsqueda de Rent2Go permitirá a los arrendatarios encontrar veh�
 El objetivo del sistema es reducir el tiempo necesario para encontrar un vehículo adecuado y mejorar la experiencia de exploración dentro de la aplicación.
 
 ### 3.1.2.5. Navigation Systems
+
+El sistema de navegación de Rent2Go fue diseñado siguiendo principios mobile-first y priorizando accesibilidad y simplicidad.
+
+### Navegación principal
+
+La aplicación contará con una barra de navegación inferior que permitirá acceso rápido a:
+
+- Inicio
+- Buscar vehículos
+- Reservas
+- Notificaciones
+- Perfil
+
+### Navegación secundaria
+
+Además, se implementarán:
+
+- Breadcrumbs en la landing page
+- Navegación contextual dentro de reservas y pagos
+- Botones de acción rápida
+- Navegación persistente en pantallas clave
+
+La estructura busca minimizar la cantidad de pasos requeridos para completar acciones importantes dentro del sistema.
+
 ### 3.1.3. Landing Page UI Design
 ### 3.1.3.1. Landing Page Wireframe
 
