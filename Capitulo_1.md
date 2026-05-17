@@ -169,50 +169,50 @@ Los arrendatarios sufren una pérdida significativa de tiempo y altos gastos en 
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-**1. Hipótesis sobre captación de propietarios de vehículos**
+**1. Hipótesis sobre monetización de vehículos inactivos**
 
-**Creemos que** incrementaremos la cantidad de vehículos registrados y disponibles en la plataforma  
+**Creemos que** aumentaremos la cantidad de propietarios activos dentro de la plataforma
 **si** los propietarios de vehículos particulares  
-**alcanzan** una forma segura y sencilla de generar ingresos pasivos sin involucrarse en procesos operativos complejos  
-**con** un sistema de publicación de vehículos, verificación de identidad, monitoreo de alquileres y protección mediante seguros integrados.
+**alcanzan** a solucionar el problema de tener vehículos inactivos que generan gastos constantes sin producir ingresos
+**con** una plataforma segura que les permita publicar sus vehículos, gestionar alquileres y recibir pagos automatizados con respaldo de seguros y validación de usuarios.
 
-Sabremos que esta hipótesis es correcta cuando al menos el 70% de los propietarios registrados complete la publicación de su primer vehículo y al menos el 50% mantenga disponibilidad activa durante el primer mes de uso.
+Sabremos que esta hipótesis es correcta cuando al menos el 70% de los propietarios registrados publiquen un vehículo y el 50% mantenga disponibilidad activa durante el primer mes.
 
-**2. Hipótesis sobre preferencia de arrendatarios**
+**2. Hipótesis sobre acceso rápido a movilidad temporal**
 
-**Creemos que** aumentaremos la preferencia y frecuencia de uso de la plataforma frente a alternativas tradicionales de alquiler  
+**Creemos que** incrementaremos la cantidad de reservas realizadas en la plataforma
 **si** los arrendatarios  
-**alcanzan** una experiencia rápida, flexible y accesible para encontrar vehículos cercanos según sus necesidades  
-**con** un sistema de búsqueda inteligente, filtros personalizados y reservas inmediatas desde dispositivos móviles.
+**alcanzan** a solucionar la dificultad de encontrar vehículos accesibles, rápidos y flexibles para necesidades temporales de transporte 
+**con** un sistema de búsqueda inteligente con filtros personalizados, geolocalización y reservas inmediatas desde dispositivos móviles.
 
-Sabremos que esta hipótesis es correcta cuando al menos el 60% de los usuarios complete una reserva sin asistencia externa y al menos el 30% vuelva a utilizar la plataforma dentro de los siguientes 60 días.
+Sabremos que esta hipótesis es correcta cuando al menos el 60% de los usuarios completen una reserva sin asistencia externa y el 30% vuelva a utilizar la plataforma dentro de los siguientes 60 días.
 
-**3. Hipótesis sobre generación de confianza entre usuarios**
+**3. Hipótesis sobre confianza y seguridad en alquileres P2P**
 
-**Creemos que** incrementaremos la confianza y permanencia de los usuarios dentro de la plataforma  
+**Creemos que** aumentaremos la retención de usuarios dentro de la plataforma
 **si** propietarios y arrendatarios  
-**alcanzan** seguridad y transparencia durante todo el proceso de alquiler  
-**con** mecanismos de validación de identidad, historial de alquileres, calificaciones bidireccionales y soporte integrado.
+**alcanzan** a solucionar la desconfianza existente en el alquiler de vehículos entre particulares
+**con** mecanismos de validación de identidad, calificaciones bidireccionales, historial de comportamiento y soporte ante incidentes.
 
-Sabremos que esta hipótesis es correcta cuando la mayoría de usuarios mantenga valoraciones superiores a 4 estrellas y las incidencias relacionadas con conflictos o cancelaciones injustificadas sean menores al 10% de las transacciones.
+Sabremos que esta hipótesis es correcta cuando más del 80% de los usuarios mantenga calificaciones positivas y las incidencias reportadas sean menores al 10% de las transacciones.
 
-**4. Hipótesis sobre ventaja competitiva del modelo P2P**
+**4. Hipótesis sobre reducción de costos frente al modelo tradicional**
 
-**Creemos que** lograremos una propuesta de valor más competitiva y escalable en el mercado de alquiler vehicular  
+**Creemos que**Rent2Go será percibida como una alternativa más competitiva en el mercado
 **si** propietarios y arrendatarios  
-**alcanzan** precios más accesibles y una mayor disponibilidad de vehículos  
-**con** un modelo peer-to-peer que elimine la necesidad de mantener una flota propia.
+**alcanzan** a solucionar los altos costos y limitaciones presentes en las empresas tradicionales de alquiler vehicular
+**con** un modelo peer-to-peer que reduzca costos operativos y permita ofrecer precios más accesibles y mayor disponibilidad de vehículos.
 
-Sabremos que esta hipótesis es correcta cuando los costos operativos sean significativamente menores frente a modelos tradicionales y la plataforma mantenga precios competitivos sin afectar la sostenibilidad del negocio.
+Sabremos que esta hipótesis es correcta cuando los usuarios perciban precios más competitivos y los costos operativos de la plataforma sean menores frente a modelos tradicionales.
 
-**5. Hipótesis sobre fidelización mediante experiencia móvil**
+**5. Hipótesis sobre experiencia móvil simplificada**
 
-**Creemos que** aumentaremos la retención y satisfacción de los usuarios de la plataforma  
+**Creemos que** mejoraremos la satisfacción y fidelización de los usuarios
 **si** propietarios y arrendatarios  
-**alcanzan** una experiencia fluida y consistente desde cualquier dispositivo móvil  
-**con** una aplicación intuitiva que permita gestionar reservas, pagos, publicaciones y seguimiento en tiempo real.
+**alcanzan** a solucionar la complejidad y fricción presente en plataformas tradicionales de alquiler
+**con** una aplicación móvil intuitiva que centralice reservas, pagos, monitoreo y gestión de vehículos en pocos pasos.
 
-Sabremos que esta hipótesis es correcta cuando los usuarios completen las principales tareas del sistema en pocos pasos y las evaluaciones de satisfacción sobre usabilidad sean mayoritariamente positivas.
+Sabremos que esta hipótesis es correcta cuando los usuarios completen las tareas principales del sistema rápidamente y las evaluaciones de usabilidad sean mayoritariamente positivas.
 
 #### 1.2.2.4. Lean UX Canvas
 
