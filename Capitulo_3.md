@@ -41,6 +41,20 @@ La landing page de Rent2Go implementará estrategias básicas de SEO para mejora
 - Optimización para redes sociales mediante Open Graph
 
 ### 3.1.2.4. Searching Systems
+
+El sistema de búsqueda de Rent2Go permitirá a los arrendatarios encontrar vehículos según distintos criterios relevantes para su necesidad de movilidad.
+
+#### Funcionalidades principales de búsqueda
+
+- Búsqueda por ubicación
+- Filtrado por precio
+- Filtrado por tipo de vehículo
+- Filtrado por disponibilidad
+- Filtrado por calificación del propietario
+- Ordenamiento por precio, cercanía y popularidad
+
+El objetivo del sistema es reducir el tiempo necesario para encontrar un vehículo adecuado y mejorar la experiencia de exploración dentro de la aplicación.
+
 ### 3.1.2.5. Navigation Systems
 ### 3.1.3. Landing Page UI Design
 ### 3.1.3.1. Landing Page Wireframe
