@@ -19,6 +19,27 @@
 ### 3.1.2.1. Organization Systems
 ### 3.1.2.2. Labelling Systems
 ### 3.1.2.3. SEO Tags and Meta Tags
+
+La landing page de Rent2Go implementará estrategias básicas de SEO para mejorar la visibilidad en motores de búsqueda y aumentar el alcance orgánico del producto.
+
+#### Meta Tags principales
+
+```html
+<meta name="title" content="Rent2Go - Plataforma de alquiler de vehículos P2P">
+<meta name="description" content="Alquila vehículos de manera segura y flexible o genera ingresos con tu auto mediante Rent2Go.">
+<meta name="keywords" content="alquiler de autos, rentar vehículos, carsharing, alquiler P2P, movilidad">
+<meta name="author" content="R2G Technologies">
+```
+
+#### Estrategias SEO consideradas
+
+- Uso de títulos jerárquicos (H1, H2, H3)
+- Optimización mobile-first
+- URLs amigables
+- Carga rápida de la landing page
+- Uso de palabras clave relacionadas con movilidad y alquiler vehicular
+- Optimización para redes sociales mediante Open Graph
+
 ### 3.1.2.4. Searching Systems
 ### 3.1.2.5. Navigation Systems
 ### 3.1.3. Landing Page UI Design
