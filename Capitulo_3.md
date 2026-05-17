@@ -1,23 +1,50 @@
 ## Capítulo III: Solution UI/UX Design
 ### 3.1. Product design
 ### 3.1.1. Style Guidelines
+### 3.1.1.1. General Style Guidelines
 
-## Tipografía
+### Tipografía
 
 <div align="center">
     <img src="Resources/capitulo_3/tipografia.png" style="margin: 10px 0;" width="60%"/>
 </div>
 
-## Paleta de Colores
+### Paleta de Colores
 
 <div align="center">
     <img src="Resources/capitulo_3/paleta-de-colores.png" style="margin: 10px 0;" width="60%"/>
 </div>
 
-### 3.1.1.1. General Style Guidelines
 ### 3.1.2. Information Architecture
 ### 3.1.2.1. Organization Systems
+
+La arquitectura de información de Rent2Go fue organizada mediante un sistema jerárquico orientado a tareas y objetivos de usuario. La estructura principal del sistema divide la experiencia en módulos funcionales enfocados en las necesidades principales de los segmentos objetivo:
+
+- Gestión de vehículos
+- Exploración y búsqueda de vehículos
+- Reservas y alquileres
+- Pagos y facturación
+- Perfil y reputación de usuarios
+- Soporte y ayuda
+
+Esta organización permite que propietarios y arrendatarios accedan rápidamente a las funcionalidades relevantes según su contexto de uso, reduciendo fricción y mejorando la navegabilidad dentro de la aplicación móvil y la landing page.
+
 ### 3.1.2.2. Labelling Systems
+
+El sistema de etiquetado de Rent2Go fue diseñado utilizando terminología simple, directa y consistente para facilitar la comprensión de las funcionalidades principales por parte de los usuarios.
+
+### Ejemplos de etiquetas utilizadas
+
+| Funcionalidad | Etiqueta |
+|---|---|
+| Publicar vehículo | “Publicar auto” |
+| Reservas activas | “Mis reservas” |
+| Historial de alquileres | “Historial” |
+| Gestión de pagos | “Pagos” |
+| Perfil del usuario | “Mi perfil” |
+| Soporte | “Ayuda” |
+
+Las etiquetas fueron definidas priorizando claridad, reconocimiento inmediato y familiaridad con aplicaciones móviles modernas.
 ### 3.1.2.3. SEO Tags and Meta Tags
 
 La landing page de Rent2Go implementará estrategias básicas de SEO para mejorar la visibilidad en motores de búsqueda y aumentar el alcance orgánico del producto.
@@ -151,18 +178,6 @@ Los mock-ups fueron desarrollados considerando distintos principios de diseño d
 
 - **Diseño responsive y móvil:**  
   Todas las vistas fueron diseñadas pensando en dispositivos móviles modernos, priorizando la comodidad visual y la facilidad de uso.
-
----
-
-### Diseño inclusivo
-
-La propuesta considera aspectos relacionados con accesibilidad y diseño inclusivo:
-
-- Uso de contrastes adecuados entre texto y fondo.
-- Botones de tamaño apropiado para interacción táctil.
-- Tipografía legible y clara.
-- Navegación simple e intuitiva.
-- Iconografía comprensible para distintos tipos de usuarios.
 
 ---
 
