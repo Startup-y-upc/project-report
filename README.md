@@ -10,7 +10,9 @@
 
 <p align="center"><strong>Curso:</strong> Aplicaciones para Dispositivos Móviles</p>
 
- <p align="center"><strong>NRC:</strong> 3248</p>
+<p align="center"><strong>Periodo:</strong> 202610</p>
+
+<p align="center"><strong>NRC:</strong> 3248</p>
 
  <p align="center"><strong>Profesor:</strong> Quevedo Velasco, David Gerardo</p>
 
@@ -49,7 +51,7 @@
 </tr>
 </table>
 <br><br>
-<div align="center"> Abril 2026 </div>
+<div align="center"> Junio 2026 </div>
 </div>
 
 <div style="page-break-after: always;"></div>
@@ -91,7 +93,13 @@
   <img src="Resources/collaboration/av1-overview.png" style="margin: 10px 0;" width="85%"/>
 </div>
 
+<div style="page-break-after: always;"></div>
+
 # Tabla de contenidos
+
+## [Student Outcome](#student-outcome)
+
+## [Objetivos SMART](#objetivos-smart)
 
 ## [Capítulo I: Introducción](Capitulo_1.md)
 
@@ -190,18 +198,22 @@
 
 ## [Anexos](Anexos.md)
 
-## Student Outcome
+<div style="page-break-after: always;"></div>
+
+# Student Outcome
 
 ABET – EAC - Student Outcome 7 Criterio: Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.
 
-| Criterio                                                                                        | Acciones realizadas | Conclusiones |
-| ----------------------------------------------------------------------------------------------- | ------------------- | ------------ |
+| Criterio                                                                                                                                | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Conclusiones                                                                                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Castillo Vidal, Jesus Ivan**<br>&nbsp;&nbsp;- **AV1:** Cumplio el criterio al aplicar conceptos de analisis del contexto, competencia y validacion inicial en la descripcion de la startup y el diseno de entrevistas con enfoque mobile-first.<br><br>- **Chavez Uribe, Ario Joel**<br>&nbsp;&nbsp;- **AV1:** Cumplio el criterio al incorporar enfoques de Lean UX y traducirlos en artefactos de requisitos (historias, impacto y backlog) segun la guia.<br><br>- **Carhuancote Dominguez, Gonzalo Alonso**<br>&nbsp;&nbsp;- **AV1:** Cumplio el criterio al articular segmentos objetivo y al aplicar principios de DDD estrategico y tactico para la solucion movil.<br><br>- **Diestra Zambrano, Adriana Maria**<br>&nbsp;&nbsp;- **AV1:** Cumplio el criterio al estructurar la problematica y aplicar tecnicas de needfinding y user stories para sustentar necesidades de usuarios.<br><br>- **Huarcaya Matias, Gilbert Alonso**<br>&nbsp;&nbsp;- **AV1:** Cumplio el criterio al consolidar el Lean UX Canvas y organizar evidencias de entrevistas e impacto para asegurar trazabilidad. | En AV1, el equipo actualizó y aplicó conceptos del guideline y de Lean UX para alinear el reporte y el enfoque mobile-first con los criterios del curso. |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | - **Castillo Vidal, Jesus Ivan**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al detectar vacios en entrevistas y competencia y dejar acciones de mejora para la siguiente entrega.<br><br>- **Chavez Uribe, Ario Joel**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al identificar que las hipotesis y la validacion de impacto requieren mayor profundidad y planificar su refuerzo. <br><br>- **Carhuancote Dominguez, Gonzalo Alonso**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al planificar la ampliacion de arquitectura y diagramas para mejorar la claridad del sistema en el siguiente avance.<br><br>- **Diestra Zambrano, Adriana Maria**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al dejar mejoras pendientes en eventstorming y lenguaje ubicuo con un plan de cierre para AV2/TB1.<br><br>- **Huarcaya Matias, Gilbert Alonso**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al definir el refinamiento de backlog y del analisis de entrevistas con nuevas evidencias. | En AV1, el equipo documentó brechas y acciones de mejora para sostener el aprendizaje continuo y la calidad del reporte en las siguientes entregas. |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.  | - **Castillo Vidal, Jesus Ivan**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al detectar vacios en entrevistas y competencia y dejar acciones de mejora para la siguiente entrega.<br><br>- **Chavez Uribe, Ario Joel**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al identificar que las hipotesis y la validacion de impacto requieren mayor profundidad y planificar su refuerzo. <br><br>- **Carhuancote Dominguez, Gonzalo Alonso**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al planificar la ampliacion de arquitectura y diagramas para mejorar la claridad del sistema en el siguiente avance.<br><br>- **Diestra Zambrano, Adriana Maria**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al dejar mejoras pendientes en eventstorming y lenguaje ubicuo con un plan de cierre para AV2/TB1.<br><br>- **Huarcaya Matias, Gilbert Alonso**<br>&nbsp;&nbsp;- **AV1:** Evidencio aprendizaje continuo al definir el refinamiento de backlog y del analisis de entrevistas con nuevas evidencias.                                              | En AV1, el equipo documentó brechas y acciones de mejora para sostener el aprendizaje continuo y la calidad del reporte en las siguientes entregas.      |
 
 </div>
 
-## Objetivos SMART
+<div style="page-break-after: always;"></div>
+
+# Objetivos SMART
 
 **Castillo Vidal, Jesus Ivan**
 
@@ -228,6 +240,5 @@ ABET – EAC - Student Outcome 7 Criterio: Actualiza conceptos y conocimientos n
 - Dominar integraciones con servicios externos para apps moviles antes de diciembre 2026, implementando 3 integraciones con APIs reales y documentando resultados.
 - Liderar un proyecto movil con DDD antes de junio 2026, definiendo bounded contexts y entregando un MVP funcional.
 - Desplegar una aplicacion movil en iOS y Android en simultaneo antes de diciembre 2026 y mantenerla con actualizaciones mensuales durante mas de 6 meses.
-
 
 1

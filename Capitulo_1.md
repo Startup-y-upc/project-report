@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 # Capítulo I: Introducción
 
 ## 1.1. StartUp Profile
@@ -218,7 +220,7 @@ Sabremos que esta hipótesis es correcta cuando los usuarios completen las tarea
 
 ![Lean UX Canvas](Resources/capitulo_1/leanuxcanva.png)
 
-# 1.3. Segmentos Objetivo
+## 1.3. Segmentos Objetivo
 
 ### Segmento Objetivo #1: Propietarios de Vehículos
 

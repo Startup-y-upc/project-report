@@ -1,4 +1,6 @@
-## Capítulo III: Solution UI/UX Design
+<div style="page-break-after: always;"></div>
+
+# Capítulo III: Solution UI/UX Design
 
 ### 3.1. Product design
 
