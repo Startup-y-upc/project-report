@@ -1,4 +1,4 @@
-﻿![alt text](Resources/caratula/Banner-UPC.png)
+![alt text](Resources/caratula/Banner-UPC.png)
 
 <div align= "center">
 
