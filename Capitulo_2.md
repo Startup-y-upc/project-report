@@ -482,54 +482,54 @@ Se realizaron 3 entrevistas a propietarios de vehículos ubicados en diferentes 
 
 ##### Características objetivas del segmento
 
-| Característica | Resultado |
-|---|---|
-| Cantidad de entrevistados | 3 |
-| Rango de edad | 21 a 30 años |
-| Promedio de edad | 26 años |
-| Distritos/Ciudades | Callao, Chorrillos y Trujillo |
-| Poseen vehículo propio | 100% |
-| Uso poco frecuente del vehículo | 100% |
-| Vehículo permanece guardado cuando no se usa | 100% |
-| Han alquilado su vehículo anteriormente | 0% |
-| Estarían dispuestos a alquilarlo | 100% |
+| Característica                               | Resultado                     |
+| -------------------------------------------- | ----------------------------- |
+| Cantidad de entrevistados                    | 3                             |
+| Rango de edad                                | 21 a 30 años                  |
+| Promedio de edad                             | 26 años                       |
+| Distritos/Ciudades                           | Callao, Chorrillos y Trujillo |
+| Poseen vehículo propio                       | 100%                          |
+| Uso poco frecuente del vehículo              | 100%                          |
+| Vehículo permanece guardado cuando no se usa | 100%                          |
+| Han alquilado su vehículo anteriormente      | 0%                            |
+| Estarían dispuestos a alquilarlo             | 100%                          |
 
 ##### Análisis estadístico
 
 ###### Frecuencia de uso del vehículo
 
-| Respuesta | Cantidad | Porcentaje |
-|---|---|---|
-| Uso moderado o poco frecuente | 3 | 100% |
+| Respuesta                     | Cantidad | Porcentaje |
+| ----------------------------- | -------- | ---------- |
+| Uso moderado o poco frecuente | 3        | 100%       |
 
 Los entrevistados mencionaron que utilizan su vehículo únicamente en determinados momentos de la semana, dejando el automóvil estacionado la mayor parte del tiempo. Esto evidencia una oportunidad para generar ingresos mediante el alquiler temporal del vehículo.
 
 ###### Experiencia previa alquilando vehículos
 
-| Respuesta | Cantidad | Porcentaje |
-|---|---|---|
-| Sí ha alquilado | 0 | 0% |
-| No ha alquilado | 3 | 100% |
+| Respuesta       | Cantidad | Porcentaje |
+| --------------- | -------- | ---------- |
+| Sí ha alquilado | 0        | 0%         |
+| No ha alquilado | 3        | 100%       |
 
 El principal motivo identificado fue la desconfianza hacia el proceso de alquiler y el temor a posibles daños o pérdidas relacionadas con el vehículo.
 
 ###### Principales preocupaciones al alquilar
 
 | Preocupación mencionada | Cantidad | Porcentaje |
-|---|---|---|
-| Seguridad del vehículo | 3 | 100% |
-| Protección y monitoreo | 3 | 100% |
-| Garantías y seguros | 3 | 100% |
+| ----------------------- | -------- | ---------- |
+| Seguridad del vehículo  | 3        | 100%       |
+| Protección y monitoreo  | 3        | 100%       |
+| Garantías y seguros     | 3        | 100%       |
 
 La seguridad representa el factor más importante para este segmento. Los entrevistados indicaron que solo considerarían alquilar su vehículo si la plataforma ofrece seguros, monitoreo y mecanismos de protección confiables.
 
 ###### Interés por la propuesta Rent2Go
 
-| Opinión sobre la propuesta | Cantidad | Porcentaje |
-|---|---|---|
-| Consideran atractiva e innovadora la idea | 3 | 100% |
-| Recomendarían la aplicación | 2 | 67% |
-| Están interesados en generar ingresos pasivos | 3 | 100% |
+| Opinión sobre la propuesta                    | Cantidad | Porcentaje |
+| --------------------------------------------- | -------- | ---------- |
+| Consideran atractiva e innovadora la idea     | 3        | 100%       |
+| Recomendarían la aplicación                   | 2        | 67%        |
+| Están interesados en generar ingresos pasivos | 3        | 100%       |
 
 La totalidad de entrevistados mostró interés en obtener ingresos adicionales mediante el uso de un vehículo que normalmente permanece inactivo.
 
@@ -556,60 +556,60 @@ Se realizaron 3 entrevistas a usuarios potencialmente interesados en alquilar ve
 
 ##### Características objetivas del segmento
 
-| Característica | Resultado |
-|---|---|
-| Cantidad de entrevistados | 3 |
-| Rango de edad | 22 a 25 años |
-| Promedio de edad | 23 años |
-| Distritos/Ciudades | Los Olivos, Chorrillos y Huaraz |
-| Uso frecuente de transporte diario | 100% |
-| Han alquilado un vehículo anteriormente | 0% |
-| Conocen plataformas de alquiler | 33% |
-| Recomendarían la aplicación | 100% |
+| Característica                          | Resultado                       |
+| --------------------------------------- | ------------------------------- |
+| Cantidad de entrevistados               | 3                               |
+| Rango de edad                           | 22 a 25 años                    |
+| Promedio de edad                        | 23 años                         |
+| Distritos/Ciudades                      | Los Olivos, Chorrillos y Huaraz |
+| Uso frecuente de transporte diario      | 100%                            |
+| Han alquilado un vehículo anteriormente | 0%                              |
+| Conocen plataformas de alquiler         | 33%                             |
+| Recomendarían la aplicación             | 100%                            |
 
 ##### Análisis estadístico
 
 ###### Frecuencia de movilidad diaria
 
-| Respuesta | Cantidad | Porcentaje |
-|---|---|---|
-| Uso constante de transporte | 3 | 100% |
+| Respuesta                   | Cantidad | Porcentaje |
+| --------------------------- | -------- | ---------- |
+| Uso constante de transporte | 3        | 100%       |
 
 Todos los entrevistados mencionaron movilizarse constantemente mediante transporte público u otros medios, lo cual refleja la necesidad de alternativas de transporte más cómodas y accesibles.
 
 ###### Experiencia previa alquilando vehículos
 
-| Respuesta | Cantidad | Porcentaje |
-|---|---|---|
-| Sí ha alquilado | 0 | 0% |
-| No ha alquilado | 3 | 100% |
+| Respuesta       | Cantidad | Porcentaje |
+| --------------- | -------- | ---------- |
+| Sí ha alquilado | 0        | 0%         |
+| No ha alquilado | 3        | 100%       |
 
 Los entrevistados no han utilizado servicios de alquiler anteriormente debido al desconocimiento, falta de confianza o ausencia de plataformas accesibles en su entorno.
 
 ###### Conocimiento de plataformas de alquiler
 
-| Respuesta | Cantidad | Porcentaje |
-|---|---|---|
-| Sí conoce plataformas | 1 | 33% |
-| No conoce plataformas | 2 | 67% |
+| Respuesta             | Cantidad | Porcentaje |
+| --------------------- | -------- | ---------- |
+| Sí conoce plataformas | 1        | 33%        |
+| No conoce plataformas | 2        | 67%        |
 
 Solo uno de los entrevistados mencionó conocer una plataforma de alquiler vehicular, lo que demuestra que aún existe baja presencia o difusión de este tipo de servicios en el mercado objetivo.
 
 ###### Principales preocupaciones al alquilar
 
-| Preocupación mencionada | Cantidad | Porcentaje |
-|---|---|---|
-| Posibles daños al vehículo | 3 | 100% |
-| Falta de confianza | 2 | 67% |
+| Preocupación mencionada    | Cantidad | Porcentaje |
+| -------------------------- | -------- | ---------- |
+| Posibles daños al vehículo | 3        | 100%       |
+| Falta de confianza         | 2        | 67%        |
 
 La principal preocupación identificada está relacionada con la responsabilidad frente a posibles daños o incidentes durante el uso del vehículo.
 
 ###### Interés por la propuesta Rent2Go
 
-| Opinión sobre la propuesta | Cantidad | Porcentaje |
-|---|---|---|
-| Consideran positiva la propuesta | 3 | 100% |
-| Recomendarían la aplicación | 3 | 100% |
+| Opinión sobre la propuesta       | Cantidad | Porcentaje |
+| -------------------------------- | -------- | ---------- |
+| Consideran positiva la propuesta | 3        | 100%       |
+| Recomendarían la aplicación      | 3        | 100%       |
 
 La totalidad de entrevistados mostró aceptación hacia la idea de Rent2Go, considerando que puede representar una solución útil, moderna y accesible para movilizarse.
 
@@ -3308,6 +3308,7 @@ Impact map de nuestros segmentos objetivos
 </div>
 
 ### 2.4.3. Product Backlog
+
 | # Orden | User Story Id | Título                                                  | Story Points |
 | ------: | ------------- | ------------------------------------------------------- | -----------: |
 |       1 | SP06          | Definir arquitectura del backend y base de datos        |            5 |
@@ -3386,7 +3387,6 @@ Impact map de nuestros segmentos objetivos
 |      74 | US55          | Acceder al registro o inicio de sesión desde la landing |            2 |
 |      75 | US56          | Consultar información de contacto                       |            2 |
 |      76 | TS13          | Configurar despliegue de landing page                   |            3 |
-
 
 ## 2.5. Strategic-Level Domain-Driven Design
 

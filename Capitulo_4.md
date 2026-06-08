@@ -230,15 +230,16 @@ En esta sección se explica y evidencia el proceso de implementación, pruebas, 
 | Story ID | Título | Descripción | Story Points | Prioridad |
 | --- | --- | --- | --- | --- |
 | **Landing Page (EP06 - Plataforma y Soporte)** | | | | |
-| HU15 | Ver landing page informativa | Como visitante, quiero ver una landing page informativa, para conocer el servicio. | 5 | Medium |
-| HU16 | Ver información de contacto | Como visitante, quiero ver información de contacto, para comunicarme con la empresa. | 3 | Medium |
-| HU17 | Navegar intuitivamente en landing | Como visitante, quiero navegar fácilmente la landing, para encontrar contenido sin fricción. | 2 | Low |
-| HU18 | Adaptar landing responsiva | Como visitante, quiero que la landing sea responsiva, para verla bien en distintos dispositivos. | 3 | Low |
+| US53 | Ver landing page informativa | Como visitante, quiero ver una landing page informativa, para conocer el servicio. | 3 | Medium |
+| US54 | Conocer beneficios para arrendatarios y propietarios | Como visitante, quiero conocer los beneficios del servicio, para decidir si registrarme. | 3 | Medium |
+| US55 | Acceder al registro o inicio de sesión desde la landing | Como visitante, quiero acceder al registro o inicio de sesión desde la landing, para ingresar a la plataforma. | 2 | Low |
+| US56 | Consultar información de contacto | Como visitante, quiero consultar la información de contacto, para comunicarme con soporte. | 2 | Low |
 | **Backend y Frontend Mobile - Vehicle Catalog (EP02 - Catálogo y Búsqueda)** | | | | |
-| HU02 | Buscar vehículos disponibles | Como arrendatario, quiero buscar vehículos disponibles, para seleccionar uno adecuado a mis necesidades. | 8 | High |
-| HU03 | Filtrar por precio | Como arrendatario, quiero filtrar vehículos por precio, para ajustar el resultado a mi presupuesto. | 3 | Medium |
-| HU04 | Ver detalles de vehículo | Como arrendatario, quiero ver detalles de un vehículo, para tomar una decisión informada. | 2 | Medium |
-| HU05 | Agregar a favoritos | Como arrendatario, quiero agregar vehículos a favoritos, para revisarlos más tarde. | 4 | Medium |
+| US18 | Explorar vehículos disponibles | Como arrendatario, quiero explorar vehículos disponibles, para ver la oferta de la plataforma. | 5 | High |
+| US19 | Buscar vehículos por ubicación y fechas | Como arrendatario, quiero buscar vehículos por ubicación y fechas, para planificar mi alquiler. | 5 | High |
+| US20 | Filtrar y ordenar vehículos disponibles | Como arrendatario, quiero filtrar y ordenar vehículos por precio u otros criterios, para afinar mi búsqueda. | 5 | Medium |
+| US22 | Ver detalle de vehículo | Como arrendatario, quiero ver el detalle de un vehículo, para tomar una decisión informada. | 5 | Medium |
+| US23 | Guardar vehículo como favorito | Como arrendatario, quiero guardar un vehículo como favorito, para consultarlo más tarde. | 3 | Medium |
 
 ---
 
@@ -247,8 +248,8 @@ En esta sección se explica y evidencia el proceso de implementación, pruebas, 
 **Introducción:**
 
 En Sprint 1, el equipo se enfoca en las historias de usuario de mayor prioridad:
-- **Landing Page (HU15-HU18):** Crear landing page informativa para que visitantes conozcan el servicio, con contacto, navegación intuitiva y diseño responsivo.
-- **Backend Vehicle Catalog (HU02-HU05):** Implementar búsqueda, filtro por precio, detalle de vehículo y gestión de favoritos para que arrendatarios puedan descubrir y seleccionar vehículos.
+- **Landing Page (US53-US56):** Crear landing page informativa para que visitantes conozcan el servicio, con contacto, navegación intuitiva y diseño responsivo.
+- **Backend Vehicle Catalog (US18-US23):** Implementar búsqueda, filtro por precio, detalle de vehículo y gestión de favoritos para que arrendatarios puedan descubrir y seleccionar vehículos.
 
 La integración de estos productos permitirá validar tempranamente el concepto con usuarios reales.
 
@@ -267,27 +268,27 @@ La integración de estos productos permitirá validar tempranamente el concepto 
 
 | Sprint # | User Story | Work-Item / Task | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Sprint 1** | HU15 | Task | HU15-01 | Setup landing page project | Configure HTML5 project structure with CSS3 and vanilla JavaScript | 4 | Castillo Vidal, Jesus Ivan | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU15-02 | Implement landing page sections | Create navbar, hero, features, how-it-works, FAQ, footer with HTML5 and CSS3 | 20 | Chavez Uribe, Ario Joel | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU15-03 | Add i18n support | Add i18n support with vanilla JavaScript for English/Spanish translations in all sections | 6 | Castillo Vidal, Jesus Ivan | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU16 | Task | HU16-01 | Create contact section | Design and implement contact information display | 4 | Chavez Uribe, Ario Joel | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU16-02 | Add social media links | Implement links to social networks and contact form | 3 | Castillo Vidal, Jesus Ivan | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU17 | Task | HU17-01 | Implement navigation menu | Create intuitive menu structure with anchor links | 5 | Diestra Zambrano, Adriana Maria | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU17-02 | Add smooth scrolling | Implement smooth scroll to sections | 2 | Diestra Zambrano, Adriana Maria | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU18 | Task | HU18-01 | Implement responsive design | Create responsive CSS for mobile, tablet, desktop | 8 | Castillo Vidal, Jesus Ivan | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU18-02 | Test responsiveness | Test on multiple devices and screen sizes | 3 | Diestra Zambrano, Adriana Maria | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU02 | Task | HU02-01 | Setup Spring Boot project | Create Maven project with Spring Boot 3.5.7 | 4 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU02-02 | Configure MySQL database | Setup connection and schema for vehicle catalog | 5 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU02-03 | Create Vehicle entity | Implement Vehicle aggregate root with properties | 6 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU02-04 | Create Vehicle repository | Implement Spring Data JPA repository | 4 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU02-05 | Implement search endpoint | Create GET /api/v1/vehicles with filters (categories, price, location) | 8 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU03 | Task | HU03-01 | Add price filter logic | Implement price range filtering in repository | 5 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU03-02 | Create price update endpoint | Implement PUT /api/v1/vehicles/{id}/price | 5 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU04 | Task | HU04-01 | Implement vehicle detail service | Add service layer method for vehicle details | 5 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU04-02 | Create detail endpoint | Implement GET /api/v1/vehicles/{id} | 4 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
-| **Sprint 1** | HU05 | Task | HU05-01 | Design favorites feature | Plan storage and query strategies for favorites | 4 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU05-02 | Implement favorites service | Add favorites management business logic | 6 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
-| | | Task | HU05-03 | Design favorites UI - Mobile | Design and implement favorites UI in Kotlin for Android | 5 | Chavez Uribe, Ario Joel | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | US53 | Task | US53-01 | Setup landing page project | Configure HTML5 project structure with CSS3 and vanilla JavaScript | 4 | Castillo Vidal, Jesus Ivan | [To-Do/In-Process/To-Review/Done] |
+| | | Task | US53-02 | Implement landing page sections | Create navbar, hero, features, how-it-works, FAQ, footer with HTML5 and CSS3 | 20 | Chavez Uribe, Ario Joel | [To-Do/In-Process/To-Review/Done] |
+| | | Task | US53-03 | Add i18n support | Add i18n support with vanilla JavaScript for English/Spanish translations in all sections | 6 | Castillo Vidal, Jesus Ivan | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | US56 | Task | US56-01 | Create contact section | Design and implement contact information display | 4 | Chavez Uribe, Ario Joel | [To-Do/In-Process/To-Review/Done] |
+| | | Task | US56-02 | Add social media links | Implement links to social networks and contact form | 3 | Castillo Vidal, Jesus Ivan | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | US54 | Task | US54-01 | Implement benefits section | Create and style sections detailing benefits for owners and renters | 5 | Diestra Zambrano, Adriana Maria | [To-Do/In-Process/To-Review/Done] |
+| | | Task | US54-02 | Add interactive elements | Implement interactive animations or hover effects in benefits | 2 | Diestra Zambrano, Adriana Maria | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | US55 | Task | US55-01 | Add navigation and CTAs | Implement navigation menu with links to login and registration views | 8 | Castillo Vidal, Jesus Ivan | [To-Do/In-Process/To-Review/Done] |
+| | | Task | US55-02 | Test auth shortcuts | Verify shortcuts and responsiveness of login/register links | 3 | Diestra Zambrano, Adriana Maria | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | US18 | Task | US18-01 | Setup Spring Boot project | Create Maven project with Spring Boot 3.5.7 | 4 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | US18-02 | Configure MySQL database | Setup connection and schema for vehicle catalog | 5 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | US18-03 | Create Vehicle entity | Implement Vehicle aggregate root with properties | 6 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | US19 | Task | US19-01 | Create Vehicle repository | Implement Spring Data JPA repository for queries | 4 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | US19-02 | Implement search endpoint | Create GET /api/v1/vehicles with filters (categories, location) | 8 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | US20 | Task | US20-01 | Add price filter logic | Implement price range filtering in repository | 5 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | US20-02 | Create price update endpoint | Implement PUT /api/v1/vehicles/{id}/price | 5 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | US22 | Task | US22-01 | Implement vehicle detail service | Add service layer method for vehicle details | 5 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | US22-02 | Create detail endpoint | Implement GET /api/v1/vehicles/{id} | 4 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
+| **Sprint 1** | US23 | Task | US23-01 | Design favorites feature | Plan storage and query strategies for favorites | 4 | Carhuancote Dominguez, Gonzalo Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | US23-02 | Implement favorites service | Add favorites management business logic | 6 | Huarcaya Matias, Gilbert Alonso | [To-Do/In-Process/To-Review/Done] |
+| | | Task | US23-03 | Design favorites UI - Mobile | Design and implement favorites UI in Kotlin for Android | 5 | Chavez Uribe, Ario Joel | [To-Do/In-Process/To-Review/Done] |
 
 ---
 
@@ -296,8 +297,8 @@ La integración de estos productos permitirá validar tempranamente el concepto 
 **Introducción:**
 
 Durante Sprint 1, el equipo implementó todas las historias de usuario priorizadas:
-- **Landing Page (HU15-HU18):** Implementación del landing page informativo con secciones core, información de contacto, navegación intuitiva y diseño responsivo.
-- **Backend Vehicle Catalog (HU02-HU05):** Endpoints de búsqueda, filtrado por precio, detalle de vehículo, y gestión de imágenes de vehículos.
+- **Landing Page (US53-US56):** Implementación del landing page informativo con secciones core, información de contacto, navegación intuitiva y diseño responsivo.
+- **Backend Vehicle Catalog (US18-US23):** Endpoints de búsqueda, filtrado por precio, detalle de vehículo, y gestión de imágenes de vehículos.
 
 Se realizaron commits regulares en ambos repositorios, siguiendo GitFlow y Conventional Commits. A continuación se presenta el resumen de avances en implementación.
 
@@ -305,23 +306,23 @@ Se realizaron commits regulares en ambos repositorios, siguiendo GitFlow y Conve
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | --- | --- | --- | --- | --- | --- |
-| rent2go-landing | feature/landing-page | 7a3c2e1 | feat(landing): implement informative landing page (HU15) | Implemented all landing page sections: navbar, hero, features, how-it-works, FAQ, footer. Added i18n support for ES/EN. | 2026-05-08 |
-| rent2go-landing | feature/contact-section | 9f5b8d4 | feat(landing): add contact information section (HU16) | Added contact section with phone, email, and social media links. Integrated contact form. | 2026-05-09 |
-| rent2go-landing | feature/navigation | 2e1c6a9 | feat(landing): implement intuitive navigation (HU17) | Added smooth scrolling and anchor links for all sections. Improved menu navigation. | 2026-05-10 |
-| rent2go-landing | feature/responsive-design | 8d4f2b7 | feat(landing): implement responsive design (HU18) | Added responsive CSS for mobile, tablet, and desktop viewports. Tested on multiple devices. | 2026-05-11 |
+| rent2go-landing | feature/landing-page | 7a3c2e1 | feat(landing): implement informative landing page (US53) | Implemented all landing page sections: navbar, hero, features, how-it-works, FAQ, footer. Added i18n support for ES/EN. | 2026-05-08 |
+| rent2go-landing | feature/contact-section | 9f5b8d4 | feat(landing): add contact information section (US56) | Added contact section with phone, email, and social media links. Integrated contact form. | 2026-05-09 |
+| rent2go-landing | feature/navigation | 2e1c6a9 | feat(landing): implement intuitive navigation (US54) | Added smooth scrolling and anchor links for all sections. Improved menu navigation. | 2026-05-10 |
+| rent2go-landing | feature/responsive-design | 8d4f2b7 | feat(landing): implement responsive design (US55) | Added responsive CSS for mobile, tablet, and desktop viewports. Tested on multiple devices. | 2026-05-11 |
 | rent2go-landing | develop | c6e3a1f | Merge: landing page Sprint 1 complete | Merged all landing page features to develop branch. | 2026-05-12 |
 
 **Commits en Backend Repository (Vehicle Catalog):**
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | --- | --- | --- | --- | --- | --- |
-| rent2go-backend | feature/vehicle-setup | 3b2f7e9 | feat(vehicle-catalog): setup Spring Boot project (HU02) | Initialized Spring Boot 3.5.7 with Maven, configured application.properties, and database connection to MySQL. | 2026-05-06 |
-| rent2go-backend | feature/vehicle-entity | 5c1a8d6 | feat(vehicle-catalog): create Vehicle aggregate root (HU02) | Implemented Vehicle domain entity with properties: id, make, model, year, price, availability, owner_id. | 2026-05-07 |
-| rent2go-backend | feature/vehicle-repo | 7f4e2c1 | feat(vehicle-catalog): implement vehicle repository (HU02) | Created Spring Data JPA VehicleRepository with custom query methods for search and filtering. | 2026-05-07 |
-| rent2go-backend | feature/vehicle-search | 9a6d3e2 | feat(vehicle-catalog): add vehicle search (HU02) | Implemented search endpoint GET /api/v1/vehicles with category, price, and location filters. | 2026-05-08 |
-| rent2go-backend | feature/vehicle-pricing | 4b7f1c8 | feat(vehicle-catalog): implement price update (HU03) | Added price range filtering logic and PUT /api/v1/vehicles/{id}/price endpoint. | 2026-05-09 |
-| rent2go-backend | feature/vehicle-detail | 6e2c5a3 | feat(vehicle-catalog): add vehicle detail endpoint (HU04) | Implemented GET /api/v1/vehicles/{id} with complete vehicle information and image references. | 2026-05-10 |
-| rent2go-backend | feature/vehicle-images | 8d5f9b4 | feat(vehicle-catalog): implement image management (HU05) | Added image upload, retrieval and primary image selection endpoints for vehicles. | 2026-05-11 |
+| rent2go-backend | feature/vehicle-setup | 3b2f7e9 | feat(vehicle-catalog): setup Spring Boot project (US18) | Initialized Spring Boot 3.5.7 with Maven, configured application.properties, and database connection to MySQL. | 2026-05-06 |
+| rent2go-backend | feature/vehicle-entity | 5c1a8d6 | feat(vehicle-catalog): create Vehicle aggregate root (US18) | Implemented Vehicle domain entity with properties: id, make, model, year, price, availability, owner_id. | 2026-05-07 |
+| rent2go-backend | feature/vehicle-repo | 7f4e2c1 | feat(vehicle-catalog): implement vehicle repository (US19) | Created Spring Data JPA VehicleRepository with custom query methods for search and filtering. | 2026-05-07 |
+| rent2go-backend | feature/vehicle-search | 9a6d3e2 | feat(vehicle-catalog): add vehicle search (US19) | Implemented search endpoint GET /api/v1/vehicles with category, price, and location filters. | 2026-05-08 |
+| rent2go-backend | feature/vehicle-pricing | 4b7f1c8 | feat(vehicle-catalog): implement price update (US20) | Added price range filtering logic and PUT /api/v1/vehicles/{id}/price endpoint. | 2026-05-09 |
+| rent2go-backend | feature/vehicle-detail | 6e2c5a3 | feat(vehicle-catalog): add vehicle detail endpoint (US22) | Implemented GET /api/v1/vehicles/{id} with complete vehicle information and image references. | 2026-05-10 |
+| rent2go-backend | feature/vehicle-images | 8d5f9b4 | feat(vehicle-catalog): implement image management (US23) | Added image upload, retrieval and primary image selection endpoints for vehicles. | 2026-05-11 |
 | rent2go-backend | develop | 2c3e7f6 | Merge: vehicle catalog Sprint 1 complete | Merged all vehicle catalog features to develop branch. | 2026-05-12 |
 
 ---
@@ -330,35 +331,35 @@ Se realizaron commits regulares en ambos repositorios, siguiendo GitFlow y Conve
 
 **Introducción:**
 
-Durante Sprint 1, el equipo implementó unit tests, integration tests, y BDD acceptance tests para las historias de usuario del Backend Vehicle Catalog (HU02-HU05). Se priorizó la cobertura de búsqueda, filtrado, detalle y favoritos, garantizando que los endpoints cumplen con los requisitos especificados.
+Durante Sprint 1, el equipo implementó unit tests, integration tests, y BDD acceptance tests para las historias de usuario del Backend Vehicle Catalog (US18-US23). Se priorizó la cobertura de búsqueda, filtrado, detalle y favoritos, garantizando que los endpoints cumplen con los requisitos especificados.
 
 **Unit Tests - Backend Vehicle Catalog:**
 
 | Test File | Test Class | Method | Description | Related to (HU) | Status |
 | --- | --- | --- | --- | --- | --- |
-| VehicleRepositoryTest.java | VehicleRepositoryTest | testFindBySearchCriteria | Verifica que la búsqueda por make y model retorna vehículos correctos | HU02 | [Pass/Fail] |
-| VehicleRepositoryTest.java | VehicleRepositoryTest | testFindByPriceRange | Verifica filtro de precio funciona correctamente | HU03 | [Pass/Fail] |
-| VehicleServiceTest.java | VehicleServiceTest | testSearchVehicles | Verifica servicio de búsqueda retorna resultados esperados | HU02 | [Pass/Fail] |
-| VehicleServiceTest.java | VehicleServiceTest | testGetVehicleDetail | Verifica que obtiene detalles correctos de un vehículo | HU04 | [Pass/Fail] |
-| VehicleImageServiceTest.java | VehicleImageServiceTest | testUploadVehicleImage | Verifica que se carga correctamente una imagen de vehículo | HU05 | [Pass/Fail] |
-| VehicleImageServiceTest.java | VehicleImageServiceTest | testSetPrimaryImage | Verifica que se establece correctamente la imagen primaria | HU05 | [Pass/Fail] |
+| VehicleRepositoryTest.java | VehicleRepositoryTest | testFindBySearchCriteria | Verifica que la búsqueda por make y model retorna vehículos correctos | US19 | [Pass/Fail] |
+| VehicleRepositoryTest.java | VehicleRepositoryTest | testFindByPriceRange | Verifica filtro de precio funciona correctamente | US20 | [Pass/Fail] |
+| VehicleServiceTest.java | VehicleServiceTest | testSearchVehicles | Verifica servicio de búsqueda retorna resultados esperados | US19 | [Pass/Fail] |
+| VehicleServiceTest.java | VehicleServiceTest | testGetVehicleDetail | Verifica que obtiene detalles correctos de un vehículo | US22 | [Pass/Fail] |
+| VehicleImageServiceTest.java | VehicleImageServiceTest | testUploadVehicleImage | Verifica que se carga correctamente una imagen de vehículo | US23 | [Pass/Fail] |
+| VehicleImageServiceTest.java | VehicleImageServiceTest | testSetPrimaryImage | Verifica que se establece correctamente la imagen primaria | US23 | [Pass/Fail] |
 
 **Integration Tests - Backend API:**
 
 | Feature File | Scenario | Given | When | Then | Related to (HU) | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| vehicle-search.feature | Search vehicles with filters | System has vehicles in database | User executes GET /api/v1/vehicles?categories=SUV&minPrice=100&maxPrice=500 | Returns filtered list of vehicles | HU02 | [Pass/Fail] |
-| vehicle-search.feature | No results found | User searches with criteria that don't match | Executes GET /api/v1/vehicles with non-existent location | Returns empty array with 200 OK | HU02 | [Pass/Fail] |
-| vehicle-detail.feature | Get vehicle detail | Vehicle exists in database | User executes GET /api/v1/vehicles/{id} | Returns complete vehicle information with images | HU04 | [Pass/Fail] |
-| vehicle-pricing.feature | Update vehicle price | Vehicle exists and user is authorized | User executes PUT /api/v1/vehicles/{id}/price with newDailyPrice | Returns updated vehicle resource | HU03 | [Pass/Fail] |
-| vehicle-images.feature | Upload vehicle image | Vehicle exists and images bucket ready | User executes POST /api/v1/vehicles/{id}/images with imagePath | Image is uploaded and vehicle resource returned | HU05 | [Pass/Fail] |
-| vehicle-images.feature | Set primary image | Vehicle has multiple images | User executes PUT /api/v1/vehicles/{vehicleId}/images/{imageId}/primary | Image is set as primary and vehicle updated | HU05 | [Pass/Fail] |
+| vehicle-search.feature | Search vehicles with filters | System has vehicles in database | User executes GET /api/v1/vehicles?categories=SUV&minPrice=100&maxPrice=500 | Returns filtered list of vehicles | US18 | [Pass/Fail] |
+| vehicle-search.feature | No results found | User searches with criteria that don't match | Executes GET /api/v1/vehicles with non-existent location | Returns empty array with 200 OK | US19 | [Pass/Fail] |
+| vehicle-detail.feature | Get vehicle detail | Vehicle exists in database | User executes GET /api/v1/vehicles/{id} | Returns complete vehicle information with images | US22 | [Pass/Fail] |
+| vehicle-pricing.feature | Update vehicle price | Vehicle exists and user is authorized | User executes PUT /api/v1/vehicles/{id}/price with newDailyPrice | Returns updated vehicle resource | US20 | [Pass/Fail] |
+| vehicle-images.feature | Upload vehicle image | Vehicle exists and images bucket ready | User executes POST /api/v1/vehicles/{id}/images with imagePath | Image is uploaded and vehicle resource returned | US23 | [Pass/Fail] |
+| vehicle-images.feature | Set primary image | Vehicle has multiple images | User executes PUT /api/v1/vehicles/{vehicleId}/images/{imageId}/primary | Image is set as primary and vehicle updated | US23 | [Pass/Fail] |
 
 **Gherkin Feature Files:**
 
 ```gherkin
 # features/vehicle-search.feature
-Feature: Vehicle Search (HU02)
+Feature: Vehicle Search (US19)
   As a renter
   I want to search for vehicles
   So that I can find a suitable vehicle to rent
@@ -377,7 +378,7 @@ Feature: Vehicle Search (HU02)
     Then the system displays "No vehicles found"
 
 # features/vehicle-filter.feature
-Feature: Vehicle Price Filter (HU03)
+Feature: Vehicle Price Filter (US20)
   As a property owner
   I want to update vehicle pricing
   So that I can manage rental rates
@@ -388,7 +389,7 @@ Feature: Vehicle Price Filter (HU03)
     Then the system confirms the price update
 
 # features/vehicle-detail.feature
-Feature: Vehicle Detail (HU04)
+Feature: Vehicle Detail (US22)
   As a renter
   I want to see vehicle details with images
   So that I can make an informed decision
@@ -399,7 +400,7 @@ Feature: Vehicle Detail (HU04)
     Then the system displays complete vehicle information with all images
 
 # features/vehicle-images.feature
-Feature: Vehicle Image Management (HU05)
+Feature: Vehicle Image Management (US23)
   As a property owner
   I want to manage vehicle images
   So that I can showcase my vehicles with quality photos
@@ -431,7 +432,7 @@ Feature: Vehicle Image Management (HU05)
 
 **Introducción:**
 
-Durante Sprint 1, el equipo completó la implementación del Landing Page informativo (HU15-HU18) y los endpoints base del Backend para catálogo de vehículos (HU02-HU05). Se presentan capturas de las principales vistas implementadas y enlace a video de demostración de funcionalidades.
+Durante Sprint 1, el equipo completó la implementación del Landing Page informativo (US53-US56) y los endpoints base del Backend para catálogo de vehículos (US18-US23). Se presentan capturas de las principales vistas implementadas y enlace a video de demostración de funcionalidades.
 
 **Landing Page - Capturas:**
 
@@ -439,81 +440,81 @@ Durante Sprint 1, el equipo completó la implementación del Landing Page inform
   <img src="Resources/capitulo_4/execution/landing-page/1-navbar.png" alt="Landing page completa con navbar" width="900">
 </div>
 
-*Nota.* Elaboración propia. Vista general de la landing page con navegación superior y estructura principal (HU17).
+*Nota.* Elaboración propia. Vista general de la landing page con navegación superior y estructura principal (US54).
 
 <div align="center">
   <img src="Resources/capitulo_4/execution/landing-page/2-hero-cta.png" alt="Hero section con CTA principal" width="900">
 </div>
 
-*Nota.* Elaboración propia. Hero section con propuesta de valor y llamada a la acción principal (HU15).
+*Nota.* Elaboración propia. Hero section con propuesta de valor y llamada a la acción principal (US53).
 
 <div align="center">
   <img src="Resources/capitulo_4/execution/landing-page/3-contact-section.png" alt="Sección de contacto" width="900">
 </div>
 
-*Nota.* Elaboración propia. Sección de contacto con información de la empresa y formulario (HU16).
+*Nota.* Elaboración propia. Sección de contacto con información de la empresa y formulario (US56).
 
 <div align="center">
   <img src="Resources/capitulo_4/execution/landing-page/4-responsive-mobile.png" alt="Layout responsivo en móvil" width="900">
 </div>
 
-*Nota.* Elaboración propia. Adaptación visual de la landing page en dispositivo móvil (HU18).
+*Nota.* Elaboración propia. Adaptación visual de la landing page en dispositivo móvil (US55).
 
 <div align="center">
   <img src="Resources/capitulo_4/execution/landing-page/5-main-sections.png" alt="Secciones principales visibles" width="900">
 </div>
 
-*Nota.* Elaboración propia. Captura donde se aprecian las secciones informativas principales del landing page (HU15).
+*Nota.* Elaboración propia. Captura donde se aprecian las secciones informativas principales del landing page (US53).
 
 **Video de Demostración - Landing Page:**
 
-En este video se muestra la navegación completa del Landing Page (HU15-HU18), incluyendo responsividad en dispositivos móviles, información de contacto, y navegación intuitiva.
+En este video se muestra la navegación completa del Landing Page (US53-US56), incluyendo responsividad en dispositivos móviles, información de contacto, y navegación intuitiva.
 
 - **URL:** https://youtu.be/eXKw6t8Z5sw
 - **Duración:** 3:27
-- **Descripción:** Demostración completa del Landing Page con navegación entre secciones (HU15), información de contacto (HU16), navegación intuitiva (HU17), y responsividad (HU18).
+- **Descripción:** Demostración completa del Landing Page con navegación entre secciones (US53), información de contacto (US56), navegación intuitiva (US54), y responsividad (US55).
 
 ---
 
-**Backend API - Capturas & Testing (HU02-HU05):**
+**Backend API - Capturas & Testing (US18-US23):**
 
 <div align="center">
   <img src="Resources/capitulo_4/execution/backend-api/1-postman-search.png" alt="Postman GET search con filtros" width="900">
 </div>
 
-*Nota.* Elaboración propia. Prueba del endpoint GET /api/v1/vehicles con filtros (categories, minPrice, maxPrice, location) para búsqueda de vehículos (HU02).
+*Nota.* Elaboración propia. Prueba del endpoint GET /api/v1/vehicles con filtros (categories, minPrice, maxPrice, location) para búsqueda de vehículos (US19).
 
 <div align="center">
   <img src="Resources/capitulo_4/execution/backend-api/2-postman-detail.png" alt="Postman GET detail de vehículo" width="900">
 </div>
 
-*Nota.* Elaboración propia. Respuesta del endpoint GET /api/v1/vehicles/{id} con detalles completos del vehículo (HU04).
+*Nota.* Elaboración propia. Respuesta del endpoint GET /api/v1/vehicles/{id} con detalles completos del vehículo (US22).
 
 <div align="center">
   <img src="Resources/capitulo_4/execution/backend-api/3-postman-update-price.png" alt="Postman PUT update price" width="900">
 </div>
 
-*Nota.* Elaboración propia. Actualización de precio diario mediante PUT /api/v1/vehicles/{id}/price (HU03).
+*Nota.* Elaboración propia. Actualización de precio diario mediante PUT /api/v1/vehicles/{id}/price (US20).
 
 <div align="center">
   <img src="Resources/capitulo_4/execution/backend-api/4-postman-upload-image.png" alt="Postman POST upload vehicle image" width="900">
 </div>
 
-*Nota.* Elaboración propia. Carga de imagen para un vehículo mediante POST /api/v1/vehicles/{id}/images (HU05).
+*Nota.* Elaboración propia. Carga de imagen para un vehículo mediante POST /api/v1/vehicles/{id}/images (US23).
 
 <div align="center">
   <img src="Resources/capitulo_4/execution/backend-api/5-postman-set-primary-image.png" alt="Postman PUT set primary image" width="900">
 </div>
 
-*Nota.* Elaboración propia. Establecimiento de imagen primaria mediante PUT /api/v1/vehicles/{vehicleId}/images/{imageId}/primary (HU05).
+*Nota.* Elaboración propia. Establecimiento de imagen primaria mediante PUT /api/v1/vehicles/{vehicleId}/images/{imageId}/primary (US23).
 
-**Video de Demostración - Backend API (HU02-HU05):**
+**Video de Demostración - Backend API (US18-US23):**
 
-En este video se muestra la ejecución de los principales endpoints del backend utilizando Postman, demostrando búsqueda con filtros (HU02), actualización de precio (HU03), detalles de vehículo (HU04), y gestión de imágenes (HU05).
+En este video se muestra la ejecución de los principales endpoints del backend utilizando Postman, demostrando búsqueda con filtros (US19), actualización de precio (US20), detalles de vehículo (US22), y gestión de imágenes (US23).
 
 - **URL:** https://youtu.be/fi6KKMVMDQg
 - **Duración:** 5:05
-- **Descripción:** Demostración de endpoints: búsqueda de vehículos con filtros (HU02), actualización de precio (HU03), detalles de vehículo (HU04), carga de imágenes y selección de imagen primaria (HU05) con casos de éxito y manejo de errores.
+- **Descripción:** Demostración de endpoints: búsqueda de vehículos con filtros (US19), actualización de precio (US20), detalles de vehículo (US22), carga de imágenes y selección de imagen primaria (US23) con casos de éxito y manejo de errores.
 
 ---
 
@@ -521,20 +522,20 @@ En este video se muestra la ejecución de los principales endpoints del backend 
 
 **Introducción:**
 
-Durante Sprint 1, se documentaron todos los endpoints del backend correspondientes a la épica de Catálogo de Vehículos (HU02-HU05) utilizando OpenAPI 3.0 (Swagger). La documentación interactiva permite a los desarrolladores frontend y mobile entender y probar los servicios disponibles.
+Durante Sprint 1, se documentaron todos los endpoints del backend correspondientes a la épica de Catálogo de Vehículos (US18-US23) utilizando OpenAPI 3.0 (Swagger). La documentación interactiva permite a los desarrolladores frontend y mobile entender y probar los servicios disponibles.
 
-**Endpoints Documentados - Vehicle Catalog (HU02-HU05):**
+**Endpoints Documentados - Vehicle Catalog (US18-US23):**
 
 | Endpoint | Método | Historia | Descripción | Parámetros | Response |
 | --- | --- | --- | --- | --- | --- |
-| `/api/v1/vehicles` | GET | HU02 | Busca vehículos disponibles con filtros | `categories`, `minPrice`, `maxPrice`, `location` | 200 OK - Array de vehículos |
-| `/api/v1/vehicles` | POST | HU02 | Registra un nuevo vehículo | Body: VehicleData | 200 OK - Vehículo creado |
-| `/api/v1/vehicles/{id}` | GET | HU04 | Obtiene detalles completos de un vehículo | `id` (path) | 200 OK - VehicleResource |
-| `/api/v1/vehicles/{id}` | PUT | HU04 | Actualiza detalles de un vehículo | `id` (path), Body: UpdateVehicleDetails | 200 OK - VehicleResource actualizado |
-| `/api/v1/vehicles/{id}/price` | PUT | HU03 | Actualiza precio diario de vehículo | `id` (path), Body: {newDailyPrice} | 200 OK - VehicleResource |
-| `/api/v1/vehicles/{id}/images` | GET | HU05 | Obtiene todas las imágenes de un vehículo | `id` (path) | 200 OK - Array de VehicleImageResource |
-| `/api/v1/vehicles/{id}/images` | POST | HU05 | Carga una imagen para un vehículo | `id` (path), Body: {imagePath, imageUrl, isPrimary} | 200 OK - VehicleResource |
-| `/api/v1/vehicles/{vehicleId}/images/{imageId}/primary` | PUT | HU05 | Establece una imagen como primaria | `vehicleId`, `imageId` (path) | 200 OK - VehicleResource |
+| `/api/v1/vehicles` | GET | US19 | Busca vehículos disponibles con filtros | `categories`, `minPrice`, `maxPrice`, `location` | 200 OK - Array de vehículos |
+| `/api/v1/vehicles` | POST | US19 | Registra un nuevo vehículo | Body: VehicleData | 200 OK - Vehículo creado |
+| `/api/v1/vehicles/{id}` | GET | US22 | Obtiene detalles completos de un vehículo | `id` (path) | 200 OK - VehicleResource |
+| `/api/v1/vehicles/{id}` | PUT | US22 | Actualiza detalles de un vehículo | `id` (path), Body: UpdateVehicleDetails | 200 OK - VehicleResource actualizado |
+| `/api/v1/vehicles/{id}/price` | PUT | US20 | Actualiza precio diario de vehículo | `id` (path), Body: {newDailyPrice} | 200 OK - VehicleResource |
+| `/api/v1/vehicles/{id}/images` | GET | US23 | Obtiene todas las imágenes de un vehículo | `id` (path) | 200 OK - Array de VehicleImageResource |
+| `/api/v1/vehicles/{id}/images` | POST | US23 | Carga una imagen para un vehículo | `id` (path), Body: {imagePath, imageUrl, isPrimary} | 200 OK - VehicleResource |
+| `/api/v1/vehicles/{vehicleId}/images/{imageId}/primary` | PUT | US23 | Establece una imagen como primaria | `vehicleId`, `imageId` (path) | 200 OK - VehicleResource |
 
 **OpenAPI Documentation Capturas:**
 
@@ -934,8 +935,8 @@ May 12 - Release 1.0.0 tag
 
 | Rol | Responsable | Contribución Principal | Horas Estimadas |
 | --- | --- | --- | --- |
-| Frontend Lead | Adriana Diestra | Landing Page (HU15-HU18) | 40 horas |
-| Backend Lead | Gilbert Huarcaya | Vehicle Catalog (HU02-HU05) | 45 horas |
+| Frontend Lead | Adriana Diestra | Landing Page (US53-US56) | 40 horas |
+| Backend Lead | Gilbert Huarcaya | Vehicle Catalog (US18-US23) | 45 horas |
 | QA/Testing | Gilbert Huarcaya | Validación y testing | 20 horas |
 | DevOps | Gilbert Huarcaya | Deployment en Vercel y Railway | 15 horas |
 
@@ -967,7 +968,7 @@ May 12 - Release 1.0.0 tag
 
 | Reunión | Fecha | Duración | Participantes | Tema |
 | --- | --- | --- | --- | --- |
-| Sprint Planning | May 6 | 2 hrs | Equipo completo | Definición de HU15-HU18, HU02-HU05 |
+| Sprint Planning | May 6 | 2 hrs | Equipo completo | Definición de US53-US56, US18-US23 |
 | Daily Standup | May 7-11 | 15 min c/día | Equipo | Progress, blockers, plan del día |
 | Pairing Session | May 8 | 1 hr | Backend dev pair | Resolución de issues de JPA |
 | Sprint Review | May 12 | 1.5 hrs | Equipo + stakeholders | Demo de Landing Page y API |
@@ -1036,57 +1037,57 @@ El equipo está bien posicionado para escalar a sprints más complejos con múlt
 
 ## 4.3. Validation Interviews
 
-En esta sección, el equipo registra y explica las actividades de entrevistas de validación durante Sprint 1. Se realizaron entrevistas con usuarios de los segmentos objetivo: visitantes para validar Landing Page (HU15-HU18) y arrendatarios para validar funcionalidades de búsqueda y filtrado de vehículos (HU02-HU05).
+En esta sección, el equipo registra y explica las actividades de entrevistas de validación durante Sprint 1. Se realizaron entrevistas con usuarios de los segmentos objetivo: visitantes para validar Landing Page (US53-US56) y arrendatarios para validar funcionalidades de búsqueda y filtrado de vehículos (US18-US23).
 
 ### 4.3.1. Diseño de Entrevistas
 
 **Objetivos de Validación:**
 
-- Evaluar claridad del valor propuesto en el Landing Page (HU15-HU18)
+- Evaluar claridad del valor propuesto en el Landing Page (US53-US56)
 - Validar navegabilidad e información presentada en landing
 - Validar responsividad en múltiples dispositivos
-- Recopilar feedback sobre funcionalidades de búsqueda y filtrado de vehículos (HU02-HU05)
+- Recopilar feedback sobre funcionalidades de búsqueda y filtrado de vehículos (US18-US23)
 - Entender fluidez de interacción en búsqueda y detalle de vehículos
 
 **Segmentos Objetivo:**
 
-1. **Visitantes:** Personas nuevas interesadas en conocer la plataforma (para HU15-HU18)
-2. **Arrendatarios:** Personas buscando alquilar vehículos de corta duración (para HU02-HU05)
+1. **Visitantes:** Personas nuevas interesadas en conocer la plataforma (para US53-US56)
+2. **Arrendatarios:** Personas buscando alquilar vehículos de corta duración (para US18-US23)
 
-**Estructura de Entrevista (Visitantes - HU15-HU18):**
+**Estructura de Entrevista (Visitantes - US53-US56):**
 
 | Sección | Duración | Descripción |
 | --- | --- | --- |
 | Bienvenida | 2 min | Presentación del producto y propósito de validación |
-| Navegar Landing Page | 5 min | Usuario explora secciones del landing (HU15, HU16, HU17, HU18) |
+| Navegar Landing Page | 5 min | Usuario explora secciones del landing (US53, US56, US54, US55) |
 | Tarea 1: Entender el servicio | 3 min | Preguntas sobre claridad del modelo de negocio y propuesta de valor |
-| Tarea 2: Encontrar contacto | 2 min | Usuario localiza información de contacto (HU16) |
-| Tarea 3: Evaluar navegación | 2 min | Usuario intenta acceder a diferentes secciones (HU17) |
-| Feedback de diseño | 2 min | Observaciones sobre responsividad y usabilidad (HU18) |
+| Tarea 2: Encontrar contacto | 2 min | Usuario localiza información de contacto (US56) |
+| Tarea 3: Evaluar navegación | 2 min | Usuario intenta acceder a diferentes secciones (US54) |
+| Feedback de diseño | 2 min | Observaciones sobre responsividad y usabilidad (US55) |
 | Cierre | 1 min | Agradecimiento y siguiente pasos |
 
-**Estructura de Entrevista (Arrendatarios - HU02-HU05):**
+**Estructura de Entrevista (Arrendatarios - US18-US23):**
 
 | Sección | Duración | Descripción |
 | --- | --- | --- |
 | Bienvenida | 2 min | Presentación del producto y propósito de validación |
-| Búsqueda de vehículos | 4 min | Usuario realiza búsqueda (HU02) y obtiene resultados |
-| Aplicar filtro | 3 min | Usuario aplica filtro de precio (HU03) |
-| Ver detalles | 3 min | Usuario selecciona y ve detalles de vehículo (HU04) |
-| Agregar favoritos | 2 min | Usuario agrega vehículo a favoritos (HU05) |
+| Búsqueda de vehículos | 4 min | Usuario realiza búsqueda (US19) y obtiene resultados |
+| Aplicar filtro | 3 min | Usuario aplica filtro de precio (US20) |
+| Ver detalles | 3 min | Usuario selecciona y ve detalles de vehículo (US22) |
+| Agregar favoritos | 2 min | Usuario agrega vehículo a favoritos (US23) |
 | Feedback general | 3 min | Preguntas sobre facilidad de uso y mejoras |
 | Cierre | 1 min | Agradecimiento y siguiente pasos |
 
 **User Flows a Validar:**
 
-1. **Flow Visitante - Landing Page:** Acceder a landing → Entender propuesta → Navegar secciones → Encontrar CTA (HU15-HU18)
-2. **Flow Arrendatario - Búsqueda:** Buscar vehículos → Filtrar por precio → Ver detalles → Agregar a favoritos (HU02-HU05)
+1. **Flow Visitante - Landing Page:** Acceder a landing → Entender propuesta → Navegar secciones → Encontrar CTA (US53-US56)
+2. **Flow Arrendatario - Búsqueda:** Buscar vehículos → Filtrar por precio → Ver detalles → Agregar a favoritos (US18-US23)
 
 ---
 
 ### 4.3.2. Registro de Entrevistas
 
-**Entrevista 1 - Segmento: Visitante (Landing Page HU15-HU18)**
+**Entrevista 1 - Segmento: Visitante (Landing Page US53-US56)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -1102,18 +1103,18 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 **Resumen de Observaciones:**
 
 [Insert resumen descriptivo de las principales apreciaciones del entrevistado. Incluir:
-- Reacciones sobre el Landing Page (HU15)
+- Reacciones sobre el Landing Page (US53)
 - Claridad del modelo de negocio
-- Facilidad de encontrar información de contacto (HU16)
-- Facilidad de navegación (HU17)
-- Observaciones sobre responsividad (HU18)
+- Facilidad de encontrar información de contacto (US56)
+- Facilidad de navegación (US54)
+- Observaciones sobre responsividad (US55)
 - Principales dudas o fricción
 - Puntos positivos y negativos
 - Disposición a usar la app]
 
 ---
 
-**Entrevista 2 - Segmento: Visitante (Landing Page HU15-HU18)**
+**Entrevista 2 - Segmento: Visitante (Landing Page US53-US56)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -1128,11 +1129,11 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 
 **Resumen de Observaciones:**
 
-[Insert resumen descriptivo de las principales apreciaciones del entrevistado sobre Landing Page (HU15-HU18)]
+[Insert resumen descriptivo de las principales apreciaciones del entrevistado sobre Landing Page (US53-US56)]
 
 ---
 
-**Entrevista 3 - Segmento: Arrendatario (Búsqueda y Filtrado HU02-HU05)**
+**Entrevista 3 - Segmento: Arrendatario (Búsqueda y Filtrado US18-US23)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -1148,10 +1149,10 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 **Resumen de Observaciones:**
 
 [Insert resumen descriptivo de las principales apreciaciones del entrevistado. Incluir:
-- Facilidad de búsqueda de vehículos (HU02)
-- Utilidad del filtro de precio (HU03)
-- Claridad de detalles de vehículo mostrados (HU04)
-- Necesidad de agregar a favoritos (HU05)
+- Facilidad de búsqueda de vehículos (US19)
+- Utilidad del filtro de precio (US20)
+- Claridad de detalles de vehículo mostrados (US22)
+- Necesidad de agregar a favoritos (US23)
 - Fluidez de la búsqueda
 - Resultados relevantes
 - Puntos de fricción
@@ -1159,7 +1160,7 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 
 ---
 
-**Entrevista 4 - Segmento: Arrendatario (Búsqueda y Filtrado HU02-HU05)**
+**Entrevista 4 - Segmento: Arrendatario (Búsqueda y Filtrado US18-US23)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -1174,7 +1175,7 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 
 **Resumen de Observaciones:**
 
-[Insert resumen descriptivo de las principales apreciaciones del entrevistado sobre búsqueda y filtrado (HU02-HU05)]
+[Insert resumen descriptivo de las principales apreciaciones del entrevistado sobre búsqueda y filtrado (US18-US23)]
 
 ---
 
