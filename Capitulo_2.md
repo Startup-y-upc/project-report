@@ -3294,99 +3294,129 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
 
 ### 2.4.2. Impact Mapping
 
-### Requisitos No Funcionales (globales)
-
-- Rendimiento: Respuestas críticas (búsqueda, reservas) < 2s bajo carga normal; optimizar consultas y paginación.
-- Seguridad: Autenticación segura (JWT/OAuth), cifrado de datos sensibles en tránsito y reposo; validación de documentos para verificación.
-- Usabilidad: Mobile-first, accesibilidad básica y flujos simplificados para onboarding y reserva.
-- Disponibilidad: Objetivo inicial 99.5% para servicios críticos (reservas, pagos); mecanismos de retry y circuit breakers para pasarelas externas.
-
-Impact map de nuestros segmentos objetivos
+Impact map de nuestros segmentos objetivos:
 
 <div align="center">
     <img src="Resources/capitulo_2/need_finding/Impact Mapping.png" alt="Impact Map" style="margin: 10px 0;" width="80%"/>
 </div>
 
-### 2.4.3. Product Backlog
+### 2.4.3. Requisitos Funcionales
 
-| # Orden | User Story Id | Título                                                  | Story Points |
-| ------: | ------------- | ------------------------------------------------------- | -----------: |
-|       1 | SP06          | Definir arquitectura del backend y base de datos        |            5 |
-|       2 | TS14          | Estandarizar respuestas de error del API                |            3 |
-|       3 | US01          | Registrar usuario                                       |            3 |
-|       4 | US02          | Iniciar sesión                                          |            3 |
-|       5 | TS01          | Implementar API de autenticación                        |            5 |
-|       6 | US04          | Seleccionar tipo de cuenta                              |            2 |
-|       7 | US05          | Completar perfil de usuario                             |            3 |
-|       8 | US08          | Ver perfil de usuario                                   |            2 |
-|       9 | US09          | Editar información del perfil                           |            3 |
-|      10 | TS02          | Implementar API de perfil de usuario                    |            5 |
-|      11 | SP03          | Evaluar almacenamiento de imágenes y documentos         |            3 |
-|      12 | US06          | Subir documentos de verificación                        |            5 |
-|      13 | US07          | Consultar estado de verificación                        |            3 |
-|      14 | TS03          | Implementar API de documentos de verificación           |            5 |
-|      15 | US10          | Ver indicadores del perfil                              |            3 |
-|      16 | US11          | Registrar vehículo para alquiler                        |            5 |
-|      17 | US12          | Publicar vehículo                                       |            5 |
-|      18 | US13          | Ver mis vehículos publicados                            |            3 |
-|      19 | TS04          | Implementar API de vehículos                            |            8 |
-|      20 | US15          | Editar información de vehículo                          |            5 |
-|      21 | US16          | Gestionar disponibilidad del vehículo                   |            5 |
-|      22 | US14          | Filtrar vehículos por estado                            |            3 |
-|      23 | US17          | Consultar rendimiento de vehículo                       |            5 |
-|      24 | SP02          | Evaluar integración de mapas y ubicación                |            5 |
-|      25 | US18          | Explorar vehículos disponibles                          |            5 |
-|      26 | US19          | Buscar vehículos por ubicación y fechas                 |            5 |
-|      27 | TS05          | Implementar API de búsqueda de vehículos                |            8 |
-|      28 | US21          | Ver resumen de vehículo disponible                      |            3 |
-|      29 | US22          | Ver detalle de vehículo                                 |            5 |
-|      30 | US20          | Filtrar y ordenar vehículos disponibles                 |            5 |
-|      31 | US23          | Guardar vehículo como favorito                          |            3 |
-|      32 | TS06          | Implementar API de favoritos                            |            5 |
-|      33 | US24          | Iniciar reserva de vehículo                             |            5 |
-|      34 | US25          | Confirmar datos de reserva                              |            3 |
-|      35 | US26          | Seleccionar cobertura de reserva                        |            3 |
-|      36 | US27          | Visualizar cálculo total de reserva                     |            5 |
-|      37 | TS08          | Implementar servicio de cálculo de tarifa               |            5 |
-|      38 | SP01          | Investigar integración de pasarela de pagos             |            3 |
-|      39 | US28          | Confirmar y pagar reserva                               |            8 |
-|      40 | TS09          | Implementar API de pagos simulados                      |            5 |
-|      41 | US44          | Registrar pago de reserva                               |            5 |
-|      42 | US45          | Ver resumen de pago                                     |            3 |
-|      43 | US29          | Ver mis reservas organizadas por estado                 |            5 |
-|      44 | US30          | Ver detalle de una reserva                              |            3 |
-|      45 | US31          | Cancelar reserva                                        |            3 |
-|      46 | US32          | Ver historial de reservas pasadas                       |            3 |
-|      47 | TS07          | Implementar API de reservas                             |            8 |
-|      48 | US33          | Ver panel de control del propietario                    |            5 |
-|      49 | US34          | Ver solicitudes de reserva pendientes                   |            5 |
-|      50 | US35          | Aceptar o rechazar solicitud de reserva                 |            5 |
-|      51 | US36          | Ver reservas activas del día                            |            3 |
-|      52 | US37          | Registrar entrega de vehículo                           |            3 |
-|      53 | US38          | Contactar al arrendatario desde una reserva             |            3 |
-|      54 | SP04          | Evaluar mensajería en tiempo real o simulada            |            3 |
-|      55 | US39          | Ver bandeja de conversaciones                           |            5 |
-|      56 | US41          | Abrir conversación                                      |            3 |
-|      57 | US42          | Enviar y recibir mensajes                               |            5 |
-|      58 | US40          | Filtrar conversaciones                                  |            2 |
-|      59 | US43          | Contactar soporte                                       |            3 |
-|      60 | TS10          | Implementar API de mensajería                           |            8 |
-|      61 | SP05          | Evaluar notificaciones push                             |            3 |
-|      62 | US50          | Recibir notificaciones de reserva                       |            3 |
-|      63 | US51          | Recibir notificaciones de mensajes                      |            3 |
-|      64 | TS11          | Implementar API de notificaciones                       |            5 |
-|      65 | US52          | Reportar problema con una reserva                       |            3 |
-|      66 | US46          | Ver ganancias acumuladas                                |            5 |
-|      67 | US47          | Ver ingresos por vehículo                               |            3 |
-|      68 | US48          | Consultar movimientos financieros                       |            3 |
-|      69 | US49          | Solicitar retiro de saldo                               |            3 |
-|      70 | TS12          | Implementar API de ganancias del propietario            |            5 |
-|      71 | US03          | Recuperar contraseña                                    |            3 |
-|      72 | US53          | Ver landing page informativa                            |            3 |
-|      73 | US54          | Conocer beneficios para arrendatarios y propietarios    |            3 |
-|      74 | US55          | Acceder al registro o inicio de sesión desde la landing |            2 |
-|      75 | US56          | Consultar información de contacto                       |            2 |
-|      76 | TS13          | Configurar despliegue de landing page                   |            3 |
+A continuación, se especifican y clasifican los Requisitos Funcionales del sistema, divididos según su prioridad en el negocio (Core vs. Normales):
+
+#### Requisitos Funcionales Core (Principales)
+
+| ID | Requisito Funcional | Descripción |
+| :--- | :--- | :--- |
+| **RF-CORE-01** | Registro y Autenticación de Usuarios | El sistema debe permitir a arrendatarios y propietarios registrarse e iniciar sesión de forma segura a través de credenciales locales (JWT). |
+| **RF-CORE-02** | Búsqueda y Exploración de Vehículos | El sistema debe permitir a los arrendatarios explorar y buscar vehículos por filtros esenciales como categoría, precio y ubicación. |
+| **RF-CORE-03** | Visualización de Detalles de Vehículo | El sistema debe mostrar la ficha técnica completa del vehículo, precios de alquiler y estado de disponibilidad. |
+| **RF-CORE-04** | Registro de Vehículos para Alquiler | El sistema debe permitir a los propietarios registrar y publicar sus vehículos incluyendo imágenes y detalles técnicos. |
+| **RF-CORE-05** | Flujo de Gestión de Reservas | El sistema debe permitir al arrendatario solicitar una reserva y al propietario aceptar o rechazar la solicitud de alquiler. |
+| **RF-CORE-06** | Procesamiento de Pago Simulado | El sistema debe integrar una simulación de cobro seguro con el desglose del costo diario y cálculo de tarifas finales. |
+
+#### Requisitos Funcionales Normales (Secundarios)
+
+| ID | Requisito Funcional | Descripción |
+| :--- | :--- | :--- |
+| **RF-NORM-01** | Landing Page Informativa | El sistema debe proveer una página web informativa para dar a conocer los beneficios del servicio y facilitar el acceso a la plataforma. |
+| **RF-NORM-02** | Configuración de Perfil de Usuario | El sistema debe permitir completar y editar la información básica y de contacto en el perfil de usuario. |
+| **RF-NORM-03** | Gestión de Favoritos | El sistema debe permitir a los arrendatarios guardar vehículos en una sección de favoritos para su posterior consulta rápida. |
+| **RF-NORM-04** | Canal de Mensajería Interna | El sistema debe ofrecer una bandeja de conversaciones entre arrendatarios y propietarios para coordinar el alquiler. |
+| **RF-NORM-05** | Bandeja de Notificaciones | El sistema debe enviar notificaciones internas o push para alertar al usuario sobre cambios en el estado de su reserva o mensajes nuevos. |
+| **RF-NORM-06** | Panel de Control y Ganancias | El sistema debe permitir a los propietarios visualizar un panel financiero con sus ingresos acumulados e historial de movimientos. |
+
+### 2.4.4. Requisitos No Funcionales (globales)
+
+A continuación, se definen los Requisitos No Funcionales (RNF) organizados bajo las 4 dimensiones principales de calidad de software:
+
+| ID | Dimensión | Requisito No Funcional | Criterio de Aceptación / Métrica |
+| :--- | :--- | :--- | :--- |
+| **RNF-01** | **Rendimiento** | Optimización de tiempos de respuesta en consultas críticas. | Los endpoints de búsqueda de vehículos y procesamiento de reservas deben responder en menos de 2.0 segundos bajo carga normal (concurrencia de hasta 100 usuarios activos simultáneos). |
+| **RNF-02** | **Seguridad** | Cifrado y gestión de accesos a datos y APIs. | Toda comunicación debe viajar sobre HTTPS cifrada con TLS 1.3. La autenticación debe realizarse mediante tokens JWT firmados con algoritmo HS256 y expirar en 24 horas. |
+| **RNF-03** | **Usabilidad** | Diseño e interfaz adaptativa (Mobile-First). | Las vistas de la aplicación móvil y la landing page informativa deben adaptarse correctamente al diseño responsivo para móviles, tabletas y computadoras de escritorio. |
+| **RNF-04** | **Disponibilidad** | Tolerancia a fallos y continuidad de servicios críticos. | El sistema global debe garantizar un tiempo de actividad (uptime) anual de al menos el 99.5%, implementando patrones de retry y circuit breakers para transacciones externas. |
+
+### 2.4.5. Product Backlog
+
+| # Orden | User Story Id | Título                                                  | Story Points | Clasificación | Sprint |
+| ------: | ------------- | ------------------------------------------------------- | -----------: | :---: | :---: |
+|       1 | SP06          | Definir arquitectura del backend y base de datos        |            5 | Core | Sprint 1 |
+|       2 | TS14          | Estandarizar respuestas de error del API                |            3 | Core | Sprint 1 |
+|       3 | US01          | Registrar usuario                                       |            3 | Core | Sprint 2 |
+|       4 | US02          | Iniciar sesión                                          |            3 | Core | Sprint 2 |
+|       5 | TS01          | Implementar API de autenticación                        |            5 | Core | Sprint 2 |
+|       6 | US04          | Seleccionar tipo de cuenta                              |            2 | Core | Sprint 2 |
+|       7 | US05          | Completar perfil de usuario                             |            3 | Normal | Sprint 2 |
+|       8 | US08          | Ver perfil de usuario                                   |            2 | Normal | Sprint 2 |
+|       9 | US09          | Editar información del perfil                           |            3 | Normal | Sprint 2 |
+|      10 | TS02          | Implementar API de perfil de usuario                    |            5 | Normal | Sprint 2 |
+|      11 | SP03          | Evaluar almacenamiento de imágenes y documentos         |            3 | Core | Sprint 2 |
+|      12 | US06          | Subir documentos de verificación                        |            5 | Core | Sprint 2 |
+|      13 | US07          | Consultar estado de verificación                        |            3 | Core | Sprint 2 |
+|      14 | TS03          | Implementar API de documentos de verificación           |            5 | Core | Sprint 2 |
+|      15 | US10          | Ver indicadores del perfil                              |            3 | Normal | Sprint 2 |
+|      16 | US18          | Explorar vehículos disponibles                          |            5 | Core | Sprint 1 |
+|      17 | US19          | Buscar vehículos por ubicación y fechas                 |            5 | Core | Sprint 1 |
+|      18 | US20          | Filtrar y ordenar vehículos disponibles                 |            5 | Core | Sprint 1 |
+|      19 | US22          | Ver detalle de vehículo                                 |            5 | Core | Sprint 1 |
+|      20 | US23          | Guardar vehículo como favorito                          |            3 | Normal | Sprint 1 |
+|      21 | TS05          | Implementar API de búsqueda de vehículos                |            8 | Core | Sprint 1 |
+|      22 | TS06          | Implementar API de favoritos                            |            5 | Normal | Sprint 1 |
+|      23 | US11          | Registrar vehículo para alquiler                        |            5 | Core | Sprint 3 |
+|      24 | US12          | Publicar vehículo                                       |            5 | Core | Sprint 3 |
+|      25 | US13          | Ver mis vehículos publicados                            |            3 | Normal | Sprint 3 |
+|      26 | TS04          | Implementar API de vehículos                            |            8 | Core | Sprint 3 |
+|      27 | US15          | Editar información de vehículo                          |            5 | Normal | Sprint 3 |
+|      28 | US16          | Gestionar disponibilidad del vehículo                   |            5 | Core | Sprint 3 |
+|      29 | US14          | Filtrar vehículos por estado                            |            3 | Normal | Sprint 3 |
+|      30 | US17          | Consultar rendimiento de vehículo                       |            5 | Normal | Sprint 3 |
+|      31 | SP02          | Evaluar integración de mapas y ubicación                |            5 | Core | Sprint 1 |
+|      32 | US21          | Ver resumen de vehículo disponible                      |            3 | Core | Sprint 1 |
+|      33 | US24          | Iniciar reserva de vehículo                             |            5 | Core | Sprint 3 |
+|      34 | US25          | Confirmar datos de reserva                              |            3 | Core | Sprint 3 |
+|      35 | US26          | Seleccionar cobertura de reserva                        |            3 | Core | Sprint 3 |
+|      36 | US27          | Visualizar cálculo total de reserva                     |            5 | Core | Sprint 3 |
+|      37 | TS08          | Implementar servicio de cálculo de tarifa               |            5 | Core | Sprint 3 |
+|      38 | SP01          | Investigar integración de pasarela de pagos             |            3 | Core | Sprint 3 |
+|      39 | US28          | Confirmar y pagar reserva                               |            8 | Core | Sprint 4 |
+|      40 | TS09          | Implementar API de pagos simulados                      |            5 | Core | Sprint 4 |
+|      41 | US44          | Registrar pago de reserva                               |            5 | Core | Sprint 4 |
+|      42 | US45          | Ver resumen de pago                                     |            3 | Core | Sprint 4 |
+|      43 | US29          | Ver mis reservas organizadas por estado                 |            5 | Core | Sprint 4 |
+|      44 | US30          | Ver detalle de una reserva                              |            3 | Core | Sprint 4 |
+|      45 | US31          | Cancelar reserva                                        |            3 | Core | Sprint 4 |
+|      46 | US32          | Ver historial de reservas pasadas                       |            3 | Normal | Sprint 4 |
+|      47 | TS07          | Implementar API de reservas                             |            8 | Core | Sprint 4 |
+|      48 | US33          | Ver panel de control del propietario                    |            5 | Core | Sprint 5 |
+|      49 | US34          | Ver solicitudes de reserva pendientes                   |            5 | Core | Sprint 5 |
+|      50 | US35          | Aceptar o rechazar solicitud de reserva                 |            5 | Core | Sprint 5 |
+|      51 | US36          | Ver reservas activas del día                            |            3 | Core | Sprint 5 |
+|      52 | US37          | Registrar entrega de vehículo                           |            3 | Core | Sprint 5 |
+|      53 | US38          | Contactar al arrendatario desde una reserva             |            3 | Normal | Sprint 5 |
+|      54 | SP04          | Evaluar mensajería en tiempo real o simulada            |            3 | Normal | Sprint 4 |
+|      55 | US39          | Ver bandeja de conversaciones                           |            5 | Normal | Sprint 5 |
+|      56 | US41          | Abrir conversación                                      |            3 | Normal | Sprint 5 |
+|      57 | US42          | Enviar y recibir mensajes                               |            5 | Normal | Sprint 5 |
+|      58 | US40          | Filtrar conversaciones                                  |            2 | Normal | Sprint 5 |
+|      59 | US43          | Contactar soporte                                       |            3 | Normal | Sprint 5 |
+|      60 | TS10          | Implementar API de mensajería                           |            8 | Normal | Sprint 5 |
+|      61 | SP05          | Evaluar notificaciones push                             |            3 | Normal | Sprint 4 |
+|      62 | US50          | Recibir notificaciones de reserva                       |            3 | Normal | Sprint 5 |
+|      63 | US51          | Recibir notificaciones de mensajes                      |            3 | Normal | Sprint 5 |
+|      64 | TS11          | Implementar API de notificaciones                       |            5 | Normal | Sprint 5 |
+|      65 | US52          | Reportar problema con una reserva                       |            3 | Normal | Sprint 5 |
+|      66 | US46          | Ver ganancias acumuladas                                |            5 | Normal | Sprint 5 |
+|      67 | US47          | Ver ingresos por vehículo                               |            3 | Normal | Sprint 5 |
+|      68 | US48          | Consultar movimientos financieros                       |            3 | Normal | Sprint 5 |
+|      69 | US49          | Solicitar retiro de saldo                               |            3 | Normal | Sprint 5 |
+|      70 | TS12          | Implementar API de ganancias del propietario            |            5 | Normal | Sprint 5 |
+|      71 | US03          | Recuperar contraseña                                    |            3 | Core | Sprint 2 |
+|      72 | US53          | Ver landing page informativa                            |            3 | Normal | Sprint 1 |
+|      73 | US54          | Conocer beneficios para arrendatarios y propietarios    |            3 | Normal | Sprint 1 |
+|      74 | US55          | Acceder al registro o inicio de sesión desde la landing |            2 | Normal | Sprint 1 |
+|      75 | US56          | Consultar información de contacto                       |            2 | Normal | Sprint 1 |
+|      76 | TS13          | Configurar despliegue de landing page                   |            3 | Normal | Sprint 1 |
 
 ## 2.5. Strategic-Level Domain-Driven Design
 
