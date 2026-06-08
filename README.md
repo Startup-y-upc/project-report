@@ -229,7 +229,7 @@
     - [4.2.1.5. Execution Evidence for Sprint Review](Capitulo_4.md#4215-execution-evidence-for-sprint-review)
     - [4.2.1.6. Services Documentation Evidence for Sprint Review](Capitulo_4.md#4216-services-documentation-evidence-for-sprint-review)
     - [4.2.1.7. Software Deployment Evidence for Sprint Review](Capitulo_4.md#4217-software-deployment-evidence-for-sprint-review)
-    - [4.2.1.8. Team Collaboration Insights during Sprint](Capitulo_4.md#4218-team-collaboration-insights-during-sprint)
+    - [4.2.1.8. Team Collaboration Insights during Sprint 1](Capitulo_4.md#4218-team-collaboration-insights-during-sprint-1)
 - [4.3. Validation Interviews](Capitulo_4.md#43-validation-interviews)
   - [4.3.1. Diseño de Entrevistas](Capitulo_4.md#431-diseño-de-entrevistas)
   - [4.3.2. Registro de Entrevistas](Capitulo_4.md#432-registro-de-entrevistas)
