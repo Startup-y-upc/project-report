@@ -3363,54 +3363,54 @@ A continuación, se definen los Requisitos No Funcionales (RNF) organizados bajo
 |      20 | US23          | Guardar vehículo como favorito                          |            3 | Normal | Sprint 1 |
 |      21 | TS05          | Implementar API de búsqueda de vehículos                |            8 | Core | Sprint 1 |
 |      22 | TS06          | Implementar API de favoritos                            |            5 | Normal | Sprint 1 |
-|      23 | US11          | Registrar vehículo para alquiler                        |            5 | Core | Sprint 3 |
-|      24 | US12          | Publicar vehículo                                       |            5 | Core | Sprint 3 |
-|      25 | US13          | Ver mis vehículos publicados                            |            3 | Normal | Sprint 3 |
-|      26 | TS04          | Implementar API de vehículos                            |            8 | Core | Sprint 3 |
-|      27 | US15          | Editar información de vehículo                          |            5 | Normal | Sprint 3 |
-|      28 | US16          | Gestionar disponibilidad del vehículo                   |            5 | Core | Sprint 3 |
-|      29 | US14          | Filtrar vehículos por estado                            |            3 | Normal | Sprint 3 |
-|      30 | US17          | Consultar rendimiento de vehículo                       |            5 | Normal | Sprint 3 |
+|      23 | US11          | Registrar vehículo para alquiler                        |            5 | Core | Sprint 2 |
+|      24 | US12          | Publicar vehículo                                       |            5 | Core | Sprint 2 |
+|      25 | US13          | Ver mis vehículos publicados                            |            3 | Normal | Sprint 2 |
+|      26 | TS04          | Implementar API de vehículos                            |            8 | Core | Sprint 2 |
+|      27 | US15          | Editar información de vehículo                          |            5 | Normal | Sprint 2 |
+|      28 | US16          | Gestionar disponibilidad del vehículo                   |            5 | Core | Sprint 2 |
+|      29 | US14          | Filtrar vehículos por estado                            |            3 | Normal | Sprint 2 |
+|      30 | US17          | Consultar rendimiento de vehículo                       |            5 | Normal | Sprint 2 |
 |      31 | SP02          | Evaluar integración de mapas y ubicación                |            5 | Core | Sprint 1 |
 |      32 | US21          | Ver resumen de vehículo disponible                      |            3 | Core | Sprint 1 |
-|      33 | US24          | Iniciar reserva de vehículo                             |            5 | Core | Sprint 3 |
-|      34 | US25          | Confirmar datos de reserva                              |            3 | Core | Sprint 3 |
-|      35 | US26          | Seleccionar cobertura de reserva                        |            3 | Core | Sprint 3 |
-|      36 | US27          | Visualizar cálculo total de reserva                     |            5 | Core | Sprint 3 |
-|      37 | TS08          | Implementar servicio de cálculo de tarifa               |            5 | Core | Sprint 3 |
-|      38 | SP01          | Investigar integración de pasarela de pagos             |            3 | Core | Sprint 3 |
-|      39 | US28          | Confirmar y pagar reserva                               |            8 | Core | Sprint 4 |
-|      40 | TS09          | Implementar API de pagos simulados                      |            5 | Core | Sprint 4 |
-|      41 | US44          | Registrar pago de reserva                               |            5 | Core | Sprint 4 |
-|      42 | US45          | Ver resumen de pago                                     |            3 | Core | Sprint 4 |
-|      43 | US29          | Ver mis reservas organizadas por estado                 |            5 | Core | Sprint 4 |
-|      44 | US30          | Ver detalle de una reserva                              |            3 | Core | Sprint 4 |
-|      45 | US31          | Cancelar reserva                                        |            3 | Core | Sprint 4 |
-|      46 | US32          | Ver historial de reservas pasadas                       |            3 | Normal | Sprint 4 |
-|      47 | TS07          | Implementar API de reservas                             |            8 | Core | Sprint 4 |
-|      48 | US33          | Ver panel de control del propietario                    |            5 | Core | Sprint 5 |
-|      49 | US34          | Ver solicitudes de reserva pendientes                   |            5 | Core | Sprint 5 |
-|      50 | US35          | Aceptar o rechazar solicitud de reserva                 |            5 | Core | Sprint 5 |
-|      51 | US36          | Ver reservas activas del día                            |            3 | Core | Sprint 5 |
-|      52 | US37          | Registrar entrega de vehículo                           |            3 | Core | Sprint 5 |
-|      53 | US38          | Contactar al arrendatario desde una reserva             |            3 | Normal | Sprint 5 |
-|      54 | SP04          | Evaluar mensajería en tiempo real o simulada            |            3 | Normal | Sprint 4 |
-|      55 | US39          | Ver bandeja de conversaciones                           |            5 | Normal | Sprint 5 |
-|      56 | US41          | Abrir conversación                                      |            3 | Normal | Sprint 5 |
-|      57 | US42          | Enviar y recibir mensajes                               |            5 | Normal | Sprint 5 |
-|      58 | US40          | Filtrar conversaciones                                  |            2 | Normal | Sprint 5 |
-|      59 | US43          | Contactar soporte                                       |            3 | Normal | Sprint 5 |
-|      60 | TS10          | Implementar API de mensajería                           |            8 | Normal | Sprint 5 |
-|      61 | SP05          | Evaluar notificaciones push                             |            3 | Normal | Sprint 4 |
-|      62 | US50          | Recibir notificaciones de reserva                       |            3 | Normal | Sprint 5 |
-|      63 | US51          | Recibir notificaciones de mensajes                      |            3 | Normal | Sprint 5 |
-|      64 | TS11          | Implementar API de notificaciones                       |            5 | Normal | Sprint 5 |
-|      65 | US52          | Reportar problema con una reserva                       |            3 | Normal | Sprint 5 |
-|      66 | US46          | Ver ganancias acumuladas                                |            5 | Normal | Sprint 5 |
-|      67 | US47          | Ver ingresos por vehículo                               |            3 | Normal | Sprint 5 |
-|      68 | US48          | Consultar movimientos financieros                       |            3 | Normal | Sprint 5 |
-|      69 | US49          | Solicitar retiro de saldo                               |            3 | Normal | Sprint 5 |
-|      70 | TS12          | Implementar API de ganancias del propietario            |            5 | Normal | Sprint 5 |
+|      33 | US24          | Iniciar reserva de vehículo                             |            5 | Core | Sprint 2 |
+|      34 | US25          | Confirmar datos de reserva                              |            3 | Core | Sprint 2 |
+|      35 | US26          | Seleccionar cobertura de reserva                        |            3 | Core | Sprint 2 |
+|      36 | US27          | Visualizar cálculo total de reserva                     |            5 | Core | Sprint 2 |
+|      37 | TS08          | Implementar servicio de cálculo de tarifa               |            5 | Core | Sprint 2 |
+|      38 | SP01          | Investigar integración de pasarela de pagos             |            3 | Core | Sprint 2 |
+|      39 | US28          | Confirmar y pagar reserva                               |            8 | Core | Sprint 3 |
+|      40 | TS09          | Implementar API de pagos simulados                      |            5 | Core | Sprint 3 |
+|      41 | US44          | Registrar pago de reserva                               |            5 | Core | Sprint 3 |
+|      42 | US45          | Ver resumen de pago                                     |            3 | Core | Sprint 3 |
+|      43 | US29          | Ver mis reservas organizadas por estado                 |            5 | Core | Sprint 3 |
+|      44 | US30          | Ver detalle de una reserva                              |            3 | Core | Sprint 3 |
+|      45 | US31          | Cancelar reserva                                        |            3 | Core | Sprint 3 |
+|      46 | US32          | Ver historial de reservas pasadas                       |            3 | Normal | Sprint 3 |
+|      47 | TS07          | Implementar API de reservas                             |            8 | Core | Sprint 3 |
+|      48 | US33          | Ver panel de control del propietario                    |            5 | Core | Sprint 3 |
+|      49 | US34          | Ver solicitudes de reserva pendientes                   |            5 | Core | Sprint 3 |
+|      50 | US35          | Aceptar o rechazar solicitud de reserva                 |            5 | Core | Sprint 3 |
+|      51 | US36          | Ver reservas activas del día                            |            3 | Core | Sprint 3 |
+|      52 | US37          | Registrar entrega de vehículo                           |            3 | Core | Sprint 3 |
+|      53 | US38          | Contactar al arrendatario desde una reserva             |            3 | Normal | Sprint 3 |
+|      54 | SP04          | Evaluar mensajería en tiempo real o simulada            |            3 | Normal | Sprint 3 |
+|      55 | US39          | Ver bandeja de conversaciones                           |            5 | Normal | Sprint 3 |
+|      56 | US41          | Abrir conversación                                      |            3 | Normal | Sprint 3 |
+|      57 | US42          | Enviar y recibir mensajes                               |            5 | Normal | Sprint 3 |
+|      58 | US40          | Filtrar conversaciones                                  |            2 | Normal | Sprint 3 |
+|      59 | US43          | Contactar soporte                                       |            3 | Normal | Sprint 3 |
+|      60 | TS10          | Implementar API de mensajería                           |            8 | Normal | Sprint 3 |
+|      61 | SP05          | Evaluar notificaciones push                             |            3 | Normal | Sprint 3 |
+|      62 | US50          | Recibir notificaciones de reserva                       |            3 | Normal | Sprint 3 |
+|      63 | US51          | Recibir notificaciones de mensajes                      |            3 | Normal | Sprint 3 |
+|      64 | TS11          | Implementar API de notificaciones                       |            5 | Normal | Sprint 3 |
+|      65 | US52          | Reportar problema con una reserva                       |            3 | Normal | Sprint 3 |
+|      66 | US46          | Ver ganancias acumuladas                                |            5 | Normal | Sprint 3 |
+|      67 | US47          | Ver ingresos por vehículo                               |            3 | Normal | Sprint 3 |
+|      68 | US48          | Consultar movimientos financieros                       |            3 | Normal | Sprint 3 |
+|      69 | US49          | Solicitar retiro de saldo                               |            3 | Normal | Sprint 3 |
+|      70 | TS12          | Implementar API de ganancias del propietario            |            5 | Normal | Sprint 3 |
 |      71 | US03          | Recuperar contraseña                                    |            3 | Core | Sprint 2 |
 |      72 | US53          | Ver landing page informativa                            |            3 | Normal | Sprint 1 |
 |      73 | US54          | Conocer beneficios para arrendatarios y propietarios    |            3 | Normal | Sprint 1 |
