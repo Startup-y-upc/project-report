@@ -14,15 +14,15 @@
 
 <p align="center"><strong>NRC:</strong> 3248</p>
 
- <p align="center"><strong>Profesor:</strong> Quevedo Velasco, David Gerardo</p>
-
-  <p align="center"><strong>StartUp:</strong> R2G Technologies</p>
-
-  <p align="center"><strong>Producto:</strong> Rent2Go</p><br><br>
+<p align="center"><strong>Profesor:</strong> Quevedo Velasco, David Gerardo</p><br><br>
 
 <h2 style="text-align: center; font-size: 24px; margin-top: 30px;">
   <strong>Informe de Trabajo Final</strong>
 </h2>
+
+<p align="center"><strong>StartUp:</strong> R2G Technologies</p>
+
+<p align="center"><strong>Producto:</strong> Rent2Go</p><br><br>
 
 <table style="display: flex; justify-content: center;"> 
 <tr>
@@ -39,7 +39,7 @@
 </tr>
 <tr>
 <td>U202213468</td>
-<td>Chavez Uribe, Ario</td>
+<td>Chavez Uribe, Ario Joel</td>
 </tr>
 <tr>
 <td>U202218110</td>
@@ -71,6 +71,19 @@
     <td>Castillo Vidal, Jesus Ivan<br>Chavez Uribe, Ario Joel<br>Carhuancote Dominguez, Gonzalo Alonso<br>Diestra Zambrano, Adriana Maria<br>Huarcaya Matias, Gilbert Alonso</td>
     <td>Primera version del informe: caratula, registro de versiones, collaboration insights, student outcome, objetivos SMART, Capitulo I con el perfil de la startup y Lean UX, y Capitulo II desarrollado segun el guideline (competidores, entrevistas, needfinding, requirements specification, DDD estrategico y tactico).</td>
   </tr>
+  <tr>
+  <td align="center">TB1</td>
+  <td align="center">19/05/2026</td>
+  <td>Castillo Vidal, Jesus Ivan<br>Chavez Uribe, Ario Joel<br>Carhuancote Dominguez, Gonzalo Alonso<br>Diestra Zambrano, Adriana Maria<br>Huarcaya Matias, Gilbert Alonso</td>
+  <td>Segunda versión del informe. Se actualizaron el Registro de Versiones, Project Report, Collaboration Insights y Student Outcome. Se corrigieron y mejoraron los artefactos previamente presentados. Se desplegó el Landing Page y se alcanzó aproximadamente el 70% de implementación del backend. Se presentaron las pantallas core de la aplicación. Se desarrollaron el Capítulo III (Solution UI/UX Design) y el Capítulo IV (Product Implementation & Validation), incluyendo la documentación y evidencias correspondientes al Sprint 1. Además, se incorporaron conclusiones, bibliografía y anexos.</td>
+</tr>
+
+<tr>
+  <td align="center">AV2</td>
+  <td align="center">16/06/2026</td>
+  <td>Castillo Vidal, Jesus Ivan<br>Chavez Uribe, Ario Joel<br>Carhuancote Dominguez, Gonzalo Alonso<br>Diestra Zambrano, Adriana Maria<br>Huarcaya Matias, Gilbert Alonso</td>
+  <td>Tercera versión del informe. Se actualizaron el Registro de Versiones, Project Report, Collaboration Insights y Student Outcome. Se corrigieron y mejoraron los artefactos de entregas anteriores. Se mantuvo desplegado el Landing Page y se completó el 100% de implementación del backend en un entorno público con su respectiva documentación. Se presentaron las principales funcionalidades core de la aplicación, así como la primera versión de los videos de validación de la aplicación, About-the-Product y About-the-Team. Se actualizó el Capítulo IV (Product Implementation & Validation) con la documentación y evidencias correspondientes al Sprint 2, además de las conclusiones, bibliografía y anexos finales.</td>
+</tr>
 </table>
 
 <div style="page-break-after: always;"></div>
