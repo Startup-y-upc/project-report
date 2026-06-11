@@ -18,7 +18,6 @@ A continuacion se presenta un analisis competitivo de las empresas que ofrecen s
     <td>¿Por que llevar a cabo este analisis?</td>
     <td  colspan="5">Este analisis fue realizado con el proposito de estudiar el valor ofrecido por las empresas que compiten con nuestra solucion. La informacion obtenida nos proporcionara la perspectiva necesaria para la realizacion de un servicio innovador.</td>
   </tr>
-  
   <tr>
     <td colspan="2"></td>
     <td ><b>Rent2Go</b></td>
@@ -26,7 +25,6 @@ A continuacion se presenta un analisis competitivo de las empresas que ofrecen s
     <td ><p><b>Hertz</b></p></td>
     <td ><p><b>Avis</b></p></td>
   </tr>
-
   <tr>
     <td colspan="2"></td>
     <td><img src="Resources/capitulo_2/competitors/rent2go-logo.svg" alt="Rent2Go logo" width="110"></td>
@@ -34,7 +32,6 @@ A continuacion se presenta un analisis competitivo de las empresas que ofrecen s
     <td><img src="Resources/capitulo_2/competitors/hertz-logo.png" alt="Hertz logo" width="110"></td>
     <td><img src="Resources/capitulo_2/competitors/avis-logo.png" alt="Avis logo" width="110"></td>
   </tr>
-  
   <tr>
     <td rowspan="2">
       <b>Perfil</b>
@@ -55,7 +52,6 @@ A continuacion se presenta un analisis competitivo de las empresas que ofrecen s
       <p>Aplicacion de reservas de autos en linea
     </td>
   </tr>
-  
   <tr>
     <td >
       <b>Ventaja competitiva ¿Que valor ofrece a los clientes?</b>
@@ -73,7 +69,6 @@ A continuacion se presenta un analisis competitivo de las empresas que ofrecen s
       <p>Enfoque en el servicio al cliente de alta calidad, con una variedad de opciones de vehiculos y soluciones tanto para clientes particulares como corporativos.
     </td>
   </tr>
-  
   <tr>
     <td rowspan="2" >
       <b>Perfil de Marketing</b>
@@ -98,7 +93,6 @@ A continuacion se presenta un analisis competitivo de las empresas que ofrecen s
       <p>Empresas que buscan alquileres a largo plazo o soluciones corporativas.
     </td>
   </tr>
-  
   <tr>
     <td >
       <b>Estrategias de marketing</b>
@@ -123,7 +117,6 @@ A continuacion se presenta un analisis competitivo de las empresas que ofrecen s
       <p>Programas de fidelizacion
     </td>
   </tr>
-  
   <tr>
     <td rowspan="3" >
       <b>Perfil de Producto</b>
@@ -150,7 +143,6 @@ A continuacion se presenta un analisis competitivo de las empresas que ofrecen s
       <p>Alquileres a largo plazo para clientes corporativos.
     </td>
   </tr>
-  
   <tr>
     <td >
       <b>Precios y Costos</b>
@@ -172,7 +164,6 @@ A continuacion se presenta un analisis competitivo de las empresas que ofrecen s
       <p>Altos costos operativos debido a la amplia infraestructura y mantenimiento de vehiculos.
     </td>
   </tr>
-  
   <tr>
     <td >
       <b>Canales de distribucion (Web y/o movil)</b>
@@ -192,13 +183,9 @@ A continuacion se presenta un analisis competitivo de las empresas que ofrecen s
       <p>Plataforma web, aplicacion movil, y oficinas fisicas en aeropuertos y centros comerciales.
     </td>
   </tr>
-  
   <tr>
     <td rowspan="5" >
       <p><b>Analisis SWOT</b>
-    </td>
-    <td colspan="5" >
-      <p>Realice esto para su startup y sus competidores. Sus fortalezas deberian apoyar sus oportunidades y contribuir a lo que ustedes definen como su posible ventaja competitiva.
     </td>
   </tr>
   <tr>
@@ -749,7 +736,7 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">No aplica por tratarse de una Epic.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -780,7 +767,7 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">No aplica por tratarse de una Epic.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -811,7 +798,7 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">No aplica por tratarse de una Epic.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -842,7 +829,7 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">No aplica por tratarse de una Epic.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -873,7 +860,7 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">No aplica por tratarse de una Epic.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -904,7 +891,7 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">No aplica por tratarse de una Epic.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -935,7 +922,7 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">No aplica por tratarse de una Epic.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -963,10 +950,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario no tiene una cuenta registrada, When ingresa datos válidos de registro, Then el sistema crea una nueva cuenta. <br> **AC2:** Given que el usuario ingresa datos incompletos o inválidos, When intenta registrarse, Then el sistema no crea la cuenta e informa que los datos deben corregirse.</td>
+    <td colspan="4">AC1: Given que el usuario no tiene una cuenta registrada, When ingresa datos válidos de registro, Then el sistema crea una nueva cuenta. <br> AC2: Given que el usuario ingresa datos incompletos o inválidos, When intenta registrarse, Then el sistema no crea la cuenta e informa que los datos deben corregirse.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -994,10 +981,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario tiene una cuenta registrada, When ingresa credenciales válidas, Then el sistema permite el acceso a la cuenta. <br> **AC2:** Given que el usuario ingresa credenciales incorrectas, When intenta iniciar sesión, Then el sistema rechaza el acceso.</td>
+    <td colspan="4">AC1: Given que el usuario tiene una cuenta registrada, When ingresa credenciales válidas, Then el sistema permite el acceso a la cuenta. <br> AC2: Given que el usuario ingresa credenciales incorrectas, When intenta iniciar sesión, Then el sistema rechaza el acceso.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1025,10 +1012,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario tiene una cuenta registrada, When solicita recuperar su contraseña, Then el sistema permite iniciar el proceso de recuperación. <br> **AC2:** Given que el usuario define una nueva contraseña válida, When confirma el cambio, Then el sistema actualiza la contraseña de la cuenta.</td>
+    <td colspan="4">AC1: Given que el usuario tiene una cuenta registrada, When solicita recuperar su contraseña, Then el sistema permite iniciar el proceso de recuperación. <br> AC2: Given que el usuario define una nueva contraseña válida, When confirma el cambio, Then el sistema actualiza la contraseña de la cuenta.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1056,10 +1043,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario se encuentra en el proceso de creación de cuenta, When selecciona un tipo de cuenta, Then el sistema registra el rol elegido. <br> **AC2:** Given que el usuario ya tiene un rol asignado, When accede a la plataforma, Then el sistema muestra las funcionalidades correspondientes a ese rol.</td>
+    <td colspan="4">AC1: Given que el usuario se encuentra en el proceso de creación de cuenta, When selecciona un tipo de cuenta, Then el sistema registra el rol elegido. <br> AC2: Given que el usuario ya tiene un rol asignado, When accede a la plataforma, Then el sistema muestra las funcionalidades correspondientes a ese rol.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1087,10 +1074,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario tiene una cuenta creada, When registra información válida de perfil, Then el sistema guarda dicha información. <br> **AC2:** Given que el usuario deja campos obligatorios incompletos, When intenta guardar el perfil, Then el sistema solicita completar la información requerida.</td>
+    <td colspan="4">AC1: Given que el usuario tiene una cuenta creada, When registra información válida de perfil, Then el sistema guarda dicha información. <br> AC2: Given que el usuario deja campos obligatorios incompletos, When intenta guardar el perfil, Then el sistema solicita completar la información requerida.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1118,10 +1105,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario desea completar su verificación, When carga documentos permitidos por el sistema, Then el sistema registra los documentos como recibidos. <br> **AC2:** Given que el usuario carga un archivo no permitido, When intenta enviarlo, Then el sistema rechaza el archivo.</td>
+    <td colspan="4">AC1: Given que el usuario desea completar su verificación, When carga documentos permitidos por el sistema, Then el sistema registra los documentos como recibidos. <br> AC2: Given que el usuario carga un archivo no permitido, When intenta enviarlo, Then el sistema rechaza el archivo.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1149,10 +1136,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario ha enviado información de verificación, When consulta su perfil, Then el sistema muestra el estado actual de la verificación. <br> **AC2:** Given que falta información de verificación, When el usuario consulta su estado, Then el sistema indica qué requisitos están pendientes.</td>
+    <td colspan="4">AC1: Given que el usuario ha enviado información de verificación, When consulta su perfil, Then el sistema muestra el estado actual de la verificación. <br> AC2: Given que falta información de verificación, When el usuario consulta su estado, Then el sistema indica qué requisitos están pendientes.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1180,10 +1167,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario ha iniciado sesión, When consulta su perfil, Then el sistema muestra su información registrada. <br> **AC2:** Given que el usuario tiene actividad en la plataforma, When consulta su perfil, Then el sistema muestra indicadores asociados a su cuenta.</td>
+    <td colspan="4">AC1: Given que el usuario ha iniciado sesión, When consulta su perfil, Then el sistema muestra su información registrada. <br> AC2: Given que el usuario tiene actividad en la plataforma, When consulta su perfil, Then el sistema muestra indicadores asociados a su cuenta.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1211,10 +1198,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario tiene una cuenta activa, When modifica datos válidos de su perfil, Then el sistema guarda los cambios. <br> **AC2:** Given que el usuario ingresa información inválida, When intenta guardar los cambios, Then el sistema no actualiza el perfil.</td>
+    <td colspan="4">AC1: Given que el usuario tiene una cuenta activa, When modifica datos válidos de su perfil, Then el sistema guarda los cambios. <br> AC2: Given que el usuario ingresa información inválida, When intenta guardar los cambios, Then el sistema no actualiza el perfil.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1242,10 +1229,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario tiene actividad registrada, When consulta su perfil, Then el sistema muestra indicadores como viajes, valoración o aceptación. <br> **AC2:** Given que el usuario no tiene actividad previa, When consulta sus indicadores, Then el sistema muestra valores iniciales.</td>
+    <td colspan="4">AC1: Given que el usuario tiene actividad registrada, When consulta su perfil, Then el sistema muestra indicadores como viajes, valoración o aceptación. <br> AC2: Given que el usuario no tiene actividad previa, When consulta sus indicadores, Then el sistema muestra valores iniciales.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1273,10 +1260,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el propietario tiene una cuenta activa, When registra los datos obligatorios del vehículo, Then el sistema crea el registro del vehículo. <br> **AC2:** Given que faltan datos obligatorios del vehículo, When el propietario intenta registrarlo, Then el sistema no guarda el registro.</td>
+    <td colspan="4">AC1: Given que el propietario tiene una cuenta activa, When registra los datos obligatorios del vehículo, Then el sistema crea el registro del vehículo. <br> AC2: Given que faltan datos obligatorios del vehículo, When el propietario intenta registrarlo, Then el sistema no guarda el registro.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1304,10 +1291,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el vehículo tiene información suficiente, When el propietario solicita publicarlo, Then el sistema cambia el vehículo a estado publicado. <br> **AC2:** Given que el vehículo tiene información incompleta, When el propietario intenta publicarlo, Then el sistema mantiene el vehículo sin publicar.</td>
+    <td colspan="4">AC1: Given que el vehículo tiene información suficiente, When el propietario solicita publicarlo, Then el sistema cambia el vehículo a estado publicado. <br> AC2: Given que el vehículo tiene información incompleta, When el propietario intenta publicarlo, Then el sistema mantiene el vehículo sin publicar.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1335,10 +1322,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el propietario tiene vehículos registrados, When consulta sus vehículos, Then el sistema muestra el listado correspondiente. <br> **AC2:** Given que el propietario no tiene vehículos registrados, When consulta sus vehículos, Then el sistema indica que no existen vehículos disponibles para mostrar.</td>
+    <td colspan="4">AC1: Given que el propietario tiene vehículos registrados, When consulta sus vehículos, Then el sistema muestra el listado correspondiente. <br> AC2: Given que el propietario no tiene vehículos registrados, When consulta sus vehículos, Then el sistema indica que no existen vehículos disponibles para mostrar.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1366,10 +1353,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el propietario tiene vehículos con diferentes estados, When aplica un filtro de estado, Then el sistema muestra solo los vehículos correspondientes. <br> **AC2:** Given que no existen vehículos en el estado seleccionado, When el propietario aplica el filtro, Then el sistema indica que no hay resultados.</td>
+    <td colspan="4">AC1: Given que el propietario tiene vehículos con diferentes estados, When aplica un filtro de estado, Then el sistema muestra solo los vehículos correspondientes. <br> AC2: Given que no existen vehículos en el estado seleccionado, When el propietario aplica el filtro, Then el sistema indica que no hay resultados.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1397,10 +1384,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el propietario tiene un vehículo registrado, When modifica datos válidos del vehículo, Then el sistema actualiza la información. <br> **AC2:** Given que el propietario ingresa datos inválidos, When intenta guardar los cambios, Then el sistema no actualiza el vehículo.</td>
+    <td colspan="4">AC1: Given que el propietario tiene un vehículo registrado, When modifica datos válidos del vehículo, Then el sistema actualiza la información. <br> AC2: Given que el propietario ingresa datos inválidos, When intenta guardar los cambios, Then el sistema no actualiza el vehículo.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1428,10 +1415,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el propietario tiene un vehículo publicado, When actualiza su disponibilidad, Then el sistema registra el nuevo estado. <br> **AC2:** Given que el vehículo no está disponible, When un arrendatario busca vehículos para ese periodo, Then el sistema no lo considera como disponible.</td>
+    <td colspan="4">AC1: Given que el propietario tiene un vehículo publicado, When actualiza su disponibilidad, Then el sistema registra el nuevo estado. <br> AC2: Given que el vehículo no está disponible, When un arrendatario busca vehículos para ese periodo, Then el sistema no lo considera como disponible.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1459,10 +1446,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el vehículo tiene reservas registradas, When el propietario consulta su rendimiento, Then el sistema muestra información asociada a ocupación, reservas e ingresos. <br> **AC2:** Given que el vehículo no tiene reservas registradas, When el propietario consulta su rendimiento, Then el sistema muestra valores iniciales.</td>
+    <td colspan="4">AC1: Given que el vehículo tiene reservas registradas, When el propietario consulta su rendimiento, Then el sistema muestra información asociada a ocupación, reservas e ingresos. <br> AC2: Given que el vehículo no tiene reservas registradas, When el propietario consulta su rendimiento, Then el sistema muestra valores iniciales.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1490,10 +1477,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que existen vehículos disponibles, When el arrendatario accede a la exploración, Then el sistema muestra opciones disponibles. <br> **AC2:** Given que no existen vehículos disponibles, When el arrendatario realiza la consulta, Then el sistema informa que no hay opciones para mostrar.</td>
+    <td colspan="4">AC1: Given que existen vehículos disponibles, When el arrendatario accede a la exploración, Then el sistema muestra opciones disponibles. <br> AC2: Given que no existen vehículos disponibles, When el arrendatario realiza la consulta, Then el sistema informa que no hay opciones para mostrar.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1521,10 +1508,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el arrendatario ingresa ubicación y fechas válidas, When realiza la búsqueda, Then el sistema muestra vehículos disponibles para esos criterios. <br> **AC2:** Given que las fechas ingresadas no son válidas, When el arrendatario realiza la búsqueda, Then el sistema no procesa la consulta.</td>
+    <td colspan="4">AC1: Given que el arrendatario ingresa ubicación y fechas válidas, When realiza la búsqueda, Then el sistema muestra vehículos disponibles para esos criterios. <br> AC2: Given que las fechas ingresadas no son válidas, When el arrendatario realiza la búsqueda, Then el sistema no procesa la consulta.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1552,10 +1539,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que existen resultados de búsqueda, When el arrendatario aplica filtros válidos, Then el sistema actualiza los resultados según los criterios seleccionados. <br> **AC2:** Given que el arrendatario aplica criterios sin coincidencias, When se actualizan los resultados, Then el sistema informa que no hay vehículos que cumplan dichos criterios.</td>
+    <td colspan="4">AC1: Given que existen resultados de búsqueda, When el arrendatario aplica filtros válidos, Then el sistema actualiza los resultados según los criterios seleccionados. <br> AC2: Given que el arrendatario aplica criterios sin coincidencias, When se actualizan los resultados, Then el sistema informa que no hay vehículos que cumplan dichos criterios.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1583,10 +1570,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que existen vehículos disponibles, When el arrendatario consulta los resultados, Then el sistema muestra información básica de cada vehículo. <br> **AC2:** Given que un vehículo no tiene información mínima registrada, When se muestran los resultados, Then el sistema no lo presenta como opción completa.</td>
+    <td colspan="4">AC1: Given que existen vehículos disponibles, When el arrendatario consulta los resultados, Then el sistema muestra información básica de cada vehículo. <br> AC2: Given que un vehículo no tiene información mínima registrada, When se muestran los resultados, Then el sistema no lo presenta como opción completa.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1614,10 +1601,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el vehículo está disponible, When el arrendatario consulta su detalle, Then el sistema muestra información completa del vehículo, propietario y condiciones de alquiler. <br> **AC2:** Given que el vehículo ya no está disponible, When el arrendatario consulta su detalle, Then el sistema informa su estado actualizado.</td>
+    <td colspan="4">AC1: Given que el vehículo está disponible, When el arrendatario consulta su detalle, Then el sistema muestra información completa del vehículo, propietario y condiciones de alquiler. <br> AC2: Given que el vehículo ya no está disponible, When el arrendatario consulta su detalle, Then el sistema informa su estado actualizado.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1645,10 +1632,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el arrendatario ha iniciado sesión, When guarda un vehículo como favorito, Then el sistema lo asocia a su cuenta. <br> **AC2:** Given que el vehículo ya se encuentra guardado como favorito, When el arrendatario intenta guardarlo nuevamente, Then el sistema mantiene un único registro.</td>
+    <td colspan="4">AC1: Given que el arrendatario ha iniciado sesión, When guarda un vehículo como favorito, Then el sistema lo asocia a su cuenta. <br> AC2: Given que el vehículo ya se encuentra guardado como favorito, When el arrendatario intenta guardarlo nuevamente, Then el sistema mantiene un único registro.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1676,10 +1663,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el vehículo está disponible para el periodo seleccionado, When el arrendatario inicia la reserva, Then el sistema genera una solicitud de reserva. <br> **AC2:** Given que el vehículo no está disponible para el periodo seleccionado, When el arrendatario intenta reservarlo, Then el sistema no permite iniciar la reserva.</td>
+    <td colspan="4">AC1: Given que el vehículo está disponible para el periodo seleccionado, When el arrendatario inicia la reserva, Then el sistema genera una solicitud de reserva. <br> AC2: Given que el vehículo no está disponible para el periodo seleccionado, When el arrendatario intenta reservarlo, Then el sistema no permite iniciar la reserva.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1707,10 +1694,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el arrendatario tiene una reserva en proceso, When revisa los datos, Then el sistema muestra vehículo, fechas, lugar y condiciones de la reserva. <br> **AC2:** Given que la reserva tiene datos incompletos, When el arrendatario intenta continuar, Then el sistema solicita completar la información pendiente.</td>
+    <td colspan="4">AC1: Given que el arrendatario tiene una reserva en proceso, When revisa los datos, Then el sistema muestra vehículo, fechas, lugar y condiciones de la reserva. <br> AC2: Given que la reserva tiene datos incompletos, When el arrendatario intenta continuar, Then el sistema solicita completar la información pendiente.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1738,10 +1725,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que existen coberturas disponibles, When el arrendatario selecciona una opción, Then el sistema la asocia a la reserva. <br> **AC2:** Given que el arrendatario cambia la cobertura seleccionada, When el sistema recalcula la reserva, Then actualiza el costo total.</td>
+    <td colspan="4">AC1: Given que existen coberturas disponibles, When el arrendatario selecciona una opción, Then el sistema la asocia a la reserva. <br> AC2: Given que el arrendatario cambia la cobertura seleccionada, When el sistema recalcula la reserva, Then actualiza el costo total.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1769,10 +1756,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que la reserva tiene fechas, vehículo y cobertura definidos, When el arrendatario consulta el resumen, Then el sistema calcula el total de la reserva. <br> **AC2:** Given que cambia un componente del cálculo, When el sistema actualiza la reserva, Then el total refleja el nuevo monto.</td>
+    <td colspan="4">AC1: Given que la reserva tiene fechas, vehículo y cobertura definidos, When el arrendatario consulta el resumen, Then el sistema calcula el total de la reserva. <br> AC2: Given que cambia un componente del cálculo, When el sistema actualiza la reserva, Then el total refleja el nuevo monto.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1800,10 +1787,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que la reserva tiene todos los datos requeridos, When el arrendatario confirma el pago, Then el sistema registra la reserva como confirmada. <br> **AC2:** Given que el pago no se completa correctamente, When el arrendatario intenta confirmar la reserva, Then el sistema no registra la reserva como confirmada.</td>
+    <td colspan="4">AC1: Given que la reserva tiene todos los datos requeridos, When el arrendatario confirma el pago, Then el sistema registra la reserva como confirmada. <br> AC2: Given que el pago no se completa correctamente, When el arrendatario intenta confirmar la reserva, Then el sistema no registra la reserva como confirmada.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1831,10 +1818,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el arrendatario tiene reservas registradas, When consulta sus reservas, Then el sistema las organiza según su estado. <br> **AC2:** Given que el arrendatario no tiene reservas registradas, When consulta sus reservas, Then el sistema informa que no hay reservas disponibles.</td>
+    <td colspan="4">AC1: Given que el arrendatario tiene reservas registradas, When consulta sus reservas, Then el sistema las organiza según su estado. <br> AC2: Given que el arrendatario no tiene reservas registradas, When consulta sus reservas, Then el sistema informa que no hay reservas disponibles.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1862,10 +1849,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el arrendatario tiene una reserva registrada, When consulta su detalle, Then el sistema muestra la información completa de la reserva. <br> **AC2:** Given que la reserva no pertenece al arrendatario, When intenta consultarla, Then el sistema no permite el acceso.</td>
+    <td colspan="4">AC1: Given que el arrendatario tiene una reserva registrada, When consulta su detalle, Then el sistema muestra la información completa de la reserva. <br> AC2: Given que la reserva no pertenece al arrendatario, When intenta consultarla, Then el sistema no permite el acceso.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1893,10 +1880,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que la reserva permite cancelación, When el arrendatario solicita cancelarla, Then el sistema actualiza el estado de la reserva. <br> **AC2:** Given que la reserva ya no permite cancelación, When el arrendatario solicita cancelarla, Then el sistema rechaza la solicitud.</td>
+    <td colspan="4">AC1: Given que la reserva permite cancelación, When el arrendatario solicita cancelarla, Then el sistema actualiza el estado de la reserva. <br> AC2: Given que la reserva ya no permite cancelación, When el arrendatario solicita cancelarla, Then el sistema rechaza la solicitud.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1924,10 +1911,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el arrendatario tiene reservas finalizadas, When consulta su historial, Then el sistema muestra las reservas pasadas. <br> **AC2:** Given que el arrendatario no tiene reservas finalizadas, When consulta su historial, Then el sistema informa que no hay reservas pasadas.</td>
+    <td colspan="4">AC1: Given que el arrendatario tiene reservas finalizadas, When consulta su historial, Then el sistema muestra las reservas pasadas. <br> AC2: Given que el arrendatario no tiene reservas finalizadas, When consulta su historial, Then el sistema informa que no hay reservas pasadas.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1955,10 +1942,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el propietario tiene una cuenta activa, When consulta su panel, Then el sistema muestra información resumida de su actividad. <br> **AC2:** Given que el propietario no tiene actividad registrada, When consulta su panel, Then el sistema muestra valores iniciales.</td>
+    <td colspan="4">AC1: Given que el propietario tiene una cuenta activa, When consulta su panel, Then el sistema muestra información resumida de su actividad. <br> AC2: Given que el propietario no tiene actividad registrada, When consulta su panel, Then el sistema muestra valores iniciales.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -1986,10 +1973,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que existen solicitudes pendientes para sus vehículos, When el propietario las consulta, Then el sistema muestra las solicitudes disponibles. <br> **AC2:** Given que no existen solicitudes pendientes, When el propietario realiza la consulta, Then el sistema informa que no hay solicitudes por revisar.</td>
+    <td colspan="4">AC1: Given que existen solicitudes pendientes para sus vehículos, When el propietario las consulta, Then el sistema muestra las solicitudes disponibles. <br> AC2: Given que no existen solicitudes pendientes, When el propietario realiza la consulta, Then el sistema informa que no hay solicitudes por revisar.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2017,10 +2004,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que existe una solicitud pendiente, When el propietario la acepta, Then el sistema actualiza la reserva como aceptada. <br> **AC2:** Given que existe una solicitud pendiente, When el propietario la rechaza, Then el sistema actualiza la reserva como rechazada.</td>
+    <td colspan="4">AC1: Given que existe una solicitud pendiente, When el propietario la acepta, Then el sistema actualiza la reserva como aceptada. <br> AC2: Given que existe una solicitud pendiente, When el propietario la rechaza, Then el sistema actualiza la reserva como rechazada.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2048,10 +2035,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que existen reservas activas para el día, When el propietario consulta su actividad, Then el sistema muestra dichas reservas. <br> **AC2:** Given que no existen reservas activas para el día, When el propietario realiza la consulta, Then el sistema informa que no hay reservas activas.</td>
+    <td colspan="4">AC1: Given que existen reservas activas para el día, When el propietario consulta su actividad, Then el sistema muestra dichas reservas. <br> AC2: Given que no existen reservas activas para el día, When el propietario realiza la consulta, Then el sistema informa que no hay reservas activas.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2079,10 +2066,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que una reserva está confirmada, When el propietario registra la entrega, Then el sistema actualiza el estado de la reserva. <br> **AC2:** Given que la reserva no está confirmada, When el propietario intenta registrar la entrega, Then el sistema no permite actualizarla como entregada.</td>
+    <td colspan="4">AC1: Given que una reserva está confirmada, When el propietario registra la entrega, Then el sistema actualiza el estado de la reserva. <br> AC2: Given que la reserva no está confirmada, When el propietario intenta registrar la entrega, Then el sistema no permite actualizarla como entregada.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2110,10 +2097,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que existe una reserva asociada al propietario, When inicia la comunicación con el arrendatario, Then el sistema crea o abre una conversación asociada. <br> **AC2:** Given que la reserva no pertenece al propietario, When intenta contactar al arrendatario, Then el sistema no permite la acción.</td>
+    <td colspan="4">AC1: Given que existe una reserva asociada al propietario, When inicia la comunicación con el arrendatario, Then el sistema crea o abre una conversación asociada. <br> AC2: Given que la reserva no pertenece al propietario, When intenta contactar al arrendatario, Then el sistema no permite la acción.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2141,10 +2128,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario tiene conversaciones registradas, When consulta sus mensajes, Then el sistema muestra sus conversaciones. <br> **AC2:** Given que el usuario no tiene conversaciones registradas, When consulta sus mensajes, Then el sistema informa que no hay conversaciones disponibles.</td>
+    <td colspan="4">AC1: Given que el usuario tiene conversaciones registradas, When consulta sus mensajes, Then el sistema muestra sus conversaciones. <br> AC2: Given que el usuario no tiene conversaciones registradas, When consulta sus mensajes, Then el sistema informa que no hay conversaciones disponibles.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2172,10 +2159,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario tiene conversaciones registradas, When aplica un filtro válido, Then el sistema muestra las conversaciones correspondientes. <br> **AC2:** Given que no existen conversaciones que cumplan el filtro, When el usuario aplica el criterio, Then el sistema informa que no hay resultados.</td>
+    <td colspan="4">AC1: Given que el usuario tiene conversaciones registradas, When aplica un filtro válido, Then el sistema muestra las conversaciones correspondientes. <br> AC2: Given que no existen conversaciones que cumplan el filtro, When el usuario aplica el criterio, Then el sistema informa que no hay resultados.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2203,10 +2190,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario tiene una conversación existente, When la consulta, Then el sistema muestra los mensajes asociados. <br> **AC2:** Given que la conversación no pertenece al usuario, When intenta consultarla, Then el sistema no permite el acceso.</td>
+    <td colspan="4">AC1: Given que el usuario tiene una conversación existente, When la consulta, Then el sistema muestra los mensajes asociados. <br> AC2: Given que la conversación no pertenece al usuario, When intenta consultarla, Then el sistema no permite el acceso.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2234,10 +2221,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario tiene una conversación activa, When envía un mensaje válido, Then el sistema lo registra en la conversación. <br> **AC2:** Given que el mensaje está vacío o no es válido, When el usuario intenta enviarlo, Then el sistema no registra el mensaje.</td>
+    <td colspan="4">AC1: Given que el usuario tiene una conversación activa, When envía un mensaje válido, Then el sistema lo registra en la conversación. <br> AC2: Given que el mensaje está vacío o no es válido, When el usuario intenta enviarlo, Then el sistema no registra el mensaje.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2265,10 +2252,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario tiene una consulta o inconveniente, When contacta al soporte, Then el sistema registra una conversación o solicitud de soporte. <br> **AC2:** Given que la solicitud no contiene información mínima, When el usuario intenta enviarla, Then el sistema solicita completar la información requerida.</td>
+    <td colspan="4">AC1: Given que el usuario tiene una consulta o inconveniente, When contacta al soporte, Then el sistema registra una conversación o solicitud de soporte. <br> AC2: Given que la solicitud no contiene información mínima, When el usuario intenta enviarla, Then el sistema solicita completar la información requerida.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2296,10 +2283,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que la reserva tiene un monto calculado, When el arrendatario realiza el pago, Then el sistema registra la operación. <br> **AC2:** Given que el pago no se completa, When el arrendatario intenta finalizar la reserva, Then el sistema mantiene la reserva sin pago confirmado.</td>
+    <td colspan="4">AC1: Given que la reserva tiene un monto calculado, When el arrendatario realiza el pago, Then el sistema registra la operación. <br> AC2: Given que el pago no se completa, When el arrendatario intenta finalizar la reserva, Then el sistema mantiene la reserva sin pago confirmado.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2327,10 +2314,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que existe un pago registrado, When el arrendatario consulta el resumen, Then el sistema muestra el monto y conceptos asociados. <br> **AC2:** Given que no existe pago confirmado, When el arrendatario consulta el resumen, Then el sistema indica que no hay pago registrado.</td>
+    <td colspan="4">AC1: Given que existe un pago registrado, When el arrendatario consulta el resumen, Then el sistema muestra el monto y conceptos asociados. <br> AC2: Given que no existe pago confirmado, When el arrendatario consulta el resumen, Then el sistema indica que no hay pago registrado.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2358,10 +2345,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el propietario tiene reservas pagadas, When consulta sus ganancias, Then el sistema muestra el saldo acumulado. <br> **AC2:** Given que el propietario no tiene reservas pagadas, When consulta sus ganancias, Then el sistema muestra saldo cero.</td>
+    <td colspan="4">AC1: Given que el propietario tiene reservas pagadas, When consulta sus ganancias, Then el sistema muestra el saldo acumulado. <br> AC2: Given que el propietario no tiene reservas pagadas, When consulta sus ganancias, Then el sistema muestra saldo cero.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2389,10 +2376,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que un vehículo tiene reservas pagadas, When el propietario consulta ingresos por vehículo, Then el sistema muestra los montos asociados. <br> **AC2:** Given que un vehículo no tiene reservas pagadas, When se consulta su ingreso, Then el sistema muestra valores iniciales.</td>
+    <td colspan="4">AC1: Given que un vehículo tiene reservas pagadas, When el propietario consulta ingresos por vehículo, Then el sistema muestra los montos asociados. <br> AC2: Given que un vehículo no tiene reservas pagadas, When se consulta su ingreso, Then el sistema muestra valores iniciales.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2420,10 +2407,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que existen movimientos registrados, When el propietario consulta sus movimientos, Then el sistema muestra el historial correspondiente. <br> **AC2:** Given que no existen movimientos registrados, When el propietario realiza la consulta, Then el sistema informa que no hay movimientos disponibles.</td>
+    <td colspan="4">AC1: Given que existen movimientos registrados, When el propietario consulta sus movimientos, Then el sistema muestra el historial correspondiente. <br> AC2: Given que no existen movimientos registrados, When el propietario realiza la consulta, Then el sistema informa que no hay movimientos disponibles.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2451,10 +2438,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el propietario tiene saldo disponible, When solicita un retiro, Then el sistema registra la solicitud. <br> **AC2:** Given que el propietario no tiene saldo suficiente, When intenta solicitar un retiro, Then el sistema rechaza la solicitud.</td>
+    <td colspan="4">AC1: Given que el propietario tiene saldo disponible, When solicita un retiro, Then el sistema registra la solicitud. <br> AC2: Given que el propietario no tiene saldo suficiente, When intenta solicitar un retiro, Then el sistema rechaza la solicitud.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2482,10 +2469,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que una reserva cambia de estado, When el sistema registra el cambio, Then notifica al usuario correspondiente. <br> **AC2:** Given que no existen cambios en la reserva, When el usuario consulta sus notificaciones, Then el sistema no genera nuevas alertas.</td>
+    <td colspan="4">AC1: Given que una reserva cambia de estado, When el sistema registra el cambio, Then notifica al usuario correspondiente. <br> AC2: Given que no existen cambios en la reserva, When el usuario consulta sus notificaciones, Then el sistema no genera nuevas alertas.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2513,10 +2500,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario recibe un nuevo mensaje, When el sistema lo registra, Then genera una notificación asociada. <br> **AC2:** Given que el usuario ya revisó el mensaje, When consulta sus notificaciones, Then el sistema actualiza el estado de lectura.</td>
+    <td colspan="4">AC1: Given que el usuario recibe un nuevo mensaje, When el sistema lo registra, Then genera una notificación asociada. <br> AC2: Given que el usuario ya revisó el mensaje, When consulta sus notificaciones, Then el sistema actualiza el estado de lectura.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2544,10 +2531,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el usuario tiene una reserva registrada, When reporta un problema con información válida, Then el sistema registra el reporte. <br> **AC2:** Given que el reporte no tiene información suficiente, When el usuario intenta enviarlo, Then el sistema solicita completar los datos requeridos.</td>
+    <td colspan="4">AC1: Given que el usuario tiene una reserva registrada, When reporta un problema con información válida, Then el sistema registra el reporte. <br> AC2: Given que el reporte no tiene información suficiente, When el usuario intenta enviarlo, Then el sistema solicita completar los datos requeridos.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2575,10 +2562,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el visitante accede al sitio web, When carga la página informativa, Then el sistema presenta información general sobre Rent2Go. <br> **AC2:** Given que el visitante navega el contenido, When revisa la información disponible, Then puede comprender el servicio ofrecido por la plataforma.</td>
+    <td colspan="4">AC1: Given que el visitante accede al sitio web, When carga la página informativa, Then el sistema presenta información general sobre Rent2Go. <br> AC2: Given que el visitante navega el contenido, When revisa la información disponible, Then puede comprender el servicio ofrecido por la plataforma.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2606,10 +2593,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el visitante revisa la información del sitio web, When consulta los beneficios del servicio, Then el sistema presenta contenido diferenciado para arrendatarios y propietarios. <br> **AC2:** Given que el visitante pertenece a un segmento específico, When revisa el contenido correspondiente, Then encuentra información relacionada con sus necesidades.</td>
+    <td colspan="4">AC1: Given que el visitante revisa la información del sitio web, When consulta los beneficios del servicio, Then el sistema presenta contenido diferenciado para arrendatarios y propietarios. <br> AC2: Given que el visitante pertenece a un segmento específico, When revisa el contenido correspondiente, Then encuentra información relacionada con sus necesidades.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2637,10 +2624,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el visitante desea usar la plataforma, When selecciona una opción de acceso, Then el sistema lo dirige al flujo correspondiente. <br> **AC2:** Given que el visitante no tiene cuenta, When decide registrarse, Then el sistema inicia el proceso de creación de cuenta.</td>
+    <td colspan="4">AC1: Given que el visitante desea usar la plataforma, When selecciona una opción de acceso, Then el sistema lo dirige al flujo correspondiente. <br> AC2: Given que el visitante no tiene cuenta, When decide registrarse, Then el sistema inicia el proceso de creación de cuenta.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2668,10 +2655,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el visitante necesita información adicional, When consulta la sección de contacto, Then el sistema presenta los canales disponibles. <br> **AC2:** Given que el visitante desea comunicarse con Rent2Go, When utiliza la información de contacto, Then puede identificar el canal correspondiente.</td>
+    <td colspan="4">AC1: Given que el visitante necesita información adicional, When consulta la sección de contacto, Then el sistema presenta los canales disponibles. <br> AC2: Given que el visitante desea comunicarse con Rent2Go, When utiliza la información de contacto, Then puede identificar el canal correspondiente.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2699,10 +2686,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el cliente envía una solicitud de registro con datos válidos, When el API procesa la solicitud, Then responde con estado exitoso y crea el usuario. <br> **AC2:** Given que el cliente envía credenciales válidas, When el API procesa el inicio de sesión, Then responde con un token o sesión válida. <br> **AC3:** Given que el cliente envía credenciales inválidas, When el API procesa la solicitud, Then responde con un error de autenticación.</td>
+    <td colspan="4">AC1: Given que el cliente envía una solicitud de registro con datos válidos, When el API procesa la solicitud, Then responde con estado exitoso y crea el usuario. <br> AC2: Given que el cliente envía credenciales válidas, When el API procesa el inicio de sesión, Then responde con un token o sesión válida. <br> **AC3:** Given que el cliente envía credenciales inválidas, When el API procesa la solicitud, Then responde con un error de autenticación.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2730,10 +2717,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el cliente envía una solicitud de consulta con un usuario autenticado, When el API procesa la solicitud, Then responde con la información del perfil. <br> **AC2:** Given que el cliente envía datos válidos de actualización, When el API procesa la solicitud, Then actualiza el perfil y responde con la información modificada. <br> **AC3:** Given que el cliente envía datos inválidos, When el API procesa la solicitud, Then responde con un mensaje de validación.</td>
+    <td colspan="4">AC1: Given que el cliente envía una solicitud de consulta con un usuario autenticado, When el API procesa la solicitud, Then responde con la información del perfil. <br> AC2: Given que el cliente envía datos válidos de actualización, When el API procesa la solicitud, Then actualiza el perfil y responde con la información modificada. <br> **AC3:** Given que el cliente envía datos inválidos, When el API procesa la solicitud, Then responde con un mensaje de validación.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2761,10 +2748,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el cliente envía un archivo permitido, When el API procesa la carga, Then registra el documento como recibido. <br> **AC2:** Given que el cliente envía un archivo no permitido, When el API procesa la carga, Then responde con un error de formato. <br> **AC3:** Given que un usuario consulta su estado de verificación, When el API procesa la solicitud, Then responde con los documentos registrados y pendientes.</td>
+    <td colspan="4">AC1: Given que el cliente envía un archivo permitido, When el API procesa la carga, Then registra el documento como recibido. <br> AC2: Given que el cliente envía un archivo no permitido, When el API procesa la carga, Then responde con un error de formato. <br> **AC3:** Given que un usuario consulta su estado de verificación, When el API procesa la solicitud, Then responde con los documentos registrados y pendientes.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2792,10 +2779,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el cliente envía datos válidos de un vehículo, When el API procesa la creación, Then registra el vehículo correctamente. <br> **AC2:** Given que el cliente solicita los vehículos de un propietario, When el API procesa la consulta, Then responde con el listado correspondiente. <br> **AC3:** Given que el cliente envía datos válidos de edición, When el API procesa la actualización, Then modifica la información del vehículo.</td>
+    <td colspan="4">AC1: Given que el cliente envía datos válidos de un vehículo, When el API procesa la creación, Then registra el vehículo correctamente. <br> AC2: Given que el cliente solicita los vehículos de un propietario, When el API procesa la consulta, Then responde con el listado correspondiente. <br> **AC3:** Given que el cliente envía datos válidos de edición, When el API procesa la actualización, Then modifica la información del vehículo.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2823,10 +2810,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el cliente envía ubicación y fechas válidas, When el API procesa la búsqueda, Then responde con vehículos disponibles. <br> **AC2:** Given que el cliente envía filtros válidos, When el API procesa la consulta, Then responde con resultados filtrados. <br> **AC3:** Given que no existen vehículos que cumplan los criterios, When el API procesa la búsqueda, Then responde con una lista vacía y estado exitoso.</td>
+    <td colspan="4">AC1: Given que el cliente envía ubicación y fechas válidas, When el API procesa la búsqueda, Then responde con vehículos disponibles. <br> AC2: Given que el cliente envía filtros válidos, When el API procesa la consulta, Then responde con resultados filtrados. <br> **AC3:** Given que no existen vehículos que cumplan los criterios, When el API procesa la búsqueda, Then responde con una lista vacía y estado exitoso.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2854,10 +2841,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el cliente envía una solicitud para guardar un vehículo favorito, When el API procesa la solicitud, Then asocia el vehículo a la cuenta del arrendatario. <br> **AC2:** Given que el vehículo ya está marcado como favorito, When el API recibe la misma solicitud, Then mantiene un único registro. <br> **AC3:** Given que el cliente solicita sus favoritos, When el API procesa la consulta, Then responde con el listado correspondiente.</td>
+    <td colspan="4">AC1: Given que el cliente envía una solicitud para guardar un vehículo favorito, When el API procesa la solicitud, Then asocia el vehículo a la cuenta del arrendatario. <br> AC2: Given que el vehículo ya está marcado como favorito, When el API recibe la misma solicitud, Then mantiene un único registro. <br> **AC3:** Given que el cliente solicita sus favoritos, When el API procesa la consulta, Then responde con el listado correspondiente.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2885,10 +2872,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el cliente envía una solicitud de reserva válida, When el API procesa la solicitud, Then crea una reserva con estado inicial. <br> **AC2:** Given que el cliente consulta reservas de un usuario autenticado, When el API procesa la solicitud, Then responde con las reservas correspondientes. <br> **AC3:** Given que el cliente solicita cancelar una reserva permitida, When el API procesa la solicitud, Then actualiza el estado de la reserva.</td>
+    <td colspan="4">AC1: Given que el cliente envía una solicitud de reserva válida, When el API procesa la solicitud, Then crea una reserva con estado inicial. <br> AC2: Given que el cliente consulta reservas de un usuario autenticado, When el API procesa la solicitud, Then responde con las reservas correspondientes. <br> **AC3:** Given que el cliente solicita cancelar una reserva permitida, When el API procesa la solicitud, Then actualiza el estado de la reserva.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2916,10 +2903,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el cliente envía fechas, vehículo y cobertura válidos, When el servicio calcula la tarifa, Then responde con el desglose del monto total. <br> **AC2:** Given que cambia un componente de la reserva, When el servicio recalcula la tarifa, Then responde con el nuevo monto actualizado. <br> **AC3:** Given que faltan datos obligatorios para el cálculo, When el servicio procesa la solicitud, Then responde con un error de validación.</td>
+    <td colspan="4">AC1: Given que el cliente envía fechas, vehículo y cobertura válidos, When el servicio calcula la tarifa, Then responde con el desglose del monto total. <br> AC2: Given que cambia un componente de la reserva, When el servicio recalcula la tarifa, Then responde con el nuevo monto actualizado. <br> **AC3:** Given que faltan datos obligatorios para el cálculo, When el servicio procesa la solicitud, Then responde con un error de validación.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2947,10 +2934,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el cliente envía una solicitud de pago válida, When el API procesa la operación, Then registra el pago como aprobado. <br> **AC2:** Given que el cliente envía una solicitud de pago inválida, When el API procesa la operación, Then responde con un error de pago. <br> **AC3:** Given que una reserva tiene un pago aprobado, When el API actualiza la reserva, Then la reserva queda registrada como confirmada.</td>
+    <td colspan="4">AC1: Given que el cliente envía una solicitud de pago válida, When el API procesa la operación, Then registra el pago como aprobado. <br> AC2: Given que el cliente envía una solicitud de pago inválida, When el API procesa la operación, Then responde con un error de pago. <br> **AC3:** Given que una reserva tiene un pago aprobado, When el API actualiza la reserva, Then la reserva queda registrada como confirmada.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -2978,10 +2965,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el cliente solicita conversaciones de un usuario autenticado, When el API procesa la consulta, Then responde con las conversaciones correspondientes. <br> **AC2:** Given que el cliente envía un mensaje válido, When el API procesa la solicitud, Then registra el mensaje en la conversación. <br> **AC3:** Given que el cliente intenta consultar una conversación ajena, When el API procesa la solicitud, Then responde con acceso denegado.</td>
+    <td colspan="4">AC1: Given que el cliente solicita conversaciones de un usuario autenticado, When el API procesa la consulta, Then responde con las conversaciones correspondientes. <br> AC2: Given que el cliente envía un mensaje válido, When el API procesa la solicitud, Then registra el mensaje en la conversación. <br> **AC3:** Given que el cliente intenta consultar una conversación ajena, When el API procesa la solicitud, Then responde con acceso denegado.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -3009,10 +2996,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que una reserva cambia de estado, When el sistema procesa el cambio, Then registra una notificación para el usuario correspondiente. <br> **AC2:** Given que un usuario recibe un mensaje nuevo, When el sistema registra el mensaje, Then crea una notificación asociada. <br> **AC3:** Given que el cliente consulta sus notificaciones, When el API procesa la solicitud, Then responde con las notificaciones del usuario autenticado.</td>
+    <td colspan="4">AC1: Given que una reserva cambia de estado, When el sistema procesa el cambio, Then registra una notificación para el usuario correspondiente. <br> AC2: Given que un usuario recibe un mensaje nuevo, When el sistema registra el mensaje, Then crea una notificación asociada. <br> **AC3:** Given que el cliente consulta sus notificaciones, When el API procesa la solicitud, Then responde con las notificaciones del usuario autenticado.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -3040,10 +3027,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el propietario tiene reservas pagadas, When el API calcula sus ganancias, Then responde con el saldo acumulado. <br> **AC2:** Given que el propietario consulta ingresos por vehículo, When el API procesa la solicitud, Then responde con los montos asociados a cada vehículo. <br> **AC3:** Given que no existen reservas pagadas, When el API procesa la consulta, Then responde con saldo cero.</td>
+    <td colspan="4">AC1: Given que el propietario tiene reservas pagadas, When el API calcula sus ganancias, Then responde con el saldo acumulado. <br> AC2: Given que el propietario consulta ingresos por vehículo, When el API procesa la solicitud, Then responde con los montos asociados a cada vehículo. <br> **AC3:** Given que no existen reservas pagadas, When el API procesa la consulta, Then responde con saldo cero.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -3071,10 +3058,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el sitio web estático está construido, When se realiza el despliegue, Then la landing page queda disponible desde una URL pública o entorno definido. <br> **AC2:** Given que el visitante accede a la URL del sitio, When el servidor responde la solicitud, Then entrega el contenido de la landing page correctamente. <br> **AC3:** Given que ocurre un error de carga, When el sistema registra el evento, Then permite identificar el problema técnico.</td>
+    <td colspan="4">AC1: Given que el sitio web estático está construido, When se realiza el despliegue, Then la landing page queda disponible desde una URL pública o entorno definido. <br> AC2: Given que el visitante accede a la URL del sitio, When el servidor responde la solicitud, Then entrega el contenido de la landing page correctamente. <br> **AC3:** Given que ocurre un error de carga, When el sistema registra el evento, Then permite identificar el problema técnico.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -3102,10 +3089,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que una solicitud tiene datos inválidos, When el API procesa la solicitud, Then responde con un código de error y mensaje descriptivo. <br> **AC2:** Given que una solicitud no está autorizada, When el API procesa la solicitud, Then responde con un error de acceso. <br> **AC3:** Given que ocurre un error interno, When el API procesa la solicitud, Then responde con un mensaje controlado sin exponer información sensible.</td>
+    <td colspan="4">AC1: Given que una solicitud tiene datos inválidos, When el API procesa la solicitud, Then responde con un código de error y mensaje descriptivo. <br> AC2: Given que una solicitud no está autorizada, When el API procesa la solicitud, Then responde con un error de acceso. <br> **AC3:** Given que ocurre un error interno, When el API procesa la solicitud, Then responde con un mensaje controlado sin exponer información sensible.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -3133,10 +3120,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el equipo necesita definir el enfoque de pagos, When se investigan alternativas técnicas, Then se documentan opciones, ventajas, limitaciones y riesgos. <br> **AC2:** Given que se evalúa la complejidad de integración, When se comparan las alternativas, Then se recomienda una opción viable para el alcance del proyecto. <br> **AC3:** Given que finaliza la investigación, When se entrega el resultado, Then existe un documento con conclusiones técnicas.</td>
+    <td colspan="4">AC1: Given que el equipo necesita definir el enfoque de pagos, When se investigan alternativas técnicas, Then se documentan opciones, ventajas, limitaciones y riesgos. <br> AC2: Given que se evalúa la complejidad de integración, When se comparan las alternativas, Then se recomienda una opción viable para el alcance del proyecto. <br> **AC3:** Given que finaliza la investigación, When se entrega el resultado, Then existe un documento con conclusiones técnicas.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -3164,10 +3151,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el flujo de búsqueda requiere ubicación, When se investigan servicios de mapas, Then se documentan alternativas disponibles. <br> **AC2:** Given que se realiza una prueba técnica, When se valida la visualización de ubicaciones, Then se obtiene un prototipo básico o evidencia de funcionamiento. <br> **AC3:** Given que finaliza la evaluación, When se comparan las alternativas, Then se define la opción recomendada para el proyecto.</td>
+    <td colspan="4">AC1: Given que el flujo de búsqueda requiere ubicación, When se investigan servicios de mapas, Then se documentan alternativas disponibles. <br> AC2: Given que se realiza una prueba técnica, When se valida la visualización de ubicaciones, Then se obtiene un prototipo básico o evidencia de funcionamiento. <br> **AC3:** Given que finaliza la evaluación, When se comparan las alternativas, Then se define la opción recomendada para el proyecto.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -3195,10 +3182,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el sistema requiere cargar archivos, When se investigan opciones de almacenamiento, Then se documentan costos, complejidad y restricciones. <br> **AC2:** Given que se realiza una prueba de carga, When se sube un archivo de ejemplo, Then se verifica que pueda almacenarse y consultarse. <br> **AC3:** Given que finaliza el spike, When se entrega el resultado, Then existe una recomendación técnica documentada.</td>
+    <td colspan="4">AC1: Given que el sistema requiere cargar archivos, When se investigan opciones de almacenamiento, Then se documentan costos, complejidad y restricciones. <br> AC2: Given que se realiza una prueba de carga, When se sube un archivo de ejemplo, Then se verifica que pueda almacenarse y consultarse. <br> **AC3:** Given que finaliza el spike, When se entrega el resultado, Then existe una recomendación técnica documentada.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -3226,10 +3213,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el sistema requiere comunicación entre usuarios, When se analizan alternativas de mensajería, Then se documentan opciones técnicas posibles. <br> **AC2:** Given que se compara tiempo real frente a mensajería simulada, When se evalúa el esfuerzo de implementación, Then se identifica la alternativa más viable. <br> **AC3:** Given que finaliza el análisis, When se presentan las conclusiones, Then el equipo cuenta con una recomendación para implementar la mensajería.</td>
+    <td colspan="4">AC1: Given que el sistema requiere comunicación entre usuarios, When se analizan alternativas de mensajería, Then se documentan opciones técnicas posibles. <br> AC2: Given que se compara tiempo real frente a mensajería simulada, When se evalúa el esfuerzo de implementación, Then se identifica la alternativa más viable. <br> **AC3:** Given que finaliza el análisis, When se presentan las conclusiones, Then el equipo cuenta con una recomendación para implementar la mensajería.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -3257,10 +3244,10 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el sistema requiere alertas de reserva y mensajes, When se investigan servicios de notificaciones, Then se documentan alternativas técnicas. <br> **AC2:** Given que se realiza una prueba técnica, When se envía una notificación de prueba, Then se valida si puede recibirse en el entorno definido. <br> **AC3:** Given que finaliza el spike, When se revisan los resultados, Then el equipo decide si implementa notificaciones reales o simuladas.</td>
+    <td colspan="4">AC1: Given que el sistema requiere alertas de reserva y mensajes, When se investigan servicios de notificaciones, Then se documentan alternativas técnicas. <br> AC2: Given que se realiza una prueba técnica, When se envía una notificación de prueba, Then se valida si puede recibirse en el entorno definido. <br> **AC3:** Given que finaliza el spike, When se revisan los resultados, Then el equipo decide si implementa notificaciones reales o simuladas.</td>
   </tr>
 </table>
-
+<br>
 <table>
   <tr>
     <th>Story ID</th>
@@ -3288,7 +3275,7 @@ Esta sección presenta el conjunto de épicas, historias de usuario, historias t
     <td colspan="4">Acceptance Criteria</td>
   </tr>
   <tr>
-    <td colspan="4">**AC1:** Given que el sistema requiere múltiples módulos, When se analiza el modelo de datos, Then se documentan entidades, relaciones y principales endpoints. <br> **AC2:** Given que se revisa la arquitectura propuesta, When se valida con los flujos principales, Then se confirma que soporta las funcionalidades del MVP. <br> **AC3:** Given que finaliza el análisis, When se entrega el resultado, Then existe un diseño técnico documentado para guiar la implementación.</td>
+    <td colspan="4">AC1: Given que el sistema requiere múltiples módulos, When se analiza el modelo de datos, Then se documentan entidades, relaciones y principales endpoints. <br> AC2: Given que se revisa la arquitectura propuesta, When se valida con los flujos principales, Then se confirma que soporta las funcionalidades del MVP. <br> **AC3:** Given que finaliza el análisis, When se entrega el resultado, Then existe un diseño técnico documentado para guiar la implementación.</td>
   </tr>
 </table>
 
@@ -3339,84 +3326,84 @@ A continuación, se definen los Requisitos No Funcionales (RNF) organizados bajo
 
 ### 2.4.5. Product Backlog
 
-| # Orden | User Story Id | Título                                                  | Story Points | Clasificación | Sprint |
-| ------: | ------------- | ------------------------------------------------------- | -----------: | :---: | :---: |
-|       1 | SP06          | Definir arquitectura del backend y base de datos        |            5 | Core | Sprint 1 |
-|       2 | TS14          | Estandarizar respuestas de error del API                |            3 | Core | Sprint 1 |
-|       3 | US01          | Registrar usuario                                       |            3 | Core | Sprint 2 |
-|       4 | US02          | Iniciar sesión                                          |            3 | Core | Sprint 2 |
-|       5 | TS01          | Implementar API de autenticación                        |            5 | Core | Sprint 2 |
-|       6 | US04          | Seleccionar tipo de cuenta                              |            2 | Core | Sprint 2 |
-|       7 | US05          | Completar perfil de usuario                             |            3 | Normal | Sprint 2 |
-|       8 | US08          | Ver perfil de usuario                                   |            2 | Normal | Sprint 2 |
-|       9 | US09          | Editar información del perfil                           |            3 | Normal | Sprint 2 |
-|      10 | TS02          | Implementar API de perfil de usuario                    |            5 | Normal | Sprint 2 |
-|      11 | SP03          | Evaluar almacenamiento de imágenes y documentos         |            3 | Core | Sprint 2 |
-|      12 | US06          | Subir documentos de verificación                        |            5 | Core | Sprint 2 |
-|      13 | US07          | Consultar estado de verificación                        |            3 | Core | Sprint 2 |
-|      14 | TS03          | Implementar API de documentos de verificación           |            5 | Core | Sprint 2 |
-|      15 | US10          | Ver indicadores del perfil                              |            3 | Normal | Sprint 2 |
-|      16 | US18          | Explorar vehículos disponibles                          |            5 | Core | Sprint 1 |
-|      17 | US19          | Buscar vehículos por ubicación y fechas                 |            5 | Core | Sprint 1 |
-|      18 | US20          | Filtrar y ordenar vehículos disponibles                 |            5 | Core | Sprint 1 |
-|      19 | US22          | Ver detalle de vehículo                                 |            5 | Core | Sprint 1 |
-|      20 | US23          | Guardar vehículo como favorito                          |            3 | Normal | Sprint 1 |
-|      21 | TS05          | Implementar API de búsqueda de vehículos                |            8 | Core | Sprint 1 |
-|      22 | TS06          | Implementar API de favoritos                            |            5 | Normal | Sprint 1 |
-|      23 | US11          | Registrar vehículo para alquiler                        |            5 | Core | Sprint 2 |
-|      24 | US12          | Publicar vehículo                                       |            5 | Core | Sprint 2 |
-|      25 | US13          | Ver mis vehículos publicados                            |            3 | Normal | Sprint 2 |
-|      26 | TS04          | Implementar API de vehículos                            |            8 | Core | Sprint 2 |
-|      27 | US15          | Editar información de vehículo                          |            5 | Normal | Sprint 2 |
-|      28 | US16          | Gestionar disponibilidad del vehículo                   |            5 | Core | Sprint 2 |
-|      29 | US14          | Filtrar vehículos por estado                            |            3 | Normal | Sprint 2 |
-|      30 | US17          | Consultar rendimiento de vehículo                       |            5 | Normal | Sprint 2 |
-|      31 | SP02          | Evaluar integración de mapas y ubicación                |            5 | Core | Sprint 1 |
-|      32 | US21          | Ver resumen de vehículo disponible                      |            3 | Core | Sprint 1 |
-|      33 | US24          | Iniciar reserva de vehículo                             |            5 | Core | Sprint 2 |
-|      34 | US25          | Confirmar datos de reserva                              |            3 | Core | Sprint 2 |
-|      35 | US26          | Seleccionar cobertura de reserva                        |            3 | Core | Sprint 2 |
-|      36 | US27          | Visualizar cálculo total de reserva                     |            5 | Core | Sprint 2 |
-|      37 | TS08          | Implementar servicio de cálculo de tarifa               |            5 | Core | Sprint 2 |
-|      38 | SP01          | Investigar integración de pasarela de pagos             |            3 | Core | Sprint 2 |
-|      39 | US28          | Confirmar y pagar reserva                               |            8 | Core | Sprint 3 |
-|      40 | TS09          | Implementar API de pagos simulados                      |            5 | Core | Sprint 3 |
-|      41 | US44          | Registrar pago de reserva                               |            5 | Core | Sprint 3 |
-|      42 | US45          | Ver resumen de pago                                     |            3 | Core | Sprint 3 |
-|      43 | US29          | Ver mis reservas organizadas por estado                 |            5 | Core | Sprint 3 |
-|      44 | US30          | Ver detalle de una reserva                              |            3 | Core | Sprint 3 |
-|      45 | US31          | Cancelar reserva                                        |            3 | Core | Sprint 3 |
-|      46 | US32          | Ver historial de reservas pasadas                       |            3 | Normal | Sprint 3 |
-|      47 | TS07          | Implementar API de reservas                             |            8 | Core | Sprint 3 |
-|      48 | US33          | Ver panel de control del propietario                    |            5 | Core | Sprint 3 |
-|      49 | US34          | Ver solicitudes de reserva pendientes                   |            5 | Core | Sprint 3 |
-|      50 | US35          | Aceptar o rechazar solicitud de reserva                 |            5 | Core | Sprint 3 |
-|      51 | US36          | Ver reservas activas del día                            |            3 | Core | Sprint 3 |
-|      52 | US37          | Registrar entrega de vehículo                           |            3 | Core | Sprint 3 |
-|      53 | US38          | Contactar al arrendatario desde una reserva             |            3 | Normal | Sprint 3 |
-|      54 | SP04          | Evaluar mensajería en tiempo real o simulada            |            3 | Normal | Sprint 3 |
-|      55 | US39          | Ver bandeja de conversaciones                           |            5 | Normal | Sprint 3 |
-|      56 | US41          | Abrir conversación                                      |            3 | Normal | Sprint 3 |
-|      57 | US42          | Enviar y recibir mensajes                               |            5 | Normal | Sprint 3 |
-|      58 | US40          | Filtrar conversaciones                                  |            2 | Normal | Sprint 3 |
-|      59 | US43          | Contactar soporte                                       |            3 | Normal | Sprint 3 |
-|      60 | TS10          | Implementar API de mensajería                           |            8 | Normal | Sprint 3 |
-|      61 | SP05          | Evaluar notificaciones push                             |            3 | Normal | Sprint 3 |
-|      62 | US50          | Recibir notificaciones de reserva                       |            3 | Normal | Sprint 3 |
-|      63 | US51          | Recibir notificaciones de mensajes                      |            3 | Normal | Sprint 3 |
-|      64 | TS11          | Implementar API de notificaciones                       |            5 | Normal | Sprint 3 |
-|      65 | US52          | Reportar problema con una reserva                       |            3 | Normal | Sprint 3 |
-|      66 | US46          | Ver ganancias acumuladas                                |            5 | Normal | Sprint 3 |
-|      67 | US47          | Ver ingresos por vehículo                               |            3 | Normal | Sprint 3 |
-|      68 | US48          | Consultar movimientos financieros                       |            3 | Normal | Sprint 3 |
-|      69 | US49          | Solicitar retiro de saldo                               |            3 | Normal | Sprint 3 |
-|      70 | TS12          | Implementar API de ganancias del propietario            |            5 | Normal | Sprint 3 |
-|      71 | US03          | Recuperar contraseña                                    |            3 | Core | Sprint 2 |
-|      72 | US53          | Ver landing page informativa                            |            3 | Normal | Sprint 1 |
-|      73 | US54          | Conocer beneficios para arrendatarios y propietarios    |            3 | Normal | Sprint 1 |
-|      74 | US55          | Acceder al registro o inicio de sesión desde la landing |            2 | Normal | Sprint 1 |
-|      75 | US56          | Consultar información de contacto                       |            2 | Normal | Sprint 1 |
-|      76 | TS13          | Configurar despliegue de landing page                   |            3 | Normal | Sprint 1 |
+| # Orden | User Story Id | Título | Story Points | Clasificación | Sprint |
+| ------: | ------------- | ------- | -----------: | :-----------: | :----: |
+| 1 | SP06 | Definir arquitectura del backend y base de datos | 5 | Core | Sprint 1 |
+| 2 | SP02 | Evaluar integración de mapas y ubicación | 5 | Core | Sprint 1 |
+| 3 | US53 | Ver landing page informativa | 3 | Normal | Sprint 1 |
+| 4 | US18 | Explorar vehículos disponibles | 5 | Core | Sprint 1 |
+| 5 | US19 | Buscar vehículos por ubicación y fechas | 5 | Core | Sprint 1 |
+| 6 | US20 | Filtrar y ordenar vehículos disponibles | 5 | Core | Sprint 1 |
+| 7 | US22 | Ver detalle de vehículo | 5 | Core | Sprint 1 |
+| 8 | TS05 | Implementar API de búsqueda de vehículos | 8 | Core | Sprint 1 |
+| 9 | US21 | Ver resumen de vehículo disponible | 3 | Core | Sprint 1 |
+| 10 | US23 | Guardar vehículo como favorito | 3 | Normal | Sprint 1 |
+| 11 | TS06 | Implementar API de favoritos | 5 | Normal | Sprint 1 |
+| 12 | TS14 | Estandarizar respuestas de error del API | 3 | Core | Sprint 1 |
+| 13 | US54 | Conocer beneficios para arrendatarios y propietarios | 3 | Normal | Sprint 1 |
+| 14 | US55 | Acceder al registro o inicio de sesión desde la landing | 2 | Normal | Sprint 1 |
+| 15 | US56 | Consultar información de contacto | 2 | Normal | Sprint 1 |
+| 16 | TS13 | Configurar despliegue de landing page | 3 | Normal | Sprint 1 |
+| 17 | US01 | Registrar usuario | 3 | Core | Sprint 2 |
+| 18 | US02 | Iniciar sesión | 3 | Core | Sprint 2 |
+| 19 | US03 | Recuperar contraseña | 3 | Core | Sprint 2 |
+| 20 | TS01 | Implementar API de autenticación | 5 | Core | Sprint 2 |
+| 21 | US04 | Seleccionar tipo de cuenta | 2 | Core | Sprint 2 |
+| 22 | US11 | Registrar vehículo para alquiler | 5 | Core | Sprint 2 |
+| 23 | US12 | Publicar vehículo | 5 | Core | Sprint 2 |
+| 24 | TS04 | Implementar API de vehículos | 8 | Core | Sprint 2 |
+| 25 | US16 | Gestionar disponibilidad del vehículo | 5 | Core | Sprint 2 |
+| 26 | US24 | Iniciar reserva de vehículo | 5 | Core | Sprint 2 |
+| 27 | US25 | Confirmar datos de reserva | 3 | Core | Sprint 2 |
+| 28 | US26 | Seleccionar cobertura de reserva | 3 | Core | Sprint 2 |
+| 29 | US27 | Visualizar cálculo total de reserva | 5 | Core | Sprint 2 |
+| 30 | TS08 | Implementar servicio de cálculo de tarifa | 5 | Core | Sprint 2 |
+| 31 | US06 | Subir documentos de verificación | 5 | Core | Sprint 2 |
+| 32 | US07 | Consultar estado de verificación | 3 | Core | Sprint 2 |
+| 33 | TS03 | Implementar API de documentos de verificación | 5 | Core | Sprint 2 |
+| 34 | SP03 | Evaluar almacenamiento de imágenes y documentos | 3 | Core | Sprint 2 |
+| 35 | SP01 | Investigar integración de pasarela de pagos | 3 | Core | Sprint 2 |
+| 36 | US15 | Editar información de vehículo | 5 | Normal | Sprint 2 |
+| 37 | US13 | Ver mis vehículos publicados | 3 | Normal | Sprint 2 |
+| 38 | US14 | Filtrar vehículos por estado | 3 | Normal | Sprint 2 |
+| 39 | US17 | Consultar rendimiento de vehículo | 5 | Normal | Sprint 2 |
+| 40 | US10 | Ver indicadores del perfil | 3 | Normal | Sprint 2 |
+| 41 | US05 | Completar perfil de usuario | 3 | Normal | Sprint 2 |
+| 42 | US08 | Ver perfil de usuario | 2 | Normal | Sprint 2 |
+| 43 | US09 | Editar información del perfil | 3 | Normal | Sprint 2 |
+| 44 | TS02 | Implementar API de perfil de usuario | 5 | Normal | Sprint 2 |
+| 45 | US28 | Confirmar y pagar reserva | 8 | Core | Sprint 3 |
+| 46 | TS07 | Implementar API de reservas | 8 | Core | Sprint 3 |
+| 47 | US29 | Ver mis reservas organizadas por estado | 5 | Core | Sprint 3 |
+| 48 | US30 | Ver detalle de una reserva | 3 | Core | Sprint 3 |
+| 49 | US31 | Cancelar reserva | 3 | Core | Sprint 3 |
+| 50 | US33 | Ver panel de control del propietario | 5 | Core | Sprint 3 |
+| 51 | US34 | Ver solicitudes de reserva pendientes | 5 | Core | Sprint 3 |
+| 52 | US35 | Aceptar o rechazar solicitud de reserva | 5 | Core | Sprint 3 |
+| 53 | US36 | Ver reservas activas del día | 3 | Core | Sprint 3 |
+| 54 | US37 | Registrar entrega de vehículo | 3 | Core | Sprint 3 |
+| 55 | US44 | Registrar pago de reserva | 5 | Core | Sprint 3 |
+| 56 | US45 | Ver resumen de pago | 3 | Core | Sprint 3 |
+| 57 | TS09 | Implementar API de pagos simulados | 5 | Core | Sprint 3 |
+| 58 | US39 | Ver bandeja de conversaciones | 5 | Normal | Sprint 3 |
+| 59 | US41 | Abrir conversación | 3 | Normal | Sprint 3 |
+| 60 | US42 | Enviar y recibir mensajes | 5 | Normal | Sprint 3 |
+| 61 | TS10 | Implementar API de mensajería | 8 | Normal | Sprint 3 |
+| 62 | US40 | Filtrar conversaciones | 2 | Normal | Sprint 3 |
+| 63 | US38 | Contactar al arrendatario desde una reserva | 3 | Normal | Sprint 3 |
+| 64 | US43 | Contactar soporte | 3 | Normal | Sprint 3 |
+| 65 | US50 | Recibir notificaciones de reserva | 3 | Normal | Sprint 3 |
+| 66 | US51 | Recibir notificaciones de mensajes | 3 | Normal | Sprint 3 |
+| 67 | TS11 | Implementar API de notificaciones | 5 | Normal | Sprint 3 |
+| 68 | US52 | Reportar problema con una reserva | 3 | Normal | Sprint 3 |
+| 69 | SP04 | Evaluar mensajería en tiempo real o simulada | 3 | Normal | Sprint 3 |
+| 70 | SP05 | Evaluar notificaciones push | 3 | Normal | Sprint 3 |
+| 71 | US46 | Ver ganancias acumuladas | 5 | Normal | Sprint 3 |
+| 72 | US47 | Ver ingresos por vehículo | 3 | Normal | Sprint 3 |
+| 73 | US48 | Consultar movimientos financieros | 3 | Normal | Sprint 3 |
+| 74 | US49 | Solicitar retiro de saldo | 3 | Normal | Sprint 3 |
+| 75 | TS12 | Implementar API de ganancias del propietario | 5 | Normal | Sprint 3 |
+| 76 | US32 | Ver historial de reservas pasadas | 3 | Normal | Sprint 3 |
 
 ## 2.5. Strategic-Level Domain-Driven Design
 
