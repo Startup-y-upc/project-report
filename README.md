@@ -108,6 +108,100 @@
 
 <div style="page-break-after: always;"></div>
 
+## TB1
+
+**URL de organización GitHub:** [https://github.com/Startup-y-upc](https://github.com/Startup-y-upc)
+
+**Resumen de actividad:** Durante TB1 el equipo amplió el alcance del proyecto incorporando el desarrollo de los principales componentes de la solución. Se continuó con la elaboración y mejora del **Project Report**, la implementación del **Landing Page**, el desarrollo del **Backend** en Java con Spring Boot, la construcción de la aplicación móvil en **Kotlin** y la definición de los **Gherkin Tests** para validar los escenarios funcionales del sistema. Durante este periodo se realizaron múltiples commits y actualizaciones distribuidas entre los repositorios del proyecto, permitiendo completar los entregables correspondientes al Sprint 1 y alcanzar aproximadamente el 70% de avance del backend.
+
+**Repositorios:**
+
+- project-report
+- landing-page
+- rent2go-backend
+- rent2go-kotlin
+- gherkin-tests
+
+**Principales contribuciones realizadas:**
+
+- Actualización y refinamiento de los capítulos del informe del proyecto.
+- Implementación y despliegue del Landing Page institucional.
+- Desarrollo de la arquitectura backend, endpoints REST y lógica de negocio inicial.
+- Desarrollo de las primeras pantallas y funcionalidades móviles en Kotlin.
+- Elaboración de escenarios Gherkin para la validación de historias de usuario.
+- Gestión colaborativa mediante ramas de trabajo, commits y pull requests.
+
+**Métricas de colaboración:**
+
+| Repositorio | Commits | Pull Requests | Contributors |
+|-----------|---------|---------------|--------------|
+| project-report | 140 | 8 | 6 |
+| landing-page | 9 | 5 | 1 |
+| rent2go-backend | 63 | 14 | 1 |
+| rent2go-kotlin | 1 | 0 | 1 |
+| gherkin-tests | 6 | 0 | 1 |
+
+**Evidencia (analíticos de colaboración y commits):**
+
+<div align="center">
+  <img src="Resources/collaboration/tb1-contributors.png" style="margin: 10px 0;" width="85%"/>
+</div>
+
+<div align="center">
+  <img src="Resources/collaboration/tb1-overview.png" style="margin: 10px 0;" width="85%"/>
+</div>
+
+<div style="page-break-after: always;"></div>
+
+## AV2
+
+**URL de organización GitHub:** [https://github.com/Startup-y-upc](https://github.com/Startup-y-upc)
+
+**Resumen de actividad:** Durante AV2 el equipo consolidó la implementación completa de la solución desarrollada durante el ciclo. Se continuó con la mejora del **Project Report**, el mantenimiento y optimización del **Landing Page**, la culminación del **Backend** desplegado públicamente, el desarrollo de la aplicación móvil en **Kotlin**, la implementación de la aplicación principal en **Flutter** y la ampliación de los **Gherkin Tests** para validar los flujos funcionales críticos. Asimismo, se prepararon las evidencias necesarias para la validación de la aplicación y los videos About-the-Product y About-the-Team correspondientes al Sprint 2.
+
+**Repositorios:**
+
+- project-report
+- landing-page
+- rent2go-backend
+- rent2go-kotlin
+- rent2go-flutter
+- gherkin-tests
+
+**Principales contribuciones realizadas:**
+
+- Actualización final del informe y corrección de entregables previos.
+- Optimización y mantenimiento del Landing Page desplegado.
+- Finalización del backend y documentación pública de la API.
+- Continuación y refinamiento del cliente móvil desarrollado en Kotlin.
+- Implementación de las funcionalidades core de la aplicación utilizando Flutter.
+- Incorporación de integración con servicios externos y validación de flujos principales.
+- Expansión de los escenarios Gherkin para pruebas funcionales y de aceptación.
+- Elaboración de material de validación y demostración del producto.
+
+**Métricas de colaboración:**
+
+| Repositorio | Commits | Pull Requests | Contributors |
+|-----------|---------|---------------|--------------|
+| project-report | 140 | 8 | 6 |
+| landing-page | 9 | 5 | 1 |
+| rent2go-backend | 63 | 14 | 1 |
+| rent2go-kotlin | 1 | 0 | 1 |
+| rent2go-flutter | 1 | 0 | 1 |
+| gherkin-tests | 6 | 0 | 1 |
+
+**Evidencia (analíticos de colaboración y commits):**
+
+<div align="center">
+  <img src="Resources/collaboration/av2-contributors.png" style="margin: 10px 0;" width="85%"/>
+</div>
+
+<div align="center">
+  <img src="Resources/collaboration/av2-overview.png" style="margin: 10px 0;" width="85%"/>
+</div>
+
+<div style="page-break-after: always;"></div>
+
 # Tabla de contenidos
 
 ## [Student Outcome (ver anexo A)](#student-outcome)
