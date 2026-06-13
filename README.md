@@ -75,7 +75,7 @@
 
 <div style="page-break-after: always;"></div>
 
-## Project Report Collaboration Insights
+# Project Report Collaboration Insights
 
 ## AV1
 
@@ -97,7 +97,7 @@
 
 # Tabla de contenidos
 
-## [Student Outcome (ver anexo A)](#student-outcome)
+## [Student Outcome](#student-outcome)
 
 ## [Objetivos SMART](#objetivos-smart)
 
@@ -264,27 +264,27 @@ ABET – EAC - Student Outcome 7 Criterio: Actualiza conceptos y conocimientos n
 
 # Objetivos SMART
 
-**Castillo Vidal, Jesus Ivan**
+## **Castillo Vidal, Jesus Ivan**
 
 - Obtener la certificacion Associate Android Developer antes de diciembre 2026, completando al menos 2 cursos oficiales y aprobando el examen en el primer intento.
 - Desarrollar y publicar una app movil en Google Play antes de marzo 2027 con al menos 500 descargas y calificacion alta.
 
-**Chavez Uribe, Ario Joel**
+## **Chavez Uribe, Ario Joel**
 
 - Especializarse en pruebas automatizadas para apps moviles antes de febrero 2027, implementando suites de pruebas en 2 proyectos academicos o personales.
 - Completar un portafolio con 3 prototipos mobile-first en Figma antes de noviembre 2026, documentando decisiones de UX y validaciones.
 
-**Carhuancote Dominguez, Gonzalo Alonso**
+## **Carhuancote Dominguez, Gonzalo Alonso**
 
 - Implementar un backend REST con autenticacion y despliegue en la nube antes de enero 2027, documentando endpoints y pruebas de carga basicas.
 - Participar en 2 hackathons o retos de desarrollo movil antes de julio 2027 para fortalecer trabajo en equipo y entrega bajo tiempo.
 
-**Diestra Zambrano, Adriana Maria**
+## **Diestra Zambrano, Adriana Maria**
 
 - Certificarse en Flutter o Kotlin Multiplatform antes de abril 2027, completando un curso especializado y construyendo una app demo publicada.
 - Mejorar competencias de arquitectura limpia para mobile antes de marzo 2027, aplicando patrones en al menos 2 proyectos con revision de codigo.
 
-**Huarcaya Matias, Gilbert Alonso**
+## **Huarcaya Matias, Gilbert Alonso**
 
 - Dominar integraciones con servicios externos para apps moviles antes de diciembre 2026, implementando 3 integraciones con APIs reales y documentando resultados.
 - Liderar un proyecto movil con DDD antes de junio 2026, definiendo bounded contexts y entregando un MVP funcional.
