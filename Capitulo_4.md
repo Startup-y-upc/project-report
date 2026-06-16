@@ -1259,13 +1259,13 @@ Se realizaron commits regulares en el repositorio del backend, siguiendo GitFlow
 
 | Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
 | --- | --- | --- | --- | --- |
-| rent2go-mobile | feature/android-auth | [Insert commit] | feat(android): setup Android project with Kotlin and Jetpack Compose (ANDR-01) | [Insert date] |
-| rent2go-mobile | feature/android-auth | [Insert commit] | feat(android): implement login screen with Jetpack Compose (ANDR-02) | [Insert date] |
-| rent2go-mobile | feature/android-auth | [Insert commit] | feat(android): implement registration screen with type selection (ANDR-03) | [Insert date] |
-| rent2go-mobile | feature/android-api | [Insert commit] | feat(android): implement Retrofit API client for backend integration (ANDR-05) | [Insert date] |
-| rent2go-mobile | feature/android-auth | [Insert commit] | feat(android): implement authentication flow with JWT token handling (ANDR-06) | [Insert date] |
-| rent2go-mobile | feature/android-home | [Insert commit] | feat(android): implement home screen with vehicle search (ANDR-04) | [Insert date] |
-| rent2go-mobile | feature/android-detail | [Insert commit] | feat(android): implement vehicle detail screen (ANDR-07) | [Insert date] |
+| rent2go-mobile | feature/android-auth | 9268735 | feat(android): setup Android project with Kotlin and Jetpack Compose (ANDR-01) | 2026-05-17 |
+| rent2go-mobile | feature/android-auth | bec583b | feat(android): implement login screen with Jetpack Compose (ANDR-02) | 2026-05-17 |
+| rent2go-mobile | feature/android-auth | bec583b | feat(android): implement registration screen with type selection (ANDR-03) | 2026-05-17 |
+| rent2go-mobile | feature/android-api | 492f210 | feat(android): implement Retrofit API client for backend integration (ANDR-05) | 2026-06-14 |
+| rent2go-mobile | feature/android-auth | 73f170e | feat(android): implement authentication flow with JWT token handling (ANDR-06) | 2026-06-14 |
+| rent2go-mobile | feature/android-home | 4488037 | feat(android): implement home screen with vehicle search (ANDR-04) | 2026-05-17 |
+| rent2go-mobile | feature/android-detail | c3b9c78 | feat(android): implement vehicle detail screen (ANDR-07) | 2026-06-14 |
 
 **Commits en Mobile Flutter Repository:**
 
@@ -1912,11 +1912,11 @@ Durante Sprint 2, el equipo Rent2Go consolidó las funcionalidades core de la pl
 
 | PR # | Título | Status | Fecha | Descripción |
 | --- | --- | --- | --- | --- |
-| #1 | Setup Android project with Kotlin and Jetpack Compose | Merged | [Insert date] | Estructura base del proyecto Android |
-| #2 | Implement login and registration screens | Merged | [Insert date] | Pantallas de login y registro con Jetpack Compose |
-| #3 | Implement Retrofit API client and auth flow | Merged | [Insert date] | Cliente API con integración al backend |
-| #4 | Implement home screen with vehicle search | Merged | [Insert date] | Pantalla de inicio con búsqueda de vehículos |
-| #5 | Implement vehicle detail screen | Merged | [Insert date] | Pantalla de detalle de vehículo |
+| #1 | Setup Android project with Kotlin and Jetpack Compose | Merged | 2026-05-17 | Estructura base del proyecto Android |
+| #2 | Implement login and registration screens | Merged | 2026-05-17 | Pantallas de login y registro con Jetpack Compose |
+| #3 | Implement Retrofit API client and auth flow | Merged | 2026-06-14 | Cliente API con integración al backend |
+| #4 | Implement home screen with vehicle search | Merged | 2026-05-17 | Pantalla de inicio con búsqueda de vehículos |
+| #5 | Implement vehicle detail screen | Merged | 2026-06-14 | Pantalla de detalle de vehículo |
 
 **Mobile Flutter:**
 
@@ -1950,13 +1950,13 @@ Jun 11 - Tests: Unit and integration tests for all features
 
 **Mobile Android - Commits Clave:**
 ```
-[Insert date] - Setup Android project with Kotlin and Jetpack Compose
-[Insert date] - Implement login screen with Compose
-[Insert date] - Implement registration screen with type selection
-[Insert date] - Implement Retrofit API client
-[Insert date] - Implement authentication flow with JWT
-[Insert date] - Implement home screen with vehicle search
-[Insert date] - Implement vehicle detail screen
+May 17 - Setup Android project with Kotlin and Jetpack Compose
+May 17 - Implement login screen with Compose
+May 17 - Implement registration screen with type selection
+Jun 14 - Implement Retrofit API client
+Jun 14 - Implement authentication flow with JWT
+May 17 - Implement home screen with vehicle search
+Jun 14 - Implement vehicle detail screen
 ```
 
 **Mobile Flutter - Commits Clave:**
