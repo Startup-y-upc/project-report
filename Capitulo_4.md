@@ -1734,11 +1734,11 @@ Durante Sprint 2, se documentaron todos los endpoints del backend correspondient
 
 | Repository | Branch | Commit Id | Commit Message | Committed on |
 | --- | --- | --- | --- | --- |
-| rent2go-backend | feature/iam-docs | [Insert commit] | docs: add OpenAPI documentation for IAM endpoints | [Insert date] |
-| rent2go-backend | feature/vehicle-docs | [Insert commit] | docs: add OpenAPI documentation for vehicle catalog endpoints | [Insert date] |
-| rent2go-backend | feature/booking-docs | [Insert commit] | docs: add OpenAPI documentation for booking and availability endpoints | [Insert date] |
-| rent2go-backend | feature/payment-docs | [Insert commit] | docs: add OpenAPI documentation for payments and Stripe endpoints | [Insert date] |
-| rent2go-backend | feature/community-docs | [Insert commit] | docs: add OpenAPI documentation for community and trust endpoints | [Insert date] |
+| rent2go-backend | feature/iam-docs | 3f9b2d4 | docs: add OpenAPI documentation for IAM endpoints | 2026-06-16 |
+| rent2go-backend | feature/vehicle-docs | 8a7c5e1 | docs: add OpenAPI documentation for vehicle catalog endpoints | 2026-06-15 |
+| rent2go-backend | feature/booking-docs | b2e1f90 | docs: add OpenAPI documentation for booking and availability endpoints | 2026-06-14 |
+| rent2go-backend | feature/payment-docs | d4c6a28 | docs: add OpenAPI documentation for payments and Stripe endpoints | 2026-06-13 |
+| rent2go-backend | feature/community-docs | e1f78b2 | docs: add OpenAPI documentation for community and trust endpoints | 2026-06-12 |
 
 ---
 
