@@ -147,7 +147,15 @@
 </div>
 
 <div align="center">
+  <img src="Resources/collaboration/tb1-contributors-2.png" style="margin: 10px 0;" width="85%"/>
+</div>
+
+<div align="center">
   <img src="Resources/collaboration/tb1-overview.png" style="margin: 10px 0;" width="85%"/>
+</div>
+
+<div align="center">
+  <img src="Resources/collaboration/tb1-overview-2.png" style="margin: 10px 0;" width="85%"/>
 </div>
 
 <div style="page-break-after: always;"></div>
