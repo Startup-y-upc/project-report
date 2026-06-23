@@ -1509,12 +1509,6 @@ Durante Sprint 2, el equipo completó la implementación de todas las funcionali
 
 *Nota.* Elaboración propia. Prueba del endpoint POST /api/v1/payments/create-intent integrando Stripe (SP01).
 
-<div align="center">
-  <img src="Resources/capitulo_4/execution/backend-api/12-postman-stripe-webhook.png" alt="Postman POST Stripe webhook" width="900">
-</div>
-
-*Nota.* Elaboración propia. Configuración del endpoint POST /api/v1/payments/webhook para eventos de Stripe (SP01).
-
 ---
 
 **Video de Demostración - Backend API (Sprint 2):**
