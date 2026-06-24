@@ -155,8 +155,45 @@ En esta sección se presentan los wireframes desarrollados para la aplicación m
 
 ### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
+Esta sección presenta los diagramas de Wireflows para cada User Goal identificado en el alcance, relacionándolos con los User Persona (María López como Arrendataria y Juan Pérez como Propietario). El objetivo de estos Wireflows es mostrar de qué forma se refleja un cambio en una pantalla (Wireframe) como resultado de la interacción física o lógica en el flujo de la aplicación.
 
+#### 1. Wireflow para María López (Arrendataria)
 
+*   **User Goal:** Como arrendataria (María López), quiero buscar, filtrar y reservar un vehículo cercano a través de la aplicación móvil de Rent2Go para poder movilizarme de manera flexible y segura en mi día a día.
+*   **Task Flow (Paso a paso lógico de acciones):**
+    *   **Paso 1:** Iniciar sesión en la aplicación.
+    *   **Paso 2:** Ingresar ubicación y rango de fechas de alquiler en el buscador principal.
+    *   **Paso 3:** Aplicar filtros de preferencia (precio, calificación del dueño, tipo de transmisión).
+    *   **Paso 4:** Seleccionar un vehículo específico y visualizar sus detalles.
+    *   **Paso 5:** Presionar el botón "Reservar ahora".
+    *   **Paso 6:** Completar la información de pago y confirmar la reserva.
+
+*   **Explicación del Flujo:**
+    El flujo de componentes (Wireflow) inicia en la **Pantalla de Inicio (Home)**, la cual contiene el formulario básico de búsqueda. Al realizar la acción de búsqueda, el sistema actualiza la interfaz y transiciona a la **Pantalla de Resultados**, donde se despliega la lista de vehículos disponibles en un formato de tarjetas informativas. Al seleccionar un vehículo, el flujo lleva a la **Pantalla de Detalle de Vehículo**, permitiendo visualizar especificaciones, fotos y calificaciones del propietario. Una vez que el usuario presiona "Reservar ahora", se despliega la **Pantalla de Pago y Resumen**, la cual recopila los datos financieros del usuario. Finalmente, tras procesar la transacción, la app muestra la **Pantalla de Éxito / Confirmación de Reserva**, completando el objetivo del usuario.
+
+<div align="center">
+    <img src="Resources/capitulo_3/FlujoArrendatario.png" style="margin: 10px 0;" width="80%"/>
+</div>
+
+---
+
+#### 2. Wireflow para Juan Pérez (Propietario)
+
+*   **User Goal:** Como propietario (Juan Pérez), quiero registrar mi vehículo y subir la documentación requerida para poder publicarlo en el catálogo de alquiler de Rent2Go y generar ingresos adicionales.
+*   **Task Flow (Paso a paso lógico de acciones):**
+    *   **Paso 1:** Iniciar sesión en la aplicación.
+    *   **Paso 2:** Acceder a la sección de "Mis autos" desde el perfil de usuario.
+    *   **Paso 3:** Seleccionar la opción de "Registrar nuevo vehículo".
+    *   **Paso 4:** Completar el formulario con los detalles técnicos del auto (placa, marca, modelo, año, tarifa diaria).
+    *   **Paso 5:** Subir fotografías del vehículo y del documento SOAT/tarjeta de propiedad para validación.
+    *   **Paso 6:** Confirmar el registro y enviar a aprobación.
+
+*   **Explicación del Flujo:**
+    Este flujo comienza en la **Pantalla de Perfil de Usuario**, donde se ubica el botón para gestionar "Mis Autos". Al seleccionarlo, se transiciona a la **Pantalla de Mis Autos** (que muestra la lista de vehículos del propietario). Al presionar el botón de agregar ("+"), se abre la **Pantalla de Formulario Técnico**, donde el usuario ingresa marca, modelo, año y placa. El botón "Siguiente" redirige a la **Pantalla de Carga de Archivos**, la cual contiene campos interactivos para subir imágenes del vehículo y el SOAT. Finalmente, al dar clic en "Publicar", el sistema guarda la información y transiciona a la **Pantalla de Registro Exitoso**, donde se indica que el coche ha sido enviado a validación para su posterior publicación.
+
+<div align="center">
+    <img src="Resources/capitulo_3/FlujoPropietario.png" style="margin: 10px 0;" width="80%"/>
+</div>
 ### 3.1.4.3. Mobile Applications Mock-ups
 
 En esta sección se presentan los mock-ups desarrollados para la aplicación móvil de Rent2Go. Estas interfaces fueron diseñadas con el objetivo de ofrecer una experiencia intuitiva, moderna y accesible tanto para propietarios de vehículos como para usuarios arrendatarios.
@@ -234,14 +271,32 @@ https://www.figma.com/design/BMdRHNFasQzhoxhp9cJB93/Untitled?node-id=0-1&p=f&t=s
 
 ### 3.1.4.4. Mobile Applications User Flow Diagrams
 
-Los diagramas de User Flow muestran la secuencia de acciones, decisiones y rutas alternativas que siguen los usuarios al interactuar con Rent2Go. Estos flujos permiten visualizar el comportamiento esperado de la aplicación y validar la experiencia de usuario antes de la implementación.
+Los diagramas de User Flow muestran la secuencia de acciones, decisiones y rutas alternativas que siguen los usuarios al interactuar con Rent2Go. Estos flujos permiten visualizar el comportamiento esperado de la aplicación (incluyendo mock-ups de alta fidelidad, lógica de condiciones de negocio, el "happy path" y las rutas alternativas de error o "unhappy paths") y validar la experiencia de usuario antes del desarrollo.
+
+#### 1. User Flow para María López (Arrendataria)
+
+*   **User Goal:** Como arrendataria (María López), quiero buscar, filtrar y reservar un vehículo cercano a través de la aplicación móvil de Rent2Go para poder movilizarme de manera flexible y segura en mi día a día.
+*   **Explicación de Flujos y Condiciones Especificados:**
+    *   **Happy Path (Ruta de éxito):** Comienza cuando María inicia sesión y accede a la pantalla principal de exploración. Ingresa su ubicación de recogida y las fechas deseadas. Al presionar "Buscar", el sistema encuentra vehículos disponibles y despliega una lista de opciones. María selecciona un auto, revisa sus características y presiona "Reservar ahora". En la pantalla de pago, ingresa su tarjeta de crédito y confirma la operación. El pago es procesado exitosamente por Stripe y se muestra la pantalla de confirmación de reserva con los datos finales.
+    *   **Unhappy Path 1 (Filtros sin coincidencia):** Si al aplicar un filtro restrictivo (ej. precio muy bajo o marca específica) no hay autos que coincidan con la búsqueda, el sistema no muestra resultados sino una pantalla de alerta "Sin Resultados". La condición obliga al usuario a modificar sus filtros o limpiar la búsqueda para volver a intentarlo.
+    *   **Unhappy Path 2 (Falla en el procesamiento de pago):** Al ingresar los datos de pago, si el emisor rechaza la tarjeta (por fondos insuficientes, datos incorrectos o sospecha de fraude), el sistema evalúa la condición de fallo y muestra un modal de error "Pago fallido". El flujo le permite elegir entre cambiar el método de pago para reintentar la transacción o cancelar la reserva y regresar a la vista de detalles del auto.
 
 <div align="center">
-    <img src="Resources/capitulo_3/FlujoArrendatario.png" style="margin: 10px 0;" width="60%"/>
+    <img src="Resources/capitulo_3/UserFlowArrendatarioMockups.png" style="margin: 10px 0;" width="80%"/>
 </div>
 
+---
+
+#### 2. User Flow para Juan Pérez (Propietario)
+
+*   **User Goal:** Como propietario (Juan Pérez), quiero registrar mi vehículo y subir la documentación requerida para poder publicarlo en el catálogo de alquiler de Rent2Go y generar ingresos adicionales.
+*   **Explicación de Flujos y Condiciones Especificados:**
+    *   **Happy Path (Ruta de éxito):** Juan inicia sesión, se dirige a su Perfil e ingresa a "Mis Autos". Selecciona "Registrar nuevo vehículo" y llena todos los campos técnicos (marca, modelo, año, placa, kilometraje). Posteriormente sube fotos nítidas del auto y una imagen de su documento SOAT vigente. El sistema valida en tiempo real la integridad del formulario y envía los datos. El coche pasa a revisión por el administrador del sistema y queda guardado provisionalmente. Al aprobarse los documentos, el auto cambia a estado "Publicado" y se vuelve visible en el catálogo de búsqueda.
+    *   **Unhappy Path 1 (Formulario incompleto):** Si Juan olvida llenar campos obligatorios o digita información errónea (como una placa con formato inválido) y presiona "Siguiente", el sistema no le permite avanzar. Muestra avisos de error debajo de cada campo afectado. El usuario debe subsanar el error para continuar con la carga de fotos y documentos.
+    *   **Unhappy Path 2 (Documentación inválida o rechazada):** Si el documento del SOAT subido está vencido o es borroso, el proceso de validación lo marcará como "Rechazado". El sistema envía una notificación push al usuario alertándolo del inconveniente. El vehículo queda en estado "Rechazado" y el flujo redirige a Juan a la pantalla de carga para que pueda subir un documento SOAT válido y solicitar una nueva aprobación.
+
 <div align="center">
-    <img src="Resources/capitulo_3/FlujoPropietario.png" style="margin: 10px 0;" width="60%"/>
+    <img src="Resources/capitulo_3/UserFlowPropietarioMockups.png" style="margin: 10px 0;" width="80%"/>
 </div>
 
 
