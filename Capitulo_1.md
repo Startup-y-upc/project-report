@@ -173,48 +173,63 @@ Los arrendatarios sufren una pérdida significativa de tiempo y altos gastos en 
 
 **1. Hipótesis sobre monetización de vehículos inactivos**
 
-**Creemos que** aumentaremos la cantidad de propietarios activos dentro de la plataforma
-**si** los propietarios de vehículos particulares  
-**alcanzan** a solucionar el problema de tener vehículos inactivos que generan gastos constantes sin producir ingresos
-**con** una plataforma segura que les permita publicar sus vehículos, gestionar alquileres y recibir pagos automatizados con respaldo de seguros y validación de usuarios.
-
-Sabremos que esta hipótesis es correcta cuando al menos el 70% de los propietarios registrados publiquen un vehículo y el 50% mantenga disponibilidad activa durante el primer mes.
+> **Creemos que**
+> publicando vehículos en una plataforma segura con gestión de alquileres y pagos automatizados con respaldo de seguros
+> **para**
+> propietarios de vehículos particulares con baja frecuencia de uso que buscan generar ingresos pasivos
+> **lograremos**
+> aumentar la cantidad de propietarios activos en la plataforma.
+>
+> **Sabremos que esto es cierto cuando veamos**
+> que al menos el 70% de los propietarios registrados publiquen un vehículo y el 50% mantenga disponibilidad activa durante el primer mes.
 
 **2. Hipótesis sobre acceso rápido a movilidad temporal**
 
-**Creemos que** incrementaremos la cantidad de reservas realizadas en la plataforma
-**si** los arrendatarios  
-**alcanzan** a solucionar la dificultad de encontrar vehículos accesibles, rápidos y flexibles para necesidades temporales de transporte 
-**con** un sistema de búsqueda inteligente con filtros personalizados, geolocalización y reservas inmediatas desde dispositivos móviles.
-
-Sabremos que esta hipótesis es correcta cuando al menos el 60% de los usuarios completen una reserva sin asistencia externa y el 30% vuelva a utilizar la plataforma dentro de los siguientes 60 días.
+> **Creemos que**
+> creando un sistema de búsqueda inteligente con filtros personalizados, geolocalización y reservas inmediatas desde móviles
+> **para**
+> arrendatarios que necesitan vehículos accesibles, rápidos y flexibles para necesidades temporales de transporte
+> **lograremos**
+> incrementar la cantidad de reservas completadas en la plataforma.
+>
+> **Sabremos que esto es cierto cuando veamos**
+> que al menos el 60% de los usuarios completen una reserva sin asistencia externa y el 30% vuelva a usar la plataforma dentro de los siguientes 60 días.
 
 **3. Hipótesis sobre confianza y seguridad en alquileres P2P**
 
-**Creemos que** aumentaremos la retención de usuarios dentro de la plataforma
-**si** propietarios y arrendatarios  
-**alcanzan** a solucionar la desconfianza existente en el alquiler de vehículos entre particulares
-**con** mecanismos de validación de identidad, calificaciones bidireccionales, historial de comportamiento y soporte ante incidentes.
-
-Sabremos que esta hipótesis es correcta cuando más del 80% de los usuarios mantenga calificaciones positivas y las incidencias reportadas sean menores al 10% de las transacciones.
+> **Creemos que**
+> implementando mecanismos de validación de identidad, calificaciones bidireccionales, historial de comportamiento y soporte ante incidentes
+> **para**
+> propietarios y arrendatarios que desconfían del alquiler de vehículos entre particulares
+> **lograremos**
+> aumentar la retención de usuarios en la plataforma.
+>
+> **Sabremos que esto es cierto cuando veamos**
+> que más del 80% de los usuarios mantenga calificaciones positivas y las incidencias reportadas sean menores al 10% de las transacciones.
 
 **4. Hipótesis sobre reducción de costos frente al modelo tradicional**
 
-**Creemos que**Rent2Go será percibida como una alternativa más competitiva en el mercado
-**si** propietarios y arrendatarios  
-**alcanzan** a solucionar los altos costos y limitaciones presentes en las empresas tradicionales de alquiler vehicular
-**con** un modelo peer-to-peer que reduzca costos operativos y permita ofrecer precios más accesibles y mayor disponibilidad de vehículos.
-
-Sabremos que esta hipótesis es correcta cuando los usuarios perciban precios más competitivos y los costos operativos de la plataforma sean menores frente a modelos tradicionales.
+> **Creemos que**
+> creando un modelo peer-to-peer que reduzca costos operativos y ofrezca precios más accesibles
+> **para**
+> propietarios y arrendatarios que enfrentan altos costos y limitaciones en empresas tradicionales de alquiler
+> **lograremos**
+> que Rent2Go sea percibida como una alternativa más competitiva en el mercado.
+>
+> **Sabremos que esto es cierto cuando veamos**
+> que los usuarios perciban precios más competitivos y los costos operativos de la plataforma sean menores frente a modelos tradicionales.
 
 **5. Hipótesis sobre experiencia móvil simplificada**
 
-**Creemos que** mejoraremos la satisfacción y fidelización de los usuarios
-**si** propietarios y arrendatarios  
-**alcanzan** a solucionar la complejidad y fricción presente en plataformas tradicionales de alquiler
-**con** una aplicación móvil intuitiva que centralice reservas, pagos, monitoreo y gestión de vehículos en pocos pasos.
-
-Sabremos que esta hipótesis es correcta cuando los usuarios completen las tareas principales del sistema rápidamente y las evaluaciones de usabilidad sean mayoritariamente positivas.
+> **Creemos que**
+> creando una aplicación móvil intuitiva que centralice reservas, pagos, monitoreo y gestión de vehículos en pocos pasos
+> **para**
+> propietarios y arrendatarios que enfrentan complejidad y fricción en plataformas tradicionales de alquiler
+> **lograremos**
+> mejorar la satisfacción y fidelización de los usuarios.
+>
+> **Sabremos que esto es cierto cuando veamos**
+> que los usuarios completen las tareas principales del sistema rápidamente y las evaluaciones de usabilidad sean mayoritariamente positivas.
 
 #### 1.2.2.4. Lean UX Canvas
 
