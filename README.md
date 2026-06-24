@@ -200,12 +200,29 @@
 **Evidencia (analíticos de colaboración y commits):**
 
 <div align="center">
-  <img src="Resources/collaboration/av2-contributors.png" style="margin: 10px 0;" width="85%"/>
+  <img src="Resources/collaboration/av2-contributors-1.png" style="margin: 10px 0;" width="85%"/>
 </div>
 
 <div align="center">
-  <img src="Resources/collaboration/av2-overview.png" style="margin: 10px 0;" width="85%"/>
+  <img src="Resources/collaboration/av2-overview-1.png" style="margin: 10px 0;" width="85%"/>
 </div>
+
+<div align="center">
+  <img src="Resources/collaboration/av2-contributors-2.png" style="margin: 10px 0;" width="85%"/>
+</div>
+
+<div align="center">
+  <img src="Resources/collaboration/av2-overview-2.png" style="margin: 10px 0;" width="85%"/>
+</div>
+
+<div align="center">
+  <img src="Resources/collaboration/av2-contributors-3.png" style="margin: 10px 0;" width="85%"/>
+</div>
+
+<div align="center">
+  <img src="Resources/collaboration/av2-overview-3.png" style="margin: 10px 0;" width="85%"/>
+</div>
+
 
 <div style="page-break-after: always;"></div>
 
