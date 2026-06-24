@@ -87,7 +87,7 @@
 
 <div style="page-break-after: always;"></div>
 
-## Project Report Collaboration Insights
+# Project Report Collaboration Insights
 
 ## AV1
 
@@ -228,7 +228,7 @@
 
 # Tabla de contenidos
 
-## [Student Outcome (ver anexo A)](#student-outcome)
+## [Student Outcome](#student-outcome)
 
 ## [Objetivos SMART](#objetivos-smart)
 
@@ -404,27 +404,27 @@ ABET – EAC - Student Outcome 7 Criterio: Actualiza conceptos y conocimientos n
 
 # Objetivos SMART
 
-**Castillo Vidal, Jesus Ivan**
+## **Castillo Vidal, Jesus Ivan**
 
 - Liderar el desarrollo de al menos 3 aplicaciones móviles nativas para Android antes de diciembre 2030, utilizando Kotlin, arquitectura limpia y patrones de diseño modernos, publicándolas en Google Play Store con al menos 10,000 descargas combinadas y calificación mínima de 4.5 estrellas, demostrando capacidad de liderazgo técnico y gestión de productos móviles como ingeniero senior.
 - Obtener la certificación Google Professional Android Developer y al menos 2 especializaciones avanzadas en arquitectura de aplicaciones, rendimiento y seguridad móvil antes de junio 2029, aplicando estos conocimientos en proyectos reales con al menos 5 contribuciones a código abierto en el ecosistema Android y mentoría a desarrolladores junior.
 
-**Chavez Uribe, Ario Joel**
+## **Chavez Uribe, Ario Joel**
 
 - Establecer un laboratorio de pruebas automatizadas para aplicaciones móviles antes de diciembre 2029, implementando suites de pruebas unitarias, de integración y UI en al menos 8 proyectos con cobertura mínima del 95%, documentando métricas de calidad y obteniendo certificaciones en herramientas como Espresso, UI Automator o Detox, y liderando la implementación de pipelines de CI/CD para testing.
 - Crear y publicar un portafolio profesional de diseño UX/UI mobile-first antes de noviembre 2028, con al menos 12 prototipos validados con usuarios reales, documentando procesos de investigación, decisiones de diseño y métricas de usabilidad, y obteniendo retroalimentación de profesionales del sector y participando en al menos 2 conferencias de diseño.
 
-**Carhuancote Dominguez, Gonzalo Alonso**
+## **Carhuancote Dominguez, Gonzalo Alonso**
 
 - Diseñar e implementar una arquitectura de microservicios con DDD y CQRS antes de septiembre 2029, desplegando al menos 5 servicios en la nube con autenticación JWT, monitoreo en producción y pruebas de carga con 2,000+ usuarios concurrentes, documentando el proceso de diseño de dominio y obteniendo certificaciones en Spring Boot avanzado y arquitecturas distribuidas.
 - Participar y ganar al menos 3 hackathons o competiciones de desarrollo de software antes de julio 2030, liderando equipos multidisciplinarios en la creación de soluciones tecnológicas innovadoras, demostrando habilidades de liderazgo, trabajo bajo presión y presentación de proyectos ante jurados profesionales, con al menos 1 solución implementada en producción.
 
-**Diestra Zambrano, Adriana Maria**
+## **Diestra Zambrano, Adriana Maria**
 
 - Desarrollar y publicar aplicaciones multiplataforma utilizando Flutter o Kotlin Multiplatform antes de abril 2029, creando al menos 5 aplicaciones publicadas simultáneamente en Google Play Store y Apple App Store con al menos 20 funcionalidades implementadas, 5,000 descargas combinadas y calificación mínima de 4.5 estrellas en ambas plataformas, demostrando dominio del desarrollo cross-platform.
 - Especializarse en arquitectura limpia y patrones de diseño para aplicaciones móviles antes de marzo 2030, aplicando los patrones Clean Architecture, MVVM y Repository en al menos 6 proyectos con revisiones de código documentadas, métricas de calidad de código superiores al 90% y contribuciones a proyectos open source en el ecosistema móvil, con al menos 2 publicaciones técnicas.
 
-**Huarcaya Matias, Gilbert Alonso**
+## **Huarcaya Matias, Gilbert Alonso**
 
 - Establecer y mantener una plataforma de servicios externos integrada (pasarelas de pago, almacenamiento en la nube, mapas, geolocalización, autenticación) antes de diciembre 2028, implementando al menos 12 integraciones con APIs reales, documentando resultados de rendimiento, configurando monitoreo de errores en producción y obteniendo certificaciones en servicios cloud como AWS o Azure, con al menos 3 sistemas en producción.
 - Liderar el desarrollo completo de un proyecto móvil con DDD y arquitectura hexagonal antes de septiembre 2029, definiendo bounded contexts, entregando un MVP funcional con al menos 8 módulos implementados, documentando el proceso de diseño de dominio y obteniendo retroalimentación de al menos 500 usuarios reales, demostrando capacidad de liderazgo técnico y gestión de productos como tech lead.

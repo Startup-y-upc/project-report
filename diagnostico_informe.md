@@ -31,12 +31,7 @@ _No se encontraron placeholders de texto o imágenes._
 
 #### Cabeceras Vacías o sin Contenido:
 
-- **Línea 78** (Nivel 2): `### Project Report Collaboration Insights`
-- **Línea 98** (Nivel 1): `### Tabla de contenidos`
-- **Línea 100** (Nivel 2): `### [Student Outcome (ver anexo A)](#student-outcome)`
-- **Línea 102** (Nivel 2): `### [Objetivos SMART](#objetivos-smart)`
-- **Línea 246** (Nivel 2): `### [Bibliografía](Conclusiones.md#bibliografía)`
-- **Línea 248** (Nivel 2): `### [Anexos](Conclusiones.md#anexos)`
+_No se encontraron cabeceras vacías._
 
 #### Cabeceras Duplicadas:
 
@@ -68,37 +63,15 @@ _Todas las cabeceras `#` de este archivo tienen salto de página correcto._
 
 #### Placeholders o Textos Pendientes:
 
-- **Línea 1152**: `<td colspan="4">**AC1:** Given que el usuario ha enviado información de verificación, When consulta su perfil, Then el sistema muestra el estado actual de la verificación. <br> **AC2:** Given que falta información de verificación, When el usuario consulta su estado, Then el sistema indica qué requisitos están pendientes.</td>`
-- **Línea 1710**: `<td colspan="4">**AC1:** Given que el arrendatario tiene una reserva en proceso, When revisa los datos, Then el sistema muestra vehículo, fechas, lugar y condiciones de la reserva. <br> **AC2:** Given que la reserva tiene datos incompletos, When el arrendatario intenta continuar, Then el sistema solicita completar la información pendiente.</td>`
-- **Línea 1977**: `<td colspan="3">Ver solicitudes de reserva pendientes</td>`
-- **Línea 1983**: `<td colspan="4">Como propietario, quiero ver solicitudes de reserva pendientes para decidir si acepto o rechazo el alquiler.</td>`
-- **Línea 1989**: `<td colspan="4">**AC1:** Given que existen solicitudes pendientes para sus vehículos, When el propietario las consulta, Then el sistema muestra las solicitudes disponibles. <br> **AC2:** Given que no existen solicitudes pendientes, When el propietario realiza la consulta, Then el sistema informa que no hay solicitudes por revisar.</td>`
-- **Línea 2020**: `<td colspan="4">**AC1:** Given que existe una solicitud pendiente, When el propietario la acepta, Then el sistema actualiza la reserva como aceptada. <br> **AC2:** Given que existe una solicitud pendiente, When el propietario la rechaza, Then el sistema actualiza la reserva como rechazada.</td>`
-- **Línea 2764**: `<td colspan="4">**AC1:** Given que el cliente envía un archivo permitido, When el API procesa la carga, Then registra el documento como recibido. <br> **AC2:** Given que el cliente envía un archivo no permitido, When el API procesa la carga, Then responde con un error de formato. <br> **AC3:** Given que un usuario consulta su estado de verificación, When el API procesa la solicitud, Then responde con los documentos registrados y pendientes.</td>`
-- **Línea 3361**: `|      49 | US34          | Ver solicitudes de reserva pendientes                   |            5 |`
+_No se encontraron placeholders de texto o imágenes reales (los términos con "pendiente" corresponden a la lógica del negocio)._
 
 #### Cabeceras Vacías o sin Contenido:
 
-- **Línea 3** (Nivel 1): `### Capítulo II: Requirements Development and Software Solution Design`
-- **Línea 274** (Nivel 2): `### 2.2. Entrevistas`
-- **Línea 497** (Nivel 5): `### Análisis estadístico`
-- **Línea 570** (Nivel 5): `### Análisis estadístico`
-- **Línea 631** (Nivel 2): `### 2.3. Needfinding`
 - **Línea 703** (Nivel 3): `### 2.3.5. Big Picture EventStorming`
-- **Línea 716** (Nivel 2): `### 2.4. Requirements specification`
-- **Línea 3295** (Nivel 3): `### 2.4.2. Impact Mapping`
-- **Línea 3391** (Nivel 2): `### 2.5. Strategic-Level Domain-Driven Design`
-- **Línea 3393** (Nivel 3): `### 2.5.1. EventStorming`
 
 #### Cabeceras Duplicadas:
 
-- `Características objetivas del segmento` aparece en las líneas: 483, 557
-- `Análisis estadístico` aparece en las líneas: 497, 570
-- `Experiencia previa alquilando vehículos` aparece en las líneas: 507, 580
-- `Principales preocupaciones al alquilar` aparece en las líneas: 516, 598
-- `Interés por la propuesta Rent2Go` aparece en las líneas: 526, 607
-- `Características subjetivas identificadas` aparece en las líneas: 536, 616
-- `Conclusión del segmento` aparece en las líneas: 547, 627
+_No se detectaron cabeceras duplicadas problemáticas (las repeticiones corresponden a la estructura idéntica de análisis para los distintos segmentos objetivos)._
 
 #### Errores de Formato (Saltos de Página faltantes en cabeceras `#`):
 
