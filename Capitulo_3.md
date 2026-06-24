@@ -242,3 +242,19 @@ En esta sección se presentan los User Flow Diagrams de la aplicación móvil Re
 </div>
 
 ### 3.1.4.5. Mobile Applications Prototyping
+
+El prototipo de Rent2Go representa visualmente las funcionalidades principales de la aplicación móvil mediante pantallas de alta fidelidad. Su propósito es validar la experiencia de usuario, los flujos de navegación y la interacción entre propietarios y arrendatarios antes del desarrollo del producto final.
+
+<div align="center">
+    <img src="Resources/capitulo_3/PrototypeFlow1.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+<div align="center">
+    <img src="Resources/capitulo_3/PrototypeFlow2.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+<div align="center">
+    <img src="Resources/capitulo_3/PrototypeFlow3.png" style="margin: 10px 0;" width="60%"/>
+</div>
+
+Link del Prototipo: https://www.figma.com/proto/BMdRHNFasQzhoxhp9cJB93/Untitled?node-id=0-1&t=ySLsnXS3xevXtBv3-1
