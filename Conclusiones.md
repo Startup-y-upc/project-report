@@ -12,21 +12,13 @@ En esta entrega se completó la implementación del 100% del backend en un entor
 
 Como recomendaciones, se debe continuar refinando la experiencia de usuario a partir de las entrevistas de validación, fortalecer la consistencia entre los flujos móviles y la arquitectura de información definida, y mantener la trazabilidad entre requerimientos, diseño e implementación en los siguientes sprints. También conviene seguir documentando de forma sistemática los cambios para asegurar que la evolución del producto permanezca alineada con los objetivos del proyecto, y profundizar en las pruebas de aceptación con usuarios reales para validar las funcionalidades core implementadas en el Sprint 2.
 
-### Video App Validation
-
-[Espacio reservado para el video de validación de la aplicación]
-
 ### Video About the product
 
-[Espacio reservado para el video sobre el producto]
+**URL**: [About the product](https://youtu.be/SISRf5DqJoM)
 
 ### Video About the team
 
 **URL**: https://upcedupe-my.sharepoint.com/personal/u202213468_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202213468%5Fupc%5Fedu%5Fpe%2FDocuments%2FAppM%C3%B3viles%2Fupc%2Dpre%2D2026%2D01%2D1acc238%2D3248%2Drent2go%2Dabout%2Dthe%2Dteam%2Dsprint%2D1%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ead1a6551%2Dc80a%2D44ad%2Dbcf7%2Dc97a75178906
-
-### Glosario
-
-[Espacio reservado para el glosario de términos]
 
 <div style="page-break-after: always;"></div>
 
