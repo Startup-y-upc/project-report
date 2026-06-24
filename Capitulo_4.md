@@ -1575,26 +1575,14 @@ En este video se muestra la ejecución de los principales endpoints del backend 
 
 *Nota.* Elaboración propia. Pantalla de inicio con búsqueda de vehículos integrada al backend (FLUT-04).
 
-<div align="center">
-  <img src="Resources/capitulo_4/execution/mobile/9-flutter-vehicle-detail.png" alt="Flutter Vehicle Detail Screen" width="300">
-</div>
-
-*Nota.* Elaboración propia. Pantalla de detalle de vehículo en Flutter (FLUT-07).
-
-<div align="center">
-  <img src="Resources/capitulo_4/execution/mobile/10-flutter-bloc-architecture.png" alt="Flutter BLoC Architecture Diagram" width="900">
-</div>
-
-*Nota.* Elaboración propia. Arquitectura BLoC con Dio HTTP client para integración al backend (FLUT-05, FLUT-06).
-
 ---
 
 **Video de Demostración - Mobile Apps (Sprint 2):**
 
 En este video se muestra el avance de las aplicaciones móviles (Android/Kotlin y Flutter/Dart), incluyendo pantallas de login, registro, home y detalle de vehículo, con integración al backend.
 
-- **URL:** [Insert YouTube URL]
-- **Duración:** [Insert duration]
+- **URL:** https://www.youtube.com/watch?v=SISRf5DqJoM
+- **Duración:** 2:57
 - **Descripción:** Demostración de pantallas funcionales en Android (Kotlin/Jetpack Compose) y Flutter (Dart/BLoC) con integración al backend Rent2Go.
 
 ---
