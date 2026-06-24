@@ -154,6 +154,9 @@ En esta sección se presentan los wireframes desarrollados para la aplicación m
 </div>
 
 ### 3.1.4.2. Mobile Applications Wireflow Diagrams
+
+
+
 ### 3.1.4.3. Mobile Applications Mock-ups
 
 En esta sección se presentan los mock-ups desarrollados para la aplicación móvil de Rent2Go. Estas interfaces fueron diseñadas con el objetivo de ofrecer una experiencia intuitiva, moderna y accesible tanto para propietarios de vehículos como para usuarios arrendatarios.
@@ -231,15 +234,16 @@ https://www.figma.com/design/BMdRHNFasQzhoxhp9cJB93/Untitled?node-id=0-1&p=f&t=s
 
 ### 3.1.4.4. Mobile Applications User Flow Diagrams
 
-En esta sección se presentan los User Flow Diagrams de la aplicación móvil Rent2Go, los cuales representan el recorrido que realiza el usuario para cumplir distintos objetivos dentro de la plataforma. Estos diagramas fueron elaborados considerando los User Persona definidos previamente y mantienen consistencia con los Wireflows y Mock-ups desarrollados.
+Los diagramas de User Flow muestran la secuencia de acciones, decisiones y rutas alternativas que siguen los usuarios al interactuar con Rent2Go. Estos flujos permiten visualizar el comportamiento esperado de la aplicación y validar la experiencia de usuario antes de la implementación.
 
 <div align="center">
-    <img src="Resources/capitulo_3/flujo.png" style="margin: 10px 0;" width="60%"/>
+    <img src="Resources/capitulo_3/FlujoArrendatario.png" style="margin: 10px 0;" width="60%"/>
 </div>
 
 <div align="center">
-    <img src="Resources/capitulo_3/flujo2.png" style="margin: 10px 0;" width="60%"/>
+    <img src="Resources/capitulo_3/FlujoPropietario.png" style="margin: 10px 0;" width="60%"/>
 </div>
+
 
 ### 3.1.4.5. Mobile Applications Prototyping
 
