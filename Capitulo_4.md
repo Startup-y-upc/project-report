@@ -1515,8 +1515,8 @@ Durante Sprint 2, el equipo completó la implementación de todas las funcionali
 
 En este video se muestra la ejecución de los principales endpoints del backend implementados en Sprint 2, incluyendo autenticación (US01-US03), perfiles (US08-US09), KYC (US06-US07), catálogo de vehículos (US11-US17), reservas (US24-US27), cálculo de tarifas (US27), y pagos con Stripe (SP01).
 
-- **URL:** [Insert YouTube URL]
-- **Duración:** [Insert duration]
+- **URL:** https://youtu.be/MkXBbPtmWJo
+- **Duración:** 44:04
 - **Descripción:** Demostración completa de endpoints Sprint 2: registro/login (US01-US02), perfil/KYC (US08-US09), creación de vehículos (US11-US12), gestión de disponibilidad (US16), reservas (US24-US25), cálculo de tarifas (US27) y pagos Stripe (SP01).
 
 ---
