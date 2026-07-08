@@ -2252,10 +2252,18 @@ El sprint cerró con una suite de pruebas alineada a los escenarios críticos de
 **Evidencia visual requerida:**
 
 <div align="center">
-  <img src="Resources/capitulo_4/execution-evidence/20-sprint3-landing-page-demo.png" alt="Landing Page - Sprint 3 Execution Evidence" width="900">
+  <img src="Resources/capitulo_4/execution/landing-page/5-main-sections.png" alt="Secciones principales visibles" width="900">
 </div>
 
-*Nota.* Elaboración propia. Captura de la landing page durante la demostración del Sprint 3.
+*Nota.* Elaboración propia. Captura donde se aprecian las secciones informativas principales del landing page (US53).
+
+**Video de Demostración - Landing Page:**
+
+En este video se muestra la navegación completa del Landing Page (US53-US56), incluyendo responsividad en dispositivos móviles, información de contacto, y navegación intuitiva.
+
+- **URL:** https://youtu.be/eXKw6t8Z5sw
+- **Duración:** 3:27
+- **Descripción:** Demostración completa del Landing Page con navegación entre secciones (US53), información de contacto (US56), navegación intuitiva (US54), y responsividad (US55).
 
 ---
 
