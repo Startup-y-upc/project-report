@@ -2,11 +2,7 @@
 
 # Capítulo IV: Product Implementation & Validation
 
-<div style="page-break-after: always;"></div>
-
 ## 4. Product Implementation & Validation
-
-<div style="page-break-after: always;"></div>
 
 ## 4.1. Software Configuration Management
 
@@ -2060,6 +2056,334 @@ Sprint 2 fue altamente productivo, consolidando las funcionalidades core de Rent
 El equipo demostró capacidad técnica sólida y disciplina en la ejecución, posicionándose para el Sprint 3 con una base sólida para las funcionalidades restantes (reservas avanzadas, notificaciones, analytics).
 
 ---
+
+<div style="page-break-after: always;"></div>
+
+## 4.2.3. Sprint 3
+
+En esta sección se explica y evidencia el proceso de implementación, pruebas, documentación y despliegue del Sprint 3. Durante este sprint, el equipo cerró el ciclo funcional de Rent2Go al completar el flujo de reservas, la operación del propietario, la mensajería y notificaciones, y los módulos de ingresos y pagos simulados para la presentación final.
+
+### 4.2.3.1. Sprint Planning 3
+
+**Resumen del Sprint Planning Meeting:**
+
+| Aspecto | Descripción |
+| --- | --- |
+| Sprint # | Sprint 3 |
+| Sprint Planning Background | *Reunión de planificación del Sprint 3 para completar el flujo end-to-end de reservas, gestión de propietarios, comunicación y reportes financieros en Rent2Go.* |
+| Date | 2026-06-29 |
+| Time | 09:30 AM |
+| Location | Virtual - Google Meet |
+| Prepared By | Carhuancote Dominguez, Gonzalo Alonso |
+| Attendees | Carhuancote Dominguez, Gonzalo Alonso<br>Castillo Vidal, Jesus Ivan<br>Chavez Uribe, Ario Joel<br>Diestra Zambrano, Adriana Maria<br>Huarcaya Matias, Gilbert Alonso |
+| Sprint 2 Review Summary: | Sprint 2 consolidó la base funcional del producto con autenticación, perfil, catálogo, reservas, pagos y comunidad. El equipo demostró un MVP funcional con integración backend-mobile y despliegue operativo. |
+| Sprint 2 Retrospective Summary: | Se identificaron mejoras en cobertura de pruebas, automatización y documentación. El equipo priorizó cerrar las historias pendientes y reforzar la experiencia final del producto. |
+| Sprint Goal & User Stories: | |
+| Sprint 3 Goal | Completar el flujo completo de reservas, gestión de propietarios, comunicaciones y reportes financieros, preparando la solución para una demostración final sólida y coherente. |
+| **Sprint 3 Velocity** | 135 |
+| **Sum of Story Points** | 135 |
+
+**User Stories Incluidas en Sprint 3:**
+
+| ID | Historia | Descripción | Story Points | Prioridad | Sprint |
+| --- | --- | --- | --- | --- | --- |
+| US28 | Confirmar y pagar reserva | Como arrendatario, quiero confirmar y pagar mi reserva, para asegurar la disponibilidad del vehículo. | 8 | Core | Sprint 3 |
+| TS07 | Implementar API de reservas | Implementar endpoints y reglas de negocio para el ciclo completo de reservas. | 8 | Core | Sprint 3 |
+| US29 | Ver mis reservas organizadas por estado | Como arrendatario, quiero ver mis reservas organizadas por estado, para monitorear su avance. | 5 | Core | Sprint 3 |
+| US30 | Ver detalle de una reserva | Como arrendatario, quiero ver el detalle de una reserva, para revisar información clave del alquiler. | 3 | Core | Sprint 3 |
+| US31 | Cancelar reserva | Como arrendatario, quiero cancelar una reserva, para gestionar cambios de plan. | 3 | Core | Sprint 3 |
+| US33 | Ver panel de control del propietario | Como propietario, quiero ver un panel de control, para supervisar reservas y rendimiento. | 5 | Core | Sprint 3 |
+| US34 | Ver solicitudes de reserva pendientes | Como propietario, quiero ver solicitudes de reserva pendientes, para tomar decisiones rápidas. | 5 | Core | Sprint 3 |
+| US35 | Aceptar o rechazar solicitud de reserva | Como propietario, quiero aceptar o rechazar una solicitud, para gestionar la disponibilidad de mi vehículo. | 5 | Core | Sprint 3 |
+| US36 | Ver reservas activas del día | Como propietario, quiero ver reservas activas del día, para coordinar entregas y devoluciones. | 3 | Core | Sprint 3 |
+| US37 | Registrar entrega de vehículo | Como propietario, quiero registrar la entrega de un vehículo, para formalizar el inicio del alquiler. | 3 | Core | Sprint 3 |
+| US44 | Registrar pago de reserva | Como propietario, quiero registrar el pago de una reserva, para cerrar el ciclo financiero. | 5 | Core | Sprint 3 |
+| US45 | Ver resumen de pago | Como arrendatario, quiero ver el resumen de pago, para confirmar el estado de mi transacción. | 3 | Core | Sprint 3 |
+| TS09 | Implementar API de pagos simulados | Implementar endpoints y reglas para pagos simulados asociados a reservas. | 5 | Core | Sprint 3 |
+| US39 | Ver bandeja de conversaciones | Como usuario, quiero ver mi bandeja de conversaciones, para revisar mensajes y solicitudes. | 5 | Normal | Sprint 3 |
+| US41 | Abrir conversación | Como usuario, quiero abrir una conversación, para iniciar comunicación sobre una reserva. | 3 | Normal | Sprint 3 |
+| US42 | Enviar y recibir mensajes | Como usuario, quiero enviar y recibir mensajes, para mantener comunicación con el otro actor. | 5 | Normal | Sprint 3 |
+| TS10 | Implementar API de mensajería | Implementar endpoints de conversaciones y mensajes para soporte de comunicación. | 8 | Normal | Sprint 3 |
+| US40 | Filtrar conversaciones | Como usuario, quiero filtrar conversaciones, para encontrar rápidamente las más relevantes. | 2 | Normal | Sprint 3 |
+| US38 | Contactar al arrendatario desde una reserva | Como propietario, quiero contactar al arrendatario desde una reserva, para resolver dudas del alquiler. | 3 | Normal | Sprint 3 |
+| US43 | Contactar soporte | Como usuario, quiero contactar soporte, para resolver incidencias del servicio. | 3 | Normal | Sprint 3 |
+| US50 | Recibir notificaciones de reserva | Como usuario, quiero recibir notificaciones de reserva, para mantenerme informado del estado de mi alquiler. | 3 | Normal | Sprint 3 |
+| US51 | Recibir notificaciones de mensajes | Como usuario, quiero recibir notificaciones de mensajes, para responder oportunamente. | 3 | Normal | Sprint 3 |
+| TS11 | Implementar API de notificaciones | Implementar endpoints y reglas para el envío de notificaciones del sistema. | 5 | Normal | Sprint 3 |
+| US52 | Reportar problema con una reserva | Como usuario, quiero reportar un problema con una reserva, para solicitar soporte. | 3 | Normal | Sprint 3 |
+| SP04 | Evaluar mensajería en tiempo real o simulada | Evaluar una solución de mensajería en tiempo real o simulada para la experiencia final. | 3 | Normal | Sprint 3 |
+| SP05 | Evaluar notificaciones push | Evaluar la viabilidad de notificaciones push para la experiencia final del producto. | 3 | Normal | Sprint 3 |
+| US46 | Ver ganancias acumuladas | Como propietario, quiero ver mis ganancias acumuladas, para evaluar el desempeño financiero. | 5 | Normal | Sprint 3 |
+| US47 | Ver ingresos por vehículo | Como propietario, quiero ver ingresos por vehículo, para analizar la rentabilidad de mi flota. | 3 | Normal | Sprint 3 |
+| US48 | Consultar movimientos financieros | Como propietario, quiero consultar movimientos financieros, para revisar ingresos y pagos. | 3 | Normal | Sprint 3 |
+| US49 | Solicitar retiro de saldo | Como propietario, quiero solicitar retiro de saldo, para disponer de mis ganancias. | 3 | Normal | Sprint 3 |
+| TS12 | Implementar API de ganancias del propietario | Implementar endpoints de consolidación y consulta de ingresos del propietario. | 5 | Normal | Sprint 3 |
+| US32 | Ver historial de reservas pasadas | Como usuario, quiero ver historial de reservas pasadas, para revisar mis experiencias previas. | 3 | Normal | Sprint 3 |
+
+---
+
+### 4.2.3.2. Sprint Backlog 3
+
+**Introducción:**
+
+En Sprint 3, el equipo se enfoca en cerrar el ciclo de experiencia del usuario para Rent2Go:
+- **Reservas y pagos (US28, US29, US30, US31, US32, US44, US45, TS07, TS09):** confirmación, seguimiento, cancelación y cierre financiero de reservas.
+- **Operación del propietario (US33-US37):** panel, solicitudes, aprobación, seguimiento diario y entrega/recepción del vehículo.
+- **Mensajería y notificaciones (US39-US43, US50-US52, TS10, TS11, SP04, SP05):** bandeja de mensajes, conversaciones, soporte y alertas.
+- **Finanzas del propietario (US46-US49, TS12):** ganancias acumuladas, ingresos por vehículo, movimientos y retiros.
+
+**Estado del Sprint Backlog (Jira Board):**
+
+| Sprint # | User Story | Story Points | Priority | Focus Area | Status |
+| --- | --- | --- | --- | --- | --- |
+| Sprint 3 | US28 | 8 | Core | Booking | Done |
+| Sprint 3 | TS07 | 8 | Core | Booking | Done |
+| Sprint 3 | US29 | 5 | Core | Booking | Done |
+| Sprint 3 | US30 | 3 | Core | Booking | Done |
+| Sprint 3 | US31 | 3 | Core | Booking | Done |
+| Sprint 3 | US33 | 5 | Core | Owner Operations | Done |
+| Sprint 3 | US34 | 5 | Core | Owner Operations | Done |
+| Sprint 3 | US35 | 5 | Core | Owner Operations | Done |
+| Sprint 3 | US36 | 3 | Core | Owner Operations | Done |
+| Sprint 3 | US37 | 3 | Core | Owner Operations | Done |
+| Sprint 3 | US44 | 5 | Core | Payments | Done |
+| Sprint 3 | US45 | 3 | Core | Payments | Done |
+| Sprint 3 | TS09 | 5 | Core | Payments | Done |
+| Sprint 3 | US39 | 5 | Normal | Messaging | Done |
+| Sprint 3 | US41 | 3 | Normal | Messaging | Done |
+| Sprint 3 | US42 | 5 | Normal | Messaging | Done |
+| Sprint 3 | TS10 | 8 | Normal | Messaging | Done |
+| Sprint 3 | US40 | 2 | Normal | Messaging | Done |
+| Sprint 3 | US38 | 3 | Normal | Messaging | Done |
+| Sprint 3 | US43 | 3 | Normal | Support | Done |
+| Sprint 3 | US50 | 3 | Normal | Notifications | Done |
+| Sprint 3 | US51 | 3 | Normal | Notifications | Done |
+| Sprint 3 | TS11 | 5 | Normal | Notifications | Done |
+| Sprint 3 | US52 | 3 | Normal | Support | Done |
+| Sprint 3 | SP04 | 3 | Normal | Spike | Done |
+| Sprint 3 | SP05 | 3 | Normal | Spike | Done |
+| Sprint 3 | US46 | 5 | Normal | Financials | Done |
+| Sprint 3 | US47 | 3 | Normal | Financials | Done |
+| Sprint 3 | US48 | 3 | Normal | Financials | Done |
+| Sprint 3 | US49 | 3 | Normal | Financials | Done |
+| Sprint 3 | TS12 | 5 | Normal | Financials | Done |
+| Sprint 3 | US32 | 3 | Normal | Booking | Done |
+
+---
+
+### 4.2.3.3. Development Evidence for Sprint Review
+
+**Introducción:**
+
+Durante Sprint 3, el foco de desarrollo se centró en cerrar la experiencia de usuario en las aplicaciones móviles y reforzar la propuesta final del Landing Page para la demostración final. La evidencia se organiza siguiendo el mismo patrón del Sprint 2, pero enfocada exclusivamente en Kotlin, Flutter y Landing Page.
+
+**Evidencia de desarrollo destacada:**
+
+| Repositorio | Área | Evidencia |
+| --- | --- | --- |
+| rent2go-kotlin | Android / Kotlin | Implementación de pantallas de reservas, panel del propietario, detalle de reserva y navegación de flujo final. |
+| rent2go-flutter | Flutter / Dart | Implementación de pantallas de reservas, mensajes, finanzas y flujo de navegación para la experiencia final. |
+| landing-page | Landing Page | Ajuste de contenido, secciones de valor, CTA y coherencia visual con la propuesta final del producto. |
+
+**Commits destacados del Sprint 3:**
+
+| Repositorio | Commit | Descripción |
+| --- | --- | --- |
+| rent2go-kotlin | feat(mobile): add reservation and owner-dashboard flows | Integración de pantallas para reservas, panel del propietario y seguimiento de operaciones. |
+| rent2go-flutter | feat(mobile): add reservation and messaging experience | Integración de reservas, pagos simulados y conversaciones en Flutter. |
+| landing-page | feat(landing): align final messaging and CTA | Ajuste de contenido visual y llamadas a la acción para la entrega final. |
+
+**Evidencia visual requerida:**
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-1.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-2.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-3.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-4.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-5.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+</div>
+
+*Nota.* Elaboración propia. Captura de la pantalla de reservas y del panel del propietario en la app Kotlin del Sprint 3.
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/17-flutter-sprint3-reservation-messaging.jpeg" alt="Flutter - Sprint 3 Reservation and Messaging Flow" width="900">
+</div>
+
+*Nota.* Elaboración propia. Captura del flujo de reservas, mensajes y finanzas en la app Flutter del Sprint 3.
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/18-landing-page-sprint3-final.png" alt="Landing Page - Sprint 3 Final Version" width="900">
+</div>
+
+*Nota.* Elaboración propia. Captura de la landing page final ajustada para la presentación de Sprint 3.
+
+---
+
+### 4.2.3.4. Testing Suite Evidence for Sprint Review
+
+**Evidencia de pruebas del sprint:**
+
+| Tipo de prueba | Plataforma | Evidencia |
+| --- | --- | --- |
+| UI tests | Kotlin / Android | Validación de pantallas de reservas, detalle de reserva y panel del propietario. |
+| UI tests | Flutter | Validación de flujo de reserva, mensajes y experiencia final del usuario. |
+| Functional / Content checks | Landing Page | Verificación de CTA, navegación, responsividad y coherencia del mensaje de valor. |
+
+**Conclusión de pruebas:**
+
+El sprint cerró con una suite de pruebas alineada a los escenarios críticos del producto, garantizando estabilidad en los flujos más importantes para la demostración final en Kotlin, Flutter y Landing Page.
+
+**Evidencia visual requerida:**
+
+<div align="center">
+  <img src="Resources/capitulo_4/testing-evidence/19-sprint3-kotlin-flutter-testing.png" alt="Kotlin and Flutter - Sprint 3 Testing Evidence" width="900">
+</div>
+
+*Nota.* Elaboración propia. Evidencia de pruebas ejecutadas para las interfaces móviles y la landing page del Sprint 3.
+
+---
+
+### 4.2.3.5. Execution Evidence for Sprint Review
+
+**Evidencia de ejecución y demo:**
+
+| Evidencia | Descripción |
+| --- | --- |
+| Demo de Sprint 3 (Kotlin) | Se validó el flujo completo de reserva y gestión del propietario en la app Android. |
+| Demo de Sprint 3 (Flutter) | Se validó el flujo de reservas, mensajes y finanzas en la app Flutter. |
+| Demo de Landing Page | Se validó la propuesta final, navegación y llamado a la acción para convertir visitantes. |
+
+**Evidencia visual requerida:**
+
+<div align="center">
+  <img src="Resources/capitulo_4/execution/landing-page/5-main-sections.png" alt="Secciones principales visibles" width="900">
+</div>
+
+*Nota.* Elaboración propia. Captura donde se aprecian las secciones informativas principales del landing page (US53).
+
+**Video de Demostración - Landing Page:**
+
+En este video se muestra la navegación completa del Landing Page (US53-US56), incluyendo responsividad en dispositivos móviles, información de contacto, y navegación intuitiva.
+
+- **URL:** https://youtu.be/eXKw6t8Z5sw
+- **Duración:** 3:27
+- **Descripción:** Demostración completa del Landing Page con navegación entre secciones (US53), información de contacto (US56), navegación intuitiva (US54), y responsividad (US55).
+
+---
+
+### 4.2.3.6. Services Documentation Evidence for Sprint Review
+
+**Documentación de servicios y experiencias actualizada:**
+
+| Componente | Evidencia de documentación |
+| --- | --- |
+| Kotlin app | Documentación de pantallas, navegación y flujo de reserva para la experiencia móvil final. |
+| Flutter app | Documentación de estructura, pantallas y flujo de reserva, mensajes y finanzas. |
+| Landing Page | Documentación de contenido, secciones y estructura de conversión para la propuesta final. |
+
+**Herramientas utilizadas:**
+- Screenshots y capturas de pantallas para evidenciar el estado de las interfaces finales.
+- Documentación de flujo y navegación compartida con el equipo para validación funcional.
+- Material visual de la landing page para sustentar la propuesta final ante usuarios.
+
+**Evidencia visual requerida:**
+
+<div align="center">
+  <img src="Resources/capitulo_4/documentation-evidence/21-sprint3-mobile-and-landing-docs.png" alt="Kotlin, Flutter and Landing Page - Sprint 3 Documentation Evidence" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/18-landing-page-sprint3-final.png" alt="Landing Page - Sprint 3 Documentation Evidence" width="900">
+</div>
+
+*Nota.* Elaboración propia. Evidencia de documentación visual y funcional para las interfaces de Kotlin, Flutter y Landing Page del Sprint 3.
+
+---
+
+### 4.2.3.7. Software Deployment Evidence for Sprint Review
+
+**Introducción:**
+
+Durante Sprint 3, la entrega final de Flutter se validó en dos canales de distribución: Firebase App Distribution para Android y Firebase Hosting para la versión web. Esto permitió comprobar la instalación controlada del build móvil y el acceso público al flujo de reservas desde el navegador.
+
+**Evidencia de despliegue Flutter:**
+
+| Componente | Entorno | Estado | URL |
+| --- | --- | --- | --- |
+| Flutter Android | Firebase App Distribution | Publicado para pruebas internas y validación de QA | https://console.firebase.google.com/u/0/project/rent2go-fe7ed/appdistribution/app/android:com.rent2go.rent2go/releases?hl=es |
+| Flutter Web | Firebase Hosting | Desplegado y accesible públicamente | https://rent2go-fe7ed.web.app/#/bookings |
+
+**Material requerido para compartir:**
+
+| Tipo | Nombre sugerido | Descripción |
+| --- | --- | --- |
+| Imagen | 23-flutter-appdistribution-release.png | Captura del release publicado en Firebase App Distribution. |
+| Imagen | 24-flutter-hosting-web-bookings.png | Captura del endpoint web desplegado en Firebase Hosting. |
+| Video | 23-flutter-appdistribution-demo.mp4 | Video de instalación, apertura y validación del build Android distribuido. |
+| Video | 24-flutter-hosting-demo.mp4 | Video de navegación del sitio web desplegado en Firebase Hosting. |
+
+**Evidencia visual requerida:**
+
+#### Flutter Android - Firebase App Distribution
+
+<div align="center">
+  <img src="Resources/capitulo_4/deployment-evidence/23-flutter-appdistribution-release.jpeg" alt="Flutter - Firebase App Distribution Release" width="900">
+</div>
+
+*Nota.* Elaboración propia. Captura del release de Flutter distribuido mediante Firebase App Distribution.
+
+#### Flutter Web - Firebase Hosting
+
+<div align="center">
+  <img src="Resources/capitulo_4/deployment-evidence/24-flutter-hosting-web-bookings.png" alt="Flutter Web - Firebase Hosting Booking Endpoint" width="900">
+</div>
+
+*Nota.* Elaboración propia. Captura del endpoint web de Flutter desplegado en Firebase Hosting.
+
+**Evidencia audiovisual requerida:**
+
+En este video se muestra el deploy de la version web de la aplicación rent2go.
+
+- **URL:** https://youtu.be/eXKw6t8Z5sw
+- **Duración:** 3:27
+- **Descripción:** Demostración completa de Rent2go con navegación entre secciones.
+
+**URLs de evidencia:**
+- **Firebase App Distribution:** https://console.firebase.google.com/u/0/project/rent2go-fe7ed/appdistribution/app/android:com.rent2go.rent2go/releases?hl=es
+- **Flutter Web en Firebase Hosting:** https://rent2go-fe7ed.web.app/
+
+---
+
+### 4.2.3.8. Team Collaboration Insights during Sprint 3
+
+**Resumen de colaboración del equipo:**
+
+| Indicador | Resultado |
+| --- | --- |
+| Comunicación diaria | Mantenida durante todo el sprint para resolver bloqueadores y priorizar tareas. |
+| Pair programming | Reforzada en integración de pantallas y flujos entre Kotlin, Flutter y Landing Page. |
+| Revisión de PRs | Se mantuvo con cadencia periódica para asegurar calidad técnica y coherencia visual. |
+| Documentación | Actualizada de forma continua para sostener la demo final y la entrega del reporte. |
+
+
+**Conclusión de colaboración:**
+
+Sprint 3 fue una etapa de cierre y consolidación en la que el equipo demostró madurez técnica, coordinación efectiva y capacidad para completar los flujos críticos de Rent2Go con una experiencia final más consistente en móvil y web.
+
+---
+
 
 <div style="page-break-after: always;"></div>
 
