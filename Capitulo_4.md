@@ -2,11 +2,7 @@
 
 # Capítulo IV: Product Implementation & Validation
 
-<div style="page-break-after: always;"></div>
-
 ## 4. Product Implementation & Validation
-
-<div style="page-break-after: always;"></div>
 
 ## 4.1. Software Configuration Management
 
@@ -2061,62 +2057,425 @@ El equipo demostró capacidad técnica sólida y disciplina en la ejecución, po
 
 ---
 
-<!--
+<div style="page-break-after: always;"></div>
+
+## 4.2.3. Sprint 3
+
+En esta sección se explica y evidencia el proceso de implementación, pruebas, documentación y despliegue del Sprint 3. Durante este sprint, el equipo cerró el ciclo funcional de Rent2Go al completar el flujo de reservas, la operación del propietario, la mensajería y notificaciones, y los módulos de ingresos y pagos simulados para la presentación final.
+
+### 4.2.3.1. Sprint Planning 3
+
+**Resumen del Sprint Planning Meeting:**
+
+| Aspecto | Descripción |
+| --- | --- |
+| Sprint # | Sprint 3 |
+| Sprint Planning Background | *Reunión de planificación del Sprint 3 para completar el flujo end-to-end de reservas, gestión de propietarios, comunicación y reportes financieros en Rent2Go.* |
+| Date | 2026-06-29 |
+| Time | 09:30 AM |
+| Location | Virtual - Google Meet |
+| Prepared By | Carhuancote Dominguez, Gonzalo Alonso |
+| Attendees | Carhuancote Dominguez, Gonzalo Alonso<br>Castillo Vidal, Jesus Ivan<br>Chavez Uribe, Ario Joel<br>Diestra Zambrano, Adriana Maria<br>Huarcaya Matias, Gilbert Alonso |
+| Sprint 2 Review Summary: | Sprint 2 consolidó la base funcional del producto con autenticación, perfil, catálogo, reservas, pagos y comunidad. El equipo demostró un MVP funcional con integración backend-mobile y despliegue operativo. |
+| Sprint 2 Retrospective Summary: | Se identificaron mejoras en cobertura de pruebas, automatización y documentación. El equipo priorizó cerrar las historias pendientes y reforzar la experiencia final del producto. |
+| Sprint Goal & User Stories: | |
+| Sprint 3 Goal | Completar el flujo completo de reservas, gestión de propietarios, comunicaciones y reportes financieros, preparando la solución para una demostración final sólida y coherente. |
+| **Sprint 3 Velocity** | 135 |
+| **Sum of Story Points** | 135 |
+
+**User Stories Incluidas en Sprint 3:**
+
+| ID | Historia | Descripción | Story Points | Prioridad | Sprint |
+| --- | --- | --- | --- | --- | --- |
+| US28 | Confirmar y pagar reserva | Como arrendatario, quiero confirmar y pagar mi reserva, para asegurar la disponibilidad del vehículo. | 8 | Core | Sprint 3 |
+| TS07 | Implementar API de reservas | Implementar endpoints y reglas de negocio para el ciclo completo de reservas. | 8 | Core | Sprint 3 |
+| US29 | Ver mis reservas organizadas por estado | Como arrendatario, quiero ver mis reservas organizadas por estado, para monitorear su avance. | 5 | Core | Sprint 3 |
+| US30 | Ver detalle de una reserva | Como arrendatario, quiero ver el detalle de una reserva, para revisar información clave del alquiler. | 3 | Core | Sprint 3 |
+| US31 | Cancelar reserva | Como arrendatario, quiero cancelar una reserva, para gestionar cambios de plan. | 3 | Core | Sprint 3 |
+| US33 | Ver panel de control del propietario | Como propietario, quiero ver un panel de control, para supervisar reservas y rendimiento. | 5 | Core | Sprint 3 |
+| US34 | Ver solicitudes de reserva pendientes | Como propietario, quiero ver solicitudes de reserva pendientes, para tomar decisiones rápidas. | 5 | Core | Sprint 3 |
+| US35 | Aceptar o rechazar solicitud de reserva | Como propietario, quiero aceptar o rechazar una solicitud, para gestionar la disponibilidad de mi vehículo. | 5 | Core | Sprint 3 |
+| US36 | Ver reservas activas del día | Como propietario, quiero ver reservas activas del día, para coordinar entregas y devoluciones. | 3 | Core | Sprint 3 |
+| US37 | Registrar entrega de vehículo | Como propietario, quiero registrar la entrega de un vehículo, para formalizar el inicio del alquiler. | 3 | Core | Sprint 3 |
+| US44 | Registrar pago de reserva | Como propietario, quiero registrar el pago de una reserva, para cerrar el ciclo financiero. | 5 | Core | Sprint 3 |
+| US45 | Ver resumen de pago | Como arrendatario, quiero ver el resumen de pago, para confirmar el estado de mi transacción. | 3 | Core | Sprint 3 |
+| TS09 | Implementar API de pagos simulados | Implementar endpoints y reglas para pagos simulados asociados a reservas. | 5 | Core | Sprint 3 |
+| US39 | Ver bandeja de conversaciones | Como usuario, quiero ver mi bandeja de conversaciones, para revisar mensajes y solicitudes. | 5 | Normal | Sprint 3 |
+| US41 | Abrir conversación | Como usuario, quiero abrir una conversación, para iniciar comunicación sobre una reserva. | 3 | Normal | Sprint 3 |
+| US42 | Enviar y recibir mensajes | Como usuario, quiero enviar y recibir mensajes, para mantener comunicación con el otro actor. | 5 | Normal | Sprint 3 |
+| TS10 | Implementar API de mensajería | Implementar endpoints de conversaciones y mensajes para soporte de comunicación. | 8 | Normal | Sprint 3 |
+| US40 | Filtrar conversaciones | Como usuario, quiero filtrar conversaciones, para encontrar rápidamente las más relevantes. | 2 | Normal | Sprint 3 |
+| US38 | Contactar al arrendatario desde una reserva | Como propietario, quiero contactar al arrendatario desde una reserva, para resolver dudas del alquiler. | 3 | Normal | Sprint 3 |
+| US43 | Contactar soporte | Como usuario, quiero contactar soporte, para resolver incidencias del servicio. | 3 | Normal | Sprint 3 |
+| US50 | Recibir notificaciones de reserva | Como usuario, quiero recibir notificaciones de reserva, para mantenerme informado del estado de mi alquiler. | 3 | Normal | Sprint 3 |
+| US51 | Recibir notificaciones de mensajes | Como usuario, quiero recibir notificaciones de mensajes, para responder oportunamente. | 3 | Normal | Sprint 3 |
+| TS11 | Implementar API de notificaciones | Implementar endpoints y reglas para el envío de notificaciones del sistema. | 5 | Normal | Sprint 3 |
+| US52 | Reportar problema con una reserva | Como usuario, quiero reportar un problema con una reserva, para solicitar soporte. | 3 | Normal | Sprint 3 |
+| SP04 | Evaluar mensajería en tiempo real o simulada | Evaluar una solución de mensajería en tiempo real o simulada para la experiencia final. | 3 | Normal | Sprint 3 |
+| SP05 | Evaluar notificaciones push | Evaluar la viabilidad de notificaciones push para la experiencia final del producto. | 3 | Normal | Sprint 3 |
+| US46 | Ver ganancias acumuladas | Como propietario, quiero ver mis ganancias acumuladas, para evaluar el desempeño financiero. | 5 | Normal | Sprint 3 |
+| US47 | Ver ingresos por vehículo | Como propietario, quiero ver ingresos por vehículo, para analizar la rentabilidad de mi flota. | 3 | Normal | Sprint 3 |
+| US48 | Consultar movimientos financieros | Como propietario, quiero consultar movimientos financieros, para revisar ingresos y pagos. | 3 | Normal | Sprint 3 |
+| US49 | Solicitar retiro de saldo | Como propietario, quiero solicitar retiro de saldo, para disponer de mis ganancias. | 3 | Normal | Sprint 3 |
+| TS12 | Implementar API de ganancias del propietario | Implementar endpoints de consolidación y consulta de ingresos del propietario. | 5 | Normal | Sprint 3 |
+| US32 | Ver historial de reservas pasadas | Como usuario, quiero ver historial de reservas pasadas, para revisar mis experiencias previas. | 3 | Normal | Sprint 3 |
+
+---
+
+### 4.2.3.2. Sprint Backlog 3
+
+**Introducción:**
+
+En Sprint 3, el equipo se enfoca en cerrar el ciclo de experiencia del usuario para Rent2Go:
+- **Reservas y pagos (US28, US29, US30, US31, US32, US44, US45, TS07, TS09):** confirmación, seguimiento, cancelación y cierre financiero de reservas.
+- **Operación del propietario (US33-US37):** panel, solicitudes, aprobación, seguimiento diario y entrega/recepción del vehículo.
+- **Mensajería y notificaciones (US39-US43, US50-US52, TS10, TS11, SP04, SP05):** bandeja de mensajes, conversaciones, soporte y alertas.
+- **Finanzas del propietario (US46-US49, TS12):** ganancias acumuladas, ingresos por vehículo, movimientos y retiros.
+
+**Estado del Sprint Backlog (Jira Board):**
+
+| Sprint # | User Story | Story Points | Priority | Focus Area | Status |
+| --- | --- | --- | --- | --- | --- |
+| Sprint 3 | US28 | 8 | Core | Booking | Done |
+| Sprint 3 | TS07 | 8 | Core | Booking | Done |
+| Sprint 3 | US29 | 5 | Core | Booking | Done |
+| Sprint 3 | US30 | 3 | Core | Booking | Done |
+| Sprint 3 | US31 | 3 | Core | Booking | Done |
+| Sprint 3 | US33 | 5 | Core | Owner Operations | Done |
+| Sprint 3 | US34 | 5 | Core | Owner Operations | Done |
+| Sprint 3 | US35 | 5 | Core | Owner Operations | Done |
+| Sprint 3 | US36 | 3 | Core | Owner Operations | Done |
+| Sprint 3 | US37 | 3 | Core | Owner Operations | Done |
+| Sprint 3 | US44 | 5 | Core | Payments | Done |
+| Sprint 3 | US45 | 3 | Core | Payments | Done |
+| Sprint 3 | TS09 | 5 | Core | Payments | Done |
+| Sprint 3 | US39 | 5 | Normal | Messaging | Done |
+| Sprint 3 | US41 | 3 | Normal | Messaging | Done |
+| Sprint 3 | US42 | 5 | Normal | Messaging | Done |
+| Sprint 3 | TS10 | 8 | Normal | Messaging | Done |
+| Sprint 3 | US40 | 2 | Normal | Messaging | Done |
+| Sprint 3 | US38 | 3 | Normal | Messaging | Done |
+| Sprint 3 | US43 | 3 | Normal | Support | Done |
+| Sprint 3 | US50 | 3 | Normal | Notifications | Done |
+| Sprint 3 | US51 | 3 | Normal | Notifications | Done |
+| Sprint 3 | TS11 | 5 | Normal | Notifications | Done |
+| Sprint 3 | US52 | 3 | Normal | Support | Done |
+| Sprint 3 | SP04 | 3 | Normal | Spike | Done |
+| Sprint 3 | SP05 | 3 | Normal | Spike | Done |
+| Sprint 3 | US46 | 5 | Normal | Financials | Done |
+| Sprint 3 | US47 | 3 | Normal | Financials | Done |
+| Sprint 3 | US48 | 3 | Normal | Financials | Done |
+| Sprint 3 | US49 | 3 | Normal | Financials | Done |
+| Sprint 3 | TS12 | 5 | Normal | Financials | Done |
+| Sprint 3 | US32 | 3 | Normal | Booking | Done |
+
+---
+
+### 4.2.3.3. Development Evidence for Sprint Review
+
+**Introducción:**
+
+Durante Sprint 3, el foco de desarrollo se centró en cerrar la experiencia de usuario en las aplicaciones móviles y reforzar la propuesta final del Landing Page para la demostración final. La evidencia se organiza siguiendo el mismo patrón del Sprint 2, pero enfocada exclusivamente en Kotlin, Flutter y Landing Page.
+
+**Evidencia de desarrollo destacada:**
+
+| Repositorio | Área | Evidencia |
+| --- | --- | --- |
+| rent2go-kotlin | Android / Kotlin | Implementación de pantallas de reservas, panel del propietario, detalle de reserva y navegación de flujo final. |
+| rent2go-flutter | Flutter / Dart | Implementación de pantallas de reservas, mensajes, finanzas y flujo de navegación para la experiencia final. |
+| landing-page | Landing Page | Ajuste de contenido, secciones de valor, CTA y coherencia visual con la propuesta final del producto. |
+
+**Commits destacados del Sprint 3:**
+
+| Repositorio | Commit | Descripción |
+| --- | --- | --- |
+| rent2go-kotlin | feat(mobile): add reservation and owner-dashboard flows | Integración de pantallas para reservas, panel del propietario y seguimiento de operaciones. |
+| rent2go-flutter | feat(mobile): add reservation and messaging experience | Integración de reservas, pagos simulados y conversaciones en Flutter. |
+| landing-page | feat(landing): align final messaging and CTA | Ajuste de contenido visual y llamadas a la acción para la entrega final. |
+
+**Evidencia visual requerida:**
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-1.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-2.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-3.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-4.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-5.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+</div>
+
+*Nota.* Elaboración propia. Captura de la pantalla de reservas y del panel del propietario en la app Kotlin del Sprint 3.
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/17-flutter-sprint3-reservation-messaging.jpeg" alt="Flutter - Sprint 3 Reservation and Messaging Flow" width="900">
+</div>
+
+*Nota.* Elaboración propia. Captura del flujo de reservas, mensajes y finanzas en la app Flutter del Sprint 3.
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/18-landing-page-sprint3-final.png" alt="Landing Page - Sprint 3 Final Version" width="900">
+</div>
+
+*Nota.* Elaboración propia. Captura de la landing page final ajustada para la presentación de Sprint 3.
+
+---
+
+### 4.2.3.4. Testing Suite Evidence for Sprint Review
+
+**Evidencia de pruebas del sprint:**
+
+| Tipo de prueba | Plataforma | Evidencia |
+| --- | --- | --- |
+| UI tests | Kotlin / Android | Validación de pantallas de reservas, detalle de reserva y panel del propietario. |
+| UI tests | Flutter | Validación de flujo de reserva, mensajes y experiencia final del usuario. |
+| Functional / Content checks | Landing Page | Verificación de CTA, navegación, responsividad y coherencia del mensaje de valor. |
+
+**Conclusión de pruebas:**
+
+El sprint cerró con una suite de pruebas alineada a los escenarios críticos del producto, garantizando estabilidad en los flujos más importantes para la demostración final en Kotlin, Flutter y Landing Page.
+
+**Evidencia visual requerida:**
+
+<div align="center">
+  <img src="Resources/capitulo_4/testing-evidence/19-sprint3-kotlin-flutter-testing.png" alt="Kotlin and Flutter - Sprint 3 Testing Evidence" width="900">
+</div>
+
+*Nota.* Elaboración propia. Evidencia de pruebas ejecutadas para las interfaces móviles y la landing page del Sprint 3.
+
+---
+
+### 4.2.3.5. Execution Evidence for Sprint Review
+
+**Evidencia de ejecución y demo:**
+
+| Evidencia | Descripción |
+| --- | --- |
+| Demo de Sprint 3 (Kotlin) | Se validó el flujo completo de reserva y gestión del propietario en la app Android. |
+| Demo de Sprint 3 (Flutter) | Se validó el flujo de reservas, mensajes y finanzas en la app Flutter. |
+| Demo de Landing Page | Se validó la propuesta final, navegación y llamado a la acción para convertir visitantes. |
+
+**Evidencia visual requerida:**
+
+<div align="center">
+  <img src="Resources/capitulo_4/execution/landing-page/5-main-sections.png" alt="Secciones principales visibles" width="900">
+</div>
+
+*Nota.* Elaboración propia. Captura donde se aprecian las secciones informativas principales del landing page (US53).
+
+**Video de Demostración - Landing Page:**
+
+En este video se muestra la navegación completa del Landing Page (US53-US56), incluyendo responsividad en dispositivos móviles, información de contacto, y navegación intuitiva.
+
+- **URL:** https://youtu.be/eXKw6t8Z5sw
+- **Duración:** 3:27
+- **Descripción:** Demostración completa del Landing Page con navegación entre secciones (US53), información de contacto (US56), navegación intuitiva (US54), y responsividad (US55).
+
+---
+
+### 4.2.3.6. Services Documentation Evidence for Sprint Review
+
+**Documentación de servicios y experiencias actualizada:**
+
+| Componente | Evidencia de documentación |
+| --- | --- |
+| Kotlin app | Documentación de pantallas, navegación y flujo de reserva para la experiencia móvil final. |
+| Flutter app | Documentación de estructura, pantallas y flujo de reserva, mensajes y finanzas. |
+| Landing Page | Documentación de contenido, secciones y estructura de conversión para la propuesta final. |
+
+**Herramientas utilizadas:**
+- Screenshots y capturas de pantallas para evidenciar el estado de las interfaces finales.
+- Documentación de flujo y navegación compartida con el equipo para validación funcional.
+- Material visual de la landing page para sustentar la propuesta final ante usuarios.
+
+**Evidencia visual requerida:**
+
+<div align="center">
+  <img src="Resources/capitulo_4/documentation-evidence/21-sprint3-mobile-and-landing-docs.png" alt="Kotlin, Flutter and Landing Page - Sprint 3 Documentation Evidence" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/18-landing-page-sprint3-final.png" alt="Landing Page - Sprint 3 Documentation Evidence" width="900">
+</div>
+
+*Nota.* Elaboración propia. Evidencia de documentación visual y funcional para las interfaces de Kotlin, Flutter y Landing Page del Sprint 3.
+
+---
+
+### 4.2.3.7. Software Deployment Evidence for Sprint Review
+
+**Introducción:**
+
+Durante Sprint 3, la entrega final de Flutter se validó en dos canales de distribución: Firebase App Distribution para Android y Firebase Hosting para la versión web. Esto permitió comprobar la instalación controlada del build móvil y el acceso público al flujo de reservas desde el navegador.
+
+**Evidencia de despliegue Flutter:**
+
+| Componente | Entorno | Estado | URL |
+| --- | --- | --- | --- |
+| Flutter Android | Firebase App Distribution | Publicado para pruebas internas y validación de QA | https://console.firebase.google.com/u/0/project/rent2go-fe7ed/appdistribution/app/android:com.rent2go.rent2go/releases?hl=es |
+| Flutter Web | Firebase Hosting | Desplegado y accesible públicamente | https://rent2go-fe7ed.web.app/#/bookings |
+
+**Material requerido para compartir:**
+
+| Tipo | Nombre sugerido | Descripción |
+| --- | --- | --- |
+| Imagen | 23-flutter-appdistribution-release.png | Captura del release publicado en Firebase App Distribution. |
+| Imagen | 24-flutter-hosting-web-bookings.png | Captura del endpoint web desplegado en Firebase Hosting. |
+| Video | 23-flutter-appdistribution-demo.mp4 | Video de instalación, apertura y validación del build Android distribuido. |
+| Video | 24-flutter-hosting-demo.mp4 | Video de navegación del sitio web desplegado en Firebase Hosting. |
+
+**Evidencia visual requerida:**
+
+#### Flutter Android - Firebase App Distribution
+
+<div align="center">
+  <img src="Resources/capitulo_4/deployment-evidence/23-flutter-appdistribution-release.jpeg" alt="Flutter - Firebase App Distribution Release" width="900">
+</div>
+
+*Nota.* Elaboración propia. Captura del release de Flutter distribuido mediante Firebase App Distribution.
+
+#### Flutter Web - Firebase Hosting
+
+<div align="center">
+  <img src="Resources/capitulo_4/deployment-evidence/24-flutter-hosting-web-bookings.png" alt="Flutter Web - Firebase Hosting Booking Endpoint" width="900">
+</div>
+
+*Nota.* Elaboración propia. Captura del endpoint web de Flutter desplegado en Firebase Hosting.
+
+**Evidencia audiovisual requerida:**
+
+En este video se muestra el deploy de la version web de la aplicación rent2go.
+
+- **URL:** https://youtu.be/eXKw6t8Z5sw
+- **Duración:** 3:27
+- **Descripción:** Demostración completa de Rent2go con navegación entre secciones.
+
+**URLs de evidencia:**
+- **Firebase App Distribution:** https://console.firebase.google.com/u/0/project/rent2go-fe7ed/appdistribution/app/android:com.rent2go.rent2go/releases?hl=es
+- **Flutter Web en Firebase Hosting:** https://rent2go-fe7ed.web.app/
+
+---
+
+### 4.2.3.8. Team Collaboration Insights during Sprint 3
+
+**Resumen de colaboración del equipo:**
+
+| Indicador | Resultado |
+| --- | --- |
+| Comunicación diaria | Mantenida durante todo el sprint para resolver bloqueadores y priorizar tareas. |
+| Pair programming | Reforzada en integración de pantallas y flujos entre Kotlin, Flutter y Landing Page. |
+| Revisión de PRs | Se mantuvo con cadencia periódica para asegurar calidad técnica y coherencia visual. |
+| Documentación | Actualizada de forma continua para sostener la demo final y la entrega del reporte. |
+
+
+**Conclusión de colaboración:**
+
+Sprint 3 fue una etapa de cierre y consolidación en la que el equipo demostró madurez técnica, coordinación efectiva y capacidad para completar los flujos críticos de Rent2Go con una experiencia final más consistente en móvil y web.
+
+---
+
+
 <div style="page-break-after: always;"></div>
 
 ## 4.3. Validation Interviews
 
-En esta sección, el equipo registra y explica las actividades de entrevistas de validación durante Sprint 1. Se realizaron entrevistas con usuarios de los segmentos objetivo: visitantes para validar Landing Page (US53-US56) y arrendatarios para validar funcionalidades de búsqueda y filtrado de vehículos (US18-US23).
+En esta sección, el equipo registra y explica las actividades de entrevistas de validación. Se diseñaron y llevaron a cabo entrevistas con usuarios reales pertenecientes a los segmentos objetivo para validar la usabilidad, utilidad y aceptación de la versión funcional desplegada de la aplicación móvil Rent2Go, analizando los flujos clave tanto de propietarios como de arrendatarios.
 
-### 4.3.1. Diseño de Entrevistas
+### 4.3.1. Diseño de Entrevistas de Validación
 
-**Objetivos de Validación:**
+**Objetivo:**
+Validar la usabilidad, utilidad percibida y aceptación de la aplicación móvil Rent2Go por parte de los segmentos objetivo, mediante la interacción directa con la versión funcional desplegada. Se busca identificar problemas de usabilidad, funcionalidades faltantes y oportunidades de mejora en los flujos principales de alquiler de vehículos entre particulares.
 
-- Evaluar claridad del valor propuesto en el Landing Page (US53-US56)
-- Validar navegabilidad e información presentada en landing
-- Validar responsividad en múltiples dispositivos
-- Recopilar feedback sobre funcionalidades de búsqueda y filtrado de vehículos (US18-US23)
-- Entender fluidez de interacción en búsqueda y detalle de vehículos
+**Público Objetivo:**
+Se entrevistarán los mismos dos segmentos de las entrevistas de needfinding:
+1. **Propietarios de vehículos particulares con baja frecuencia de uso**
+2. **Arrendatarios que buscan opciones de movilidad temporal y flexible**
 
-**Segmentos Objetivo:**
+*Características comunes de los participantes:*
+- **Edad:** 18 a 60 años
+- **Residencia:** Zonas urbanas a nivel nacional
+- **Dispositivo:** Acceso a un smartphone (Android o iOS)
+- **Criterio de inclusión:** Haber participado en las entrevistas iniciales de needfinding
 
-1. **Visitantes:** Personas nuevas interesadas en conocer la plataforma (para US53-US56)
-2. **Arrendatarios:** Personas buscando alquilar vehículos de corta duración (para US18-US23)
+**Tipo de Entrevistas:**
+Se utilizarán entrevistas de validación estructuradas, combinando la observación directa del usuario interactuando con la aplicación móvil y preguntas posteriores orientadas a recoger su percepción sobre la experiencia.
 
-**Estructura de Entrevista (Visitantes - US53-US56):**
+**Metodología:**
 
-| Sección | Duración | Descripción |
-| --- | --- | --- |
-| Bienvenida | 2 min | Presentación del producto y propósito de validación |
-| Navegar Landing Page | 5 min | Usuario explora secciones del landing (US53, US56, US54, US55) |
-| Tarea 1: Entender el servicio | 3 min | Preguntas sobre claridad del modelo de negocio y propuesta de valor |
-| Tarea 2: Encontrar contacto | 2 min | Usuario localiza información de contacto (US56) |
-| Tarea 3: Evaluar navegación | 2 min | Usuario intenta acceder a diferentes secciones (US54) |
-| Feedback de diseño | 2 min | Observaciones sobre responsividad y usabilidad (US55) |
-| Cierre | 1 min | Agradecimiento y siguiente pasos |
+| Aspecto | Detalle |
+| --- | --- |
+| **Modalidad** | Virtual |
+| **Duración** | 15 a 20 minutos por entrevista |
+| **Herramienta** | Se compartirá el enlace de descarga o la URL de la aplicación desplegada (APK o PWA) para que el usuario la explore desde su propio dispositivo móvil |
+| **Registro** | Video de la sesión subido a Microsoft Stream, con notas escritas en el informe |
 
-**Estructura de Entrevista (Arrendatarios - US18-US23):**
+**Dinámica de la Sesión:**
+Cada sesión se divide en dos partes:
+1. **Pruebas de tareas (Observación directa):** Se le pide al entrevistado que realice una serie de tareas dentro de la aplicación sin intervención del equipo, mientras se observa su comportamiento en pantalla y navegación.
+2. **Entrevista estructurada (Preguntas de validación):** Se realizan las preguntas de validación basadas en lo observado y en la experiencia directa del usuario con el fin de recoger feedback cualitativo.
 
-| Sección | Duración | Descripción |
-| --- | --- | --- |
-| Bienvenida | 2 min | Presentación del producto y propósito de validación |
-| Búsqueda de vehículos | 4 min | Usuario realiza búsqueda (US19) y obtiene resultados |
-| Aplicar filtro | 3 min | Usuario aplica filtro de precio (US20) |
-| Ver detalles | 3 min | Usuario selecciona y ve detalles de vehículo (US22) |
-| Agregar favoritos | 2 min | Usuario agrega vehículo a favoritos (US23) |
-| Feedback general | 3 min | Preguntas sobre facilidad de uso y mejoras |
-| Cierre | 1 min | Agradecimiento y siguiente pasos |
+**User Flows a Evaluar Durante la Sesión:**
 
-**User Flows a Validar:**
+*Para Propietarios de Vehículos:*
+- Registrarse e iniciar sesión en la aplicación como propietario.
+- Publicar un vehículo ingresando sus datos, fotos, disponibilidad y precio por día.
+- Revisar y gestionar una solicitud de alquiler recibida (aceptar o rechazar).
+- Consultar el historial de alquileres realizados y los ingresos generados.
+- Revisar las calificaciones y comentarios recibidos de arrendatarios.
 
-1. **Flow Visitante - Landing Page:** Acceder a landing → Entender propuesta → Navegar secciones → Encontrar CTA (US53-US56)
-2. **Flow Arrendatario - Búsqueda:** Buscar vehículos → Filtrar por precio → Ver detalles → Agregar a favoritos (US18-US23)
+*Para Arrendatarios de Vehículos:*
+- Registrarse e iniciar sesión en la aplicación como arrendatario.
+- Buscar un vehículo disponible aplicando filtros (zona, tipo, precio).
+- Revisar el detalle de un vehículo (fotos, descripción, calificaciones del propietario) y realizar una reserva.
+- Consultar el estado de su reserva activa y los detalles del vehículo asignado.
+- Calificar al propietario y al vehículo al finalizar el alquiler.
+
+**Guía de Preguntas para la Validación:**
+
+*Preguntas para Propietarios de Vehículos:*
+1. Al ver la pantalla de inicio, ¿qué fue lo primero que entendiste que podías hacer con la aplicación como propietario?
+2. Al registrar tu vehículo, ¿el proceso te pareció claro y completo? ¿Qué fue lo más complicado o lo que más tiempo te tomó?
+3. La información que solicita la app para publicar tu vehículo (fotos, precio, disponibilidad), ¿te parece suficiente o echarías algo de menos?
+4. Cuando recibiste una solicitud de alquiler, ¿la información que te mostraba sobre el arrendatario te generó suficiente confianza para aceptarla? ¿Qué más querrías saber?
+5. ¿El historial de alquileres e ingresos que muestra la app te da una imagen clara de cómo te está yendo económicamente?
+6. ¿Ver las calificaciones y comentarios que te dejan los arrendatarios te motivaría a mejorar la presentación de tu vehículo o tu atención? ¿O no le darías mucha importancia?
+7. ¿Hubo alguna pantalla o función que no entendiste a la primera o que te resultó confusa?
+8. ¿Qué tan probable es que recomiendes esta aplicación a otros propietarios de tu entorno? ¿Qué mejorarías antes de hacerlo?
+
+*Preguntas para Arrendatarios de Vehículos:*
+1. Al ver la pantalla de inicio, ¿qué fue lo primero que entendiste que podías hacer con la aplicación?
+2. Al buscar un vehículo, ¿los filtros disponibles (zona, tipo de vehículo, precio) te fueron suficientes para encontrar lo que necesitabas? ¿Qué filtro adicional agregarías?
+3. La información del vehículo que encontraste (fotos, descripción, calificaciones del propietario), ¿te generó confianza suficiente para querer reservarlo? ¿Qué le faltó o qué le sobró?
+4. ¿El precio por día que muestra la app te pareció justo o razonable comparado con las opciones que conocías antes? ¿Por qué?
+5. ¿Hubo algún paso durante el proceso de reserva en que no supiste qué hacer o te confundiste?
+6. Comparando con cómo conseguías un vehículo de alquiler antes, ¿sientes que esta forma es mejor, igual o peor? ¿Qué te lo hace pensar?
+7. ¿Qué tan fácil o difícil fue calificar al propietario y al vehículo al finalizar el alquiler? ¿Lo harías en la vida real?
+8. ¿Hay alguna función que esperabas encontrar y no encontraste?
+9. ¿Usarías esta aplicación la próxima vez que necesites alquilar un vehículo? ¿Qué te lo impediría?
+
+*Pregunta de Cierre (Ambos Segmentos):*
+- En una sola frase, ¿cómo describirías esta aplicación a alguien de tu ciudad que aún no la conoce?
+
+**Consideraciones Éticas:**
+- Se solicitará al entrevistado el consentimiento explícito para la grabación de la sesión y el uso de su información antes de iniciar.
+- Se garantizará la confidencialidad de toda la información proporcionada durante la entrevista.
+- Los datos obtenidos serán utilizados únicamente con fines académicos, en el marco del curso de Aplicaciones Móviles de la Universidad Peruana de Ciencias Aplicadas (UPC).
 
 ---
 
 ### 4.3.2. Registro de Entrevistas
 
-**Entrevista 1 - Segmento: Visitante (Landing Page US53-US56)**
+**Entrevista 1 - Segmento: Propietario (Validación de Aplicación Móvil)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -2126,24 +2485,24 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
 | **Captura de Video** | <img src="Resources/capitulo_4/interviews/1-entrevista-1.png" alt="Captura entrevista 1" width="320"> |
-| **URL OneDrive** | [Insert link OneDrive] |
+| **URL Stream** | [Insert link Microsoft Stream] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
 **Resumen de Observaciones:**
 
-[Insert resumen descriptivo de las principales apreciaciones del entrevistado. Incluir:
-- Reacciones sobre el Landing Page (US53)
-- Claridad del modelo de negocio
-- Facilidad de encontrar información de contacto (US56)
-- Facilidad de navegación (US54)
-- Observaciones sobre responsividad (US55)
-- Principales dudas o fricción
-- Puntos positivos y negativos
-- Disposición a usar la app]
+[Insert resumen descriptivo de las principales apreciaciones del propietario. Incluir:
+- Primeras impresiones al iniciar la app.
+- Claridad y facilidad para registrar y publicar el vehículo.
+- Suficiencia de la información y fotos solicitadas para el vehículo.
+- Nivel de confianza que genera la información del arrendatario al recibir una solicitud.
+- Entendimiento del historial de alquileres e ingresos.
+- Motivación frente al sistema de calificaciones y comentarios.
+- Identificación de pantallas o funciones confusas.
+- Probabilidad de recomendación y propuestas de mejora.]
 
 ---
 
-**Entrevista 2 - Segmento: Visitante (Landing Page US53-US56)**
+**Entrevista 2 - Segmento: Propietario (Validación de Aplicación Móvil)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -2153,16 +2512,16 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
 | **Captura de Video** | <img src="Resources/capitulo_4/interviews/2-entrevista-2.png" alt="Captura entrevista 2" width="320"> |
-| **URL OneDrive** | [Insert link OneDrive] |
+| **URL Stream** | [Insert link Microsoft Stream] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
 **Resumen de Observaciones:**
 
-[Insert resumen descriptivo de las principales apreciaciones del entrevistado sobre Landing Page (US53-US56)]
+[Insert resumen descriptivo de las apreciaciones del segundo propietario sobre la interacción con la aplicación.]
 
 ---
 
-**Entrevista 3 - Segmento: Arrendatario (Búsqueda y Filtrado US18-US23)**
+**Entrevista 3 - Segmento: Arrendatario (Validación de Aplicación Móvil)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -2172,24 +2531,22 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
 | **Captura de Video** | <img src="Resources/capitulo_4/interviews/3-entrevista-3.png" alt="Captura entrevista 3" width="320"> |
-| **URL OneDrive** | [Insert link OneDrive] |
+| **URL Stream** | [Insert link Microsoft Stream] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
 **Resumen de Observaciones:**
 
-[Insert resumen descriptivo de las principales apreciaciones del entrevistado. Incluir:
-- Facilidad de búsqueda de vehículos (US19)
-- Utilidad del filtro de precio (US20)
-- Claridad de detalles de vehículo mostrados (US22)
-- Necesidad de agregar a favoritos (US23)
-- Fluidez de la búsqueda
-- Resultados relevantes
-- Puntos de fricción
-- Intención de alquilar]
+[Insert resumen descriptivo de las principales apreciaciones del arrendatario. Incluir:
+- Facilidad para buscar vehículos y suficiencia de los filtros aplicados (zona, tipo, precio).
+- Nivel de confianza inspirado por la información detallada del vehículo y la reputación del dueño.
+- Percepción del precio y facilidad para realizar/confirmar el proceso de reserva.
+- Facilidad para consultar el estado de la reserva activa.
+- Utilidad y usabilidad en el flujo de calificación al propietario y vehículo.
+- Comparación de este método con los tradicionales y la intención real de uso futuro.]
 
 ---
 
-**Entrevista 4 - Segmento: Arrendatario (Búsqueda y Filtrado US18-US23)**
+**Entrevista 4 - Segmento: Arrendatario (Validación de Aplicación Móvil)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -2199,39 +2556,132 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
 | **Captura de Video** | <img src="Resources/capitulo_4/interviews/4-entrevista-4.png" alt="Captura entrevista 4" width="320"> |
-| **URL OneDrive** | [Insert link OneDrive] |
+| **URL Stream** | [Insert link Microsoft Stream] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
 **Resumen de Observaciones:**
 
-[Insert resumen descriptivo de las principales apreciaciones del entrevistado sobre búsqueda y filtrado (US18-US23)]
+[Insert resumen descriptivo de las apreciaciones del segundo arrendatario sobre la interacción con la aplicación.]
 
 ---
 
 ### 4.3.3. Evaluaciones según heurísticas
 
-En esta sección se evalúan las sesiones de validación basado en heurísticas de usabilidad, arquitectura de información e inclusive design de la experiencia propuesta en el Landing Page.
+**UX Heuristics & Principles Evaluation**
+_Usability – Inclusive Design – Information Architecture_
 
-**Evaluación Heurística - Landing Page Sprint 1:**
+**SITE o APP A EVALUAR:**
+Rent2Go – Aplicación móvil de alquiler de vehículos entre particulares (vistas de propietario y arrendatario).
 
-| # | Heurística | Severidad | Descripción | Recomendación |
-| --- | --- | --- | --- | --- |
-| 1 | Visibilidad del estado del sistema | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 2 | Coincidencia entre el sistema y el mundo real | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 3 | Control y libertad del usuario | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 4 | Estándares y consistencia | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 5 | Prevención de errores | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 6 | Reconocimiento en lugar de recuerdo | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 7 | Flexibilidad y eficiencia de uso | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 8 | Diseño estético y minimalista | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 9 | Ayuda y documentación | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 10 | Accesibilidad (WCAG 2.1) | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
+**TAREAS A EVALUAR:**
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas en los flujos principales de la aplicación:
 
-**Resumen de Evaluación:**
+_Segmento Propietario:_
+1. Registrarse e iniciar sesión en la aplicación como propietario.
+2. Publicar un vehículo ingresando sus datos, fotos, disponibilidad y precio por día.
+3. Revisar y gestionar una solicitud de alquiler recibida (aceptar o rechazar).
+4. Consultar el historial de alquileres realizados y los ingresos generados.
+5. Revisar las calificaciones y comentarios recibidos de arrendatarios.
 
-[Insert resumen general de hallazgos, patrones observados, y prioridades de mejora para próximas iteraciones]
+_Segmento Arrendatario:_
+6. Registrarse e iniciar sesión en la aplicación como arrendatario.
+7. Buscar un vehículo disponible aplicando filtros (zona, tipo, precio).
+8. Revisar el detalle de un vehículo (fotos, descripción, calificaciones del propietario) y realizar una reserva.
+9. Consultar el estado de su reserva activa y los detalles del vehículo asignado.
+10. Calificar al propietario y al vehículo al finalizar el alquiler.
 
----
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+1. Comunicación directa por chat en tiempo real entre propietario y arrendatario.
+2. Pasarela de pagos digitales y facturación integrada.
+3. Carga y validación automática de multas de tránsito.
+4. Cobertura de seguros contra accidentes (SOAT digital integrado).
 
-<div style="page-break-after: always;"></div>
--->
+**ESCALA DE SEVERIDAD:**
+
+| Nivel | Descripción |
+| ----- | ----------- |
+| 1     | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2     | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja de cara al siguiente release. |
+| 3     | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar prioridad alta. |
+| 4     | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+**TABLA RESUMEN:**
+
+| #   | Problema | Segmento | Escala de severidad | Heurística/Principio violada(o) |
+| --- | -------- | -------- | ------------------- | ------------------------------- |
+| 1   | Falta de notificaciones y actualizaciones en tiempo real en la gestión de reservas | Ambos | 3 | Usability: Visibilidad del estado del sistema |
+| 2   | Ausencia de geolocalización en tiempo real para coordinar la entrega y devolución del vehículo | Ambos | 3 | Usability: Visibilidad del estado del sistema |
+| 3   | Proceso de validación de documentos (licencia de conducir y DNI) confuso y sin feedback de estado | Arrendatario | 2 | Usability: Ayuda y documentación |
+| 4   | Ausencia de filtros de búsqueda avanzados (tipo de transmisión, combustible, equipamiento adicional) | Arrendatario | 2 | Usability: Flexibilidad y eficiencia de uso |
+| 5   | No se indica visualmente cuáles campos del formulario de registro de vehículos son obligatorios | Propietario | 2 | Usability: Prevención de errores |
+| 6   | Dificultad o imposibilidad de modificar o cancelar una reserva activa directamente desde la app | Ambos | 3 | Usability: Control y libertad del usuario |
+| 7   | El historial de ingresos no permite comparar periodos (semana/mes actual vs. anterior) | Propietario | 1 | Information Architecture: Is it useful? |
+| 8   | Las calificaciones muestran solo estrellas, sin permitir comentarios detallados de retroalimentación | Ambos | 2 | Usability: Visibilidad del estado del sistema |
+| 9   | Contraste de colores deficiente en textos secundarios y etiquetas de estado de vehículos | Ambos | 2 | Accesibilidad (WCAG 2.1) |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1: Falta de notificaciones y actualizaciones en tiempo real en la gestión de reservas**
+*   **Severidad:** 3
+*   **Heurística violada:** Usability – Visibilidad del estado del sistema
+*   **Problema:** Los usuarios reportaron que cuando un arrendatario realiza una solicitud de reserva, el propietario no recibe una notificación en tiempo real. De forma similar, el arrendatario debe recargar manualmente la vista de su reserva para enterarse si su solicitud fue aceptada o rechazada. Esto incrementa la fricción y el tiempo de espera.
+*   _(Incluir captura de pantalla del flujo de reserva/solicitud)_
+*   **Recomendación:** Integrar un servicio de notificaciones push en tiempo real (por ejemplo, Firebase Cloud Messaging) y actualizar dinámicamente el estado de la reserva en pantalla a través de sockets o listeners activos.
+
+**PROBLEMA #2: Ausencia de geolocalización en tiempo real para coordinar la entrega**
+*   **Severidad:** 3
+*   **Heurística violada:** Usability – Visibilidad del estado del sistema
+*   **Problema:** Al aproximarse la hora de inicio de la reserva, ni el propietario ni el arrendatario pueden visualizar la ubicación física del otro en un mapa en tiempo real para encontrarse y entregar las llaves del vehículo. Esto los obliga a coordinar mediante llamadas telefónicas externas o mensajería de terceros.
+*   _(Incluir captura de pantalla del mapa o pantalla previa a la entrega)_
+*   **Recomendación:** Incorporar un mapa interactivo de seguimiento GPS activo únicamente durante las horas programadas de entrega y devolución del vehículo.
+
+**PROBLEMA #3: Proceso de validación de documentos confuso y sin feedback de estado**
+*   **Severidad:** 2
+*   **Heurística violada:** Usability – Ayuda y documentación
+*   **Problema:** Durante el registro de arrendatarios, al solicitar la foto de la licencia de conducir (brevete) y del documento de identidad, no se especifican los formatos permitidos ni las pautas de nitidez. Además, tras subir las imágenes, no se muestra ningún mensaje sobre si los archivos se encuentran en revisión, aprobados o rechazados.
+*   _(Incluir captura de pantalla del paso de subida de documentos KYC)_
+*   **Recomendación:** Agregar pautas explícitas de subida (ej. "Formatos PNG o JPG, tamaño máximo 5MB") y mostrar un banner claro de estado (ej. "Tus documentos están siendo verificados. Tiempo estimado: 15 min").
+
+**PROBLEMA #4: Ausencia de filtros de búsqueda avanzados**
+*   **Severidad:** 2
+*   **Heurística violada:** Usability – Flexibilidad y eficiencia de uso
+*   **Problema:** El buscador de vehículos solo permite filtrar por zona, tipo de carrocería y rango de precio general. Los arrendatarios señalaron que para alquilar un auto es crucial conocer el tipo de transmisión (manual/automática) y el tipo de combustible (gasolina, GLP, eléctrico), opciones que actualmente no se pueden filtrar.
+*   _(Incluir captura de pantalla del panel de filtros de búsqueda)_
+*   **Recomendación:** Expandir la funcionalidad de filtros añadiendo opciones específicas de transmisión, combustible, y equipamiento básico (ej. aire acondicionado, GPS, cámara de retroceso).
+
+**PROBLEMA #5: No se indica visualmente cuáles campos del registro de vehículos son obligatorios**
+*   **Severidad:** 2
+*   **Heurística violada:** Usability – Prevención de errores
+*   **Problema:** Al completar el formulario para registrar y publicar un vehículo, no hay marcas visuales (como asteriscos) que identifiquen cuáles campos son estrictamente requeridos (SOAT, kilometraje, fotos) y cuáles opcionales (descripción adicional). Si el usuario omite uno, la app muestra un error genérico tras intentar guardar.
+*   _(Incluir captura de pantalla del formulario de publicación de vehículo)_
+*   **Recomendación:** Señalar con un asterisco (*) los campos obligatorios, validar las entradas inline y mantener el botón "Publicar" inactivo hasta que se cumplan las condiciones mínimas.
+
+**PROBLEMA #6: Dificultad o imposibilidad de modificar o cancelar una reserva activa**
+*   **Severidad:** 3
+*   **Heurística violada:** Usability – Control y libertad del usuario
+*   **Problema:** En el flujo de reservas activas, el arrendatario no cuenta con un botón directo para cancelar o solicitar un cambio de fecha ante un imprevisto. La interfaz asume un flujo lineal sin posibilidad de retroceso, lo que genera desconfianza y obliga al usuario a recurrir a canales de soporte externos.
+*   _(Incluir captura de pantalla del detalle de reserva confirmada)_
+*   **Recomendación:** Añadir un botón visible de "Cancelar reserva" y otro de "Solicitar reprogramación", aplicando las políticas de cobro o penalización parametrizadas por el sistema.
+
+**PROBLEMA #7: El historial de ingresos no permite comparar periodos**
+*   **Severidad:** 1
+*   **Heurística violada:** Information Architecture – Is it useful?
+*   **Problema:** El panel financiero del propietario solo muestra una lista plana de ingresos acumulados cronológicamente. No es posible agrupar las ganancias por periodos de tiempo (semanas, meses, años) ni contrastar el desempeño económico actual con el de periodos anteriores.
+*   _(Incluir captura de pantalla del panel de ingresos del propietario)_
+*   **Recomendación:** Integrar un selector de fecha/periodo en la sección de ingresos y un indicador gráfico simplificado que compare la rentabilidad respecto al mes anterior.
+
+**PROBLEMA #8: Las calificaciones muestran solo estrellas, sin permitir comentarios detallados**
+*   **Severidad:** 2
+*   **Heurística violada:** Usability – Visibilidad del estado del sistema
+*   **Problema:** Tras finalizar un alquiler, los usuarios únicamente pueden calificar con un rango de 1 a 5 estrellas. Los propietarios manifestaron que esto impide conocer las razones específicas detrás de una calificación baja (por ejemplo, problemas de limpieza o retraso en la entrega) para poder corregirlos.
+*   _(Incluir captura de pantalla de la pantalla de calificación final)_
+*   **Recomendación:** Añadir un campo opcional para comentarios escritos e incorporar etiquetas de selección rápida (ej. "Limpieza excelente", "Puntual", "Trato amable").
+
+**PROBLEMA #9: Contraste de colores deficiente en textos secundarios y etiquetas**
+*   **Severidad:** 2
+*   **Heurística violada:** Accesibilidad (WCAG 2.1)
+*   **Problema:** Las etiquetas secundarias que indican el estado del vehículo (ej. "En mantenimiento" o "Disponible") utilizan combinaciones de colores con bajo contraste visual, dificultando su lectura para usuarios con fatiga visual o en condiciones de luz solar directa en dispositivos móviles.
+*   **Recomendación:** Ajustar la paleta de colores de los estados y tipografías secundarias para cumplir con el nivel mínimo de contraste WCAG AA (4.5:1).
+
+**Resumen de la Evaluación:**
+Las pruebas de usabilidad revelaron que Rent2Go posee una arquitectura de información base sólida y flujos de registro comprensibles; sin embargo, adolece de mecanismos dinámicos e interactivos en tiempo real (notificaciones instantáneas y rastreo GPS) que son indispensables para coordinar un alquiler de vehículos seguro y ágil. Asimismo, existen oportunidades críticas de mejora en la prevención de errores (formularios de publicación), la flexibilidad del usuario (opción de cancelación/modificación) y la retroalimentación cualitativa (comentarios en las calificaciones). La implementación de estas recomendaciones prioritarias elevará significativamente la percepción de seguridad y la retención tanto de propietarios como de arrendatarios en la plataforma móvil.
