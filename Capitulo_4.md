@@ -2061,62 +2061,97 @@ El equipo demostró capacidad técnica sólida y disciplina en la ejecución, po
 
 ---
 
-<!--
 <div style="page-break-after: always;"></div>
 
 ## 4.3. Validation Interviews
 
-En esta sección, el equipo registra y explica las actividades de entrevistas de validación durante Sprint 1. Se realizaron entrevistas con usuarios de los segmentos objetivo: visitantes para validar Landing Page (US53-US56) y arrendatarios para validar funcionalidades de búsqueda y filtrado de vehículos (US18-US23).
+En esta sección, el equipo registra y explica las actividades de entrevistas de validación. Se diseñaron y llevaron a cabo entrevistas con usuarios reales pertenecientes a los segmentos objetivo para validar la usabilidad, utilidad y aceptación de la versión funcional desplegada de la aplicación móvil Rent2Go, analizando los flujos clave tanto de propietarios como de arrendatarios.
 
-### 4.3.1. Diseño de Entrevistas
+### 4.3.1. Diseño de Entrevistas de Validación
 
-**Objetivos de Validación:**
+**Objetivo:**
+Validar la usabilidad, utilidad percibida y aceptación de la aplicación móvil Rent2Go por parte de los segmentos objetivo, mediante la interacción directa con la versión funcional desplegada. Se busca identificar problemas de usabilidad, funcionalidades faltantes y oportunidades de mejora en los flujos principales de alquiler de vehículos entre particulares.
 
-- Evaluar claridad del valor propuesto en el Landing Page (US53-US56)
-- Validar navegabilidad e información presentada en landing
-- Validar responsividad en múltiples dispositivos
-- Recopilar feedback sobre funcionalidades de búsqueda y filtrado de vehículos (US18-US23)
-- Entender fluidez de interacción en búsqueda y detalle de vehículos
+**Público Objetivo:**
+Se entrevistarán los mismos dos segmentos de las entrevistas de needfinding:
+1. **Propietarios de vehículos particulares con baja frecuencia de uso**
+2. **Arrendatarios que buscan opciones de movilidad temporal y flexible**
 
-**Segmentos Objetivo:**
+*Características comunes de los participantes:*
+- **Edad:** 18 a 60 años
+- **Residencia:** Zonas urbanas a nivel nacional
+- **Dispositivo:** Acceso a un smartphone (Android o iOS)
+- **Criterio de inclusión:** Haber participado en las entrevistas iniciales de needfinding
 
-1. **Visitantes:** Personas nuevas interesadas en conocer la plataforma (para US53-US56)
-2. **Arrendatarios:** Personas buscando alquilar vehículos de corta duración (para US18-US23)
+**Tipo de Entrevistas:**
+Se utilizarán entrevistas de validación estructuradas, combinando la observación directa del usuario interactuando con la aplicación móvil y preguntas posteriores orientadas a recoger su percepción sobre la experiencia.
 
-**Estructura de Entrevista (Visitantes - US53-US56):**
+**Metodología:**
 
-| Sección | Duración | Descripción |
-| --- | --- | --- |
-| Bienvenida | 2 min | Presentación del producto y propósito de validación |
-| Navegar Landing Page | 5 min | Usuario explora secciones del landing (US53, US56, US54, US55) |
-| Tarea 1: Entender el servicio | 3 min | Preguntas sobre claridad del modelo de negocio y propuesta de valor |
-| Tarea 2: Encontrar contacto | 2 min | Usuario localiza información de contacto (US56) |
-| Tarea 3: Evaluar navegación | 2 min | Usuario intenta acceder a diferentes secciones (US54) |
-| Feedback de diseño | 2 min | Observaciones sobre responsividad y usabilidad (US55) |
-| Cierre | 1 min | Agradecimiento y siguiente pasos |
+| Aspecto | Detalle |
+| --- | --- |
+| **Modalidad** | Virtual |
+| **Duración** | 15 a 20 minutos por entrevista |
+| **Herramienta** | Se compartirá el enlace de descarga o la URL de la aplicación desplegada (APK o PWA) para que el usuario la explore desde su propio dispositivo móvil |
+| **Registro** | Video de la sesión subido a Microsoft Stream, con notas escritas en el informe |
 
-**Estructura de Entrevista (Arrendatarios - US18-US23):**
+**Dinámica de la Sesión:**
+Cada sesión se divide en dos partes:
+1. **Pruebas de tareas (Observación directa):** Se le pide al entrevistado que realice una serie de tareas dentro de la aplicación sin intervención del equipo, mientras se observa su comportamiento en pantalla y navegación.
+2. **Entrevista estructurada (Preguntas de validación):** Se realizan las preguntas de validación basadas en lo observado y en la experiencia directa del usuario con el fin de recoger feedback cualitativo.
 
-| Sección | Duración | Descripción |
-| --- | --- | --- |
-| Bienvenida | 2 min | Presentación del producto y propósito de validación |
-| Búsqueda de vehículos | 4 min | Usuario realiza búsqueda (US19) y obtiene resultados |
-| Aplicar filtro | 3 min | Usuario aplica filtro de precio (US20) |
-| Ver detalles | 3 min | Usuario selecciona y ve detalles de vehículo (US22) |
-| Agregar favoritos | 2 min | Usuario agrega vehículo a favoritos (US23) |
-| Feedback general | 3 min | Preguntas sobre facilidad de uso y mejoras |
-| Cierre | 1 min | Agradecimiento y siguiente pasos |
+**User Flows a Evaluar Durante la Sesión:**
 
-**User Flows a Validar:**
+*Para Propietarios de Vehículos:*
+- Registrarse e iniciar sesión en la aplicación como propietario.
+- Publicar un vehículo ingresando sus datos, fotos, disponibilidad y precio por día.
+- Revisar y gestionar una solicitud de alquiler recibida (aceptar o rechazar).
+- Consultar el historial de alquileres realizados y los ingresos generados.
+- Revisar las calificaciones y comentarios recibidos de arrendatarios.
 
-1. **Flow Visitante - Landing Page:** Acceder a landing → Entender propuesta → Navegar secciones → Encontrar CTA (US53-US56)
-2. **Flow Arrendatario - Búsqueda:** Buscar vehículos → Filtrar por precio → Ver detalles → Agregar a favoritos (US18-US23)
+*Para Arrendatarios de Vehículos:*
+- Registrarse e iniciar sesión en la aplicación como arrendatario.
+- Buscar un vehículo disponible aplicando filtros (zona, tipo, precio).
+- Revisar el detalle de un vehículo (fotos, descripción, calificaciones del propietario) y realizar una reserva.
+- Consultar el estado de su reserva activa y los detalles del vehículo asignado.
+- Calificar al propietario y al vehículo al finalizar el alquiler.
+
+**Guía de Preguntas para la Validación:**
+
+*Preguntas para Propietarios de Vehículos:*
+1. Al ver la pantalla de inicio, ¿qué fue lo primero que entendiste que podías hacer con la aplicación como propietario?
+2. Al registrar tu vehículo, ¿el proceso te pareció claro y completo? ¿Qué fue lo más complicado o lo que más tiempo te tomó?
+3. La información que solicita la app para publicar tu vehículo (fotos, precio, disponibilidad), ¿te parece suficiente o echarías algo de menos?
+4. Cuando recibiste una solicitud de alquiler, ¿la información que te mostraba sobre el arrendatario te generó suficiente confianza para aceptarla? ¿Qué más querrías saber?
+5. ¿El historial de alquileres e ingresos que muestra la app te da una imagen clara de cómo te está yendo económicamente?
+6. ¿Ver las calificaciones y comentarios que te dejan los arrendatarios te motivaría a mejorar la presentación de tu vehículo o tu atención? ¿O no le darías mucha importancia?
+7. ¿Hubo alguna pantalla o función que no entendiste a la primera o que te resultó confusa?
+8. ¿Qué tan probable es que recomiendes esta aplicación a otros propietarios de tu entorno? ¿Qué mejorarías antes de hacerlo?
+
+*Preguntas para Arrendatarios de Vehículos:*
+1. Al ver la pantalla de inicio, ¿qué fue lo primero que entendiste que podías hacer con la aplicación?
+2. Al buscar un vehículo, ¿los filtros disponibles (zona, tipo de vehículo, precio) te fueron suficientes para encontrar lo que necesitabas? ¿Qué filtro adicional agregarías?
+3. La información del vehículo que encontraste (fotos, descripción, calificaciones del propietario), ¿te generó confianza suficiente para querer reservarlo? ¿Qué le faltó o qué le sobró?
+4. ¿El precio por día que muestra la app te pareció justo o razonable comparado con las opciones que conocías antes? ¿Por qué?
+5. ¿Hubo algún paso durante el proceso de reserva en que no supiste qué hacer o te confundiste?
+6. Comparando con cómo conseguías un vehículo de alquiler antes, ¿sientes que esta forma es mejor, igual o peor? ¿Qué te lo hace pensar?
+7. ¿Qué tan fácil o difícil fue calificar al propietario y al vehículo al finalizar el alquiler? ¿Lo harías en la vida real?
+8. ¿Hay alguna función que esperabas encontrar y no encontraste?
+9. ¿Usarías esta aplicación la próxima vez que necesites alquilar un vehículo? ¿Qué te lo impediría?
+
+*Pregunta de Cierre (Ambos Segmentos):*
+- En una sola frase, ¿cómo describirías esta aplicación a alguien de tu ciudad que aún no la conoce?
+
+**Consideraciones Éticas:**
+- Se solicitará al entrevistado el consentimiento explícito para la grabación de la sesión y el uso de su información antes de iniciar.
+- Se garantizará la confidencialidad de toda la información proporcionada durante la entrevista.
+- Los datos obtenidos serán utilizados únicamente con fines académicos, en el marco del curso de Aplicaciones Móviles de la Universidad Peruana de Ciencias Aplicadas (UPC).
 
 ---
 
 ### 4.3.2. Registro de Entrevistas
 
-**Entrevista 1 - Segmento: Visitante (Landing Page US53-US56)**
+**Entrevista 1 - Segmento: Propietario (Validación de Aplicación Móvil)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -2126,24 +2161,24 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
 | **Captura de Video** | <img src="Resources/capitulo_4/interviews/1-entrevista-1.png" alt="Captura entrevista 1" width="320"> |
-| **URL OneDrive** | [Insert link OneDrive] |
+| **URL Stream** | [Insert link Microsoft Stream] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
 **Resumen de Observaciones:**
 
-[Insert resumen descriptivo de las principales apreciaciones del entrevistado. Incluir:
-- Reacciones sobre el Landing Page (US53)
-- Claridad del modelo de negocio
-- Facilidad de encontrar información de contacto (US56)
-- Facilidad de navegación (US54)
-- Observaciones sobre responsividad (US55)
-- Principales dudas o fricción
-- Puntos positivos y negativos
-- Disposición a usar la app]
+[Insert resumen descriptivo de las principales apreciaciones del propietario. Incluir:
+- Primeras impresiones al iniciar la app.
+- Claridad y facilidad para registrar y publicar el vehículo.
+- Suficiencia de la información y fotos solicitadas para el vehículo.
+- Nivel de confianza que genera la información del arrendatario al recibir una solicitud.
+- Entendimiento del historial de alquileres e ingresos.
+- Motivación frente al sistema de calificaciones y comentarios.
+- Identificación de pantallas o funciones confusas.
+- Probabilidad de recomendación y propuestas de mejora.]
 
 ---
 
-**Entrevista 2 - Segmento: Visitante (Landing Page US53-US56)**
+**Entrevista 2 - Segmento: Propietario (Validación de Aplicación Móvil)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -2153,16 +2188,16 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
 | **Captura de Video** | <img src="Resources/capitulo_4/interviews/2-entrevista-2.png" alt="Captura entrevista 2" width="320"> |
-| **URL OneDrive** | [Insert link OneDrive] |
+| **URL Stream** | [Insert link Microsoft Stream] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
 **Resumen de Observaciones:**
 
-[Insert resumen descriptivo de las principales apreciaciones del entrevistado sobre Landing Page (US53-US56)]
+[Insert resumen descriptivo de las apreciaciones del segundo propietario sobre la interacción con la aplicación.]
 
 ---
 
-**Entrevista 3 - Segmento: Arrendatario (Búsqueda y Filtrado US18-US23)**
+**Entrevista 3 - Segmento: Arrendatario (Validación de Aplicación Móvil)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -2172,24 +2207,22 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
 | **Captura de Video** | <img src="Resources/capitulo_4/interviews/3-entrevista-3.png" alt="Captura entrevista 3" width="320"> |
-| **URL OneDrive** | [Insert link OneDrive] |
+| **URL Stream** | [Insert link Microsoft Stream] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
 **Resumen de Observaciones:**
 
-[Insert resumen descriptivo de las principales apreciaciones del entrevistado. Incluir:
-- Facilidad de búsqueda de vehículos (US19)
-- Utilidad del filtro de precio (US20)
-- Claridad de detalles de vehículo mostrados (US22)
-- Necesidad de agregar a favoritos (US23)
-- Fluidez de la búsqueda
-- Resultados relevantes
-- Puntos de fricción
-- Intención de alquilar]
+[Insert resumen descriptivo de las principales apreciaciones del arrendatario. Incluir:
+- Facilidad para buscar vehículos y suficiencia de los filtros aplicados (zona, tipo, precio).
+- Nivel de confianza inspirado por la información detallada del vehículo y la reputación del dueño.
+- Percepción del precio y facilidad para realizar/confirmar el proceso de reserva.
+- Facilidad para consultar el estado de la reserva activa.
+- Utilidad y usabilidad en el flujo de calificación al propietario y vehículo.
+- Comparación de este método con los tradicionales y la intención real de uso futuro.]
 
 ---
 
-**Entrevista 4 - Segmento: Arrendatario (Búsqueda y Filtrado US18-US23)**
+**Entrevista 4 - Segmento: Arrendatario (Validación de Aplicación Móvil)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -2199,39 +2232,34 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
 | **Captura de Video** | <img src="Resources/capitulo_4/interviews/4-entrevista-4.png" alt="Captura entrevista 4" width="320"> |
-| **URL OneDrive** | [Insert link OneDrive] |
+| **URL Stream** | [Insert link Microsoft Stream] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
 **Resumen de Observaciones:**
 
-[Insert resumen descriptivo de las principales apreciaciones del entrevistado sobre búsqueda y filtrado (US18-US23)]
+[Insert resumen descriptivo de las apreciaciones del segundo arrendatario sobre la interacción con la aplicación.]
 
 ---
 
 ### 4.3.3. Evaluaciones según heurísticas
 
-En esta sección se evalúan las sesiones de validación basado en heurísticas de usabilidad, arquitectura de información e inclusive design de la experiencia propuesta en el Landing Page.
+En esta sección se evalúan las sesiones de validación basándose en heurísticas de usabilidad, arquitectura de información y diseño inclusivo de la experiencia móvil propuesta en la aplicación Rent2Go.
 
-**Evaluación Heurística - Landing Page Sprint 1:**
+**Evaluación Heurística - Aplicación Móvil Rent2Go:**
 
 | # | Heurística | Severidad | Descripción | Recomendación |
 | --- | --- | --- | --- | --- |
-| 1 | Visibilidad del estado del sistema | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 2 | Coincidencia entre el sistema y el mundo real | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 3 | Control y libertad del usuario | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 4 | Estándares y consistencia | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 5 | Prevención de errores | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 6 | Reconocimiento en lugar de recuerdo | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 7 | Flexibilidad y eficiencia de uso | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 8 | Diseño estético y minimalista | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 9 | Ayuda y documentación | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 10 | Accesibilidad (WCAG 2.1) | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
+| 1 | Visibilidad del estado del sistema | [Low/Medium/High] | Indicadores visuales y de carga al obtener el catálogo de vehículos o procesar una reserva. | Asegurar que existan loaders o spinners claros en transiciones de carga de red para que el usuario conozca el estado actual del proceso. |
+| 2 | Coincidencia entre el sistema y el mundo real | [Low/Medium/High] | Términos utilizados en la publicación y reserva de vehículos familiares para los usuarios (ej. "alquiler por día", "calificación de reputación"). | Mantener un lenguaje simple y directo alineado con la terminología local de alquiler de autos particulares. |
+| 3 | Control y libertad del usuario | [Low/Medium/High] | Capacidad del usuario para cancelar una reserva iniciada accidentalmente o deshacer la publicación de un vehículo sin trabas. | Proveer botones claros para retornar ("Atrás") o cancelar acciones sin penalizaciones inmediatas. |
+| 4 | Estándares y consistencia | [Low/Medium/High] | Consistencia en los patrones visuales y de interacción entre la versión Kotlin/Android y Flutter/Dart (ej. iconos de favoritos, botones de acción). | Homologar los componentes de diseño y la paleta de colores entre ambas plataformas para mantener una identidad de marca única. |
+| 5 | Prevención de errores | [Low/Medium/High] | Validación en campos de entrada (ej. precios negativos, fechas de disponibilidad inválidas, datos del vehículo faltantes). | Deshabilitar el botón de envío hasta que los campos mandatorios estén debidamente validados y mostrar sugerencias de formato interactivo. |
+| 6 | Reconocimiento en lugar de recuerdo | [Low/Medium/High] | Acceso a filtros de búsqueda previos aplicados y pre-llenado de datos de perfil en el checkout. | Mantener visibles los filtros seleccionados durante la búsqueda y autocompletar la información personal conocida. |
+| 7 | Flexibilidad y eficiencia de uso | [Low/Medium/High] | Atajos o flujos rápidos para usuarios recurrentes (propietarios experimentados que desean duplicar una publicación anterior o arrendatarios frecuentes). | Implementar guardado de filtros preferidos e historial rápido de vehículos consultados. |
+| 8 | Diseño estético y minimalista | [Low/Medium/High] | Sobrecarga visual en la visualización detallada del vehículo o exceso de campos irrelevantes en el formulario de registro. | Ocultar información complementaria bajo pestañas expandibles y destacar de manera limpia el CTA principal (Reservar). |
+| 9 | Ayuda y documentación | [Low/Medium/High] | Falta de una sección de preguntas frecuentes (FAQs) o de guías cortas explicativas durante el registro de vehículos o subida de documentos KYC. | Añadir un flujo corto de onboarding interactivo en el primer inicio de sesión y enlaces a soporte en caso de error de verificación. |
+| 10 | Accesibilidad (WCAG 2.1) | [Low/Medium/High] | Contraste de colores en textos secundarios y soporte para lectores de pantalla en los flujos principales de la aplicación. | Revisar la paleta de colores para cumplir con el estándar WCAG AA y añadir etiquetas de accesibilidad descriptoras (semantics/contentDescription). |
 
 **Resumen de Evaluación:**
 
-[Insert resumen general de hallazgos, patrones observados, y prioridades de mejora para próximas iteraciones]
-
----
-
-<div style="page-break-after: always;"></div>
--->
+[Insert resumen general de hallazgos, patrones observados y prioridades de mejora en la interfaz y usabilidad de la aplicación móvil de cara a próximas iteraciones del desarrollo.]
