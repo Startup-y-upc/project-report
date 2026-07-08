@@ -87,7 +87,7 @@
     <td align="center">TB2</td>
     <td align="center">06/07/2026</td>
     <td>Castillo Vidal, Jesus Ivan<br>Chavez Uribe, Ario Joel<br>Carhuancote Dominguez, Gonzalo Alonso<br>Diestra Zambrano, Adriana Maria<br>Huarcaya Matias, Gilbert Alonso</td>
-    <td>Cuarta versión del informe. Se documentó el Sprint 3 como continuidad del Sprint 2, enfocado en completar las historias pendientes en Kotlin y Flutter, ajustar el Landing Page según las entrevistas de validación y consolidar las evidencias finales de cierre del proyecto. Se actualizaron Collaboration Insights, Student Outcome y las conclusiones de cierre para la entrega TB2.</td>
+    <td>Cuarta versión del informe. Se documentó el Sprint 3 como continuidad del Sprint 2, enfocado en completar las historias pendientes en Kotlin y Flutter, ajustar el Landing Page según las entrevistas de validación y consolidar las evidencias finales de cierre del proyecto, incluyendo Firebase App Distribution y Firebase Hosting para la entrega Flutter. Se actualizaron Collaboration Insights, Student Outcome y las conclusiones de cierre para la entrega TB2.</td>
   </tr>
 </table>
 

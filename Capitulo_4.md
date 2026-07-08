@@ -2,11 +2,7 @@
 
 # Capítulo IV: Product Implementation & Validation
 
-<div style="page-break-after: always;"></div>
-
 ## 4. Product Implementation & Validation
-
-<div style="page-break-after: always;"></div>
 
 ## 4.1. Software Configuration Management
 
@@ -2290,26 +2286,56 @@ El sprint cerró con una suite de pruebas alineada a los escenarios críticos de
 
 ### 4.2.3.7. Software Deployment Evidence for Sprint Review
 
-**Evidencia de despliegue:**
+**Introducción:**
 
-| Componente | Estado |
-| --- | --- |
-| Aplicación Android / Kotlin | Lista para demostración con los flujos cerrados de reserva y propietario. |
-| Aplicación Flutter | Lista para demostración con el flujo de reservas, mensajes y finanzas. |
-| Landing Page | Desplegada y alineada con la propuesta final del producto para la presentación. |
+Durante Sprint 3, la entrega final de Flutter se validó en dos canales de distribución: Firebase App Distribution para Android y Firebase Hosting para la versión web. Esto permitió comprobar la instalación controlada del build móvil y el acceso público al flujo de reservas desde el navegador.
 
-**URLs de evidencia:**
-- **Demo Android / Kotlin:** [Insert public URL]
-- **Demo Flutter:** [Insert public URL]
-- **Landing Page:** [Insert public URL]
+**Evidencia de despliegue Flutter:**
+
+| Componente | Entorno | Estado | URL |
+| --- | --- | --- | --- |
+| Flutter Android | Firebase App Distribution | Publicado para pruebas internas y validación de QA | https://console.firebase.google.com/u/0/project/rent2go-fe7ed/appdistribution/app/android:com.rent2go.rent2go/releases?hl=es |
+| Flutter Web | Firebase Hosting | Desplegado y accesible públicamente | https://rent2go-fe7ed.web.app/#/bookings |
+
+**Material requerido para compartir:**
+
+| Tipo | Nombre sugerido | Descripción |
+| --- | --- | --- |
+| Imagen | 23-flutter-appdistribution-release.png | Captura del release publicado en Firebase App Distribution. |
+| Imagen | 24-flutter-hosting-web-bookings.png | Captura del endpoint web desplegado en Firebase Hosting. |
+| Video | 23-flutter-appdistribution-demo.mp4 | Video de instalación, apertura y validación del build Android distribuido. |
+| Video | 24-flutter-hosting-demo.mp4 | Video de navegación del sitio web desplegado en Firebase Hosting. |
 
 **Evidencia visual requerida:**
 
+#### Flutter Android - Firebase App Distribution
+
 <div align="center">
-  <img src="Resources/capitulo_4/deployment-evidence/22-sprint3-mobile-and-landing-deployment.png" alt="Kotlin, Flutter and Landing Page - Sprint 3 Deployment Evidence" width="900">
+  <img src="Resources/capitulo_4/deployment-evidence/23-flutter-appdistribution-release.png" alt="Flutter - Firebase App Distribution Release" width="900">
 </div>
 
-*Nota.* Elaboración propia. Evidencia de despliegue y presentación final de Kotlin, Flutter y Landing Page para Sprint 3.
+*Nota.* Elaboración propia. Captura del release de Flutter distribuido mediante Firebase App Distribution.
+
+#### Flutter Web - Firebase Hosting
+
+<div align="center">
+  <img src="Resources/capitulo_4/deployment-evidence/24-flutter-hosting-web-bookings.png" alt="Flutter Web - Firebase Hosting Booking Endpoint" width="900">
+</div>
+
+*Nota.* Elaboración propia. Captura del endpoint web de Flutter desplegado en Firebase Hosting.
+
+**Evidencia audiovisual requerida:**
+
+| Video | Nombre sugerido | Uso |
+| --- | --- | --- |
+| Flutter Android | 23-flutter-appdistribution-demo.mp4 | Demostración del proceso de descarga, instalación y ejecución del build distribuido. |
+| Flutter Web | 24-flutter-hosting-demo.mp4 | Demostración de navegación del sitio web y validación del flujo `/#/bookings`. |
+
+**URLs de evidencia:**
+- **Firebase App Distribution:** https://console.firebase.google.com/u/0/project/rent2go-fe7ed/appdistribution/app/android:com.rent2go.rent2go/releases?hl=es
+- **Flutter Web en Firebase Hosting:** https://rent2go-fe7ed.web.app/#/bookings
+
+**Nota de cierre:** La evidencia solicitada en esta sección debe entregarse con los nombres sugeridos para mantener consistencia con el resto del informe y facilitar la revisión de Sprint 3.
 
 ---
 
