@@ -2196,13 +2196,29 @@ Durante Sprint 3, el foco de desarrollo se centró en cerrar la experiencia de u
 **Evidencia visual requerida:**
 
 <div align="center">
-  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow.png" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-1.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-2.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-3.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-4.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/16-kotlin-sprint3-reservation-flow-5.jpeg" alt="Kotlin - Sprint 3 Reservation Flow" width="900">
 </div>
 
 *Nota.* Elaboración propia. Captura de la pantalla de reservas y del panel del propietario en la app Kotlin del Sprint 3.
 
 <div align="center">
-  <img src="Resources/capitulo_4/mobile-evidence/17-flutter-sprint3-reservation-messaging.png" alt="Flutter - Sprint 3 Reservation and Messaging Flow" width="900">
+  <img src="Resources/capitulo_4/mobile-evidence/17-flutter-sprint3-reservation-messaging.jpeg" alt="Flutter - Sprint 3 Reservation and Messaging Flow" width="900">
 </div>
 
 *Nota.* Elaboración propia. Captura del flujo de reservas, mensajes y finanzas en la app Flutter del Sprint 3.
@@ -2280,12 +2296,16 @@ En este video se muestra la navegación completa del Landing Page (US53-US56), i
 **Herramientas utilizadas:**
 - Screenshots y capturas de pantallas para evidenciar el estado de las interfaces finales.
 - Documentación de flujo y navegación compartida con el equipo para validación funcional.
-- Material visual de la landing page para sustentar la propuesta final ante usuarios y stakeholders.
+- Material visual de la landing page para sustentar la propuesta final ante usuarios.
 
 **Evidencia visual requerida:**
 
 <div align="center">
   <img src="Resources/capitulo_4/documentation-evidence/21-sprint3-mobile-and-landing-docs.png" alt="Kotlin, Flutter and Landing Page - Sprint 3 Documentation Evidence" width="900">
+</div>
+
+<div align="center">
+  <img src="Resources/capitulo_4/mobile-evidence/18-landing-page-sprint3-final.png" alt="Landing Page - Sprint 3 Documentation Evidence" width="900">
 </div>
 
 *Nota.* Elaboración propia. Evidencia de documentación visual y funcional para las interfaces de Kotlin, Flutter y Landing Page del Sprint 3.
@@ -2319,7 +2339,7 @@ Durante Sprint 3, la entrega final de Flutter se validó en dos canales de distr
 #### Flutter Android - Firebase App Distribution
 
 <div align="center">
-  <img src="Resources/capitulo_4/deployment-evidence/23-flutter-appdistribution-release.png" alt="Flutter - Firebase App Distribution Release" width="900">
+  <img src="Resources/capitulo_4/deployment-evidence/23-flutter-appdistribution-release.jpeg" alt="Flutter - Firebase App Distribution Release" width="900">
 </div>
 
 *Nota.* Elaboración propia. Captura del release de Flutter distribuido mediante Firebase App Distribution.
@@ -2343,8 +2363,6 @@ Durante Sprint 3, la entrega final de Flutter se validó en dos canales de distr
 - **Firebase App Distribution:** https://console.firebase.google.com/u/0/project/rent2go-fe7ed/appdistribution/app/android:com.rent2go.rent2go/releases?hl=es
 - **Flutter Web en Firebase Hosting:** https://rent2go-fe7ed.web.app/#/bookings
 
-**Nota de cierre:** La evidencia solicitada en esta sección debe entregarse con los nombres sugeridos para mantener consistencia con el resto del informe y facilitar la revisión de Sprint 3.
-
 ---
 
 ### 4.2.3.8. Team Collaboration Insights during Sprint 3
@@ -2357,6 +2375,7 @@ Durante Sprint 3, la entrega final de Flutter se validó en dos canales de distr
 | Pair programming | Reforzada en integración de pantallas y flujos entre Kotlin, Flutter y Landing Page. |
 | Revisión de PRs | Se mantuvo con cadencia periódica para asegurar calidad técnica y coherencia visual. |
 | Documentación | Actualizada de forma continua para sostener la demo final y la entrega del reporte. |
+
 
 **Conclusión de colaboración:**
 
