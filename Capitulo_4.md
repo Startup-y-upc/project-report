@@ -2243,23 +2243,121 @@ Cada sesión se divide en dos partes:
 
 ### 4.3.3. Evaluaciones según heurísticas
 
-En esta sección se evalúan las sesiones de validación basándose en heurísticas de usabilidad, arquitectura de información y diseño inclusivo de la experiencia móvil propuesta en la aplicación Rent2Go.
+**UX Heuristics & Principles Evaluation**
+_Usability – Inclusive Design – Information Architecture_
 
-**Evaluación Heurística - Aplicación Móvil Rent2Go:**
+**SITE o APP A EVALUAR:**
+Rent2Go – Aplicación móvil de alquiler de vehículos entre particulares (vistas de propietario y arrendatario).
 
-| # | Heurística | Severidad | Descripción | Recomendación |
-| --- | --- | --- | --- | --- |
-| 1 | Visibilidad del estado del sistema | [Low/Medium/High] | Indicadores visuales y de carga al obtener el catálogo de vehículos o procesar una reserva. | Asegurar que existan loaders o spinners claros en transiciones de carga de red para que el usuario conozca el estado actual del proceso. |
-| 2 | Coincidencia entre el sistema y el mundo real | [Low/Medium/High] | Términos utilizados en la publicación y reserva de vehículos familiares para los usuarios (ej. "alquiler por día", "calificación de reputación"). | Mantener un lenguaje simple y directo alineado con la terminología local de alquiler de autos particulares. |
-| 3 | Control y libertad del usuario | [Low/Medium/High] | Capacidad del usuario para cancelar una reserva iniciada accidentalmente o deshacer la publicación de un vehículo sin trabas. | Proveer botones claros para retornar ("Atrás") o cancelar acciones sin penalizaciones inmediatas. |
-| 4 | Estándares y consistencia | [Low/Medium/High] | Consistencia en los patrones visuales y de interacción entre la versión Kotlin/Android y Flutter/Dart (ej. iconos de favoritos, botones de acción). | Homologar los componentes de diseño y la paleta de colores entre ambas plataformas para mantener una identidad de marca única. |
-| 5 | Prevención de errores | [Low/Medium/High] | Validación en campos de entrada (ej. precios negativos, fechas de disponibilidad inválidas, datos del vehículo faltantes). | Deshabilitar el botón de envío hasta que los campos mandatorios estén debidamente validados y mostrar sugerencias de formato interactivo. |
-| 6 | Reconocimiento en lugar de recuerdo | [Low/Medium/High] | Acceso a filtros de búsqueda previos aplicados y pre-llenado de datos de perfil en el checkout. | Mantener visibles los filtros seleccionados durante la búsqueda y autocompletar la información personal conocida. |
-| 7 | Flexibilidad y eficiencia de uso | [Low/Medium/High] | Atajos o flujos rápidos para usuarios recurrentes (propietarios experimentados que desean duplicar una publicación anterior o arrendatarios frecuentes). | Implementar guardado de filtros preferidos e historial rápido de vehículos consultados. |
-| 8 | Diseño estético y minimalista | [Low/Medium/High] | Sobrecarga visual en la visualización detallada del vehículo o exceso de campos irrelevantes en el formulario de registro. | Ocultar información complementaria bajo pestañas expandibles y destacar de manera limpia el CTA principal (Reservar). |
-| 9 | Ayuda y documentación | [Low/Medium/High] | Falta de una sección de preguntas frecuentes (FAQs) o de guías cortas explicativas durante el registro de vehículos o subida de documentos KYC. | Añadir un flujo corto de onboarding interactivo en el primer inicio de sesión y enlaces a soporte en caso de error de verificación. |
-| 10 | Accesibilidad (WCAG 2.1) | [Low/Medium/High] | Contraste de colores en textos secundarios y soporte para lectores de pantalla en los flujos principales de la aplicación. | Revisar la paleta de colores para cumplir con el estándar WCAG AA y añadir etiquetas de accesibilidad descriptoras (semantics/contentDescription). |
+**TAREAS A EVALUAR:**
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas en los flujos principales de la aplicación:
 
-**Resumen de Evaluación:**
+_Segmento Propietario:_
+1. Registrarse e iniciar sesión en la aplicación como propietario.
+2. Publicar un vehículo ingresando sus datos, fotos, disponibilidad y precio por día.
+3. Revisar y gestionar una solicitud de alquiler recibida (aceptar o rechazar).
+4. Consultar el historial de alquileres realizados y los ingresos generados.
+5. Revisar las calificaciones y comentarios recibidos de arrendatarios.
 
-[Insert resumen general de hallazgos, patrones observados y prioridades de mejora en la interfaz y usabilidad de la aplicación móvil de cara a próximas iteraciones del desarrollo.]
+_Segmento Arrendatario:_
+6. Registrarse e iniciar sesión en la aplicación como arrendatario.
+7. Buscar un vehículo disponible aplicando filtros (zona, tipo, precio).
+8. Revisar el detalle de un vehículo (fotos, descripción, calificaciones del propietario) y realizar una reserva.
+9. Consultar el estado de su reserva activa y los detalles del vehículo asignado.
+10. Calificar al propietario y al vehículo al finalizar el alquiler.
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+1. Comunicación directa por chat en tiempo real entre propietario y arrendatario.
+2. Pasarela de pagos digitales y facturación integrada.
+3. Carga y validación automática de multas de tránsito.
+4. Cobertura de seguros contra accidentes (SOAT digital integrado).
+
+**ESCALA DE SEVERIDAD:**
+
+| Nivel | Descripción |
+| ----- | ----------- |
+| 1     | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2     | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja de cara al siguiente release. |
+| 3     | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar prioridad alta. |
+| 4     | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+**TABLA RESUMEN:**
+
+| #   | Problema | Segmento | Escala de severidad | Heurística/Principio violada(o) |
+| --- | -------- | -------- | ------------------- | ------------------------------- |
+| 1   | Falta de notificaciones y actualizaciones en tiempo real en la gestión de reservas | Ambos | 3 | Usability: Visibilidad del estado del sistema |
+| 2   | Ausencia de geolocalización en tiempo real para coordinar la entrega y devolución del vehículo | Ambos | 3 | Usability: Visibilidad del estado del sistema |
+| 3   | Proceso de validación de documentos (licencia de conducir y DNI) confuso y sin feedback de estado | Arrendatario | 2 | Usability: Ayuda y documentación |
+| 4   | Ausencia de filtros de búsqueda avanzados (tipo de transmisión, combustible, equipamiento adicional) | Arrendatario | 2 | Usability: Flexibilidad y eficiencia de uso |
+| 5   | No se indica visualmente cuáles campos del formulario de registro de vehículos son obligatorios | Propietario | 2 | Usability: Prevención de errores |
+| 6   | Dificultad o imposibilidad de modificar o cancelar una reserva activa directamente desde la app | Ambos | 3 | Usability: Control y libertad del usuario |
+| 7   | El historial de ingresos no permite comparar periodos (semana/mes actual vs. anterior) | Propietario | 1 | Information Architecture: Is it useful? |
+| 8   | Las calificaciones muestran solo estrellas, sin permitir comentarios detallados de retroalimentación | Ambos | 2 | Usability: Visibilidad del estado del sistema |
+| 9   | Contraste de colores deficiente en textos secundarios y etiquetas de estado de vehículos | Ambos | 2 | Accesibilidad (WCAG 2.1) |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1: Falta de notificaciones y actualizaciones en tiempo real en la gestión de reservas**
+*   **Severidad:** 3
+*   **Heurística violada:** Usability – Visibilidad del estado del sistema
+*   **Problema:** Los usuarios reportaron que cuando un arrendatario realiza una solicitud de reserva, el propietario no recibe una notificación en tiempo real. De forma similar, el arrendatario debe recargar manualmente la vista de su reserva para enterarse si su solicitud fue aceptada o rechazada. Esto incrementa la fricción y el tiempo de espera.
+*   _(Incluir captura de pantalla del flujo de reserva/solicitud)_
+*   **Recomendación:** Integrar un servicio de notificaciones push en tiempo real (por ejemplo, Firebase Cloud Messaging) y actualizar dinámicamente el estado de la reserva en pantalla a través de sockets o listeners activos.
+
+**PROBLEMA #2: Ausencia de geolocalización en tiempo real para coordinar la entrega**
+*   **Severidad:** 3
+*   **Heurística violada:** Usability – Visibilidad del estado del sistema
+*   **Problema:** Al aproximarse la hora de inicio de la reserva, ni el propietario ni el arrendatario pueden visualizar la ubicación física del otro en un mapa en tiempo real para encontrarse y entregar las llaves del vehículo. Esto los obliga a coordinar mediante llamadas telefónicas externas o mensajería de terceros.
+*   _(Incluir captura de pantalla del mapa o pantalla previa a la entrega)_
+*   **Recomendación:** Incorporar un mapa interactivo de seguimiento GPS activo únicamente durante las horas programadas de entrega y devolución del vehículo.
+
+**PROBLEMA #3: Proceso de validación de documentos confuso y sin feedback de estado**
+*   **Severidad:** 2
+*   **Heurística violada:** Usability – Ayuda y documentación
+*   **Problema:** Durante el registro de arrendatarios, al solicitar la foto de la licencia de conducir (brevete) y del documento de identidad, no se especifican los formatos permitidos ni las pautas de nitidez. Además, tras subir las imágenes, no se muestra ningún mensaje sobre si los archivos se encuentran en revisión, aprobados o rechazados.
+*   _(Incluir captura de pantalla del paso de subida de documentos KYC)_
+*   **Recomendación:** Agregar pautas explícitas de subida (ej. "Formatos PNG o JPG, tamaño máximo 5MB") y mostrar un banner claro de estado (ej. "Tus documentos están siendo verificados. Tiempo estimado: 15 min").
+
+**PROBLEMA #4: Ausencia de filtros de búsqueda avanzados**
+*   **Severidad:** 2
+*   **Heurística violada:** Usability – Flexibilidad y eficiencia de uso
+*   **Problema:** El buscador de vehículos solo permite filtrar por zona, tipo de carrocería y rango de precio general. Los arrendatarios señalaron que para alquilar un auto es crucial conocer el tipo de transmisión (manual/automática) y el tipo de combustible (gasolina, GLP, eléctrico), opciones que actualmente no se pueden filtrar.
+*   _(Incluir captura de pantalla del panel de filtros de búsqueda)_
+*   **Recomendación:** Expandir la funcionalidad de filtros añadiendo opciones específicas de transmisión, combustible, y equipamiento básico (ej. aire acondicionado, GPS, cámara de retroceso).
+
+**PROBLEMA #5: No se indica visualmente cuáles campos del registro de vehículos son obligatorios**
+*   **Severidad:** 2
+*   **Heurística violada:** Usability – Prevención de errores
+*   **Problema:** Al completar el formulario para registrar y publicar un vehículo, no hay marcas visuales (como asteriscos) que identifiquen cuáles campos son estrictamente requeridos (SOAT, kilometraje, fotos) y cuáles opcionales (descripción adicional). Si el usuario omite uno, la app muestra un error genérico tras intentar guardar.
+*   _(Incluir captura de pantalla del formulario de publicación de vehículo)_
+*   **Recomendación:** Señalar con un asterisco (*) los campos obligatorios, validar las entradas inline y mantener el botón "Publicar" inactivo hasta que se cumplan las condiciones mínimas.
+
+**PROBLEMA #6: Dificultad o imposibilidad de modificar o cancelar una reserva activa**
+*   **Severidad:** 3
+*   **Heurística violada:** Usability – Control y libertad del usuario
+*   **Problema:** En el flujo de reservas activas, el arrendatario no cuenta con un botón directo para cancelar o solicitar un cambio de fecha ante un imprevisto. La interfaz asume un flujo lineal sin posibilidad de retroceso, lo que genera desconfianza y obliga al usuario a recurrir a canales de soporte externos.
+*   _(Incluir captura de pantalla del detalle de reserva confirmada)_
+*   **Recomendación:** Añadir un botón visible de "Cancelar reserva" y otro de "Solicitar reprogramación", aplicando las políticas de cobro o penalización parametrizadas por el sistema.
+
+**PROBLEMA #7: El historial de ingresos no permite comparar periodos**
+*   **Severidad:** 1
+*   **Heurística violada:** Information Architecture – Is it useful?
+*   **Problema:** El panel financiero del propietario solo muestra una lista plana de ingresos acumulados cronológicamente. No es posible agrupar las ganancias por periodos de tiempo (semanas, meses, años) ni contrastar el desempeño económico actual con el de periodos anteriores.
+*   _(Incluir captura de pantalla del panel de ingresos del propietario)_
+*   **Recomendación:** Integrar un selector de fecha/periodo en la sección de ingresos y un indicador gráfico simplificado que compare la rentabilidad respecto al mes anterior.
+
+**PROBLEMA #8: Las calificaciones muestran solo estrellas, sin permitir comentarios detallados**
+*   **Severidad:** 2
+*   **Heurística violada:** Usability – Visibilidad del estado del sistema
+*   **Problema:** Tras finalizar un alquiler, los usuarios únicamente pueden calificar con un rango de 1 a 5 estrellas. Los propietarios manifestaron que esto impide conocer las razones específicas detrás de una calificación baja (por ejemplo, problemas de limpieza o retraso en la entrega) para poder corregirlos.
+*   _(Incluir captura de pantalla de la pantalla de calificación final)_
+*   **Recomendación:** Añadir un campo opcional para comentarios escritos e incorporar etiquetas de selección rápida (ej. "Limpieza excelente", "Puntual", "Trato amable").
+
+**PROBLEMA #9: Contraste de colores deficiente en textos secundarios y etiquetas**
+*   **Severidad:** 2
+*   **Heurística violada:** Accesibilidad (WCAG 2.1)
+*   **Problema:** Las etiquetas secundarias que indican el estado del vehículo (ej. "En mantenimiento" o "Disponible") utilizan combinaciones de colores con bajo contraste visual, dificultando su lectura para usuarios con fatiga visual o en condiciones de luz solar directa en dispositivos móviles.
+*   **Recomendación:** Ajustar la paleta de colores de los estados y tipografías secundarias para cumplir con el nivel mínimo de contraste WCAG AA (4.5:1).
+
+**Resumen de la Evaluación:**
+Las pruebas de usabilidad revelaron que Rent2Go posee una arquitectura de información base sólida y flujos de registro comprensibles; sin embargo, adolece de mecanismos dinámicos e interactivos en tiempo real (notificaciones instantáneas y rastreo GPS) que son indispensables para coordinar un alquiler de vehículos seguro y ágil. Asimismo, existen oportunidades críticas de mejora en la prevención de errores (formularios de publicación), la flexibilidad del usuario (opción de cancelación/modificación) y la retroalimentación cualitativa (comentarios en las calificaciones). La implementación de estas recomendaciones prioritarias elevará significativamente la percepción de seguridad y la retención tanto de propietarios como de arrendatarios en la plataforma móvil.
