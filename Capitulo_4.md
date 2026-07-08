@@ -2384,62 +2384,98 @@ Sprint 3 fue una etapa de cierre y consolidación en la que el equipo demostró 
 
 ---
 
-<!--
+
 <div style="page-break-after: always;"></div>
 
 ## 4.3. Validation Interviews
 
-En esta sección, el equipo registra y explica las actividades de entrevistas de validación durante Sprint 1. Se realizaron entrevistas con usuarios de los segmentos objetivo: visitantes para validar Landing Page (US53-US56) y arrendatarios para validar funcionalidades de búsqueda y filtrado de vehículos (US18-US23).
+En esta sección, el equipo registra y explica las actividades de entrevistas de validación. Se diseñaron y llevaron a cabo entrevistas con usuarios reales pertenecientes a los segmentos objetivo para validar la usabilidad, utilidad y aceptación de la versión funcional desplegada de la aplicación móvil Rent2Go, analizando los flujos clave tanto de propietarios como de arrendatarios.
 
-### 4.3.1. Diseño de Entrevistas
+### 4.3.1. Diseño de Entrevistas de Validación
 
-**Objetivos de Validación:**
+**Objetivo:**
+Validar la usabilidad, utilidad percibida y aceptación de la aplicación móvil Rent2Go por parte de los segmentos objetivo, mediante la interacción directa con la versión funcional desplegada. Se busca identificar problemas de usabilidad, funcionalidades faltantes y oportunidades de mejora en los flujos principales de alquiler de vehículos entre particulares.
 
-- Evaluar claridad del valor propuesto en el Landing Page (US53-US56)
-- Validar navegabilidad e información presentada en landing
-- Validar responsividad en múltiples dispositivos
-- Recopilar feedback sobre funcionalidades de búsqueda y filtrado de vehículos (US18-US23)
-- Entender fluidez de interacción en búsqueda y detalle de vehículos
+**Público Objetivo:**
+Se entrevistarán los mismos dos segmentos de las entrevistas de needfinding:
+1. **Propietarios de vehículos particulares con baja frecuencia de uso**
+2. **Arrendatarios que buscan opciones de movilidad temporal y flexible**
 
-**Segmentos Objetivo:**
+*Características comunes de los participantes:*
+- **Edad:** 18 a 60 años
+- **Residencia:** Zonas urbanas a nivel nacional
+- **Dispositivo:** Acceso a un smartphone (Android o iOS)
+- **Criterio de inclusión:** Haber participado en las entrevistas iniciales de needfinding
 
-1. **Visitantes:** Personas nuevas interesadas en conocer la plataforma (para US53-US56)
-2. **Arrendatarios:** Personas buscando alquilar vehículos de corta duración (para US18-US23)
+**Tipo de Entrevistas:**
+Se utilizarán entrevistas de validación estructuradas, combinando la observación directa del usuario interactuando con la aplicación móvil y preguntas posteriores orientadas a recoger su percepción sobre la experiencia.
 
-**Estructura de Entrevista (Visitantes - US53-US56):**
+**Metodología:**
 
-| Sección | Duración | Descripción |
-| --- | --- | --- |
-| Bienvenida | 2 min | Presentación del producto y propósito de validación |
-| Navegar Landing Page | 5 min | Usuario explora secciones del landing (US53, US56, US54, US55) |
-| Tarea 1: Entender el servicio | 3 min | Preguntas sobre claridad del modelo de negocio y propuesta de valor |
-| Tarea 2: Encontrar contacto | 2 min | Usuario localiza información de contacto (US56) |
-| Tarea 3: Evaluar navegación | 2 min | Usuario intenta acceder a diferentes secciones (US54) |
-| Feedback de diseño | 2 min | Observaciones sobre responsividad y usabilidad (US55) |
-| Cierre | 1 min | Agradecimiento y siguiente pasos |
+| Aspecto | Detalle |
+| --- | --- |
+| **Modalidad** | Virtual |
+| **Duración** | 15 a 20 minutos por entrevista |
+| **Herramienta** | Se compartirá el enlace de descarga o la URL de la aplicación desplegada (APK o PWA) para que el usuario la explore desde su propio dispositivo móvil |
+| **Registro** | Video de la sesión subido a Microsoft Stream, con notas escritas en el informe |
 
-**Estructura de Entrevista (Arrendatarios - US18-US23):**
+**Dinámica de la Sesión:**
+Cada sesión se divide en dos partes:
+1. **Pruebas de tareas (Observación directa):** Se le pide al entrevistado que realice una serie de tareas dentro de la aplicación sin intervención del equipo, mientras se observa su comportamiento en pantalla y navegación.
+2. **Entrevista estructurada (Preguntas de validación):** Se realizan las preguntas de validación basadas en lo observado y en la experiencia directa del usuario con el fin de recoger feedback cualitativo.
 
-| Sección | Duración | Descripción |
-| --- | --- | --- |
-| Bienvenida | 2 min | Presentación del producto y propósito de validación |
-| Búsqueda de vehículos | 4 min | Usuario realiza búsqueda (US19) y obtiene resultados |
-| Aplicar filtro | 3 min | Usuario aplica filtro de precio (US20) |
-| Ver detalles | 3 min | Usuario selecciona y ve detalles de vehículo (US22) |
-| Agregar favoritos | 2 min | Usuario agrega vehículo a favoritos (US23) |
-| Feedback general | 3 min | Preguntas sobre facilidad de uso y mejoras |
-| Cierre | 1 min | Agradecimiento y siguiente pasos |
+**User Flows a Evaluar Durante la Sesión:**
 
-**User Flows a Validar:**
+*Para Propietarios de Vehículos:*
+- Registrarse e iniciar sesión en la aplicación como propietario.
+- Publicar un vehículo ingresando sus datos, fotos, disponibilidad y precio por día.
+- Revisar y gestionar una solicitud de alquiler recibida (aceptar o rechazar).
+- Consultar el historial de alquileres realizados y los ingresos generados.
+- Revisar las calificaciones y comentarios recibidos de arrendatarios.
 
-1. **Flow Visitante - Landing Page:** Acceder a landing → Entender propuesta → Navegar secciones → Encontrar CTA (US53-US56)
-2. **Flow Arrendatario - Búsqueda:** Buscar vehículos → Filtrar por precio → Ver detalles → Agregar a favoritos (US18-US23)
+*Para Arrendatarios de Vehículos:*
+- Registrarse e iniciar sesión en la aplicación como arrendatario.
+- Buscar un vehículo disponible aplicando filtros (zona, tipo, precio).
+- Revisar el detalle de un vehículo (fotos, descripción, calificaciones del propietario) y realizar una reserva.
+- Consultar el estado de su reserva activa y los detalles del vehículo asignado.
+- Calificar al propietario y al vehículo al finalizar el alquiler.
+
+**Guía de Preguntas para la Validación:**
+
+*Preguntas para Propietarios de Vehículos:*
+1. Al ver la pantalla de inicio, ¿qué fue lo primero que entendiste que podías hacer con la aplicación como propietario?
+2. Al registrar tu vehículo, ¿el proceso te pareció claro y completo? ¿Qué fue lo más complicado o lo que más tiempo te tomó?
+3. La información que solicita la app para publicar tu vehículo (fotos, precio, disponibilidad), ¿te parece suficiente o echarías algo de menos?
+4. Cuando recibiste una solicitud de alquiler, ¿la información que te mostraba sobre el arrendatario te generó suficiente confianza para aceptarla? ¿Qué más querrías saber?
+5. ¿El historial de alquileres e ingresos que muestra la app te da una imagen clara de cómo te está yendo económicamente?
+6. ¿Ver las calificaciones y comentarios que te dejan los arrendatarios te motivaría a mejorar la presentación de tu vehículo o tu atención? ¿O no le darías mucha importancia?
+7. ¿Hubo alguna pantalla o función que no entendiste a la primera o que te resultó confusa?
+8. ¿Qué tan probable es que recomiendes esta aplicación a otros propietarios de tu entorno? ¿Qué mejorarías antes de hacerlo?
+
+*Preguntas para Arrendatarios de Vehículos:*
+1. Al ver la pantalla de inicio, ¿qué fue lo primero que entendiste que podías hacer con la aplicación?
+2. Al buscar un vehículo, ¿los filtros disponibles (zona, tipo de vehículo, precio) te fueron suficientes para encontrar lo que necesitabas? ¿Qué filtro adicional agregarías?
+3. La información del vehículo que encontraste (fotos, descripción, calificaciones del propietario), ¿te generó confianza suficiente para querer reservarlo? ¿Qué le faltó o qué le sobró?
+4. ¿El precio por día que muestra la app te pareció justo o razonable comparado con las opciones que conocías antes? ¿Por qué?
+5. ¿Hubo algún paso durante el proceso de reserva en que no supiste qué hacer o te confundiste?
+6. Comparando con cómo conseguías un vehículo de alquiler antes, ¿sientes que esta forma es mejor, igual o peor? ¿Qué te lo hace pensar?
+7. ¿Qué tan fácil o difícil fue calificar al propietario y al vehículo al finalizar el alquiler? ¿Lo harías en la vida real?
+8. ¿Hay alguna función que esperabas encontrar y no encontraste?
+9. ¿Usarías esta aplicación la próxima vez que necesites alquilar un vehículo? ¿Qué te lo impediría?
+
+*Pregunta de Cierre (Ambos Segmentos):*
+- En una sola frase, ¿cómo describirías esta aplicación a alguien de tu ciudad que aún no la conoce?
+
+**Consideraciones Éticas:**
+- Se solicitará al entrevistado el consentimiento explícito para la grabación de la sesión y el uso de su información antes de iniciar.
+- Se garantizará la confidencialidad de toda la información proporcionada durante la entrevista.
+- Los datos obtenidos serán utilizados únicamente con fines académicos, en el marco del curso de Aplicaciones Móviles de la Universidad Peruana de Ciencias Aplicadas (UPC).
 
 ---
 
 ### 4.3.2. Registro de Entrevistas
 
-**Entrevista 1 - Segmento: Visitante (Landing Page US53-US56)**
+**Entrevista 1 - Segmento: Propietario (Validación de Aplicación Móvil)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -2449,24 +2485,24 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
 | **Captura de Video** | <img src="Resources/capitulo_4/interviews/1-entrevista-1.png" alt="Captura entrevista 1" width="320"> |
-| **URL OneDrive** | [Insert link OneDrive] |
+| **URL Stream** | [Insert link Microsoft Stream] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
 **Resumen de Observaciones:**
 
-[Insert resumen descriptivo de las principales apreciaciones del entrevistado. Incluir:
-- Reacciones sobre el Landing Page (US53)
-- Claridad del modelo de negocio
-- Facilidad de encontrar información de contacto (US56)
-- Facilidad de navegación (US54)
-- Observaciones sobre responsividad (US55)
-- Principales dudas o fricción
-- Puntos positivos y negativos
-- Disposición a usar la app]
+[Insert resumen descriptivo de las principales apreciaciones del propietario. Incluir:
+- Primeras impresiones al iniciar la app.
+- Claridad y facilidad para registrar y publicar el vehículo.
+- Suficiencia de la información y fotos solicitadas para el vehículo.
+- Nivel de confianza que genera la información del arrendatario al recibir una solicitud.
+- Entendimiento del historial de alquileres e ingresos.
+- Motivación frente al sistema de calificaciones y comentarios.
+- Identificación de pantallas o funciones confusas.
+- Probabilidad de recomendación y propuestas de mejora.]
 
 ---
 
-**Entrevista 2 - Segmento: Visitante (Landing Page US53-US56)**
+**Entrevista 2 - Segmento: Propietario (Validación de Aplicación Móvil)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -2476,16 +2512,16 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
 | **Captura de Video** | <img src="Resources/capitulo_4/interviews/2-entrevista-2.png" alt="Captura entrevista 2" width="320"> |
-| **URL OneDrive** | [Insert link OneDrive] |
+| **URL Stream** | [Insert link Microsoft Stream] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
 **Resumen de Observaciones:**
 
-[Insert resumen descriptivo de las principales apreciaciones del entrevistado sobre Landing Page (US53-US56)]
+[Insert resumen descriptivo de las apreciaciones del segundo propietario sobre la interacción con la aplicación.]
 
 ---
 
-**Entrevista 3 - Segmento: Arrendatario (Búsqueda y Filtrado US18-US23)**
+**Entrevista 3 - Segmento: Arrendatario (Validación de Aplicación Móvil)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -2495,24 +2531,22 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
 | **Captura de Video** | <img src="Resources/capitulo_4/interviews/3-entrevista-3.png" alt="Captura entrevista 3" width="320"> |
-| **URL OneDrive** | [Insert link OneDrive] |
+| **URL Stream** | [Insert link Microsoft Stream] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
 **Resumen de Observaciones:**
 
-[Insert resumen descriptivo de las principales apreciaciones del entrevistado. Incluir:
-- Facilidad de búsqueda de vehículos (US19)
-- Utilidad del filtro de precio (US20)
-- Claridad de detalles de vehículo mostrados (US22)
-- Necesidad de agregar a favoritos (US23)
-- Fluidez de la búsqueda
-- Resultados relevantes
-- Puntos de fricción
-- Intención de alquilar]
+[Insert resumen descriptivo de las principales apreciaciones del arrendatario. Incluir:
+- Facilidad para buscar vehículos y suficiencia de los filtros aplicados (zona, tipo, precio).
+- Nivel de confianza inspirado por la información detallada del vehículo y la reputación del dueño.
+- Percepción del precio y facilidad para realizar/confirmar el proceso de reserva.
+- Facilidad para consultar el estado de la reserva activa.
+- Utilidad y usabilidad en el flujo de calificación al propietario y vehículo.
+- Comparación de este método con los tradicionales y la intención real de uso futuro.]
 
 ---
 
-**Entrevista 4 - Segmento: Arrendatario (Búsqueda y Filtrado US18-US23)**
+**Entrevista 4 - Segmento: Arrendatario (Validación de Aplicación Móvil)**
 
 | Aspecto | Descripción |
 | --- | --- |
@@ -2522,39 +2556,132 @@ En esta sección, el equipo registra y explica las actividades de entrevistas de
 | **Distrito** | [Insert distrito] |
 | **Ocupación** | [Insert ocupación] |
 | **Captura de Video** | <img src="Resources/capitulo_4/interviews/4-entrevista-4.png" alt="Captura entrevista 4" width="320"> |
-| **URL OneDrive** | [Insert link OneDrive] |
+| **URL Stream** | [Insert link Microsoft Stream] |
 | **Timing del Video** | Inicia en [HH:MM:SS], Duración: [HH:MM:SS] |
 
 **Resumen de Observaciones:**
 
-[Insert resumen descriptivo de las principales apreciaciones del entrevistado sobre búsqueda y filtrado (US18-US23)]
+[Insert resumen descriptivo de las apreciaciones del segundo arrendatario sobre la interacción con la aplicación.]
 
 ---
 
 ### 4.3.3. Evaluaciones según heurísticas
 
-En esta sección se evalúan las sesiones de validación basado en heurísticas de usabilidad, arquitectura de información e inclusive design de la experiencia propuesta en el Landing Page.
+**UX Heuristics & Principles Evaluation**
+_Usability – Inclusive Design – Information Architecture_
 
-**Evaluación Heurística - Landing Page Sprint 1:**
+**SITE o APP A EVALUAR:**
+Rent2Go – Aplicación móvil de alquiler de vehículos entre particulares (vistas de propietario y arrendatario).
 
-| # | Heurística | Severidad | Descripción | Recomendación |
-| --- | --- | --- | --- | --- |
-| 1 | Visibilidad del estado del sistema | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 2 | Coincidencia entre el sistema y el mundo real | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 3 | Control y libertad del usuario | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 4 | Estándares y consistencia | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 5 | Prevención de errores | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 6 | Reconocimiento en lugar de recuerdo | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 7 | Flexibilidad y eficiencia de uso | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 8 | Diseño estético y minimalista | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 9 | Ayuda y documentación | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
-| 10 | Accesibilidad (WCAG 2.1) | [Low/Medium/High] | [Descripción de hallazgo] | [Recomendación de mejora] |
+**TAREAS A EVALUAR:**
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas en los flujos principales de la aplicación:
 
-**Resumen de Evaluación:**
+_Segmento Propietario:_
+1. Registrarse e iniciar sesión en la aplicación como propietario.
+2. Publicar un vehículo ingresando sus datos, fotos, disponibilidad y precio por día.
+3. Revisar y gestionar una solicitud de alquiler recibida (aceptar o rechazar).
+4. Consultar el historial de alquileres realizados y los ingresos generados.
+5. Revisar las calificaciones y comentarios recibidos de arrendatarios.
 
-[Insert resumen general de hallazgos, patrones observados, y prioridades de mejora para próximas iteraciones]
+_Segmento Arrendatario:_
+6. Registrarse e iniciar sesión en la aplicación como arrendatario.
+7. Buscar un vehículo disponible aplicando filtros (zona, tipo, precio).
+8. Revisar el detalle de un vehículo (fotos, descripción, calificaciones del propietario) y realizar una reserva.
+9. Consultar el estado de su reserva activa y los detalles del vehículo asignado.
+10. Calificar al propietario y al vehículo al finalizar el alquiler.
 
----
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+1. Comunicación directa por chat en tiempo real entre propietario y arrendatario.
+2. Pasarela de pagos digitales y facturación integrada.
+3. Carga y validación automática de multas de tránsito.
+4. Cobertura de seguros contra accidentes (SOAT digital integrado).
 
-<div style="page-break-after: always;"></div>
--->
+**ESCALA DE SEVERIDAD:**
+
+| Nivel | Descripción |
+| ----- | ----------- |
+| 1     | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2     | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja de cara al siguiente release. |
+| 3     | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar prioridad alta. |
+| 4     | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+**TABLA RESUMEN:**
+
+| #   | Problema | Segmento | Escala de severidad | Heurística/Principio violada(o) |
+| --- | -------- | -------- | ------------------- | ------------------------------- |
+| 1   | Falta de notificaciones y actualizaciones en tiempo real en la gestión de reservas | Ambos | 3 | Usability: Visibilidad del estado del sistema |
+| 2   | Ausencia de geolocalización en tiempo real para coordinar la entrega y devolución del vehículo | Ambos | 3 | Usability: Visibilidad del estado del sistema |
+| 3   | Proceso de validación de documentos (licencia de conducir y DNI) confuso y sin feedback de estado | Arrendatario | 2 | Usability: Ayuda y documentación |
+| 4   | Ausencia de filtros de búsqueda avanzados (tipo de transmisión, combustible, equipamiento adicional) | Arrendatario | 2 | Usability: Flexibilidad y eficiencia de uso |
+| 5   | No se indica visualmente cuáles campos del formulario de registro de vehículos son obligatorios | Propietario | 2 | Usability: Prevención de errores |
+| 6   | Dificultad o imposibilidad de modificar o cancelar una reserva activa directamente desde la app | Ambos | 3 | Usability: Control y libertad del usuario |
+| 7   | El historial de ingresos no permite comparar periodos (semana/mes actual vs. anterior) | Propietario | 1 | Information Architecture: Is it useful? |
+| 8   | Las calificaciones muestran solo estrellas, sin permitir comentarios detallados de retroalimentación | Ambos | 2 | Usability: Visibilidad del estado del sistema |
+| 9   | Contraste de colores deficiente en textos secundarios y etiquetas de estado de vehículos | Ambos | 2 | Accesibilidad (WCAG 2.1) |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1: Falta de notificaciones y actualizaciones en tiempo real en la gestión de reservas**
+*   **Severidad:** 3
+*   **Heurística violada:** Usability – Visibilidad del estado del sistema
+*   **Problema:** Los usuarios reportaron que cuando un arrendatario realiza una solicitud de reserva, el propietario no recibe una notificación en tiempo real. De forma similar, el arrendatario debe recargar manualmente la vista de su reserva para enterarse si su solicitud fue aceptada o rechazada. Esto incrementa la fricción y el tiempo de espera.
+*   _(Incluir captura de pantalla del flujo de reserva/solicitud)_
+*   **Recomendación:** Integrar un servicio de notificaciones push en tiempo real (por ejemplo, Firebase Cloud Messaging) y actualizar dinámicamente el estado de la reserva en pantalla a través de sockets o listeners activos.
+
+**PROBLEMA #2: Ausencia de geolocalización en tiempo real para coordinar la entrega**
+*   **Severidad:** 3
+*   **Heurística violada:** Usability – Visibilidad del estado del sistema
+*   **Problema:** Al aproximarse la hora de inicio de la reserva, ni el propietario ni el arrendatario pueden visualizar la ubicación física del otro en un mapa en tiempo real para encontrarse y entregar las llaves del vehículo. Esto los obliga a coordinar mediante llamadas telefónicas externas o mensajería de terceros.
+*   _(Incluir captura de pantalla del mapa o pantalla previa a la entrega)_
+*   **Recomendación:** Incorporar un mapa interactivo de seguimiento GPS activo únicamente durante las horas programadas de entrega y devolución del vehículo.
+
+**PROBLEMA #3: Proceso de validación de documentos confuso y sin feedback de estado**
+*   **Severidad:** 2
+*   **Heurística violada:** Usability – Ayuda y documentación
+*   **Problema:** Durante el registro de arrendatarios, al solicitar la foto de la licencia de conducir (brevete) y del documento de identidad, no se especifican los formatos permitidos ni las pautas de nitidez. Además, tras subir las imágenes, no se muestra ningún mensaje sobre si los archivos se encuentran en revisión, aprobados o rechazados.
+*   _(Incluir captura de pantalla del paso de subida de documentos KYC)_
+*   **Recomendación:** Agregar pautas explícitas de subida (ej. "Formatos PNG o JPG, tamaño máximo 5MB") y mostrar un banner claro de estado (ej. "Tus documentos están siendo verificados. Tiempo estimado: 15 min").
+
+**PROBLEMA #4: Ausencia de filtros de búsqueda avanzados**
+*   **Severidad:** 2
+*   **Heurística violada:** Usability – Flexibilidad y eficiencia de uso
+*   **Problema:** El buscador de vehículos solo permite filtrar por zona, tipo de carrocería y rango de precio general. Los arrendatarios señalaron que para alquilar un auto es crucial conocer el tipo de transmisión (manual/automática) y el tipo de combustible (gasolina, GLP, eléctrico), opciones que actualmente no se pueden filtrar.
+*   _(Incluir captura de pantalla del panel de filtros de búsqueda)_
+*   **Recomendación:** Expandir la funcionalidad de filtros añadiendo opciones específicas de transmisión, combustible, y equipamiento básico (ej. aire acondicionado, GPS, cámara de retroceso).
+
+**PROBLEMA #5: No se indica visualmente cuáles campos del registro de vehículos son obligatorios**
+*   **Severidad:** 2
+*   **Heurística violada:** Usability – Prevención de errores
+*   **Problema:** Al completar el formulario para registrar y publicar un vehículo, no hay marcas visuales (como asteriscos) que identifiquen cuáles campos son estrictamente requeridos (SOAT, kilometraje, fotos) y cuáles opcionales (descripción adicional). Si el usuario omite uno, la app muestra un error genérico tras intentar guardar.
+*   _(Incluir captura de pantalla del formulario de publicación de vehículo)_
+*   **Recomendación:** Señalar con un asterisco (*) los campos obligatorios, validar las entradas inline y mantener el botón "Publicar" inactivo hasta que se cumplan las condiciones mínimas.
+
+**PROBLEMA #6: Dificultad o imposibilidad de modificar o cancelar una reserva activa**
+*   **Severidad:** 3
+*   **Heurística violada:** Usability – Control y libertad del usuario
+*   **Problema:** En el flujo de reservas activas, el arrendatario no cuenta con un botón directo para cancelar o solicitar un cambio de fecha ante un imprevisto. La interfaz asume un flujo lineal sin posibilidad de retroceso, lo que genera desconfianza y obliga al usuario a recurrir a canales de soporte externos.
+*   _(Incluir captura de pantalla del detalle de reserva confirmada)_
+*   **Recomendación:** Añadir un botón visible de "Cancelar reserva" y otro de "Solicitar reprogramación", aplicando las políticas de cobro o penalización parametrizadas por el sistema.
+
+**PROBLEMA #7: El historial de ingresos no permite comparar periodos**
+*   **Severidad:** 1
+*   **Heurística violada:** Information Architecture – Is it useful?
+*   **Problema:** El panel financiero del propietario solo muestra una lista plana de ingresos acumulados cronológicamente. No es posible agrupar las ganancias por periodos de tiempo (semanas, meses, años) ni contrastar el desempeño económico actual con el de periodos anteriores.
+*   _(Incluir captura de pantalla del panel de ingresos del propietario)_
+*   **Recomendación:** Integrar un selector de fecha/periodo en la sección de ingresos y un indicador gráfico simplificado que compare la rentabilidad respecto al mes anterior.
+
+**PROBLEMA #8: Las calificaciones muestran solo estrellas, sin permitir comentarios detallados**
+*   **Severidad:** 2
+*   **Heurística violada:** Usability – Visibilidad del estado del sistema
+*   **Problema:** Tras finalizar un alquiler, los usuarios únicamente pueden calificar con un rango de 1 a 5 estrellas. Los propietarios manifestaron que esto impide conocer las razones específicas detrás de una calificación baja (por ejemplo, problemas de limpieza o retraso en la entrega) para poder corregirlos.
+*   _(Incluir captura de pantalla de la pantalla de calificación final)_
+*   **Recomendación:** Añadir un campo opcional para comentarios escritos e incorporar etiquetas de selección rápida (ej. "Limpieza excelente", "Puntual", "Trato amable").
+
+**PROBLEMA #9: Contraste de colores deficiente en textos secundarios y etiquetas**
+*   **Severidad:** 2
+*   **Heurística violada:** Accesibilidad (WCAG 2.1)
+*   **Problema:** Las etiquetas secundarias que indican el estado del vehículo (ej. "En mantenimiento" o "Disponible") utilizan combinaciones de colores con bajo contraste visual, dificultando su lectura para usuarios con fatiga visual o en condiciones de luz solar directa en dispositivos móviles.
+*   **Recomendación:** Ajustar la paleta de colores de los estados y tipografías secundarias para cumplir con el nivel mínimo de contraste WCAG AA (4.5:1).
+
+**Resumen de la Evaluación:**
+Las pruebas de usabilidad revelaron que Rent2Go posee una arquitectura de información base sólida y flujos de registro comprensibles; sin embargo, adolece de mecanismos dinámicos e interactivos en tiempo real (notificaciones instantáneas y rastreo GPS) que son indispensables para coordinar un alquiler de vehículos seguro y ágil. Asimismo, existen oportunidades críticas de mejora en la prevención de errores (formularios de publicación), la flexibilidad del usuario (opción de cancelación/modificación) y la retroalimentación cualitativa (comentarios en las calificaciones). La implementación de estas recomendaciones prioritarias elevará significativamente la percepción de seguridad y la retención tanto de propietarios como de arrendatarios en la plataforma móvil.
