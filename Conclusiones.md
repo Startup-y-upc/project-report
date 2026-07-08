@@ -14,16 +14,19 @@ Como recomendaciones para el roadmap, se sugiere continuar fortaleciendo la cons
 
 ### Videos demo de Kotlin y Flutter
 
-- **Kotlin (Android):** [Enlace pendiente de publicación]
-- **Flutter:** [Enlace pendiente de publicación]
+- **Flutter:** [Flutter Demo](https://upcedupe-my.sharepoint.com/personal/u202213468_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202213468%5Fupc%5Fedu%5Fpe%2FDocuments%2FAppM%C3%B3viles%2FTB2%2Drecursos%2Fupc%2Dpre%2D202601%2Dcc238%2D3248%2Drent2go%2Dflutternavigation%2Dsprint%2D3%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaf0d1f69%2D81af%2D4f85%2Dbd67%2D8c82551f5673)
 
 ### Video About the product
 
-**URL**: [About the product](https://youtu.be/SISRf5DqJoM)
+**URL**: https://n9.cl/soycr6
+
+**Link**: [Video About the product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213468_upc_edu_pe/IQAMnOBSa21AQbR2KLAwec7LAQaO08guWj501PVn8Pq8xl0?e=8TfLda&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 ### Video About the team
 
-**URL**: https://upcedupe-my.sharepoint.com/personal/u202213468_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202213468%5Fupc%5Fedu%5Fpe%2FDocuments%2FAppM%C3%B3viles%2Fupc%2Dpre%2D2026%2D01%2D1acc238%2D3248%2Drent2go%2Dabout%2Dthe%2Dteam%2Dsprint%2D1%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ead1a6551%2Dc80a%2D44ad%2Dbcf7%2Dc97a75178906
+**URL**: https://n9.cl/0osji
+
+**Link**: [Video About the team](https://upcedupe-my.sharepoint.com/personal/u202213468_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202213468%5Fupc%5Fedu%5Fpe%2FDocuments%2FAppM%C3%B3viles%2FTB2%2Drecursos%2Fupc%2Dpre%2D202601%2Dcc238%2D3248%2Drent2go%2Dabout%2Dthe%2Dteam%2Dsprint%2D3%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E99a5e305%2D8e0d%2D4d58%2Dbafd%2D46c3dd5729b4)
 
 <div style="page-break-after: always;"></div>
 
