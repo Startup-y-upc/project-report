@@ -2354,14 +2354,15 @@ Durante Sprint 3, la entrega final de Flutter se validó en dos canales de distr
 
 **Evidencia audiovisual requerida:**
 
-| Video | Nombre sugerido | Uso |
-| --- | --- | --- |
-| Flutter Android | 23-flutter-appdistribution-demo.mp4 | Demostración del proceso de descarga, instalación y ejecución del build distribuido. |
-| Flutter Web | 24-flutter-hosting-demo.mp4 | Demostración de navegación del sitio web y validación del flujo `/#/bookings`. |
+En este video se muestra el deploy de la version web de la aplicación rent2go.
+
+- **URL:** https://youtu.be/eXKw6t8Z5sw
+- **Duración:** 3:27
+- **Descripción:** Demostración completa de Rent2go con navegación entre secciones.
 
 **URLs de evidencia:**
 - **Firebase App Distribution:** https://console.firebase.google.com/u/0/project/rent2go-fe7ed/appdistribution/app/android:com.rent2go.rent2go/releases?hl=es
-- **Flutter Web en Firebase Hosting:** https://rent2go-fe7ed.web.app/#/bookings
+- **Flutter Web en Firebase Hosting:** https://rent2go-fe7ed.web.app/
 
 ---
 
